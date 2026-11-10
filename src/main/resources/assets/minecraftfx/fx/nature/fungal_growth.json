@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:nature.fungal_growth" } ],
+  "palette": { "cap": "#B86AD8", "stem": "#E8E0D0", "mold": "#6A5A7A", "dark": "#3A2E44", "spore": "#D8C8F0" },
+  "layers": [
+    { "sprite": "minecraftfx:mushroom", "additive": false, "axis": "up", "repeat": 9, "interval": 3, "lifetime": [44], "scale": { "from": 0.0, "mid": 0.2, "to": 0.2, "easing": "expoOut" }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["cap", "stem"], "cone": 90, "rim": true, "pattern": "even", "twist": 137, "offset": [0.3, 1.4], "height": [0.2] },
+    { "sprite": "minecraftfx:splat", "shape": "plane", "additive": false, "axis": "up", "lifetime": [70], "height": [0.03], "scale": { "from": 0.3, "to": 1.6 }, "alpha": { "from": 0.8, "mid": 0.8, "to": 0.0 }, "color": ["mold", "dark"] },
+    { "sprite": "minecraftfx:pixel", "frames": "first", "additive": false, "axis": "up", "count": 2, "repeat": 12, "interval": 4, "lifetime": [20, 26], "scale": { "from": 0.03, "to": 0.03 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["spore", "mold"], "cone": 90, "rim": true, "offset": [0.2, 1.4], "height": [0.3], "lift": [0.02, 0.04] }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:sci_fi.system_reboot" } ],
+  "palette": { "white": "#FFFFFF", "cyan": "#7AF8FF", "teal": "#20C8D8" },
+  "layers": [
+    { "sprite": "minecraftfx:screen", "additive": false, "axis": "up", "count": 4, "repeat": 3, "interval": 8, "lifetime": [8], "scale": { "from": 0.2, "to": 0.2 }, "alpha": { "from": 1.0, "to": 0.6 }, "color": ["cyan", "teal"], "cone": 90, "rim": true, "pattern": "even", "twist": 45, "offset": [0.9], "height": [1.2] },
+    { "sprite": "minecraftfx:digit", "frames": "random", "additive": false, "axis": "up", "count": 3, "repeat": 8, "interval": 3, "lifetime": [6], "scale": { "from": 0.08, "to": 0.08 }, "color": ["white", "cyan"], "cone": 90, "rim": true, "offset": [0.3, 0.9], "height": [0.6, 1.8] },
+    { "sprite": "minecraftfx:ring", "frames": "first", "additive": false, "axis": "up", "delay": 24, "lifetime": [10], "height": [1.2], "scale": { "from": 0.2, "to": 1.2 }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["white", "cyan"] },
+    { "sprite": "minecraftfx:reticle", "additive": false, "axis": "up", "lifetime": [26], "height": [1.2], "scale": { "from": 0.3, "to": 0.3 }, "alpha": { "from": 0.0, "mid": 0.9, "to": 0.0 }, "color": ["cyan", "teal"], "spin": 0.15 }
+  ]
+}

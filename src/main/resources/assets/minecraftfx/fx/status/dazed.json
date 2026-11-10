@@ -1,0 +1,14 @@
+{
+  "sounds": [ { "id": "minecraftfx:status.dazed" } ],
+  "palette": { "white": "#FFFFFF", "yellow": "#FFE45A", "orange": "#FFAA2A" },
+  "layers": [
+    { "sprite": "minecraftfx:flash", "frames": "first", "axis": "up", "additive": false, "count": 3, "lifetime": [36],
+      "scale": { "from": 0.0, "mid": 0.13, "to": 0.0 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["yellow", "orange"],
+      "cone": 90, "rim": true, "pattern": "even", "offset": [0.42], "height": [2.1], "orbit": 0.18, "spin": 0.2 },
+    { "sprite": "minecraftfx:ring", "additive": false, "shape": "plane", "frames": "first", "axis": "up", "lifetime": [36], "height": [2.1],
+      "scale": { "from": 0.42, "to": 0.42 }, "alpha": { "from": 0.0, "mid": 0.5, "to": 0.0 }, "color": ["yellow", "orange"] },
+    { "sprite": "minecraftfx:pixel", "axis": "up", "count": 3, "repeat": 16, "interval": 2, "lifetime": [8],
+      "scale": { "from": 0.04, "to": 0.0 }, "color": ["white", "yellow"],
+      "cone": 90, "rim": true, "pattern": "even", "twist": 20.63, "offset": [0.42], "height": [2.1] }
+  ]
+}

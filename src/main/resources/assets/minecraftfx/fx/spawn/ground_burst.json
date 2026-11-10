@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:spawn.ground_burst" } ],
+  "palette": { "dirt": "#8A6A44", "dark": "#4A3626", "black": "#241A12", "dust": "#B8A890" },
+  "layers": [
+    { "sprite": "minecraftfx:rock", "frames": "random", "additive": false, "axis": "up", "count": 12, "lifetime": [16, 22], "scale": { "from": 0.14, "to": 0.1 }, "color": ["dirt", "dark"], "cone": 40, "speed": [0.3, 0.5], "gravity": 1.4, "spin": 0.3 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 20, "lifetime": [12, 18], "scale": { "from": 0.07, "to": 0.04 }, "color": ["dirt", "dark"], "cone": 50, "speed": [0.2, 0.45], "gravity": 1.2 },
+    { "sprite": "minecraftfx:crack", "shape": "plane", "additive": false, "axis": "up", "lifetime": [44], "height": [0.04], "scale": { "from": 1.2, "to": 1.2 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["dark", "black"] },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 10, "lifetime": [14, 18], "scale": { "from": 0.25, "to": 0.25 }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["dust", "dirt"], "cone": 90, "rim": true, "pattern": "even", "speed": [0.14], "friction": 0.86 }
+  ]
+}

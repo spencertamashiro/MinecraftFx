@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:arcane.mana_drain" } ],
+  "palette": { "white": "#FFFFFF", "sky": "#9AD8FF", "blue": "#3F8CFF", "deep": "#1E3FB0" },
+  "layers": [
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 3, "repeat": 10, "interval": 2, "lifetime": [7], "scale": { "from": 0.03, "to": 0.06 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 1.0 }, "color": ["sky", "blue"], "offset": [0.7, 0.9], "speed": [-0.11] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "repeat": 22, "interval": 1, "lifetime": [12], "scale": { "from": 0.05, "to": 0.03 }, "length": { "from": 0.3, "to": 0.3 }, "alpha": { "from": 1.0, "to": 0.5 }, "color": ["sky", "deep"], "cone": 0, "speed": [0.35] },
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "repeat": 8, "interval": 3, "lifetime": [12], "scale": { "from": 0.1, "to": 0.06 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["white", "blue"], "cone": 0, "speed": [0.35] }
+  ]
+}

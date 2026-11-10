@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:shadow.abyssal_gaze" } ],
+  "palette": { "bright": "#FF5A4A", "red": "#C01010", "dark": "#241430", "void": "#0A0612" },
+  "layers": [
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "count": 8, "lifetime": [44, 50], "scale": { "from": 0.6, "to": 0.9 }, "alpha": { "from": 0.0, "mid": 0.85, "to": 0.0 }, "color": ["dark", "void"], "cone": 90, "offset": [0.0, 0.6], "height": [1.4], "speed": [0.003, 0.01], "spin": 0.02 },
+    { "sprite": "minecraftfx:eyes", "additive": false, "axis": "up", "delay": 8, "lifetime": [34], "height": [1.5], "scale": { "from": 0.4, "to": 0.4 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["bright", "red"] },
+    { "sprite": "minecraftfx:eyes", "additive": false, "axis": "up", "delay": 16, "lifetime": [22], "scale": { "from": 0.22, "to": 0.22 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["bright", "red"], "cone": 60, "rim": true, "pattern": "even", "phase": 40, "offset": [0.9], "height": [1.0] },
+    { "sprite": "minecraftfx:glint", "axis": "up", "count": 2, "delay": 20, "lifetime": [5], "height": [1.5], "scale": { "from": 0.3, "to": 0.3 }, "color": ["bright"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.22] }
+  ]
+}

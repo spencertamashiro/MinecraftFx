@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:status.poisoned" } ],
+  "palette": { "lime": "#C8FF5A", "green": "#5ED13A", "dark": "#2E7A1E" },
+  "layers": [
+    { "sprite": "minecraftfx:bubble", "additive": false, "axis": "up", "count": 2, "repeat": 14, "interval": 3, "lifetime": [12, 16], "scale": { "from": 0.05, "to": 0.09 }, "color": ["lime", "green"], "cone": 90, "rim": true, "offset": [0.3, 0.5], "height": [0.2, 1.4], "lift": [0.02, 0.04] },
+    { "sprite": "minecraftfx:drop", "additive": false, "axis": "up", "repeat": 10, "interval": 4, "lifetime": [12], "scale": { "from": 0.05, "to": 0.05 }, "color": ["green", "dark"], "cone": 90, "rim": true, "offset": [0.3, 0.45], "height": [0.8, 1.6], "gravity": 0.5 },
+    { "sprite": "minecraftfx:skull", "additive": false, "axis": "up", "repeat": 3, "interval": 14, "delay": 4, "lifetime": [16], "height": [2.1], "scale": { "from": 0.1, "to": 0.14 }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["lime", "green"], "lift": [0.02] }
+  ]
+}

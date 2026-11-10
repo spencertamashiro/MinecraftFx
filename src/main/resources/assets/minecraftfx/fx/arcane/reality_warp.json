@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:arcane.reality_warp" } ],
+  "palette": { "white": "#FFFFFF", "pink": "#FF8CF0", "cyan": "#7AF0FF", "deep": "#3A2A8A" },
+  "layers": [
+    { "sprite": "minecraftfx:grid", "shape": "plane", "additive": false, "lifetime": [30], "scale": { "from": 0.6, "mid": 1.4, "to": 0.8 }, "alpha": { "from": 0.0, "mid": 0.6, "to": 0.0 }, "color": ["cyan", "pink"], "spin": 0.05 },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "repeat": 3, "interval": 6, "lifetime": [12], "scale": { "from": 0.2, "to": 2.0, "easing": "expoOut" }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["pink", "deep"] },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "repeat": 3, "interval": 6, "delay": 3, "lifetime": [12], "scale": { "from": 2.0, "to": 0.2, "easing": "quadIn" }, "alpha": { "from": 0.0, "to": 0.8 }, "color": ["cyan", "deep"] },
+    { "sprite": "minecraftfx:pixel", "frames": "first", "additive": false, "count": 8, "lifetime": [30], "scale": { "from": 0.05, "to": 0.05 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["white"], "cone": 90, "rim": true, "pattern": "even", "offset": [1.2], "orbit": 0.2 }
+  ]
+}

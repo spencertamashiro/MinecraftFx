@@ -1,0 +1,89 @@
+{
+  "bleeding": { "about": "A wet wound and five slow drips over a faint pulse", "level": 0.8, "layers": [
+    { "wave": "noise", "freq": [900, 400], "dur": 0.1, "vol": 0.5 },
+    { "use": "thud", "freq": [110, 60], "dur": 0.1, "at": 0.1, "repeat": 5, "every": 0.4, "vol": 0.4 },
+    { "use": "drip", "freq": [700, 350], "dur": 0.09, "at": 0.2, "repeat": 5, "every": 0.4 } ] },
+  "blinded": { "about": "The world going muffled with a drooping tone", "level": 0.8, "layers": [
+    { "use": "fall", "wave": "sine", "freq": [900, 200], "dur": 0.5 },
+    { "wave": "hiss", "band": [800, 300], "dur": 2.5, "shape": "bump", "power": 1 },
+    { "use": "pad", "freq": 233, "dur": 2.5, "vol": 0.3 } ] },
+  "burning": { "about": "Someone on fire: flames, crackle and sizzle", "layers": [
+    { "use": "flame", "freq": [900, 600], "dur": 2.3 },
+    { "use": "crackle", "repeat": 14, "every": 0.16 },
+    { "use": "sizzle", "dur": 2.3, "shape": "bump", "vol": 0.3 } ] },
+  "charmed": { "about": "A sweet lilting tune with little heart pops", "level": 0.8, "layers": [
+    { "use": "blip", "wave": "triangle", "freq": 1319, "notes": [0, 4, 9, 4, 0, 4, 9, 12], "every": 0.2, "dur": 0.16 },
+    { "use": "pad", "freq": 659, "vib": [5, 0.5], "dur": 2.4, "vol": 0.3 },
+    { "use": "drip", "freq": [900, 1800], "dur": 0.06, "at": 0.1, "repeat": 8, "every": 0.2, "vol": 0.3 } ] },
+  "confused": { "about": "Six wandering off-key notes, each ending in a 'huh?'", "level": 0.8, "layers": [
+    { "use": "blip", "wave": "triangle", "freq": 600, "vib": [9, 1], "notes": [0, 6, 2, 8, 1, 7], "every": 0.35, "dur": 0.18 },
+    { "wave": "sine", "freq": [500, 900], "dur": 0.15, "shape": "swell", "at": 0.18, "repeat": 6, "every": 0.35, "vol": 0.3 },
+    { "use": "wobble", "freq": [300, 340], "vib": [3, 6], "dur": 2.5, "vol": 0.35 } ] },
+  "cursed": { "about": "A personal storm cloud: drizzle, two small bolts and a sour toll", "level": 0.8, "layers": [
+    { "use": "drone", "freq": 58, "dur": 2.6 },
+    { "use": "bell", "freq": 233, "fm": [2.76, 2], "notes": [0, -6], "every": 0.9, "dur": 1.0, "vol": 0.5 },
+    { "use": "zap", "at": 0.6, "freq": [1500, 300], "dur": 0.1, "repeat": 2, "every": 0.9, "vol": 0.5 },
+    { "use": "drip", "freq": [500, 250], "dur": 0.08, "at": 0.2, "repeat": 12, "every": 0.2, "jitter": 0.5, "vol": 0.3 } ] },
+  "dazed": { "about": "A bonk and little birds circling", "level": 0.8, "layers": [
+    { "use": "thud", "freq": [200, 70], "dur": 0.15 },
+    { "use": "chime", "freq": 1568, "vib": [7, 1], "notes": [0, 3, 0, 3, 0, 3, 0, 3], "every": 0.2, "dur": 0.2, "vol": 0.5 },
+    { "use": "wobble", "freq": 392, "vib": [2.5, 2], "dur": 1.8, "vol": 0.3 } ] },
+  "enraged": { "about": "Four angry snarls, each higher, with pounding and snorts", "layers": [
+    { "use": "growl", "freq": [90, 120], "dur": 0.5, "repeat": 4, "every": 0.6, "step": 1.06 },
+    { "use": "thud", "freq": [150, 60], "dur": 0.12, "repeat": 4, "every": 0.6 },
+    { "wave": "noise", "freq": [2000, 3000], "high": 1500, "dur": 0.3, "shape": "swell", "at": 0.2, "repeat": 4, "every": 0.6, "vol": 0.3 } ] },
+  "frozen": { "about": "Ice clamping shut in three steps and ringing coldly", "layers": [
+    { "use": "crunch", "freq": [3000, 1000], "dur": 0.1, "repeat": 3, "every": 0.1, "step": 1.2 },
+    { "use": "glass", "at": 0.3, "freq": 1800, "dur": 0.8, "vol": 0.8 },
+    { "use": "glass", "at": 0.5, "freq": 3000, "repeat": 5, "every": 0.5, "jitter": 0.5, "vol": 0.3 },
+    { "use": "wind", "band": [1500, 2000], "dur": 2.6, "vol": 0.2 } ] },
+  "hasted": { "about": "Quick ascending zips and rushing air", "layers": [
+    { "use": "rise", "wave": "square", "duty": 0.25, "freq": [400, 1600], "dur": 0.12, "repeat": 6, "every": 0.12, "step": 1.06, "vol": 0.5 },
+    { "use": "whoosh", "band": [2000, 5000], "dur": 0.1, "repeat": 12, "every": 0.1, "vol": 0.4 } ] },
+  "marked": { "about": "Four targeting beeps, then a lock tone", "level": 0.8, "layers": [
+    { "use": "blip", "freq": 990, "dur": 0.05, "repeat": 4, "every": 0.12 },
+    { "use": "blip", "at": 0.5, "freq": 1480, "dur": 0.25, "shape": "decay" },
+    { "use": "clang", "at": 0.5, "freq": 740, "vol": 0.4 },
+    { "wave": "sine", "at": 0.5, "freq": 2960, "trem": [6, 0.5], "dur": 1.2, "vol": 0.15 } ] },
+  "paralyzed": { "about": "Four stiff jolts of current under a locked, trembling whine", "layers": [
+    { "use": "buzz", "freq": 95, "trem": [38, 0.9], "dur": 0.32, "repeat": 4, "every": 0.45 },
+    { "wave": "sine", "freq": 1400, "trem": [38, 0.9], "dur": 1.8, "shape": "hold", "vol": 0.3 },
+    { "use": "zap", "duty": 0.1, "freq": [700, 500], "dur": 0.05, "repeat": 4, "every": 0.45, "vol": 0.5 },
+    { "use": "spark", "repeat": 4, "every": 0.45, "jitter": 0.2, "vol": 0.6 } ] },
+  "poisoned": { "about": "Queasy sinking bubbles and a sick wobble", "level": 0.8, "layers": [
+    { "use": "drip", "freq": [350, 150], "dur": 0.12, "repeat": 9, "every": 0.28, "jitter": 0.5 },
+    { "use": "wobble", "freq": [180, 150], "vib": [4, 3], "dur": 2.6, "vol": 0.5 },
+    { "wave": "noise", "freq": [400, 250], "dur": 0.1, "at": 0.2, "repeat": 4, "every": 0.7, "vol": 0.3 } ] },
+  "regenerating": { "about": "Three gentle arpeggios, each a step higher", "level": 0.8, "layers": [
+    { "use": "chime", "freq": 784, "notes": [0, 4, 7, 12, 2, 5, 9, 14, 4, 7, 12, 16], "every": 0.22, "dur": 0.3 },
+    { "use": "pad", "freq": 392, "dur": 2.9, "vol": 0.4 } ] },
+  "silenced": { "about": "A 'bwomp' and the sound closing down to nothing", "layers": [
+    { "use": "blip", "duty": 0.25, "freq": 660, "notes": [0, -5], "every": 0.1, "dur": 0.09 },
+    { "use": "thud", "at": 0.15, "freq": [160, 70], "dur": 0.15, "vol": 0.6 },
+    { "wave": "hiss", "band": [3000, 200], "at": 0.15, "dur": 0.5, "power": 1 },
+    { "wave": "noise", "freq": [300, 200], "dur": 0.04, "at": 0.35, "repeat": 6, "every": 0.3, "vol": 0.25 } ] },
+  "sleeping": { "about": "Three snores, each with a little whistle out", "level": 0.8, "layers": [
+    { "wave": "noise", "freq": [200, 320], "trem": [24, 0.7], "low": 900, "dur": 0.7, "shape": "bump", "repeat": 3, "every": 1.0 },
+    { "wave": "sine", "freq": [900, 600], "dur": 0.5, "shape": "bump", "at": 0.6, "repeat": 3, "every": 1.0, "vol": 0.3 },
+    { "use": "chime", "freq": 1047, "notes": [7, 4, 0], "every": 1.0, "at": 0.4, "vol": 0.15 } ] },
+  "slowed": { "about": "A tone winding down with thick, slow drips", "level": 0.8, "layers": [
+    { "use": "fall", "freq": [500, 160], "glide": 0.6, "dur": 1.5 },
+    { "use": "wobble", "freq": [150, 110], "vib": [1.5, 3], "dur": 3.0, "vol": 0.5 },
+    { "use": "drip", "freq": [300, 130], "dur": 0.2, "repeat": 6, "every": 0.5, "fade": 0.9, "vol": 0.5 } ] },
+  "stunned": { "about": "A hard knock, then stars ringing round the head", "layers": [
+    { "use": "thud", "freq": [240, 70], "dur": 0.2 },
+    { "use": "crack", "vol": 0.5 },
+    { "use": "chime", "freq": 2093, "notes": [0, -2, 0, -2, 0, -2, 0, -2], "every": 0.25, "dur": 0.2, "vol": 0.5 },
+    { "wave": "sine", "freq": 2500, "trem": [4, 0.6], "dur": 2.0, "shape": "bump", "vol": 0.15 } ] },
+  "terrified": { "about": "A gasp, a racing heart and a trembling whine", "layers": [
+    { "use": "fall", "wave": "saw", "freq": [1200, 500], "vib": [16, 2], "low": 3000, "dur": 0.35, "vol": 0.4 },
+    { "use": "thud", "freq": [140, 70], "dur": 0.08, "repeat": 12, "every": 0.2, "vol": 0.6 },
+    { "use": "thud", "at": 0.08, "freq": [120, 60], "dur": 0.08, "repeat": 12, "every": 0.2, "vol": 0.4 },
+    { "wave": "sine", "freq": [880, 932], "trem": [11, 0.9], "dur": 2.4, "shape": "bump", "vol": 0.35 } ] },
+  "vulnerable": { "about": "A guard weakening, cracking and a two-note debuff", "layers": [
+    { "use": "clang", "freq": 520, "fm": [1.41, 2], "dur": 0.5, "vol": 0.6 },
+    { "use": "fall", "wave": "square", "duty": 0.25, "freq": [800, 200], "dur": 0.9, "vol": 0.35 },
+    { "use": "crack", "at": 0.9 },
+    { "use": "crunch", "at": 0.9, "freq": [3500, 900], "dur": 0.25 },
+    { "use": "blip", "duty": 0.25, "at": 0.9, "freq": 311, "notes": [0, -6], "every": 0.12, "dur": 0.15, "vol": 0.5 } ] }
+}

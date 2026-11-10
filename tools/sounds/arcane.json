@@ -1,0 +1,81 @@
+{
+  "aether_wisps": { "about": "Airy swells with sparse high chimes drifting past", "level": 0.8, "layers": [
+    { "use": "pad", "freq": 660, "dur": 1.2, "repeat": 3, "every": 0.9, "step": 1.12, "vol": 0.5 },
+    { "use": "chime", "freq": 2100, "dur": 0.3, "repeat": 8, "every": 0.35, "jitter": 0.5, "scatter": 5, "vol": 0.3 },
+    { "use": "wind", "dur": 3.0, "vol": 0.25 } ] },
+  "arcane_barrage": { "about": "Eight quick rising magic shots", "layers": [
+    { "use": "zap", "freq": [1500, 500], "dur": 0.09, "repeat": 8, "every": 0.1, "step": 1.04 },
+    { "use": "chime", "freq": 1760, "dur": 0.08, "repeat": 8, "every": 0.1, "step": 1.04, "vol": 0.4 } ] },
+  "arcane_burst": { "about": "A rising charge, then a bell-like burst", "layers": [
+    { "use": "rise", "freq": [300, 1400], "dur": 0.55 },
+    { "use": "bell", "at": 0.55, "freq": 880 },
+    { "use": "blast", "at": 0.55, "freq": [6000, 800], "dur": 0.4, "vol": 0.5 } ] },
+  "arcane_missile": { "about": "A warbling bolt in flight that pops on arrival", "layers": [
+    { "use": "wobble", "freq": [400, 700], "vib": [16, 2], "dur": 0.8, "shape": "swell" },
+    { "use": "whoosh", "band": [800, 2400], "dur": 0.8, "shape": "swell", "vol": 0.5 },
+    { "use": "zap", "at": 0.8, "freq": [1400, 300], "dur": 0.2 },
+    { "use": "chime", "at": 0.8, "freq": 1568, "dur": 0.4, "vol": 0.6 } ] },
+  "arcane_nova": { "about": "A bell tone with a ring of force sweeping outward", "layers": [
+    { "use": "bell", "freq": 1175, "dur": 0.7 },
+    { "use": "whoosh", "band": [3000, 400], "dur": 0.6, "shape": "decay" },
+    { "use": "thud", "vol": 0.6 } ] },
+  "blink_in": { "about": "A sweep rushing upward and inward, ending in a bright ping", "layers": [
+    { "use": "rise", "freq": [200, 1800], "glide": 2, "dur": 0.55 },
+    { "use": "chime", "at": 0.55, "freq": 2093, "dur": 0.3 },
+    { "use": "crack", "at": 0.55, "vol": 0.6 } ] },
+  "blink_out": { "about": "A snap, then a tone falling away as the caster vanishes", "layers": [
+    { "use": "crack" },
+    { "use": "fall", "freq": [1800, 200], "dur": 0.6 },
+    { "use": "whoosh", "band": [2600, 500], "dur": 0.7, "shape": "decay", "vol": 0.6 } ] },
+  "ethereal_chains": { "about": "Ghostly chain links clinking, then locking shut", "layers": [
+    { "use": "clang", "freq": 900, "dur": 0.08, "repeat": 14, "every": 0.1, "jitter": 0.3, "scatter": 2, "vol": 0.6 },
+    { "use": "pad", "freq": 330, "dur": 2.0, "vol": 0.4 },
+    { "use": "clang", "at": 1.5, "freq": 520, "dur": 0.4 } ] },
+  "leyline_glow": { "about": "A low hum under a slow shimmering fifth", "level": 0.8, "layers": [
+    { "use": "drone", "freq": 110, "dur": 1.5 },
+    { "use": "pad", "freq": 660, "dur": 1.5, "vol": 0.5 },
+    { "use": "chime", "freq": 1320, "notes": [0, 7, 12, 7], "every": 0.3, "vol": 0.3 } ] },
+  "magic_circle": { "about": "Six runes ringing in turn over a sustained hum", "layers": [
+    { "use": "bell", "freq": 587, "notes": [0, 3, 7, 10, 14, 17], "every": 0.3, "dur": 0.5, "vol": 0.5 },
+    { "use": "pad", "freq": 293, "dur": 2.6 },
+    { "use": "wobble", "freq": 146, "vib": [4, 1], "dur": 2.6, "vol": 0.4 } ] },
+  "mana_drain": { "about": "A warbling tone sinking as droplets of mana are pulled away", "layers": [
+    { "use": "wobble", "freq": [900, 300], "vib": [14, 2], "dur": 1.5 },
+    { "use": "drip", "freq": [1400, 700], "repeat": 10, "every": 0.1, "step": 0.94, "vol": 0.6 } ] },
+  "mana_shield": { "about": "A shield humming up as hexagon plates tick into place", "layers": [
+    { "use": "rise", "freq": [200, 600], "dur": 0.4 },
+    { "use": "pad", "freq": 392, "dur": 2.0, "trem": [8, 0.3] },
+    { "use": "clang", "freq": 1200, "dur": 0.15, "repeat": 7, "every": 0.25, "vol": 0.3 } ] },
+  "mind_flay": { "about": "A sickly psychic warble with a harsh buzzing edge", "layers": [
+    { "use": "wobble", "freq": 180, "vib": [11, 5], "dur": 2.0 },
+    { "use": "buzz", "freq": 270, "trem": [17, 0.8], "dur": 2.0, "shape": "bump", "vol": 0.4 },
+    { "use": "chime", "freq": 2637, "dur": 0.2, "repeat": 8, "every": 0.2, "step": 0.97, "vol": 0.2 } ] },
+  "mystic_runes": { "about": "Four strange bell notes, each a rune appearing", "layers": [
+    { "use": "bell", "freq": 523, "notes": [0, 6, 10, 16], "every": 0.25, "dur": 0.7 },
+    { "use": "pad", "freq": 261, "dur": 2.2, "vol": 0.4 } ] },
+  "reality_warp": { "about": "Pitch bending and tearing as space distorts", "layers": [
+    { "use": "wobble", "freq": [120, 480], "vib": [5, 7], "dur": 1.4 },
+    { "wave": "noise", "freq": [200, 4000], "dur": 1.2, "shape": "bump", "vol": 0.3 },
+    { "use": "fall", "wave": "square", "duty": 0.12, "at": 0.3, "freq": [2400, 100], "dur": 0.9, "vol": 0.3 } ] },
+  "rift_tear": { "about": "A rising rip, a crack, then a low drone from the opening", "layers": [
+    { "wave": "noise", "freq": [800, 9000], "glide": 2, "dur": 0.35, "shape": "swell" },
+    { "use": "crack", "at": 0.33 },
+    { "use": "drone", "at": 0.3, "freq": 62, "dur": 1.0 },
+    { "use": "wobble", "at": 0.3, "freq": 330, "dur": 0.9, "vol": 0.4 } ] },
+  "spell_echo": { "about": "One spell note repeated four times, each fainter", "echo": [0.1, 0.3], "layers": [
+    { "use": "bell", "freq": 784, "dur": 0.3, "repeat": 4, "every": 0.2, "fade": 0.6 },
+    { "use": "zap", "freq": [1200, 600], "dur": 0.1, "repeat": 4, "every": 0.2, "fade": 0.6, "vol": 0.5 } ] },
+  "spell_fizzle": { "about": "A sputtering tone drooping into a fizz", "layers": [
+    { "use": "fall", "wave": "square", "duty": 0.2, "freq": [700, 120], "vib": [22, 2], "dur": 0.5 },
+    { "use": "sizzle", "dur": 0.7, "vol": 0.5 },
+    { "use": "spark", "repeat": 5, "every": 0.1, "vol": 0.6 } ] },
+  "teleport_flash": { "about": "A sharp snap and zip with a bright after-ring", "layers": [
+    { "use": "crack" },
+    { "use": "zap", "freq": [3000, 500], "dur": 0.12 },
+    { "use": "chime", "freq": 2349, "dur": 0.35, "vol": 0.6 },
+    { "use": "whoosh", "band": [3000, 800], "dur": 0.3, "shape": "decay", "vol": 0.5 } ] },
+  "temporal_shift": { "about": "Clock ticks slowing in pitch over a tone bending backwards", "layers": [
+    { "use": "tick", "freq": 1800, "repeat": 6, "every": 0.1, "step": 0.89 },
+    { "use": "wobble", "freq": [660, 220], "vib": [9, 2], "dur": 0.8 },
+    { "use": "rise", "freq": [150, 900], "glide": 3, "dur": 0.8, "vol": 0.4 } ] }
+}

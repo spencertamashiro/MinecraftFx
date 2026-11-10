@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:ice.frozen_ground" } ],
+  "palette": { "white": "#FFFFFF", "ice": "#BDF0FF", "blue": "#5AB4FF" },
+  "layers": [
+    { "sprite": "minecraftfx:splat", "shape": "plane", "additive": false, "axis": "up", "lifetime": [80], "height": [0.03], "scale": { "from": 0.4, "mid": 2.0, "to": 2.0, "easing": "quadOut" }, "alpha": { "from": 0.85, "mid": 0.85, "to": 0.0 }, "color": ["white", "ice"] },
+    { "sprite": "minecraftfx:glint", "axis": "up", "count": 2, "repeat": 14, "interval": 4, "lifetime": [6], "scale": { "from": 0.14, "to": 0.14 }, "color": ["white"], "cone": 90, "rim": true, "offset": [0.0, 1.8], "height": [0.08] },
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "repeat": 8, "interval": 6, "lifetime": [24, 30], "scale": { "from": 0.3, "to": 0.6 }, "alpha": { "from": 0.0, "mid": 0.3, "to": 0.0 }, "color": ["ice", "blue"], "cone": 90, "rim": true, "offset": [0.0, 1.5], "height": [0.15], "lift": [0.01] }
+  ]
+}

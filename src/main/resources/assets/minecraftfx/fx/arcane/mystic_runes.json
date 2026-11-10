@@ -1,0 +1,8 @@
+{
+  "sounds": [ { "id": "minecraftfx:arcane.mystic_runes" } ],
+  "palette": { "glow": "#D9B8FF", "arcane": "#9A5CFF", "deep": "#4B2AA8" },
+  "layers": [
+    { "sprite": "minecraftfx:glyph", "frames": "random", "additive": false, "axis": "up", "count": 3, "repeat": 4, "interval": 5, "lifetime": [30], "scale": { "from": 0.12, "to": 0.15 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["glow", "arcane"], "cone": 90, "rim": true, "pattern": "even", "twist": 40, "offset": [0.8], "height": [0.4, 1.6], "lift": [0.01], "orbit": 0.05 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 2, "repeat": 10, "interval": 3, "lifetime": [14, 20], "scale": { "from": 0.04, "to": 0.02 }, "color": ["glow", "deep"], "cone": 90, "rim": true, "offset": [0.3, 1.0], "height": [0.2, 1.8], "lift": [0.02, 0.04] }
+  ]
+}

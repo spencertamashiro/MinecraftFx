@@ -1,0 +1,8 @@
+{
+  "sounds": [ { "id": "minecraftfx:nature.petal_dance" } ],
+  "palette": { "white": "#FFFFFF", "pink": "#FFA6D8", "rose": "#E85AA8", "yellow": "#FFE27A" },
+  "layers": [
+    { "sprite": "minecraftfx:petal", "frames": "random", "additive": false, "axis": "up", "count": 3, "repeat": 14, "interval": 3, "lifetime": [30, 40], "scale": { "from": 0.12, "to": 0.09 }, "color": ["pink", "rose"], "cone": 90, "rim": true, "offset": [0.3, 1.6], "height": [1.6, 2.6], "lift": [-0.035], "orbit": 0.08, "spin": 0.1 },
+    { "sprite": "minecraftfx:petal", "frames": "random", "additive": false, "axis": "up", "count": 2, "repeat": 14, "interval": 3, "lifetime": [30, 40], "scale": { "from": 0.1, "to": 0.08 }, "color": ["white", "yellow"], "cone": 90, "rim": true, "offset": [0.3, 1.4], "height": [1.4, 2.4], "lift": [-0.03], "orbit": -0.06, "spin": 0.1 }
+  ]
+}

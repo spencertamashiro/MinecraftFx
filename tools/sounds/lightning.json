@@ -1,0 +1,92 @@
+{
+  "arc_whip": { "about": "A rising electric buzz that ends in a whip-crack", "layers": [
+    { "use": "buzz", "freq": [200, 900], "trem": [70, 0.8], "dur": 0.4 },
+    { "use": "spark", "repeat": 8, "every": 0.05 },
+    { "use": "crack", "at": 0.4 },
+    { "use": "zap", "at": 0.4, "freq": [3000, 800], "dur": 0.12 } ] },
+  "chain_lightning": { "about": "Five zaps jumping target to target, each higher", "range": 32, "layers": [
+    { "use": "zap", "freq": [2400, 500], "dur": 0.12, "repeat": 5, "every": 0.15, "step": 1.12 },
+    { "use": "spark", "repeat": 14, "every": 0.055 },
+    { "use": "buzz", "freq": 160, "dur": 0.8, "vol": 0.4 } ] },
+  "charge_up": { "about": "Power building for a second, then a sharp release", "layers": [
+    { "use": "rise", "wave": "saw", "freq": [80, 900], "glide": 2, "low": 3500, "trem": [40, 0.4], "dur": 1.05 },
+    { "use": "spark", "repeat": 14, "every": 0.075, "fade": 1.05, "vol": 0.4 },
+    { "use": "crack", "at": 1.05 },
+    { "use": "zap", "at": 1.05, "freq": [2600, 300], "dur": 0.3 },
+    { "use": "boom", "at": 1.05, "freq": [150, 50], "dur": 0.35, "vol": 0.6 } ] },
+  "electrified": { "about": "A body crackling with current: hum, sparks and jolts", "layers": [
+    { "use": "buzz", "freq": 110, "trem": [50, 0.8], "dur": 1.8 },
+    { "use": "spark", "repeat": 24, "every": 0.075 },
+    { "use": "zap", "freq": [1800, 900], "dur": 0.05, "repeat": 10, "every": 0.15, "jitter": 0.5, "vol": 0.5 } ] },
+  "emp_sparks": { "about": "Electronics sputtering and powering down", "layers": [
+    { "use": "spark", "freq": [9000, 3000], "dur": 0.04, "repeat": 12, "every": 0.1 },
+    { "use": "zap", "freq": [600, 200], "duty": 0.1, "dur": 0.06, "repeat": 6, "every": 0.2, "jitter": 0.8, "vol": 0.5 },
+    { "use": "fall", "wave": "square", "duty": 0.2, "freq": [300, 60], "dur": 1.2, "vol": 0.4 } ] },
+  "ion_trail": { "about": "A thin flickering hum with stray sparks", "level": 0.7, "layers": [
+    { "wave": "sine", "freq": 1900, "trem": [24, 0.8], "dur": 2.8, "shape": "bump", "vol": 0.4 },
+    { "use": "spark", "repeat": 14, "every": 0.2, "vol": 0.3 },
+    { "wave": "hiss", "band": [5000, 7000], "dur": 2.8, "shape": "bump", "vol": 0.2 } ] },
+  "lightning_rod": { "about": "Six bolts striking metal, each ringing the rod", "range": 32, "layers": [
+    { "use": "zap", "freq": [3000, 1200], "dur": 0.08, "repeat": 6, "every": 0.15 },
+    { "use": "clang", "freq": 1250, "dur": 0.12, "repeat": 6, "every": 0.15, "vol": 0.5 },
+    { "use": "buzz", "freq": 220, "dur": 1.2, "vol": 0.5 } ] },
+  "lightning_strike": { "about": "A blinding crack and rolling thunder", "range": 40, "echo": [0.11, 0.3], "layers": [
+    { "use": "crack" },
+    { "use": "blast", "freq": [12000, 500], "dur": 0.5 },
+    { "use": "boom", "freq": [130, 35], "dur": 1.3 },
+    { "use": "rumble", "at": 0.15, "freq": [160, 60], "dur": 1.6 },
+    { "use": "spark", "at": 0.05 } ] },
+  "plasma_arc": { "about": "A harsh, steady arc of plasma", "layers": [
+    { "use": "buzz", "wave": "square", "duty": 0.3, "freq": [300, 340], "trem": [90, 0.6], "dur": 1.1 },
+    { "use": "wobble", "freq": 600, "vib": [20, 2], "dur": 1.1, "vol": 0.4 },
+    { "use": "spark", "repeat": 8, "every": 0.13, "vol": 0.4 } ] },
+  "plasma_burst": { "about": "A ball of plasma swelling, then discharging", "range": 32, "layers": [
+    { "use": "wobble", "freq": [200, 500], "vib": [15, 2], "dur": 0.8, "shape": "swell" },
+    { "use": "buzz", "freq": 120, "dur": 0.8, "shape": "swell", "vol": 0.5 },
+    { "use": "zap", "at": 0.8, "freq": [2200, 200], "dur": 0.35 },
+    { "use": "blast", "at": 0.8, "freq": [9000, 1500], "dur": 0.4, "vol": 0.6 },
+    { "use": "spark", "at": 0.85, "repeat": 8 } ] },
+  "spark_shower": { "about": "A fizzing shower of sparks ticking as they land", "layers": [
+    { "use": "spark", "freq": [12000, 4000], "repeat": 26, "every": 0.06 },
+    { "wave": "hiss", "band": [6000, 4000], "dur": 1.2, "vol": 0.3 },
+    { "wave": "noise", "freq": [3000, 1500], "dur": 0.03, "at": 0.6, "repeat": 12, "every": 0.07, "jitter": 0.9, "vol": 0.4 } ] },
+  "static_cling": { "about": "Small static snaps, well spaced", "level": 0.7, "layers": [
+    { "use": "spark", "dur": 0.015, "repeat": 14, "every": 0.15, "vol": 0.8 },
+    { "use": "tick", "freq": 3500, "repeat": 14, "every": 0.15, "jitter": 0.9, "vol": 0.3 },
+    { "use": "hiss", "high": 8000, "dur": 2.1, "shape": "bump", "vol": 0.12 } ] },
+  "storm_cloud": { "about": "A brooding cloud that spits four small bolts", "range": 32, "layers": [
+    { "use": "rumble", "freq": [100, 60], "dur": 3.2, "vol": 0.7 },
+    { "use": "crack", "at": 0.4, "repeat": 4, "every": 0.6 },
+    { "use": "zap", "at": 0.4, "freq": [2500, 400], "dur": 0.15, "repeat": 4, "every": 0.6, "vol": 0.7 },
+    { "use": "boom", "at": 0.45, "freq": [110, 40], "dur": 0.5, "repeat": 4, "every": 0.6, "vol": 0.6 } ] },
+  "surge_aura": { "about": "Three surges of current, each pitched higher", "layers": [
+    { "use": "rise", "wave": "saw", "freq": [100, 400], "low": 3000, "trem": [45, 0.5], "dur": 0.4, "repeat": 3, "every": 0.4, "step": 1.26 },
+    { "use": "spark", "repeat": 12, "every": 0.1, "vol": 0.5 } ] },
+  "tesla_coil": { "about": "A loud mains buzz with rapid arcing", "range": 32, "layers": [
+    { "use": "buzz", "freq": 100, "trem": [100, 0.9], "dur": 1.2 },
+    { "use": "zap", "freq": [1500, 2500], "dur": 0.04, "repeat": 22, "every": 0.05, "jitter": 0.6, "vol": 0.5 },
+    { "wave": "sine", "freq": 3000, "dur": 1.2, "shape": "bump", "vol": 0.1 } ] },
+  "thunder_clap": { "about": "One close, hard clap of thunder", "range": 40, "echo": [0.1, 0.4], "layers": [
+    { "use": "crack" },
+    { "use": "boom", "freq": [160, 40], "dur": 0.6 },
+    { "use": "blast", "freq": [9000, 800], "dur": 0.35 } ] },
+  "thunder_storm": { "about": "Six strikes in a rolling storm with rain", "range": 40, "layers": [
+    { "use": "crack", "repeat": 6, "every": 0.25, "jitter": 0.3 },
+    { "use": "boom", "freq": [120, 40], "dur": 0.6, "repeat": 6, "every": 0.25, "jitter": 0.3, "vol": 0.7 },
+    { "use": "rumble", "freq": [140, 60], "dur": 2.4 },
+    { "wave": "hiss", "band": [2000, 3000], "dur": 2.4, "shape": "bump", "vol": 0.25 } ] },
+  "volt_shield": { "about": "A shield of current switching on and humming", "layers": [
+    { "use": "rise", "wave": "square", "duty": 0.25, "freq": [300, 900], "dur": 0.3, "vol": 0.4 },
+    { "use": "buzz", "freq": 180, "trem": [60, 0.5], "dur": 2.1, "vol": 0.6 },
+    { "use": "pad", "freq": 720, "dur": 2.1, "vol": 0.3 },
+    { "use": "spark", "repeat": 20, "every": 0.1, "vol": 0.4 } ] },
+  "volt_tackle": { "about": "An electric charge rushing in and hitting hard", "layers": [
+    { "use": "whoosh", "band": [800, 3000], "dur": 0.4, "shape": "swell" },
+    { "use": "buzz", "freq": [150, 600], "trem": [70, 0.7], "dur": 0.4 },
+    { "use": "crack", "at": 0.38 },
+    { "use": "thud", "at": 0.38, "freq": [220, 60], "dur": 0.25 },
+    { "use": "spark", "at": 0.4, "repeat": 5 } ] },
+  "zap_flash": { "about": "A single tiny zap", "layers": [
+    { "use": "zap", "freq": [3200, 700], "dur": 0.09 },
+    { "use": "crack", "vol": 0.6 } ] }
+}

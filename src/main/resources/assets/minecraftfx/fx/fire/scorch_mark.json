@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:fire.scorch_mark" } ],
+  "palette": { "black": "#141010", "char": "#3A2A22", "ember": "#FF8A2A", "red": "#B8321A", "smoke": "#3E3430" },
+  "layers": [
+    { "sprite": "minecraftfx:splat", "shape": "plane", "additive": false, "axis": "up", "lifetime": [90], "height": [0.03], "scale": { "from": 0.5, "mid": 1.0, "to": 1.0, "easing": "expoOut" }, "alpha": { "from": 0.9, "mid": 0.9, "to": 0.0 }, "color": ["char", "black"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 10, "lifetime": [20, 30], "scale": { "from": 0.05, "to": 0.02 }, "color": ["ember", "red"], "cone": 90, "rim": true, "offset": [0.1, 0.8], "height": [0.05], "lift": [0.01, 0.03] },
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "repeat": 6, "interval": 5, "lifetime": [20, 26], "scale": { "from": 0.12, "to": 0.3 }, "alpha": { "from": 0.4, "to": 0.0 }, "color": ["smoke"], "cone": 90, "rim": true, "offset": [0.0, 0.6], "lift": [0.04] }
+  ]
+}

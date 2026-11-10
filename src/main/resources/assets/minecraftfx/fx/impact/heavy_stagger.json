@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:impact.heavy_stagger" } ],
+  "palette": { "white": "#FFFFFF", "hot": "#FFE98A", "pale": "#E0E4E8", "dust": "#D8CFC0", "shade": "#8A7F70" },
+  "layers": [
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "repeat": 3, "interval": 4, "lifetime": [12], "scale": { "from": 0.3, "to": 1.5, "easing": "quadOut" }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["pale", "shade"], "lift": [0.03] },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 8, "lifetime": [12, 16], "scale": { "from": 0.22, "to": 0.22 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["dust", "shade"], "cone": 90, "rim": true, "pattern": "even", "height": [0.1], "speed": [0.12], "friction": 0.85 },
+    { "sprite": "minecraftfx:star", "additive": false, "axis": "up", "count": 3, "delay": 2, "lifetime": [14], "scale": { "from": 0.12, "to": 0.08 }, "color": ["white", "hot"], "cone": 50, "height": [1.8], "speed": [0.08, 0.12], "gravity": 0.5 }
+  ]
+}

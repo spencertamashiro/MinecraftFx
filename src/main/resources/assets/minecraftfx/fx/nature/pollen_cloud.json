@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:nature.pollen_cloud" } ],
+  "palette": { "pollen": "#FFE86A", "gold": "#D8A82A" },
+  "layers": [
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "count": 3, "repeat": 8, "interval": 4, "lifetime": [36, 46], "scale": { "from": 0.4, "to": 0.8 }, "alpha": { "from": 0.0, "mid": 0.4, "to": 0.0 }, "color": ["pollen", "gold"], "cone": 90, "rim": true, "offset": [0.0, 1.4], "height": [0.5, 1.5], "speed": [0.005, 0.02], "spin": 0.02 },
+    { "sprite": "minecraftfx:pixel", "frames": "first", "additive": false, "axis": "up", "count": 3, "repeat": 14, "interval": 3, "lifetime": [26, 34], "scale": { "from": 0.04, "to": 0.04 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["pollen", "gold"], "cone": 90, "rim": true, "offset": [0.0, 1.6], "height": [0.4, 1.8], "orbit": 0.02, "lift": [0.005, 0.015] },
+    { "sprite": "minecraftfx:petal", "frames": "random", "additive": false, "axis": "up", "repeat": 5, "interval": 8, "lifetime": [30], "scale": { "from": 0.08, "to": 0.08 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["pollen"], "cone": 90, "rim": true, "offset": [0.3, 1.2], "height": [1.6], "lift": [-0.03], "spin": 0.08 }
+  ]
+}

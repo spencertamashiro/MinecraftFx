@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:lightning.volt_tackle" } ],
+  "palette": { "white": "#FFFFFF", "yellow": "#FFF06A", "amber": "#FFB02E" },
+  "layers": [
+    { "sprite": "minecraftfx:bolt", "shape": "streak", "count": 2, "repeat": 8, "interval": 1, "lifetime": [6], "scale": { "from": 0.12, "to": 0.08 }, "length": { "from": 0.5, "to": 0.5 }, "color": ["white", "yellow"], "cone": 10, "speed": [0.7] },
+    { "sprite": "minecraftfx:ring", "shape": "oriented", "additive": false, "repeat": 3, "interval": 3, "lifetime": [8], "scale": { "from": 0.3, "to": 0.8 }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["yellow", "amber"], "cone": 0, "speed": [0.5] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 16, "lifetime": [8, 12], "scale": { "from": 0.06, "to": 0.02 }, "color": ["yellow", "amber"], "cone": 8, "speed": [0.1, 0.7] }
+  ]
+}

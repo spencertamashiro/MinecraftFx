@@ -1,0 +1,8 @@
+{
+  "sounds": [ { "id": "minecraftfx:lightning.static_cling" } ],
+  "palette": { "white": "#FFFFFF", "bolt": "#C8E8FF", "blue": "#6FA8FF" },
+  "layers": [
+    { "sprite": "minecraftfx:bolt", "shape": "streak", "axis": "up", "count": 2, "repeat": 14, "interval": 3, "lifetime": [3], "scale": { "from": 0.05, "to": 0.05 }, "length": { "from": 0.12, "to": 0.12 }, "color": ["white", "bolt"], "cone": 90, "rim": true, "offset": [0.4, 0.5], "height": [0.2, 1.7], "orbit": 0.05 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "repeat": 14, "interval": 3, "lifetime": [3, 4], "scale": { "from": 0.04, "to": 0.02 }, "color": ["white", "blue"], "cone": 90, "rim": true, "offset": [0.4, 0.5], "height": [0.2, 1.7] }
+  ]
+}

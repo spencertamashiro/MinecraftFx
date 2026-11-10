@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:pickup.health_globe" } ],
+  "palette": { "white": "#FFFFFF", "bright": "#FF5A5A", "red": "#D01818", "dark": "#7A0A0A" },
+  "layers": [
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "axis": "up", "lifetime": [54], "height": [0.6], "scale": { "from": 0.22, "mid": 0.28, "to": 0.22 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["bright", "red"] },
+    { "sprite": "minecraftfx:glint", "axis": "up", "repeat": 6, "interval": 8, "lifetime": [6], "height": [0.72], "scale": { "from": 0.16, "to": 0.16 }, "color": ["white"], "cone": 90, "rim": true, "offset": [0.1] },
+    { "sprite": "minecraftfx:heart", "additive": false, "axis": "up", "repeat": 6, "interval": 8, "lifetime": [16], "scale": { "from": 0.08, "to": 0.05 }, "color": ["bright", "red"], "cone": 90, "rim": true, "offset": [0.2, 0.35], "height": [0.7], "lift": [0.03] },
+    { "sprite": "minecraftfx:pixel", "frames": "first", "additive": false, "axis": "up", "count": 4, "lifetime": [54], "scale": { "from": 0.04, "to": 0.04 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["bright", "dark"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.45], "height": [0.6], "orbit": 0.12 }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "blade_beam": { "about": "A slash that launches a humming wave of energy", "layers": [
+    { "use": "slice", "band": [6000, 2000], "dur": 0.2 },
+    { "use": "fall", "wave": "saw", "freq": [1800, 600], "low": 4000, "dur": 0.6, "vol": 0.5 },
+    { "use": "chime", "freq": 2093, "vol": 0.3 } ] },
+  "cleave_arc": { "about": "A heavy, wide swing that lands with a thud", "layers": [
+    { "use": "whoosh", "band": [700, 2600], "dur": 0.32, "shape": "swell" },
+    { "use": "slice", "at": 0.15, "band": [5000, 1000], "dur": 0.2 },
+    { "use": "thud", "at": 0.28, "freq": [150, 50], "vol": 0.7 } ] },
+  "cross_slash": { "about": "Two fast cuts, the second ringing", "layers": [
+    { "use": "slice", "dur": 0.14 },
+    { "use": "slice", "at": 0.15, "band": [8000, 2200], "dur": 0.16 },
+    { "use": "clang", "at": 0.17, "freq": 2000, "dur": 0.25, "vol": 0.4 } ] },
+  "dagger_toss": { "about": "A dagger spinning through the air and thunking in", "layers": [
+    { "use": "whoosh", "band": [2500, 3500], "trem": [14, 0.8], "dur": 0.7, "shape": "hold", "vol": 0.6 },
+    { "use": "thud", "at": 0.7, "freq": [400, 150], "dur": 0.08 },
+    { "use": "clang", "at": 0.7, "freq": 1700, "dur": 0.15, "vol": 0.5 },
+    { "use": "wobble", "at": 0.72, "freq": 300, "vib": [40, 1], "dur": 0.25, "shape": "decay", "vol": 0.3 } ] },
+  "execution_strike": { "about": "A wind-up, a brutal final blow and a low doom toll", "range": 32, "layers": [
+    { "use": "rise", "wave": "saw", "freq": [150, 500], "low": 1500, "vol": 0.4 },
+    { "use": "slice", "at": 0.4, "band": [9000, 1500], "dur": 0.2 },
+    { "use": "boom", "at": 0.42, "freq": [140, 40], "dur": 0.6 },
+    { "use": "clang", "at": 0.42, "freq": 800, "fm": [1.41, 5], "dur": 0.5 },
+    { "use": "bell", "at": 0.5, "freq": 196, "dur": 1.0, "vol": 0.5 } ] },
+  "flurry_blur": { "about": "Eight rapid cuts, quickening in pitch", "layers": [
+    { "use": "slice", "band": [7000, 2500], "dur": 0.08, "repeat": 8, "every": 0.1, "step": 1.03 },
+    { "use": "tick", "freq": 2600, "at": 0.05, "repeat": 8, "every": 0.1, "vol": 0.3 } ] },
+  "gouge_blood": { "about": "A tearing rip and blood spattering", "layers": [
+    { "wave": "noise", "freq": [1800, 500], "low": 2500, "dur": 0.2 },
+    { "use": "slice", "dur": 0.1 },
+    { "use": "thud", "vol": 0.5 },
+    { "use": "drip", "freq": [500, 250], "dur": 0.09, "at": 0.2, "repeat": 4, "every": 0.12, "jitter": 0.6, "vol": 0.5 } ] },
+  "lunge_trail": { "about": "A fast forward lunge", "layers": [
+    { "use": "whoosh", "band": [800, 4000], "dur": 0.3, "shape": "swell" },
+    { "use": "slice", "at": 0.2, "dur": 0.12 } ] },
+  "overhead_smash": { "about": "A big swing down and a ground-cracking slam", "range": 32, "layers": [
+    { "use": "whoosh", "band": [2500, 500], "dur": 0.4, "shape": "swell" },
+    { "use": "boom", "at": 0.4, "freq": [120, 35], "dur": 0.6 },
+    { "use": "crunch", "at": 0.4, "freq": [1300, 300], "dur": 0.35 },
+    { "use": "crack", "at": 0.4 } ] },
+  "parry_spark": { "about": "A tiny, crisp deflect", "layers": [
+    { "use": "clang", "freq": 2400, "fm": [1.41, 3], "dur": 0.18 },
+    { "use": "tick", "freq": 4000 },
+    { "use": "spark", "repeat": 3, "every": 0.03, "vol": 0.6 } ] },
+  "pommel_strike": { "about": "A blunt knock to the head and a dizzy two-note", "layers": [
+    { "use": "thud", "freq": [320, 110], "dur": 0.1 },
+    { "use": "clang", "freq": 600, "dur": 0.12, "vol": 0.5 },
+    { "use": "chime", "at": 0.05, "freq": 1400, "notes": [0, -1], "every": 0.12, "dur": 0.2, "vol": 0.3 } ] },
+  "riposte_flash": { "about": "A deflect, an instant counter-cut and a glint", "layers": [
+    { "use": "clang", "freq": 2100, "dur": 0.1 },
+    { "use": "slice", "at": 0.15, "band": [9000, 2500], "dur": 0.14 },
+    { "use": "zap", "at": 0.15, "freq": [2000, 1200], "dur": 0.06, "vol": 0.3 },
+    { "use": "chime", "at": 0.35, "freq": 3136, "dur": 0.4, "vol": 0.5 } ] },
+  "slash": { "about": "The basic sword swish", "layers": [
+    { "use": "slice", "band": [6500, 1600], "dur": 0.16 },
+    { "use": "whoosh", "band": [1500, 3000], "dur": 0.2, "vol": 0.4 } ] },
+  "spin_attack": { "about": "Three rising whooshes as a blade spins round", "layers": [
+    { "use": "whoosh", "band": [600, 2400], "dur": 0.25, "repeat": 3, "every": 0.2, "step": 1.1 },
+    { "wave": "hiss", "band": [3000, 5000], "dur": 0.5, "shape": "bump", "vol": 0.5 } ] },
+  "stab_glint": { "about": "A quick stab and a high glint", "layers": [
+    { "use": "slice", "band": [9000, 4000], "dur": 0.07 },
+    { "use": "tick", "freq": 3000 },
+    { "use": "chime", "at": 0.03, "freq": 3520, "dur": 0.25, "vol": 0.5 } ] },
+  "sweep_dust": { "about": "A low sweep scraping up dust", "layers": [
+    { "use": "whoosh", "band": [500, 1500], "dur": 0.5 },
+    { "wave": "hiss", "band": [1500, 800], "dur": 0.9, "power": 1.5, "vol": 0.5 },
+    { "wave": "noise", "freq": [700, 300], "dur": 0.3, "vol": 0.3 } ] },
+  "sword_clash": { "about": "Two swords meeting with a long ringing clang", "echo": [0.07, 0.3], "layers": [
+    { "use": "clang", "freq": 1250, "fm": [1.41, 6], "dur": 0.5 },
+    { "use": "clang", "freq": 1870, "dur": 0.4, "vol": 0.6 },
+    { "use": "crack" },
+    { "use": "spark", "repeat": 6, "every": 0.04 } ] },
+  "thrust_trail": { "about": "A straight, fast thrust ending in a glint", "layers": [
+    { "use": "whoosh", "band": [1500, 6000], "dur": 0.22, "shape": "swell" },
+    { "use": "slice", "at": 0.12, "band": [9000, 5000], "dur": 0.1 },
+    { "use": "chime", "at": 0.25, "freq": 2794, "dur": 0.2, "vol": 0.3 } ] },
+  "uppercut_swoosh": { "about": "A rising swoosh, a hit and a high glint at the top", "layers": [
+    { "use": "whoosh", "band": [400, 3500], "dur": 0.32, "shape": "swell" },
+    { "use": "rise", "freq": [200, 900], "dur": 0.3, "vol": 0.4 },
+    { "use": "thud", "at": 0.15, "freq": [250, 90], "dur": 0.12 },
+    { "use": "chime", "at": 0.45, "freq": 2349, "dur": 0.25, "vol": 0.3 } ] },
+  "whirlwind": { "about": "Four fast revolutions of a spinning blade", "layers": [
+    { "use": "whoosh", "band": [500, 2000], "dur": 0.22, "repeat": 4, "every": 0.2 },
+    { "use": "wind", "band": [600, 1200], "dur": 0.95, "vol": 0.7 },
+    { "use": "slice", "at": 0.1, "dur": 0.15, "repeat": 2, "every": 0.4, "vol": 0.5 } ] }
+}

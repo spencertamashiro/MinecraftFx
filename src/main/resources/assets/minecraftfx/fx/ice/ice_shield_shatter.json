@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:ice.ice_shield_shatter" } ],
+  "palette": { "white": "#FFFFFF", "ice": "#BDF0FF", "blue": "#5AB4FF", "deep": "#2C66C8" },
+  "layers": [
+    { "sprite": "minecraftfx:shield", "additive": false, "axis": "up", "lifetime": [12], "height": [1.0], "scale": { "from": 0.6, "to": 0.65 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["ice", "blue"] },
+    { "sprite": "minecraftfx:shard", "shape": "oriented", "additive": false, "axis": "up", "count": 14, "delay": 10, "lifetime": [14, 20], "scale": { "from": 0.12, "to": 0.08 }, "alpha": { "from": 1.0, "to": 0.0, "easing": "quarticIn" }, "color": ["ice", "blue"], "height": [1.0], "speed": [0.12, 0.28], "gravity": 1.3, "friction": 0.96 },
+    { "sprite": "minecraftfx:block", "additive": false, "axis": "up", "count": 6, "delay": 10, "lifetime": [14, 20], "scale": { "from": 0.09, "to": 0.06 }, "color": ["white", "deep"], "height": [1.0], "speed": [0.08, 0.2], "gravity": 1.2, "spin": 0.3 },
+    { "sprite": "minecraftfx:glint", "axis": "up", "delay": 9, "lifetime": [6], "height": [1.0], "scale": { "from": 0.6, "to": 0.6 }, "color": ["white"] }
+  ]
+}

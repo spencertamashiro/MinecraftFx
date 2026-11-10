@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:sci_fi.warp_speed" } ],
+  "palette": { "white": "#FFFFFF", "blue": "#8AB8FF" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "count": 6, "repeat": 10, "interval": 1, "lifetime": [10], "scale": { "from": 0.03, "to": 0.03 }, "length": { "from": 0.1, "to": 1.2 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 1.0 }, "color": ["white", "blue"], "cone": 35, "offset": [1.0, 2.0], "speed": [0.08], "friction": 1.25 },
+    { "sprite": "minecraftfx:flash", "delay": 12, "lifetime": [5], "scale": { "from": 0.3, "mid": 1.2, "to": 0.2 }, "color": ["white"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 4, "repeat": 10, "interval": 1, "lifetime": [10], "scale": { "from": 0.03, "to": 0.03 }, "color": ["white", "blue"], "cone": 50, "offset": [1.5, 3.0], "speed": [0.05], "friction": 1.25 }
+  ]
+}

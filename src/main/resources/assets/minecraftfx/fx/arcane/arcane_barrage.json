@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:arcane.arcane_barrage" } ],
+  "palette": { "white": "#FFFFFF", "pink": "#F4A6FF", "arcane": "#A45CFF" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "repeat": 8, "interval": 2, "lifetime": [8], "scale": { "from": 0.08, "to": 0.05 }, "length": { "from": 0.5, "to": 0.5 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["white", "arcane"], "cone": 6, "speed": [0.7] },
+    { "sprite": "minecraftfx:flash", "repeat": 8, "interval": 2, "lifetime": [2], "scale": { "from": 0.35, "to": 0.15 }, "color": ["white", "pink"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 2, "repeat": 8, "interval": 2, "lifetime": [4, 6], "scale": { "from": 0.05, "to": 0.02 }, "color": ["pink", "arcane"], "cone": 10, "speed": [0.3, 0.6] }
+  ]
+}

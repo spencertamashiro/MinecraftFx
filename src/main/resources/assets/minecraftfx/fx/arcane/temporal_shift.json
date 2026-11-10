@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:arcane.temporal_shift" } ],
+  "palette": { "white": "#FFFFFF", "cyan": "#9AF4FF", "blue": "#4A8CFF" },
+  "layers": [
+    { "sprite": "minecraftfx:ghost", "additive": false, "repeat": 5, "interval": 2, "lifetime": [10], "scale": { "from": 0.5, "to": 0.5 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["cyan", "blue"], "cone": 0, "speed": [0.15] },
+    { "sprite": "minecraftfx:spiral", "additive": false, "lifetime": [16], "scale": { "from": 0.2, "to": 0.5 }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["white", "cyan"], "spin": 0.3 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 10, "lifetime": [10, 14], "scale": { "from": 0.05, "to": 0.02 }, "color": ["white", "blue"], "cone": 12, "speed": [0.05, 0.3] }
+  ]
+}

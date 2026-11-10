@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:water.rain_cloud" } ],
+  "palette": { "foam": "#F0FBFF", "water": "#7AB8F0", "deep": "#3A78C8", "grey": "#8A929A", "dark": "#5A626A" },
+  "layers": [
+    { "sprite": "minecraftfx:cloud", "additive": false, "axis": "up", "count": 2, "lifetime": [60], "scale": { "from": 1.0, "to": 1.0 }, "alpha": { "from": 0.0, "mid": 0.95, "to": 0.0 }, "color": ["grey", "dark"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.5], "height": [3.2] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "count": 3, "repeat": 24, "interval": 2, "delay": 4, "lifetime": [6], "scale": { "from": 0.015, "to": 0.015 }, "length": { "from": 0.25, "to": 0.25 }, "alpha": { "from": 0.8, "to": 0.8 }, "color": ["water", "deep"], "cone": 90, "rim": true, "offset": [0.0, 1.2], "height": [2.9], "lift": [-0.48] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 2, "repeat": 24, "interval": 2, "delay": 10, "lifetime": [5, 7], "scale": { "from": 0.04, "to": 0.02 }, "color": ["foam", "water"], "cone": 90, "rim": true, "offset": [0.0, 1.2], "height": [0.05], "lift": [0.06, 0.1], "gravity": 1.0 }
+  ]
+}

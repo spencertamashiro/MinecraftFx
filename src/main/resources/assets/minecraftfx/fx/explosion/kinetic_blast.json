@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:explosion.kinetic_blast" } ],
+  "palette": { "white": "#FFFFFF", "pale": "#E8EEF4" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "count": 16, "lifetime": [6], "scale": { "from": 0.04, "to": 0.02 }, "length": { "from": 0.7, "to": 0.2 }, "color": ["white", "pale"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.3], "speed": [0.6], "friction": 0.8 },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "lifetime": [6], "scale": { "from": 0.2, "to": 1.8, "easing": "expoOut" }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["white", "pale"] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "count": 16, "delay": 2, "lifetime": [5], "scale": { "from": 0.03, "to": 0.02 }, "length": { "from": 0.4, "to": 0.1 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["white", "pale"], "cone": 90, "rim": true, "pattern": "even", "phase": 11.25, "offset": [0.6], "speed": [0.5], "friction": 0.8 }
+  ]
+}

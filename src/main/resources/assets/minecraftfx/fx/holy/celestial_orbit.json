@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:holy.celestial_orbit" } ],
+  "palette": { "white": "#FFFFFF", "light": "#FFF6C8", "gold": "#FFD54A", "amber": "#E89A1E" },
+  "layers": [
+    { "sprite": "minecraftfx:star", "frames": "first", "additive": false, "axis": "up", "count": 4, "lifetime": [50], "scale": { "from": 0.14, "to": 0.14 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["white", "gold"], "cone": 90, "rim": true, "pattern": "even", "offset": [1.1], "height": [1.0], "orbit": 0.15 },
+    { "sprite": "minecraftfx:star", "frames": "first", "additive": false, "axis": "up", "count": 3, "lifetime": [50], "scale": { "from": 0.1, "to": 0.1 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["light", "amber"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.7], "height": [1.7], "orbit": -0.2 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 4, "repeat": 22, "interval": 2, "lifetime": [8], "scale": { "from": 0.04, "to": 0.01 }, "color": ["light", "gold"], "cone": 90, "rim": true, "pattern": "even", "twist": 17.19, "offset": [1.1], "height": [1.0] }
+  ]
+}

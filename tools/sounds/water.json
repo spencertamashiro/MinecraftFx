@@ -1,0 +1,89 @@
+{
+  "aqua_ring": { "about": "A flowing ring of water with drips and a healing melody", "level": 0.8, "layers": [
+    { "wave": "noise", "freq": [5000, 3500], "high": 1500, "trem": [3, 0.4], "dur": 2.9, "shape": "bump", "vol": 0.4 },
+    { "use": "drip", "freq": [600, 1500], "repeat": 12, "every": 0.23, "jitter": 0.7 },
+    { "use": "chime", "freq": 1175, "notes": [0, 4, 7, 12, 7, 4], "every": 0.45, "vol": 0.35 } ] },
+  "bubbles": { "about": "Bubbles of all sizes rising and popping", "level": 0.8, "layers": [
+    { "use": "drip", "freq": [400, 1400], "repeat": 18, "every": 0.13, "jitter": 0.9, "scatter": 9 },
+    { "use": "drip", "freq": [250, 700], "dur": 0.1, "repeat": 7, "every": 0.33, "jitter": 0.9, "scatter": 5, "vol": 0.6 } ] },
+  "condensation": { "about": "Tiny droplets forming and falling", "level": 0.6, "layers": [
+    { "use": "drip", "freq": [1200, 2200], "dur": 0.05, "repeat": 16, "every": 0.18, "jitter": 0.9, "scatter": 6, "vol": 0.7 },
+    { "use": "drip", "freq": [500, 1100], "dur": 0.08, "at": 0.3, "repeat": 4, "every": 0.7, "jitter": 0.8 },
+    { "use": "hiss", "high": 7000, "dur": 3.0, "shape": "bump", "vol": 0.12 } ] },
+  "coral_growth": { "about": "Coral plipping into being, with clicks and gentle surf", "level": 0.8, "layers": [
+    { "use": "drip", "freq": [300, 800], "dur": 0.1, "repeat": 10, "every": 0.15, "step": 1.06 },
+    { "use": "clang", "freq": 1500, "dur": 0.08, "at": 0.2, "repeat": 6, "every": 0.25, "scatter": 7, "vol": 0.25 },
+    { "use": "surf", "low": [400, 800], "dur": 3.0, "vol": 0.5 },
+    { "use": "drip", "freq": [500, 1300], "at": 0.3, "repeat": 8, "every": 0.33, "jitter": 0.9, "vol": 0.4 } ] },
+  "deep_sea_crush": { "about": "Pressure groaning tighter until it implodes in bubbles", "range": 32, "layers": [
+    { "wave": "sine", "freq": [90, 38], "dur": 1.0, "shape": "swell", "power": 1 },
+    { "wave": "noise", "freq": [150, 80], "low": 400, "dur": 0.9, "shape": "swell" },
+    { "use": "clang", "freq": 180, "fm": [1.41, 6], "at": 0.2, "repeat": 2, "every": 0.4, "vol": 0.4 },
+    { "use": "boom", "at": 0.9, "freq": [200, 35], "dur": 0.5 },
+    { "use": "drip", "freq": [300, 1200], "at": 0.95, "repeat": 8, "every": 0.06, "scatter": 8, "vol": 0.5 } ] },
+  "fountain_spray": { "about": "A steady fountain: fine spray and pattering drops", "layers": [
+    { "wave": "noise", "freq": [7000, 5000], "high": 2500, "dur": 3.0, "shape": "bump", "power": 1, "vol": 0.6 },
+    { "use": "drip", "freq": [700, 1600], "repeat": 26, "every": 0.11, "jitter": 0.9, "scatter": 6, "vol": 0.5 },
+    { "use": "surf", "dur": 3.0, "vol": 0.3 } ] },
+  "geyser": { "about": "A rumble, a jet of water and steam, then rain falling back", "range": 32, "layers": [
+    { "use": "rumble", "freq": [80, 160], "dur": 0.5, "shape": "swell" },
+    { "wave": "noise", "freq": [3000, 6000], "high": 1200, "attack": 0.08, "at": 0.2, "dur": 1.8, "power": 1 },
+    { "use": "hiss", "at": 0.2, "high": 5000, "dur": 2.0, "power": 1, "vol": 0.5 },
+    { "use": "drip", "freq": [500, 1200], "at": 1.0, "repeat": 12, "every": 0.1, "jitter": 0.9, "vol": 0.4 } ] },
+  "hydro_pump": { "about": "A high-pressure jet that holds, then splashes out", "range": 32, "layers": [
+    { "wave": "noise", "freq": [2500, 3500], "high": 600, "attack": 0.05, "dur": 1.2, "shape": "hold", "release": 0.3 },
+    { "use": "rumble", "freq": [140, 120], "dur": 1.2, "shape": "hold", "release": 0.3, "vol": 0.6 },
+    { "use": "splash", "at": 1.0, "dur": 0.6, "vol": 0.6 } ] },
+  "mist_aura": { "about": "A soft drifting mist with the odd tiny drop", "level": 0.6, "layers": [
+    { "wave": "hiss", "band": [3500, 5000], "trem": [0.7, 0.4], "dur": 3.0, "shape": "bump", "vol": 0.5 },
+    { "use": "pad", "freq": 880, "dur": 3.0, "vol": 0.15 },
+    { "use": "drip", "freq": [1000, 2000], "dur": 0.05, "repeat": 8, "every": 0.36, "jitter": 0.9, "vol": 0.3 } ] },
+  "puddle_step": { "about": "A foot splashing in a puddle", "layers": [
+    { "use": "splash", "freq": [3500, 1200], "dur": 0.15 },
+    { "use": "thud", "freq": [200, 90], "dur": 0.06, "vol": 0.5 },
+    { "use": "drip", "freq": [600, 1300], "dur": 0.06, "at": 0.08, "repeat": 2, "every": 0.07, "vol": 0.5 } ] },
+  "rain_cloud": { "about": "A small rain shower with a soft roll of thunder", "level": 0.8, "layers": [
+    { "use": "rumble", "freq": [90, 70], "dur": 1.2, "vol": 0.35 },
+    { "wave": "noise", "freq": 6000, "high": 2500, "at": 0.2, "dur": 2.8, "shape": "bump", "power": 1, "vol": 0.5 },
+    { "use": "drip", "freq": [900, 1800], "dur": 0.04, "at": 0.5, "repeat": 30, "every": 0.08, "jitter": 0.9, "scatter": 6, "vol": 0.5 } ] },
+  "ripples": { "about": "One drop and three widening ripples", "level": 0.8, "layers": [
+    { "use": "drip", "freq": [450, 1100], "dur": 0.1 },
+    { "wave": "sine", "freq": [700, 500], "dur": 0.3, "shape": "bump", "repeat": 3, "every": 0.35, "fade": 0.6, "vol": 0.4 } ] },
+  "splash": { "about": "The basic water splash", "layers": [
+    { "use": "splash", "dur": 0.45 },
+    { "use": "thud", "freq": [180, 80], "dur": 0.12, "vol": 0.6 },
+    { "use": "drip", "freq": [500, 1300], "at": 0.15, "repeat": 5, "every": 0.08, "jitter": 0.7, "scatter": 5, "vol": 0.5 } ] },
+  "steam_hiss": { "about": "A sharp jet of steam with a hint of kettle whistle", "layers": [
+    { "use": "hiss", "high": 3500, "attack": 0.03, "dur": 1.8, "power": 1.2 },
+    { "wave": "noise", "freq": [9000, 7000], "trem": [28, 0.3], "dur": 1.6, "power": 1.5, "vol": 0.4 },
+    { "wave": "sine", "freq": [2600, 2200], "dur": 0.8, "vol": 0.12 } ] },
+  "tear_drop": { "about": "One tear falling, landing and rippling, with two sad notes", "level": 0.7, "layers": [
+    { "use": "chime", "freq": 1245, "notes": [0, -4], "every": 0.25, "dur": 0.4, "vol": 0.2 },
+    { "wave": "sine", "freq": [1500, 900], "dur": 0.5, "shape": "swell", "vol": 0.3 },
+    { "use": "drip", "at": 0.55, "freq": [500, 1300], "dur": 0.09 },
+    { "wave": "sine", "freq": [800, 600], "dur": 0.25, "shape": "bump", "at": 0.58, "repeat": 2, "every": 0.2, "fade": 0.5, "vol": 0.3 } ] },
+  "tidal_wave": { "about": "A wall of water swelling and foaming", "range": 40, "layers": [
+    { "use": "surf", "low": [300, 3000], "dur": 1.9 },
+    { "use": "rumble", "freq": [70, 120], "dur": 1.9, "shape": "swell" },
+    { "wave": "noise", "freq": [5000, 2000], "high": 800, "at": 0.6, "dur": 1.3, "vol": 0.5 } ] },
+  "tsunami_crash": { "about": "A wave rearing up and crashing down with a boom and spray", "range": 40, "layers": [
+    { "use": "surf", "low": [300, 2500], "dur": 0.6, "shape": "swell" },
+    { "use": "boom", "at": 0.55, "freq": [110, 28], "dur": 1.2 },
+    { "use": "splash", "at": 0.55, "freq": [6000, 800], "dur": 1.3, "power": 1.3 },
+    { "use": "rumble", "at": 0.55, "dur": 1.4 },
+    { "use": "hiss", "at": 0.7, "high": 4000, "dur": 1.2, "vol": 0.4 } ] },
+  "water_shield": { "about": "Water rising into a flowing, wobbling shield", "layers": [
+    { "wave": "sine", "freq": [200, 500], "dur": 0.3, "shape": "swell", "vol": 0.4 },
+    { "wave": "noise", "freq": [4500, 3000], "high": 1500, "trem": [5, 0.4], "dur": 2.5, "shape": "bump", "vol": 0.4 },
+    { "use": "wobble", "freq": 330, "vib": [5, 1], "dur": 2.5, "vol": 0.4 },
+    { "use": "drip", "freq": [500, 1500], "repeat": 9, "every": 0.28, "jitter": 0.7, "vol": 0.5 } ] },
+  "water_whip": { "about": "A stream of water lashing out and snapping wetly", "layers": [
+    { "wave": "noise", "freq": [1500, 6000], "high": 800, "dur": 0.45, "shape": "swell" },
+    { "use": "crack", "at": 0.45 },
+    { "use": "splash", "at": 0.45, "dur": 0.35, "vol": 0.8 },
+    { "use": "drip", "freq": [600, 1500], "at": 0.5, "repeat": 4, "every": 0.07, "vol": 0.4 } ] },
+  "whirlpool": { "about": "Water churning round and gurgling down a drain", "range": 32, "layers": [
+    { "use": "surf", "low": [1500, 500], "trem": [2.5, 0.6], "dur": 2.6 },
+    { "wave": "sine", "freq": [300, 70], "vib": [2.5, 2], "dur": 2.6, "power": 1.5, "vol": 0.5 },
+    { "use": "drip", "freq": [700, 300], "repeat": 12, "every": 0.2, "step": 0.95, "vol": 0.4 } ] }
+}

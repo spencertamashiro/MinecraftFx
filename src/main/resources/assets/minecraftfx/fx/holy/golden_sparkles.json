@@ -1,0 +1,8 @@
+{
+  "sounds": [ { "id": "minecraftfx:holy.golden_sparkles" } ],
+  "palette": { "light": "#FFF6C8", "gold": "#FFD54A", "amber": "#E89A1E" },
+  "layers": [
+    { "sprite": "minecraftfx:glint", "axis": "up", "count": 2, "repeat": 16, "interval": 2, "lifetime": [6], "scale": { "from": 0.16, "to": 0.16 }, "color": ["light"], "offset": [0.2, 1.4], "height": [1.0] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 2, "repeat": 14, "interval": 3, "lifetime": [20, 28], "scale": { "from": 0.05, "to": 0.02 }, "color": ["gold", "amber"], "offset": [0.2, 1.4], "height": [1.2], "lift": [-0.02, -0.035] }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:explosion.shockwave_ring" } ],
+  "palette": { "white": "#FFFFFF", "pale": "#E0E8F0", "dust": "#B8AFA0" },
+  "layers": [
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "lifetime": [8], "height": [0.06], "scale": { "from": 0.3, "to": 4.0, "easing": "quadOut" }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["white", "pale"] },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "delay": 2, "lifetime": [9], "height": [0.06], "scale": { "from": 0.2, "to": 3.2, "easing": "quadOut" }, "alpha": { "from": 0.4, "to": 0.0 }, "color": ["pale", "dust"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 28, "lifetime": [10, 12], "scale": { "from": 0.06, "to": 0.03 }, "color": ["pale", "dust"], "cone": 90, "rim": true, "pattern": "even", "height": [0.08], "offset": [0.4], "speed": [0.4], "friction": 0.88 }
+  ]
+}

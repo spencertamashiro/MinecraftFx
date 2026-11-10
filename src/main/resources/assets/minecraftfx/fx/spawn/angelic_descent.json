@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:spawn.angelic_descent" } ],
+  "palette": { "white": "#FFFFFF", "light": "#FFF6C8", "gold": "#FFD54A" },
+  "layers": [
+    { "sprite": "minecraftfx:wings", "additive": false, "axis": "up", "lifetime": [44], "height": [4.6], "scale": { "from": 1.0, "to": 1.0 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["white", "light"], "lift": [-0.075] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "lifetime": [44], "height": [2.5], "scale": { "from": 0.5, "to": 0.5 }, "length": { "from": 2.5, "to": 2.5 }, "alpha": { "from": 0.0, "mid": 0.3, "to": 0.0 }, "color": ["light", "gold"], "cone": 0, "lift": [0.0001] },
+    { "sprite": "minecraftfx:feather", "frames": "random", "additive": false, "axis": "up", "count": 2, "repeat": 10, "interval": 4, "lifetime": [30, 36], "scale": { "from": 0.09, "to": 0.09 }, "color": ["white", "light"], "cone": 90, "rim": true, "offset": [0.3, 1.2], "height": [3.0, 4.5], "lift": [-0.05], "orbit": 0.03, "spin": 0.06 },
+    { "sprite": "minecraftfx:glint", "axis": "up", "repeat": 10, "interval": 4, "lifetime": [6], "scale": { "from": 0.16, "to": 0.16 }, "color": ["white"], "cone": 90, "rim": true, "offset": [0.2, 1.0], "height": [1.0, 4.0] }
+  ]
+}

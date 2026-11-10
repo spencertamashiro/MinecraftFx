@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:nature.insect_swarm" } ],
+  "palette": { "dark": "#3A3428", "black": "#1A1612", "yellow": "#D8C84A" },
+  "layers": [
+    { "sprite": "minecraftfx:bug", "additive": false, "axis": "up", "count": 8, "lifetime": [44], "scale": { "from": 0.09, "to": 0.09 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["dark", "black"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.4, 1.0], "height": [0.8, 1.6], "orbit": 0.22 },
+    { "sprite": "minecraftfx:bug", "additive": false, "axis": "up", "count": 7, "lifetime": [44], "scale": { "from": 0.08, "to": 0.08 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["dark", "black"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.3, 0.8], "height": [1.0, 1.8], "orbit": -0.28 },
+    { "sprite": "minecraftfx:bug", "additive": false, "count": 5, "lifetime": [44], "scale": { "from": 0.07, "to": 0.07 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["yellow", "dark"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.6], "orbit": 0.25 }
+  ]
+}

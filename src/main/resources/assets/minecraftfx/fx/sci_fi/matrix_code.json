@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:sci_fi.matrix_code" } ],
+  "palette": { "white": "#FFFFFF", "neon": "#5AFF7A", "green": "#1A8A3A" },
+  "layers": [
+    { "sprite": "minecraftfx:digit", "frames": "random", "additive": false, "axis": "up", "count": 3, "repeat": 20, "interval": 2, "lifetime": [22], "scale": { "from": 0.09, "to": 0.09 }, "alpha": { "from": 1.0, "to": 0.2 }, "color": ["neon", "green"], "cone": 90, "rim": true, "offset": [0.0, 1.5], "height": [2.6, 3.4], "lift": [-0.13] },
+    { "sprite": "minecraftfx:glyph", "frames": "random", "additive": false, "axis": "up", "repeat": 20, "interval": 2, "lifetime": [22], "scale": { "from": 0.09, "to": 0.09 }, "alpha": { "from": 1.0, "to": 0.2 }, "color": ["white", "neon"], "cone": 90, "rim": true, "offset": [0.0, 1.5], "height": [2.6, 3.4], "lift": [-0.13] },
+    { "sprite": "minecraftfx:pixel", "frames": "first", "additive": false, "axis": "up", "count": 2, "repeat": 20, "interval": 2, "lifetime": [22], "scale": { "from": 0.03, "to": 0.03 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["green"], "cone": 90, "rim": true, "offset": [0.0, 1.5], "height": [2.8, 3.6], "lift": [-0.13] }
+  ]
+}

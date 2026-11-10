@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:status.vulnerable" } ],
+  "palette": { "glow": "#E0B0FF", "violet": "#A050E0", "dark": "#4A2470" },
+  "layers": [
+    { "sprite": "minecraftfx:shield", "additive": false, "axis": "up", "lifetime": [30], "height": [2.4], "scale": { "from": 0.3, "to": 0.3 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.6 }, "color": ["violet", "dark"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 8, "delay": 18, "lifetime": [12, 16], "scale": { "from": 0.05, "to": 0.03 }, "color": ["violet", "dark"], "cone": 60, "height": [2.4], "speed": [0.06, 0.12], "gravity": 0.8 },
+    { "sprite": "minecraftfx:ring", "frames": "first", "additive": false, "axis": "up", "delay": 18, "lifetime": [8], "height": [2.4], "scale": { "from": 0.2, "to": 0.6 }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["glow", "violet"] }
+  ]
+}

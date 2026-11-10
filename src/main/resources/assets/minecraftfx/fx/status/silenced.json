@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:status.silenced" } ],
+  "palette": { "white": "#FFFFFF", "grey": "#A8A8B8", "red": "#E04040" },
+  "layers": [
+    { "sprite": "minecraftfx:silence", "additive": false, "axis": "up", "lifetime": [44], "height": [2.4], "scale": { "from": 0.1, "mid": 0.3, "to": 0.3, "easing": "expoOut" }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["white", "grey"] },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 4, "lifetime": [8, 10], "scale": { "from": 0.12, "to": 0.12 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["white", "grey"], "cone": 90, "rim": true, "pattern": "even", "height": [2.4], "speed": [0.06], "friction": 0.85 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "repeat": 6, "interval": 6, "delay": 6, "lifetime": [10], "scale": { "from": 0.04, "to": 0.02 }, "color": ["red"], "cone": 90, "rim": true, "offset": [0.3], "height": [2.4], "gravity": 0.2 }
+  ]
+}

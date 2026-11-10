@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:status.hasted" } ],
+  "palette": { "white": "#FFFFFF", "pale": "#E8E8F0", "yellow": "#FFF06A", "amber": "#FFB02E" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "count": 3, "repeat": 12, "interval": 2, "lifetime": [6], "scale": { "from": 0.025, "to": 0.025 }, "length": { "from": 0.8, "to": 0.3 }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["white", "yellow"], "cone": 90, "rim": true, "offset": [0.1, 0.9], "lift": [0.5] },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 2, "repeat": 8, "interval": 3, "lifetime": [8, 10], "scale": { "from": 0.14, "to": 0.14 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["white", "pale"], "cone": 90, "rim": true, "offset": [0.1, 0.3], "height": [0.05], "speed": [0.03] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 2, "repeat": 12, "interval": 2, "lifetime": [6, 8], "scale": { "from": 0.04, "to": 0.02 }, "color": ["yellow", "amber"], "cone": 90, "rim": true, "offset": [0.2, 0.8], "lift": [0.35] }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:status.regenerating" } ],
+  "palette": { "white": "#FFFFFF", "mint": "#B8FFC8", "green": "#3FE07A", "deep": "#1E9A4A" },
+  "layers": [
+    { "sprite": "minecraftfx:plus", "additive": false, "axis": "up", "count": 2, "repeat": 10, "interval": 4, "lifetime": [18, 24], "scale": { "from": 0.12, "to": 0.08 }, "alpha": { "from": 1.0, "to": 0.0, "easing": "quadIn" }, "color": ["mint", "green"], "cone": 90, "rim": true, "offset": [0.2, 0.7], "height": [0.2, 1.2], "lift": [0.04, 0.06] },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "repeat": 3, "interval": 13, "lifetime": [14], "height": [0.05], "scale": { "from": 0.3, "to": 1.0, "easing": "quadOut" }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["mint", "deep"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 2, "repeat": 12, "interval": 3, "lifetime": [12, 18], "scale": { "from": 0.05, "to": 0.02 }, "color": ["white", "green"], "cone": 90, "rim": true, "offset": [0.4, 0.7], "lift": [0.06, 0.1] }
+  ]
+}

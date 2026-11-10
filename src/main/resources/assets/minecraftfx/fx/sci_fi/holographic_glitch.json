@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:sci_fi.holographic_glitch" } ],
+  "palette": { "white": "#FFFFFF", "cyan": "#7AF8FF", "blue": "#2A7AE0" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "count": 4, "repeat": 12, "interval": 2, "lifetime": [3], "scale": { "from": 0.02, "to": 0.02 }, "length": { "from": 0.5, "to": 0.5 }, "color": ["cyan", "blue"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.0, 0.3], "height": [0.2, 1.8], "speed": [0.02] },
+    { "sprite": "minecraftfx:pixel", "frames": "first", "additive": false, "axis": "up", "count": 3, "repeat": 12, "interval": 2, "lifetime": [2, 4], "scale": { "from": 0.08, "to": 0.08 }, "alpha": { "from": 0.8, "to": 0.8 }, "color": ["cyan", "blue"], "cone": 90, "rim": true, "offset": [0.1, 0.5], "height": [0.2, 1.8] },
+    { "sprite": "minecraftfx:digit", "frames": "random", "additive": false, "axis": "up", "repeat": 8, "interval": 3, "lifetime": [4], "scale": { "from": 0.1, "to": 0.1 }, "alpha": { "from": 0.9, "to": 0.9 }, "color": ["white", "cyan"], "cone": 90, "rim": true, "offset": [0.2, 0.5], "height": [0.4, 1.6] }
+  ]
+}

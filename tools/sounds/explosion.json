@@ -1,0 +1,93 @@
+{
+  "ash_cloud": { "about": "A soft low rumble and settling ash", "level": 0.8, "layers": [
+    { "use": "rumble", "freq": [90, 50], "dur": 2.6, "vol": 0.8 },
+    { "use": "wind", "band": [300, 600], "dur": 3.0, "vol": 0.6 },
+    { "use": "hiss", "high": 6000, "dur": 2.5, "shape": "bump", "vol": 0.15 } ] },
+  "cluster_bombs": { "about": "Seven small blasts in quick, uneven succession", "range": 32, "layers": [
+    { "use": "boom", "freq": [140, 50], "dur": 0.25, "repeat": 7, "every": 0.15, "jitter": 0.2, "step": 0.97 },
+    { "use": "blast", "dur": 0.22, "repeat": 7, "every": 0.15, "jitter": 0.2, "vol": 0.7 },
+    { "use": "crack", "repeat": 7, "every": 0.15, "vol": 0.6 } ] },
+  "concussive_blast": { "about": "A deep pressure thump with a rush of air", "range": 32, "layers": [
+    { "use": "boom", "freq": [90, 30], "dur": 0.6 },
+    { "use": "whoosh", "band": [1500, 200], "dur": 0.5, "shape": "decay", "power": 1 },
+    { "use": "crack", "vol": 0.5 } ] },
+  "debris_scatter": { "about": "A crunch, then pebbles clattering down", "layers": [
+    { "use": "crunch", "dur": 0.3 },
+    { "use": "thud", "vol": 0.7 },
+    { "wave": "noise", "freq": [1500, 400], "dur": 0.06, "at": 0.15, "repeat": 9, "every": 0.11, "jitter": 0.9, "fade": 0.85 } ] },
+  "dirt_fountain": { "about": "Earth heaving up and raining back as clods", "layers": [
+    { "use": "rumble", "freq": [200, 80], "dur": 0.9 },
+    { "use": "crunch", "dur": 0.15, "repeat": 6, "every": 0.05 },
+    { "wave": "noise", "freq": [900, 300], "dur": 0.05, "at": 0.5, "repeat": 8, "every": 0.1, "jitter": 0.9, "fade": 0.85, "vol": 0.5 } ] },
+  "dust_cloud": { "about": "A dull puff and a long soft billow", "level": 0.8, "layers": [
+    { "use": "whoosh", "band": [700, 250], "dur": 1.2, "shape": "decay" },
+    { "use": "thud", "vol": 0.5 },
+    { "use": "hiss", "dur": 1.2, "vol": 0.15 } ] },
+  "explosion": { "about": "The classic: a crack, a deep boom and a roaring tail", "range": 40, "echo": [0.09, 0.25], "layers": [
+    { "use": "boom", "freq": [110, 32], "dur": 1.0 },
+    { "use": "blast", "dur": 1.1 },
+    { "use": "crack" } ] },
+  "firework_burst": { "about": "A pop, then a crackling shower of sparks", "range": 40, "layers": [
+    { "use": "crack" },
+    { "use": "boom", "freq": [200, 70], "dur": 0.3 },
+    { "use": "blast", "freq": [9000, 3000], "dur": 0.4, "vol": 0.5 },
+    { "use": "spark", "at": 0.45, "repeat": 16, "every": 0.06, "jitter": 0.9, "fade": 0.93 },
+    { "use": "chime", "freq": 2800, "dur": 0.15, "at": 0.5, "repeat": 6, "every": 0.12, "jitter": 0.8, "vol": 0.2 } ] },
+  "flak_burst": { "about": "A dry airburst with shrapnel whizzing out", "range": 40, "layers": [
+    { "use": "crack" },
+    { "use": "boom", "freq": [160, 60], "dur": 0.35 },
+    { "use": "blast", "freq": [3000, 600], "low": 3000, "dur": 0.5 },
+    { "use": "fall", "wave": "sine", "freq": [5000, 2500], "dur": 0.08, "at": 0.1, "repeat": 6, "every": 0.07, "jitter": 0.9, "vol": 0.3 } ] },
+  "flashbang": { "about": "A hard bang that leaves a ringing in the ears", "range": 32, "layers": [
+    { "use": "crack" },
+    { "use": "boom", "freq": [300, 120], "dur": 0.15 },
+    { "use": "blast", "freq": [12000, 6000], "dur": 0.2 },
+    { "wave": "sine", "freq": 3900, "dur": 1.5, "power": 1.5, "vol": 0.5 } ] },
+  "implosion": { "about": "Everything sucked inward, then a deep collapse", "range": 32, "layers": [
+    { "wave": "sine", "freq": [60, 400], "glide": 2.5, "dur": 0.5, "shape": "swell" },
+    { "wave": "noise", "freq": [200, 6000], "glide": 2, "dur": 0.5, "shape": "swell" },
+    { "use": "boom", "at": 0.5, "freq": [200, 40], "dur": 0.5 },
+    { "use": "crack", "at": 0.5 } ] },
+  "kinetic_blast": { "about": "A short hard punch of force", "layers": [
+    { "use": "thud", "freq": [220, 60] },
+    { "use": "crack" },
+    { "use": "whoosh", "band": [4000, 600], "dur": 0.25, "shape": "decay" } ] },
+  "mega_boom": { "about": "A huge double detonation with a long rolling rumble", "range": 40, "echo": [0.14, 0.35], "layers": [
+    { "use": "boom", "freq": [90, 24], "dur": 2.0, "power": 2 },
+    { "use": "blast", "freq": [4000, 150], "dur": 2.2 },
+    { "use": "crack" },
+    { "use": "boom", "at": 0.2, "freq": [70, 28], "dur": 1.2 },
+    { "use": "rumble", "at": 0.3, "dur": 2.4, "vol": 0.7 } ] },
+  "mushroom_cloud": { "about": "A heavy blast that keeps swelling as the cloud climbs", "range": 40, "layers": [
+    { "use": "boom", "freq": [80, 28], "dur": 1.6 },
+    { "use": "rumble", "freq": [140, 60], "dur": 2.4 },
+    { "use": "blast", "freq": [1500, 200], "low": 1500, "dur": 1.8, "vol": 0.6 },
+    { "wave": "sine", "freq": [40, 90], "dur": 2.0, "shape": "bump", "vol": 0.5 } ] },
+  "plasma_pop": { "about": "A wet electric pop", "layers": [
+    { "use": "zap", "freq": [900, 2400], "dur": 0.08 },
+    { "use": "drip", "freq": [300, 1800], "dur": 0.09 },
+    { "use": "thud", "freq": [300, 90], "dur": 0.12 },
+    { "use": "spark", "repeat": 4, "vol": 0.6 } ] },
+  "rubble_shower": { "about": "Stones cracking loose and thudding to the ground", "layers": [
+    { "use": "crunch", "freq": [1600, 500], "dur": 0.1, "repeat": 10, "every": 0.1, "jitter": 0.7 },
+    { "use": "thud", "freq": [140, 60], "dur": 0.1, "at": 0.6, "repeat": 10, "every": 0.1, "jitter": 0.7, "vol": 0.7 },
+    { "use": "rumble", "dur": 1.8, "vol": 0.5 } ] },
+  "shockwave_ring": { "about": "A tone dropping fast as a ring of air races out", "layers": [
+    { "wave": "sine", "freq": [500, 60], "dur": 0.5, "power": 1.5 },
+    { "use": "whoosh", "band": [2400, 300], "dur": 0.55, "shape": "decay" },
+    { "use": "thump" } ] },
+  "shrapnel_blast": { "about": "A sharp blast with metal fragments pinging away", "range": 32, "layers": [
+    { "use": "crack" },
+    { "use": "boom", "freq": [150, 50], "dur": 0.4 },
+    { "use": "blast", "freq": [7000, 1500], "dur": 0.35 },
+    { "use": "clang", "freq": 1700, "dur": 0.08, "at": 0.08, "repeat": 6, "every": 0.06, "jitter": 0.9, "step": 1.1, "vol": 0.5 } ] },
+  "smoke_plume": { "about": "A long, quiet column of rising smoke", "level": 0.7, "layers": [
+    { "use": "wind", "band": [250, 500], "dur": 3.0, "vol": 0.8 },
+    { "use": "hiss", "high": 3000, "dur": 2.8, "shape": "bump", "trem": [5, 0.3], "vol": 0.2 },
+    { "use": "rumble", "dur": 1.2, "vol": 0.4 } ] },
+  "sonic_boom": { "about": "A double crack with air tearing past", "range": 40, "layers": [
+    { "use": "crack", "repeat": 2, "every": 0.08 },
+    { "use": "boom", "freq": [200, 45], "dur": 0.5, "repeat": 2, "every": 0.08 },
+    { "use": "blast", "freq": [8000, 400], "dur": 0.5, "vol": 0.6 },
+    { "use": "whoosh", "band": [5000, 300], "dur": 0.6, "shape": "decay" } ] }
+}

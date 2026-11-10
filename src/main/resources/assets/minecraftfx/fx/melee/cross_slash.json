@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:melee.cross_slash" } ],
+  "palette": { "white": "#FFFFFF", "steel": "#D8ECFF", "blue": "#7AB4FF" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "count": 2, "lifetime": [8], "scale": { "from": 0.1, "to": 0.02 }, "length": { "from": 1.0, "to": 0.5 }, "color": ["white", "steel"], "cone": 90, "rim": true, "pattern": "even", "phase": 45, "speed": [0.3], "friction": 0.7 },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "count": 2, "delay": 3, "lifetime": [8], "scale": { "from": 0.1, "to": 0.02 }, "length": { "from": 1.0, "to": 0.5 }, "color": ["white", "blue"], "cone": 90, "rim": true, "pattern": "even", "phase": 135, "speed": [0.3], "friction": 0.7 },
+    { "sprite": "minecraftfx:xslash", "shape": "plane", "additive": false, "delay": 3, "lifetime": [7], "scale": { "from": 0.9, "to": 1.0 }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["steel", "blue"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 8, "delay": 4, "lifetime": [8, 10], "scale": { "from": 0.05, "to": 0.02 }, "color": ["white", "blue"], "cone": 90, "rim": true, "pattern": "even", "phase": 22.5, "speed": [0.2], "friction": 0.85 }
+  ]
+}

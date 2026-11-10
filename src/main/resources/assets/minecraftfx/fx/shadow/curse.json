@@ -1,0 +1,14 @@
+{
+  "sounds": [ { "id": "minecraftfx:shadow.curse" } ],
+  "palette": { "bone": "#E6D8FF", "purple": "#8C3CD8", "dark": "#3A1458", "black": "#140A1C" },
+  "layers": [
+    { "sprite": "minecraftfx:skull", "axis": "up", "additive": false, "repeat": 5, "interval": 5, "lifetime": [20, 26],
+      "scale": { "from": 0.1, "mid": 0.16, "to": 0.12 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["bone", "purple"],
+      "cone": 90, "offset": [0.2, 0.6], "height": [1.0, 1.8], "lift": [0.02, 0.04] },
+    { "sprite": "minecraftfx:smoke", "axis": "up", "additive": false, "count": 3, "repeat": 8, "interval": 3, "lifetime": [16, 24],
+      "scale": { "from": 0.2, "to": 0.45 }, "alpha": { "from": 0.8, "to": 0.0, "easing": "quadIn" }, "color": ["dark", "black"],
+      "cone": 90, "offset": [0.3, 0.7], "height": [0.0, 1.4], "lift": [0.03, 0.06], "spin": 0.05 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 2, "repeat": 8, "interval": 3, "lifetime": [12, 18],
+      "scale": { "from": 0.05, "to": 0.02 }, "color": ["purple", "dark"], "cone": 90, "offset": [0.2, 0.6], "height": [0.0, 1.6], "lift": [0.04, 0.08] }
+  ]
+}

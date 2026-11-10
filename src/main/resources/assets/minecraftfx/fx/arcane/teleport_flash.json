@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:arcane.teleport_flash" } ],
+  "palette": { "white": "#FFFFFF", "glow": "#D9B8FF", "arcane": "#9A5CFF" },
+  "layers": [
+    { "sprite": "minecraftfx:flash", "axis": "up", "lifetime": [3], "height": [0.9], "scale": { "from": 1.8, "to": 0.3 }, "color": ["white", "glow"] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "axis": "up", "lifetime": [7], "height": [1.0], "scale": { "from": 0.25, "to": 0.0, "easing": "quadIn" }, "length": { "from": 1.4, "to": 0.2 }, "alpha": { "from": 1.0, "to": 0.6 }, "color": ["white", "arcane"], "cone": 0, "speed": [0.001] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 8, "delay": 2, "lifetime": [8, 10], "scale": { "from": 0.07, "to": 0.02 }, "color": ["glow", "arcane"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.35], "lift": [0.14, 0.2] }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "sounds": [ { "id": "minecraftfx:holy.halo" } ],
+  "palette": { "white": "#FFFFFF", "gold": "#FFE27A", "amber": "#FFB02E" },
+  "layers": [
+    { "sprite": "minecraftfx:ring", "additive": false, "shape": "plane", "axis": "up", "lifetime": [40], "height": [2.3],
+      "scale": { "from": 0.1, "mid": 0.42, "to": 0.42, "easing": "expoOut" }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0, "easing": "quadIn" }, "color": ["white", "gold"] },
+    { "sprite": "minecraftfx:flash", "axis": "up", "count": 2, "repeat": 12, "interval": 3, "lifetime": [6, 8],
+      "scale": { "from": 0.12, "to": 0.0 }, "color": ["white", "amber"], "cone": 90, "rim": true, "offset": [0.38, 0.42], "height": [2.3], "orbit": 0.15 },
+    { "sprite": "minecraftfx:pixel", "axis": "up", "repeat": 12, "interval": 3, "lifetime": [16, 22],
+      "scale": { "from": 0.04, "to": 0.02 }, "color": ["gold", "amber"], "cone": 90, "rim": true, "offset": [0.35, 0.45], "height": [2.3], "gravity": 0.15 }
+  ]
+}

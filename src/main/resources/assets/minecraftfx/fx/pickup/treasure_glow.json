@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:pickup.treasure_glow" } ],
+  "palette": { "white": "#FFFFFF", "light": "#FFF6C8", "gold": "#FFC83A" },
+  "layers": [
+    { "sprite": "minecraftfx:orb", "frames": "first", "axis": "up", "repeat": 3, "interval": 12, "lifetime": [14], "height": [0.3], "scale": { "from": 0.4, "to": 0.9 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["light", "gold"] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "count": 8, "repeat": 3, "interval": 12, "lifetime": [10], "scale": { "from": 0.04, "to": 0.02 }, "length": { "from": 0.3, "to": 0.5 }, "color": ["light", "gold"], "cone": 60, "rim": true, "pattern": "even", "twist": 22.5, "offset": [0.3], "height": [0.2], "speed": [0.08] },
+    { "sprite": "minecraftfx:glint", "axis": "up", "repeat": 9, "interval": 4, "lifetime": [6], "scale": { "from": 0.16, "to": 0.16 }, "color": ["white"], "cone": 70, "offset": [0.2, 0.7], "height": [0.2] }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "sounds": [ { "id": "minecraftfx:arcane.arcane_burst" } ],
+  "palette": { "white": "#FFFFFF", "pink": "#F4A6FF", "arcane": "#A45CFF", "deep": "#4A22A8" },
+  "layers": [
+    { "sprite": "minecraftfx:glyph", "frames": "random", "additive": false, "shape": "oriented", "count": 6, "lifetime": [12],
+      "scale": { "from": 0.08, "to": 0.14 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 1.0 }, "color": ["pink", "arcane"],
+      "cone": 90, "rim": true, "pattern": "even", "offset": [1.5], "speed": [-0.11], "orbit": 0.25 },
+    { "sprite": "minecraftfx:rune", "additive": false, "shape": "plane", "delay": 11, "lifetime": [18],
+      "scale": { "from": 0.2, "to": 1.2, "easing": "expoOut" }, "alpha": { "from": 1.0, "to": 0.0, "easing": "quadIn" }, "color": ["pink", "deep"], "spin": 0.25 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "delay": 11, "count": 5, "repeat": 8, "interval": 1, "lifetime": [14, 18],
+      "scale": { "from": 0.07, "to": 0.02 }, "color": ["white", "arcane"],
+      "cone": 90, "rim": true, "pattern": "even", "twist": 14, "offset": [0.15], "speed": [0.13], "orbit": 0.12 },
+    { "sprite": "minecraftfx:glyph", "frames": "random", "additive": false, "delay": 13, "count": 8, "lifetime": [20],
+      "scale": { "from": 0.1, "to": 0.04 }, "color": ["white", "pink"],
+      "cone": 90, "rim": true, "pattern": "even", "offset": [0.9], "orbit": -0.15, "spin": 0.2 }
+  ]
+}

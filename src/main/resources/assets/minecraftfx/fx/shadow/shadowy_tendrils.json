@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:shadow.shadowy_tendrils" } ],
+  "palette": { "void": "#0A0612", "dark": "#2A1240", "violet": "#8A3CFF" },
+  "layers": [
+    { "sprite": "minecraftfx:wave", "shape": "streak", "additive": false, "axis": "up", "count": 6, "repeat": 8, "interval": 1, "lifetime": [14], "scale": { "from": 0.12, "to": 0.05 }, "length": { "from": 0.28, "to": 0.28 }, "color": ["dark", "void"], "cone": 90, "rim": true, "pattern": "even", "height": [0.1], "speed": [0.3], "friction": 0.88, "orbit": 0.06 },
+    { "sprite": "minecraftfx:wave", "shape": "streak", "additive": false, "axis": "up", "count": 6, "repeat": 8, "interval": 1, "delay": 16, "lifetime": [14], "scale": { "from": 0.12, "to": 0.05 }, "length": { "from": 0.28, "to": 0.28 }, "color": ["violet", "void"], "cone": 90, "rim": true, "pattern": "even", "phase": 30, "height": [0.1], "speed": [0.3], "friction": 0.88, "orbit": -0.06 },
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "count": 4, "lifetime": [26, 30], "scale": { "from": 0.3, "to": 0.5 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["dark", "void"], "cone": 90, "rim": true, "offset": [0.0, 0.3], "height": [0.1] }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:arcane.blink_out" } ],
+  "palette": { "white": "#FFFFFF", "glow": "#E0C8FF", "arcane": "#A066FF", "deep": "#4A26B0" },
+  "layers": [
+    { "sprite": "minecraftfx:flash", "axis": "up", "lifetime": [4], "height": [0.9], "scale": { "from": 0.3, "mid": 1.0, "to": 0.2 }, "color": ["white", "glow"] },
+    { "sprite": "minecraftfx:ring", "frames": "first", "additive": false, "axis": "up", "lifetime": [10], "height": [0.9], "scale": { "from": 0.2, "to": 1.8, "easing": "expoOut" }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["glow", "arcane"] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "count": 16, "lifetime": [8, 10], "scale": { "from": 0.06, "to": 0.02 }, "length": { "from": 0.6, "to": 0.2 }, "color": ["white", "arcane"], "pattern": "even", "height": [0.9], "speed": [0.45], "friction": 0.8 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 6, "repeat": 3, "interval": 1, "delay": 4, "lifetime": [14, 18], "scale": { "from": 0.06, "to": 0.03 }, "color": ["glow", "deep"], "cone": 90, "rim": true, "pattern": "even", "twist": 20, "offset": [0.25], "height": [0.9], "speed": [0.06], "lift": [0.08], "orbit": 0.35, "friction": 0.92 }
+  ]
+}

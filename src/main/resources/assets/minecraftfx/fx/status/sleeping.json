@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:status.sleeping" } ],
+  "palette": { "white": "#FFFFFF", "sky": "#A8D8FF" },
+  "layers": [
+    { "sprite": "minecraftfx:zzz", "additive": false, "axis": "up", "repeat": 4, "interval": 10, "lifetime": [28], "scale": { "from": 0.07, "to": 0.2 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["white", "sky"], "cone": 60, "rim": true, "pattern": "even", "height": [1.9], "speed": [0.03] },
+    { "sprite": "minecraftfx:bubble", "additive": false, "axis": "up", "repeat": 2, "interval": 20, "delay": 6, "lifetime": [18], "height": [1.75], "scale": { "from": 0.05, "to": 0.14 }, "color": ["white", "sky"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.25] },
+    { "sprite": "minecraftfx:pixel", "frames": "first", "additive": false, "axis": "up", "repeat": 4, "interval": 10, "delay": 4, "lifetime": [14], "scale": { "from": 0.03, "to": 0.03 }, "alpha": { "from": 0.0, "mid": 0.8, "to": 0.0 }, "color": ["sky"], "cone": 60, "rim": true, "pattern": "even", "offset": [0.2], "height": [1.9], "speed": [0.02] }
+  ]
+}

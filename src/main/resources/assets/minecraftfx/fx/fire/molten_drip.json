@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:fire.molten_drip" } ],
+  "palette": { "core": "#FFF0A8", "lava": "#FF6A1A", "crust": "#8A2410" },
+  "layers": [
+    { "sprite": "minecraftfx:drop", "additive": false, "axis": "up", "repeat": 6, "interval": 6, "lifetime": [13], "scale": { "from": 0.1, "to": 0.1 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["core", "lava"], "cone": 90, "rim": true, "offset": [0.0, 0.4], "height": [2.5], "gravity": 0.8 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 3, "repeat": 6, "interval": 6, "delay": 13, "lifetime": [8, 12], "scale": { "from": 0.05, "to": 0.02 }, "color": ["core", "lava"], "cone": 90, "rim": true, "offset": [0.0, 0.4], "height": [0.05], "lift": [0.08, 0.14], "gravity": 0.8 },
+    { "sprite": "minecraftfx:splat", "shape": "plane", "additive": false, "axis": "up", "delay": 13, "lifetime": [50], "height": [0.04], "scale": { "from": 0.15, "to": 0.5 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["lava", "crust"] }
+  ]
+}

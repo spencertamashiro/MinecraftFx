@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:sci_fi.laser_beam" } ],
+  "palette": { "white": "#FFFFFF", "hot": "#FFB0A0", "red": "#FF3A3A", "dark": "#A01010" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "repeat": 6, "interval": 5, "lifetime": [6], "scale": { "from": 0.09, "to": 0.09 }, "length": { "from": 4.0, "to": 4.0 }, "alpha": { "from": 1.0, "to": 0.8 }, "color": ["red", "dark"], "cone": 0, "height": [4.0], "speed": [0.001] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "repeat": 6, "interval": 5, "lifetime": [6], "scale": { "from": 0.03, "to": 0.03 }, "length": { "from": 4.0, "to": 4.0 }, "alpha": { "from": 1.0, "to": 0.8 }, "color": ["white"], "cone": 0, "height": [4.0], "speed": [0.001] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 3, "repeat": 10, "interval": 3, "lifetime": [5, 8], "scale": { "from": 0.05, "to": 0.02 }, "color": ["hot", "red"], "cone": 70, "speed": [0.1, 0.25], "gravity": 0.5 },
+    { "sprite": "minecraftfx:glint", "repeat": 10, "interval": 3, "lifetime": [3], "scale": { "from": 0.3, "to": 0.3 }, "color": ["white"] }
+  ]
+}

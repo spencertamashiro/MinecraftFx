@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:holy.faith_shield" } ],
+  "palette": { "white": "#FFFFFF", "light": "#FFF6C8", "gold": "#FFD54A", "amber": "#E89A1E" },
+  "layers": [
+    { "sprite": "minecraftfx:hex", "frames": "first", "shape": "plane", "additive": false, "lifetime": [44], "scale": { "from": 0.1, "mid": 0.34, "to": 0.34, "easing": "expoOut" }, "alpha": { "from": 0.0, "mid": 0.9, "to": 0.0 }, "color": ["white", "gold"] },
+    { "sprite": "minecraftfx:hex", "frames": "first", "shape": "plane", "additive": false, "count": 6, "delay": 3, "lifetime": [40], "scale": { "from": 0.1, "mid": 0.34, "to": 0.34, "easing": "expoOut" }, "alpha": { "from": 0.0, "mid": 0.75, "to": 0.0 }, "color": ["light", "gold"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.58] },
+    { "sprite": "minecraftfx:glint", "delay": 2, "lifetime": [8], "scale": { "from": 0.5, "to": 0.5 }, "color": ["white"] },
+    { "sprite": "minecraftfx:pixel", "frames": "first", "additive": false, "count": 6, "delay": 6, "lifetime": [30], "scale": { "from": 0.04, "to": 0.04 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["gold", "amber"], "cone": 90, "rim": true, "pattern": "even", "phase": 30, "offset": [1.0], "orbit": 0.03 }
+  ]
+}

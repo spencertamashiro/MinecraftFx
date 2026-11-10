@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:melee.overhead_smash" } ],
+  "palette": { "white": "#FFFFFF", "steel": "#D8ECFF", "dust": "#D8CFC0", "shade": "#8A7F70" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "repeat": 6, "interval": 1, "lifetime": [8], "scale": { "from": 0.18, "to": 0.04 }, "length": { "from": 0.5, "to": 0.5 }, "color": ["white", "steel"], "cone": 90, "rim": true, "pattern": "even", "phase": 270, "offset": [1.3], "orbit": 0.4 },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 10, "delay": 8, "lifetime": [12, 16], "scale": { "from": 0.22, "to": 0.22 }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["dust", "shade"], "cone": 90, "rim": true, "pattern": "even", "height": [-1.3], "speed": [0.14], "friction": 0.86 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 10, "delay": 8, "lifetime": [10, 14], "scale": { "from": 0.06, "to": 0.03 }, "color": ["dust", "shade"], "cone": 50, "height": [-1.3], "speed": [0.15, 0.3], "gravity": 1.0 }
+  ]
+}

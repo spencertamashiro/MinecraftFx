@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:fire.flaming_trail" } ],
+  "palette": { "core": "#FFF0A8", "flame": "#FF8A2A", "deep": "#D23A1A", "ember": "#9E2412", "smoke": "#3E3430" },
+  "layers": [
+    { "sprite": "minecraftfx:flame", "additive": false, "count": 2, "repeat": 20, "interval": 2, "lifetime": [10, 14], "scale": { "from": 0.28, "to": 0.1 }, "color": ["core", "deep"], "cone": 0, "offset": [0.0, 4.0], "gravity": -0.4 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "repeat": 20, "interval": 2, "lifetime": [14, 18], "scale": { "from": 0.05, "to": 0.02 }, "color": ["core", "ember"], "cone": 0, "offset": [0.0, 4.0], "gravity": -0.6 },
+    { "sprite": "minecraftfx:smoke", "additive": false, "repeat": 10, "interval": 4, "delay": 6, "lifetime": [18, 24], "scale": { "from": 0.2, "to": 0.45 }, "alpha": { "from": 0.4, "to": 0.0 }, "color": ["smoke"], "cone": 0, "offset": [0.0, 4.0], "gravity": -0.5 }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:explosion.sonic_boom" } ],
+  "palette": { "white": "#FFFFFF", "pale": "#DDEEFF", "grey": "#8A9AA8" },
+  "layers": [
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "repeat": 3, "interval": 2, "lifetime": [8], "scale": { "from": 0.2, "to": 2.2, "easing": "expoOut" }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["white", "pale"], "lift": [0.4] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "count": 12, "lifetime": [5, 7], "scale": { "from": 0.04, "to": 0.02 }, "length": { "from": 0.8, "to": 0.3 }, "color": ["white", "grey"], "cone": 25, "speed": [0.8, 1.1] },
+    { "sprite": "minecraftfx:puff", "additive": false, "count": 6, "lifetime": [8, 12], "scale": { "from": 0.25, "to": 0.35 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["pale", "grey"], "cone": 90, "rim": true, "pattern": "even", "speed": [0.12], "friction": 0.85 }
+  ]
+}

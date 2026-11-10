@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:holy.aura_of_courage" } ],
+  "palette": { "white": "#FFFFFF", "light": "#FFF6C8", "gold": "#FFD54A", "amber": "#E89A1E" },
+  "layers": [
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "repeat": 3, "interval": 10, "lifetime": [12], "height": [0.05], "scale": { "from": 0.5, "to": 1.4, "easing": "quadOut" }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["gold", "amber"] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "count": 8, "repeat": 3, "interval": 10, "lifetime": [10], "scale": { "from": 0.05, "to": 0.02 }, "length": { "from": 0.4, "to": 0.6 }, "color": ["light", "gold"], "cone": 90, "rim": true, "pattern": "even", "twist": 22.5, "offset": [0.6], "lift": [0.16] },
+    { "sprite": "minecraftfx:star", "frames": "first", "additive": false, "axis": "up", "repeat": 3, "interval": 10, "lifetime": [10], "height": [2.3], "scale": { "from": 0.1, "mid": 0.28, "to": 0.12 }, "alpha": { "from": 1.0, "to": 0.3 }, "color": ["white", "gold"] }
+  ]
+}

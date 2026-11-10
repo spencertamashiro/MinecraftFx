@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:fire.fire_ring" } ],
+  "palette": { "core": "#FFE27A", "flame": "#FF7A1F", "deep": "#C2301A" },
+  "layers": [
+    { "sprite": "minecraftfx:flame", "additive": false, "axis": "up", "count": 16, "repeat": 3, "interval": 2, "lifetime": [12, 14], "scale": { "from": 0.3, "to": 0.12 }, "color": ["core", "deep"], "cone": 90, "rim": true, "pattern": "even", "twist": 11.25, "offset": [0.3], "speed": [0.2], "friction": 0.96 },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "lifetime": [12], "height": [0.05], "scale": { "from": 0.3, "to": 2.4, "easing": "quadOut" }, "color": ["core", "deep"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 16, "delay": 3, "lifetime": [16, 22], "scale": { "from": 0.06, "to": 0.03 }, "color": ["core", "flame"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.4], "speed": [0.16], "lift": [0.04, 0.08], "friction": 0.95 }
+  ]
+}

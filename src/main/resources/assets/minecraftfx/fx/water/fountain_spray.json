@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:water.fountain_spray" } ],
+  "palette": { "foam": "#F0FBFF", "water": "#5FB8FF", "deep": "#2A6FD6" },
+  "layers": [
+    { "sprite": "minecraftfx:drop", "additive": false, "axis": "up", "count": 3, "repeat": 40, "interval": 1, "lifetime": [18, 22], "scale": { "from": 0.06, "to": 0.06 }, "color": ["foam", "water"], "cone": 14, "speed": [0.38, 0.44], "gravity": 1.2 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 2, "repeat": 40, "interval": 1, "lifetime": [16, 20], "scale": { "from": 0.04, "to": 0.03 }, "color": ["foam", "deep"], "cone": 18, "speed": [0.3, 0.42], "gravity": 1.2 },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "repeat": 6, "interval": 7, "lifetime": [12], "height": [0.03], "scale": { "from": 0.2, "to": 1.2, "easing": "quadOut" }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["foam", "water"] }
+  ]
+}

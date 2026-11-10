@@ -1,0 +1,14 @@
+{
+  "sounds": [ { "id": "minecraftfx:ice.ice_shatter" } ],
+  "palette": { "white": "#FFFFFF", "ice": "#BDF0FF", "blue": "#5AB4FF", "deep": "#2C66C8" },
+  "layers": [
+    { "sprite": "minecraftfx:flash", "lifetime": [3], "scale": { "from": 0.6, "to": 0.3 }, "color": ["white", "ice"] },
+    { "sprite": "minecraftfx:shard", "shape": "oriented", "additive": false, "count": 14, "lifetime": [16, 24],
+      "scale": { "from": 0.14, "to": 0.1 }, "alpha": { "from": 1.0, "to": 0.0, "easing": "quarticIn" }, "color": ["ice", "blue"],
+      "speed": [0.12, 0.28], "gravity": 1.3, "friction": 0.96 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 20, "lifetime": [12, 20],
+      "scale": { "from": 0.07, "to": 0.04 }, "color": ["white", "deep"], "speed": [0.08, 0.25], "gravity": 1.0, "friction": 0.95 },
+    { "sprite": "minecraftfx:snowflake", "count": 5, "lifetime": [14, 20],
+      "scale": { "from": 0.08, "to": 0.04 }, "color": ["white"], "speed": [0.03, 0.06], "spin": 0.1 }
+  ]
+}

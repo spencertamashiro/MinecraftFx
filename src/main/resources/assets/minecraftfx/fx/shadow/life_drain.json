@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:shadow.life_drain" } ],
+  "palette": { "bright": "#FF5A6A", "red": "#C01830", "dark": "#3A1028", "void": "#140610" },
+  "layers": [
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "count": 2, "repeat": 20, "interval": 1, "lifetime": [12], "scale": { "from": 0.08, "to": 0.04 }, "color": ["bright", "red"], "cone": 90, "rim": true, "pattern": "even", "twist": 30, "offset": [0.25], "lift": [0.3], "orbit": 0.3 },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "repeat": 20, "interval": 1, "lifetime": [12], "scale": { "from": 0.05, "to": 0.05 }, "length": { "from": 0.3, "to": 0.3 }, "alpha": { "from": 0.9, "to": 0.3 }, "color": ["dark", "void"], "cone": 0, "speed": [0.3] },
+    { "sprite": "minecraftfx:heart", "additive": false, "repeat": 5, "interval": 5, "lifetime": [12], "scale": { "from": 0.09, "to": 0.06 }, "color": ["bright", "red"], "cone": 0, "speed": [0.3] }
+  ]
+}

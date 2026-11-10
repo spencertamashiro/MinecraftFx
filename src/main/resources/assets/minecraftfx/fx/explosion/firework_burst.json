@@ -1,0 +1,16 @@
+{
+  "sounds": [ { "id": "minecraftfx:explosion.firework_burst" } ],
+  "palette": { "white": "#FFFFFF", "pink": "#FF5FA8", "cyan": "#4FE3FF", "gold": "#FFD24A" },
+  "layers": [
+    { "sprite": "minecraftfx:flash", "lifetime": [4], "scale": { "from": 0.4, "to": 1.0, "easing": "expoOut" }, "color": ["white"] },
+    { "sprite": "minecraftfx:shard", "additive": false, "shape": "streak", "count": 24, "lifetime": [14, 20],
+      "scale": { "from": 0.05, "to": 0.02 }, "length": { "from": 0.4, "to": 0.1 }, "color": ["white", "pink"],
+      "speed": [0.3, 0.35], "friction": 0.88, "gravity": 0.3 },
+    { "sprite": "minecraftfx:shard", "additive": false, "shape": "streak", "count": 24, "lifetime": [14, 20],
+      "scale": { "from": 0.05, "to": 0.02 }, "length": { "from": 0.4, "to": 0.1 }, "color": ["white", "cyan"],
+      "speed": [0.22, 0.26], "friction": 0.88, "gravity": 0.3 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 30, "delay": 10, "lifetime": [15, 30],
+      "scale": { "from": 0.07, "to": 0.03 }, "alpha": { "from": 1.0, "to": 0.0, "easing": "sineIn" }, "color": ["gold", "pink"],
+      "offset": [1.6, 2.4], "speed": [0.01, 0.03], "gravity": 0.3, "friction": 0.9 }
+  ]
+}

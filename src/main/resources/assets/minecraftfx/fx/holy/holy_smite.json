@@ -1,0 +1,21 @@
+{
+  "sounds": [ { "id": "minecraftfx:holy.holy_smite" } ],
+  "palette": { "white": "#FFFFFF", "light": "#FFF6C8", "gold": "#FFD54A", "amber": "#E89A1E" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "axis": "up", "lifetime": [16],
+      "scale": { "from": 0.5, "to": 0.05, "easing": "quadIn" }, "length": { "from": 5.0, "to": 5.0 }, "alpha": { "from": 1.0, "to": 0.4 }, "color": ["white", "gold"],
+      "cone": 0, "height": [5.0], "speed": [-0.001] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "axis": "up", "additive": false, "count": 3, "repeat": 8, "interval": 1, "lifetime": [12],
+      "scale": { "from": 0.05, "to": 0.03 }, "length": { "from": 0.6, "to": 0.3 }, "color": ["light", "gold"],
+      "cone": 90, "rim": true, "offset": [0.5, 0.7], "height": [4.0, 5.0], "lift": [-0.35] },
+    { "sprite": "minecraftfx:ring", "additive": false, "shape": "plane", "axis": "up", "delay": 2, "repeat": 4, "interval": 3, "lifetime": [14],
+      "scale": { "from": 0.9, "to": 0.3, "easing": "quadIn" }, "alpha": { "from": 1.0, "to": 0.0 }, "color": ["light", "amber"],
+      "height": [0.05], "lift": [0.18] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "axis": "up", "additive": false, "count": 4, "delay": 1, "lifetime": [16],
+      "scale": { "from": 0.12, "to": 0.06 }, "length": { "from": 0.9, "to": 0.5, "easing": "quadOut" }, "color": ["white", "gold"],
+      "cone": 90, "rim": true, "pattern": "even", "height": [0.05], "speed": [0.35], "friction": 0.78 },
+    { "sprite": "minecraftfx:feather", "frames": "random", "axis": "up", "additive": false, "count": 8, "delay": 4, "lifetime": [30, 40],
+      "scale": { "from": 0.1, "to": 0.08 }, "color": ["white", "light"],
+      "cone": 90, "rim": true, "pattern": "even", "offset": [1.2], "height": [3.0, 4.0], "lift": [-0.08], "orbit": 0.1, "spin": 0.08 }
+  ]
+}

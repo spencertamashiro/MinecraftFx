@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:impact.smash_crater" } ],
+  "palette": { "stone": "#9A9088", "dust": "#B8AFA0", "dark": "#3A322C", "black": "#1A1614" },
+  "layers": [
+    { "sprite": "minecraftfx:splat", "shape": "plane", "additive": false, "axis": "up", "lifetime": [70], "height": [0.03], "scale": { "from": 0.5, "mid": 1.1, "to": 1.1, "easing": "expoOut" }, "alpha": { "from": 0.9, "mid": 0.9, "to": 0.0 }, "color": ["dark", "black"] },
+    { "sprite": "minecraftfx:crack", "shape": "plane", "additive": false, "axis": "up", "lifetime": [70], "height": [0.04], "scale": { "from": 0.8, "mid": 1.9, "to": 1.9, "easing": "expoOut" }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["dark", "black"] },
+    { "sprite": "minecraftfx:rock", "frames": "random", "additive": false, "axis": "up", "count": 10, "lifetime": [14, 20], "scale": { "from": 0.12, "to": 0.09 }, "color": ["stone", "dark"], "cone": 55, "rim": true, "pattern": "even", "offset": [0.6], "speed": [0.3], "gravity": 1.4, "spin": 0.3 },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 12, "lifetime": [14, 18], "scale": { "from": 0.25, "to": 0.25 }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["dust", "stone"], "cone": 90, "rim": true, "pattern": "even", "phase": 15, "offset": [0.5], "speed": [0.16], "friction": 0.86 }
+  ]
+}

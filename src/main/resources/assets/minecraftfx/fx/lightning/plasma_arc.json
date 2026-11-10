@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:lightning.plasma_arc" } ],
+  "palette": { "white": "#FFFFFF", "cyan": "#8FF0FF", "blue": "#4A8CFF", "deep": "#2A46C8" },
+  "layers": [
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "repeat": 10, "interval": 1, "lifetime": [14], "scale": { "from": 0.12, "to": 0.05 }, "color": ["white", "blue"], "cone": 90, "rim": true, "pattern": "even", "phase": 200, "offset": [1.4], "orbit": 0.2 },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "repeat": 10, "interval": 1, "lifetime": [14], "scale": { "from": 0.05, "to": 0.02 }, "length": { "from": 0.3, "to": 0.3 }, "color": ["cyan", "deep"], "cone": 90, "rim": true, "pattern": "even", "phase": 200, "offset": [1.4], "orbit": 0.2 },
+    { "sprite": "minecraftfx:glint", "repeat": 5, "interval": 3, "lifetime": [5], "scale": { "from": 0.2, "to": 0.2 }, "color": ["white"], "cone": 90, "rim": true, "offset": [1.4] }
+  ]
+}

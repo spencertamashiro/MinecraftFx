@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:impact.shield_bash" } ],
+  "palette": { "white": "#FFFFFF", "steel": "#C8D0D8", "dust": "#D8CFC0", "shade": "#8A7F70" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "count": 20, "lifetime": [6], "scale": { "from": 0.05, "to": 0.03 }, "length": { "from": 0.5, "to": 0.2 }, "color": ["white", "steel"], "cone": 80, "speed": [0.45, 0.55], "friction": 0.8 },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "lifetime": [7], "scale": { "from": 0.3, "to": 1.6, "easing": "expoOut" }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["white", "steel"], "lift": [0.1] },
+    { "sprite": "minecraftfx:flash", "lifetime": [3], "scale": { "from": 0.5, "to": 0.9 }, "color": ["white"] },
+    { "sprite": "minecraftfx:puff", "additive": false, "count": 6, "lifetime": [10, 12], "scale": { "from": 0.2, "to": 0.2 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["dust", "shade"], "cone": 70, "speed": [0.1, 0.2], "friction": 0.85 }
+  ]
+}

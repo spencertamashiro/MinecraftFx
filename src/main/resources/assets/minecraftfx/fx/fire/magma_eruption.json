@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:fire.magma_eruption" } ],
+  "palette": { "core": "#FFF0A8", "lava": "#FF6A1A", "crust": "#8A2410", "soot": "#2A2222" },
+  "layers": [
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 3, "repeat": 14, "interval": 1, "lifetime": [18, 24], "scale": { "from": 0.3, "to": 0.2 }, "color": ["core", "lava"], "cone": 8, "speed": [0.6, 0.8], "gravity": 1.3 },
+    { "sprite": "minecraftfx:drop", "additive": false, "axis": "up", "count": 4, "repeat": 10, "interval": 2, "delay": 4, "lifetime": [18, 26], "scale": { "from": 0.09, "to": 0.06 }, "color": ["lava", "crust"], "cone": 30, "speed": [0.35, 0.55], "gravity": 1.2 },
+    { "sprite": "minecraftfx:splat", "shape": "plane", "additive": false, "axis": "up", "lifetime": [60], "height": [0.04], "scale": { "from": 0.5, "to": 1.6, "easing": "quadOut" }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["lava", "crust"] },
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "count": 2, "repeat": 8, "interval": 3, "delay": 4, "lifetime": [26, 34], "scale": { "from": 0.4, "to": 0.9 }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["soot"], "cone": 20, "height": [2.0, 3.0], "lift": [0.06, 0.09], "spin": 0.03 }
+  ]
+}

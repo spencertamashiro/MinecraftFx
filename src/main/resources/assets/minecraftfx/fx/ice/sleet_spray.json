@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:ice.sleet_spray" } ],
+  "palette": { "white": "#FFFFFF", "ice": "#BDF0FF", "blue": "#5AB4FF" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "count": 4, "repeat": 12, "interval": 1, "lifetime": [8, 10], "scale": { "from": 0.03, "to": 0.02 }, "length": { "from": 0.35, "to": 0.25 }, "color": ["white", "ice"], "cone": 15, "speed": [0.6, 0.8], "gravity": 0.5 },
+    { "sprite": "minecraftfx:drop", "additive": false, "count": 2, "repeat": 12, "interval": 1, "lifetime": [10, 12], "scale": { "from": 0.06, "to": 0.04 }, "color": ["ice", "blue"], "cone": 18, "speed": [0.5, 0.7], "gravity": 0.7 },
+    { "sprite": "minecraftfx:puff", "additive": false, "repeat": 8, "interval": 2, "lifetime": [10, 12], "scale": { "from": 0.12, "to": 0.14 }, "alpha": { "from": 0.4, "to": 0.0 }, "color": ["white"], "cone": 12, "speed": [0.3, 0.4], "friction": 0.92 }
+  ]
+}

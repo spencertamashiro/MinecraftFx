@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:impact.weakpoint_flash" } ],
+  "palette": { "white": "#FFFFFF", "bright": "#FF5A5A", "red": "#D01818" },
+  "layers": [
+    { "sprite": "minecraftfx:reticle", "additive": false, "lifetime": [8], "scale": { "from": 1.0, "to": 0.35, "easing": "quadOut" }, "alpha": { "from": 0.4, "to": 1.0 }, "color": ["bright", "red"] },
+    { "sprite": "minecraftfx:flash", "delay": 7, "lifetime": [4], "scale": { "from": 0.3, "mid": 0.9, "to": 0.3 }, "color": ["white", "bright"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 8, "delay": 7, "lifetime": [8, 10], "scale": { "from": 0.07, "to": 0.03 }, "color": ["bright", "red"], "cone": 90, "rim": true, "pattern": "even", "speed": [0.25], "friction": 0.85 },
+    { "sprite": "minecraftfx:glint", "delay": 7, "lifetime": [6], "scale": { "from": 0.5, "to": 0.5 }, "color": ["white"] }
+  ]
+}

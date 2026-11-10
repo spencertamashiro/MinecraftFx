@@ -1,0 +1,15 @@
+{
+  "sounds": [ { "id": "minecraftfx:nature.healing_bloom" } ],
+  "palette": { "white": "#FFFFFF", "pink": "#FFA6D8", "rose": "#E85AA8", "green": "#5ED16A" },
+  "layers": [
+    { "sprite": "minecraftfx:leaf", "shape": "plane", "frames": "first", "axis": "up", "additive": false, "count": 8, "lifetime": [26],
+      "scale": { "from": 0.05, "to": 0.22, "easing": "expoOut" }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["pink", "rose"],
+      "cone": 90, "rim": true, "offset": [0.1], "height": [0.06], "speed": [0.03], "friction": 0.85, "spin": 0.02 },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "axis": "up", "additive": false, "lifetime": [18], "height": [0.04],
+      "scale": { "from": 0.2, "to": 1.3, "easing": "expoOut" }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["green", "white"] },
+    { "sprite": "minecraftfx:flash", "axis": "up", "count": 2, "repeat": 8, "interval": 3, "delay": 4, "lifetime": [8, 12],
+      "scale": { "from": 0.12, "to": 0.0 }, "color": ["white", "pink"], "cone": 90, "offset": [0.2, 1.0], "height": [0.2, 0.6], "lift": [0.04, 0.07] },
+    { "sprite": "minecraftfx:plus", "axis": "up", "additive": false, "count": 3, "delay": 8, "lifetime": [18, 24],
+      "scale": { "from": 0.1, "to": 0.06 }, "color": ["white", "green"], "cone": 90, "offset": [0.2, 0.6], "height": [0.4], "lift": [0.04, 0.06] }
+  ]
+}

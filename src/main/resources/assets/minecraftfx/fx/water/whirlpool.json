@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:water.whirlpool" } ],
+  "palette": { "foam": "#F0FBFF", "water": "#5FB8FF", "deep": "#2A6FD6", "dark": "#143A7A" },
+  "layers": [
+    { "sprite": "minecraftfx:drop", "additive": false, "axis": "up", "count": 4, "repeat": 20, "interval": 2, "lifetime": [14], "scale": { "from": 0.07, "to": 0.04 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 1.0 }, "color": ["foam", "water"], "cone": 90, "rim": true, "pattern": "even", "twist": 20, "offset": [1.8], "height": [0.05], "speed": [-0.11], "orbit": 0.3 },
+    { "sprite": "minecraftfx:ring", "frames": "first", "shape": "plane", "additive": false, "axis": "up", "repeat": 5, "interval": 8, "lifetime": [16], "height": [0.04], "scale": { "from": 1.8, "to": 0.2, "easing": "quadIn" }, "alpha": { "from": 0.0, "mid": 0.7, "to": 0.0 }, "color": ["water", "deep"] },
+    { "sprite": "minecraftfx:splat", "frames": "first", "shape": "plane", "additive": false, "axis": "up", "lifetime": [50], "height": [0.03], "scale": { "from": 0.5, "to": 0.5 }, "alpha": { "from": 0.0, "mid": 0.9, "to": 0.0 }, "color": ["deep", "dark"], "spin": 0.2 },
+    { "sprite": "minecraftfx:pixel", "frames": "first", "additive": false, "axis": "up", "count": 3, "repeat": 20, "interval": 2, "lifetime": [12], "scale": { "from": 0.04, "to": 0.04 }, "color": ["foam", "deep"], "cone": 90, "rim": true, "offset": [0.6, 1.8], "height": [0.06], "speed": [-0.06], "orbit": 0.35 }
+  ]
+}

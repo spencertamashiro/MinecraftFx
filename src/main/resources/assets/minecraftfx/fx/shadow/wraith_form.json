@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:shadow.wraith_form" } ],
+  "palette": { "void": "#0A0612", "dark": "#2A1240", "violet": "#8A3CFF", "glow": "#D0A0FF" },
+  "layers": [
+    { "sprite": "minecraftfx:ghost", "additive": false, "axis": "up", "lifetime": [44], "height": [1.0], "scale": { "from": 0.7, "mid": 0.8, "to": 0.7 }, "alpha": { "from": 0.0, "mid": 0.85, "to": 0.0 }, "color": ["dark", "void"] },
+    { "sprite": "minecraftfx:eyes", "additive": false, "axis": "up", "delay": 6, "lifetime": [32], "height": [1.18], "scale": { "from": 0.22, "to": 0.22 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["glow", "violet"] },
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "count": 2, "repeat": 12, "interval": 3, "lifetime": [14, 18], "scale": { "from": 0.3, "to": 0.12 }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["dark", "void"], "cone": 90, "rim": true, "offset": [0.0, 0.35], "height": [0.3, 0.6], "lift": [-0.03] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "repeat": 12, "interval": 3, "lifetime": [12, 16], "scale": { "from": 0.04, "to": 0.02 }, "color": ["violet", "void"], "cone": 90, "rim": true, "offset": [0.3, 0.6], "height": [0.4, 1.6], "lift": [0.02, 0.04] }
+  ]
+}

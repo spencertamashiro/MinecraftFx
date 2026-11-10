@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:status.terrified" } ],
+  "palette": { "white": "#FFFFFF", "pale": "#D8FFF0", "teal": "#5AC8B0", "sweat": "#9AD8FF" },
+  "layers": [
+    { "sprite": "minecraftfx:skull", "additive": false, "axis": "up", "lifetime": [44], "scale": { "from": 0.16, "to": 0.16 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["pale", "teal"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.7], "height": [1.9], "orbit": 0.25 },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "repeat": 22, "interval": 2, "lifetime": [8], "scale": { "from": 0.12, "to": 0.1 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["pale", "teal"], "cone": 90, "rim": true, "pattern": "even", "twist": 28.65, "offset": [0.7], "height": [1.9] },
+    { "sprite": "minecraftfx:drop", "additive": false, "axis": "up", "count": 2, "repeat": 6, "interval": 7, "lifetime": [10, 12], "scale": { "from": 0.05, "to": 0.05 }, "color": ["white", "sweat"], "cone": 60, "height": [1.75], "speed": [0.1, 0.16], "gravity": 1.0 }
+  ]
+}

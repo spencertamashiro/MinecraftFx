@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:pickup.resource_gather" } ],
+  "palette": { "white": "#FFFFFF", "stone": "#9A9088", "dark": "#5A524A", "leaf": "#8AD84A", "green": "#3A8A2A", "cyan": "#7AF0FF", "blue": "#2A8CE0" },
+  "layers": [
+    { "sprite": "minecraftfx:rock", "frames": "random", "additive": false, "axis": "up", "count": 5, "lifetime": [14], "scale": { "from": 0.1, "to": 0.06 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["stone", "dark"], "cone": 90, "rim": true, "pattern": "even", "offset": [1.6, 2.0], "height": [0.1], "speed": [-0.12], "lift": [0.06], "spin": 0.2 },
+    { "sprite": "minecraftfx:leaf", "frames": "random", "additive": false, "axis": "up", "count": 5, "delay": 2, "lifetime": [14], "scale": { "from": 0.09, "to": 0.06 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["leaf", "green"], "cone": 90, "rim": true, "pattern": "even", "phase": 36, "offset": [1.6, 2.0], "height": [0.1], "speed": [-0.12], "lift": [0.06], "spin": 0.2 },
+    { "sprite": "minecraftfx:gem", "additive": false, "axis": "up", "count": 3, "delay": 4, "lifetime": [14], "scale": { "from": 0.08, "to": 0.05 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["cyan", "blue"], "cone": 90, "rim": true, "pattern": "even", "phase": 60, "offset": [1.6, 2.0], "height": [0.1], "speed": [-0.12], "lift": [0.06] },
+    { "sprite": "minecraftfx:glint", "axis": "up", "delay": 17, "lifetime": [6], "height": [0.95], "scale": { "from": 0.45, "to": 0.45 }, "color": ["white"] }
+  ]
+}

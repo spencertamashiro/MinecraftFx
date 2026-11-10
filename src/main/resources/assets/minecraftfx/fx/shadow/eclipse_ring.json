@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:shadow.eclipse_ring" } ],
+  "palette": { "black": "#000000", "white": "#FFFFFF", "gold": "#FFD88A" },
+  "layers": [
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "lifetime": [44], "scale": { "from": 0.5, "to": 0.5 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["black"] },
+    { "sprite": "minecraftfx:ring", "frames": "first", "lifetime": [44], "scale": { "from": 0.56, "to": 0.56 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["white", "gold"] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "count": 12, "repeat": 5, "interval": 8, "lifetime": [8], "scale": { "from": 0.03, "to": 0.03 }, "length": { "from": 0.12, "to": 0.25 }, "color": ["white", "gold"], "cone": 90, "rim": true, "pattern": "even", "twist": 15, "offset": [0.6], "speed": [0.03] },
+    { "sprite": "minecraftfx:glint", "delay": 20, "lifetime": [6], "scale": { "from": 0.3, "to": 0.3 }, "color": ["white"], "cone": 90, "rim": true, "pattern": "even", "phase": 315, "offset": [0.52] }
+  ]
+}

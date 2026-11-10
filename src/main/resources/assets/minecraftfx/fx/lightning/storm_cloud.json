@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:lightning.storm_cloud" } ],
+  "palette": { "white": "#FFFFFF", "bolt": "#C8E8FF", "grey": "#5A606A", "dark": "#2E323A" },
+  "layers": [
+    { "sprite": "minecraftfx:cloud", "additive": false, "axis": "up", "count": 3, "lifetime": [64], "scale": { "from": 0.9, "to": 0.9 }, "alpha": { "from": 0.0, "mid": 0.95, "to": 0.0 }, "color": ["grey", "dark"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.5], "height": [2.8], "orbit": 0.01 },
+    { "sprite": "minecraftfx:bolt", "shape": "streak", "axis": "up", "repeat": 4, "interval": 12, "delay": 8, "lifetime": [3], "scale": { "from": 0.14, "to": 0.14 }, "length": { "from": 0.8, "to": 0.8 }, "color": ["white", "bolt"], "cone": 90, "rim": true, "pattern": "even", "twist": 137, "offset": [0.4], "height": [1.7], "lift": [-0.001] },
+    { "sprite": "minecraftfx:glint", "axis": "up", "repeat": 4, "interval": 12, "delay": 8, "lifetime": [4], "scale": { "from": 0.5, "to": 0.5 }, "color": ["white"], "height": [2.7] },
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "count": 2, "repeat": 8, "interval": 6, "lifetime": [26, 32], "scale": { "from": 0.5, "to": 0.7 }, "alpha": { "from": 0.0, "mid": 0.5, "to": 0.0 }, "color": ["grey", "dark"], "cone": 90, "rim": true, "offset": [0.3, 1.0], "height": [2.7, 3.0], "orbit": 0.02 }
+  ]
+}

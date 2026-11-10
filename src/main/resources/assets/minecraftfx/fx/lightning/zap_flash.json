@@ -1,0 +1,8 @@
+{
+  "sounds": [ { "id": "minecraftfx:lightning.zap_flash" } ],
+  "palette": { "white": "#FFFFFF", "bolt": "#C8E8FF" },
+  "layers": [
+    { "sprite": "minecraftfx:bolt", "shape": "streak", "lifetime": [3], "scale": { "from": 0.12, "to": 0.12 }, "length": { "from": 0.6, "to": 0.6 }, "color": ["white", "bolt"], "cone": 60, "offset": [0.6], "speed": [0.01] },
+    { "sprite": "minecraftfx:glint", "lifetime": [4], "scale": { "from": 0.35, "to": 0.35 }, "color": ["white"] }
+  ]
+}

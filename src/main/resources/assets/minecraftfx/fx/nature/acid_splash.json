@@ -1,0 +1,15 @@
+{
+  "sounds": [ { "id": "minecraftfx:nature.acid_splash" } ],
+  "palette": { "lime": "#D4FF4A", "acid": "#8CE02A", "dark": "#3E7A12", "fume": "#A8C878" },
+  "layers": [
+    { "sprite": "minecraftfx:drop", "additive": false, "count": 16, "lifetime": [14, 22],
+      "scale": { "from": 0.09, "to": 0.06 }, "color": ["lime", "acid"], "cone": 70, "speed": [0.18, 0.32], "gravity": 1.3, "friction": 0.97 },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "axis": "up", "additive": false, "lifetime": [14], "height": [0.03],
+      "scale": { "from": 0.2, "to": 1.0, "easing": "expoOut" }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["acid", "dark"] },
+    { "sprite": "minecraftfx:smoke", "axis": "up", "additive": false, "count": 3, "repeat": 6, "interval": 3, "lifetime": [14, 20],
+      "scale": { "from": 0.12, "to": 0.3 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["fume", "dark"],
+      "cone": 90, "offset": [0.0, 0.8], "lift": [0.04, 0.07], "spin": 0.05 },
+    { "sprite": "minecraftfx:bubble", "axis": "up", "additive": false, "count": 2, "repeat": 6, "interval": 3, "lifetime": [8, 12],
+      "scale": { "from": 0.05, "to": 0.07 }, "color": ["lime", "acid"], "cone": 90, "offset": [0.0, 0.8], "lift": [0.01, 0.02] }
+  ]
+}

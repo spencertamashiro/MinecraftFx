@@ -1,0 +1,12 @@
+{
+  "sounds": [ { "id": "minecraftfx:fire.meteor_strike" } ],
+  "palette": { "core": "#FFF0A8", "flame": "#FF8A2A", "deep": "#D23A1A", "rock": "#5A4038", "smoke": "#3E3430" },
+  "layers": [
+    { "sprite": "minecraftfx:rock", "frames": "first", "additive": false, "axis": "up", "lifetime": [10], "scale": { "from": 0.4, "to": 0.4 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["rock", "deep"], "cone": 30, "rim": true, "pattern": "even", "offset": [6.0], "speed": [-0.6], "spin": 0.2 },
+    { "sprite": "minecraftfx:flame", "additive": false, "axis": "up", "repeat": 8, "interval": 1, "lifetime": [10], "scale": { "from": 0.5, "to": 0.25 }, "alpha": { "from": 1.0, "to": 0.6 }, "color": ["core", "deep"], "cone": 30, "rim": true, "pattern": "even", "offset": [6.0], "speed": [-0.6] },
+    { "sprite": "minecraftfx:flash", "axis": "up", "delay": 10, "lifetime": [5], "height": [0.3], "scale": { "from": 0.5, "mid": 1.8, "to": 0.8, "easing": "expoOut" }, "color": ["core", "flame"] },
+    { "sprite": "minecraftfx:rock", "frames": "random", "additive": false, "axis": "up", "count": 12, "delay": 10, "lifetime": [16, 24], "scale": { "from": 0.12, "to": 0.08 }, "color": ["rock", "deep"], "cone": 60, "speed": [0.25, 0.45], "gravity": 1.3, "spin": 0.3 },
+    { "sprite": "minecraftfx:splat", "shape": "plane", "additive": false, "axis": "up", "delay": 10, "lifetime": [60], "height": [0.04], "scale": { "from": 0.5, "to": 1.4, "easing": "expoOut" }, "alpha": { "from": 0.9, "mid": 0.9, "to": 0.0 }, "color": ["deep", "rock"] },
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "count": 6, "delay": 12, "lifetime": [24, 32], "scale": { "from": 0.4, "to": 0.9 }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["smoke"], "cone": 40, "speed": [0.03, 0.08], "gravity": -0.2 }
+  ]
+}

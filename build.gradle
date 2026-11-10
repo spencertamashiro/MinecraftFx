@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+
+group = 'dev.minecraftfx'
+version = '0.1.0'
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+repositories {
+    mavenCentral()
+    // Modrinth Maven pins the exact published release file by version ID. Lodestone's own Maven
+    // (maven.blamejared.com) only carries numbered CI builds such as 1.21.1-1.8.2.525.
+    maven { url = 'https://api.modrinth.com/maven'; content { includeGroup 'maven.modrinth' } }
+}
+
+dependencies {
+    // Linked as an external mod, never shaded: Lodestone is LGPL-3.0 and ships as its own JAR.
+    implementation "maven.modrinth:lodestonelib:${lodestone_version_id}"
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+neoForge {
+    version = neo_version
+    runs {
+        client { client(); gameDirectory = file('run/client') }
+        server { server(); gameDirectory = file('run/server'); programArgument '--nogui' }
+    }
+    mods { minecraftfx { sourceSet sourceSets.main } }
+    unitTest { enable(); testedMod = mods.minecraftfx }
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+    // The test checks every shipped effect file, so it needs their source folder; the test JVM's working directory is not the project.
+    systemProperty 'minecraftfx.effects', file('src/main/resources/assets/minecraftfx/fx').absolutePath
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }

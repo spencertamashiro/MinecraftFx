@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:lightning.arc_whip" } ],
+  "palette": { "white": "#FFFFFF", "bolt": "#C8E8FF", "violet": "#7A5CFF" },
+  "layers": [
+    { "sprite": "minecraftfx:bolt", "shape": "streak", "axis": "up", "repeat": 8, "interval": 1, "lifetime": [8], "scale": { "from": 0.12, "to": 0.06 }, "length": { "from": 0.35, "to": 0.35 }, "color": ["white", "bolt"], "cone": 90, "rim": true, "pattern": "even", "offset": [1.5], "height": [1.0], "orbit": 0.35 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "repeat": 8, "interval": 1, "lifetime": [8], "scale": { "from": 0.06, "to": 0.02 }, "color": ["bolt", "violet"], "cone": 90, "rim": true, "pattern": "even", "offset": [1.5], "height": [1.0], "orbit": 0.35, "speed": [0.03] },
+    { "sprite": "minecraftfx:glint", "axis": "up", "delay": 8, "lifetime": [5], "scale": { "from": 0.45, "to": 0.45 }, "color": ["white"], "cone": 90, "rim": true, "pattern": "even", "phase": 160.4, "offset": [1.5], "height": [1.0] }
+  ]
+}

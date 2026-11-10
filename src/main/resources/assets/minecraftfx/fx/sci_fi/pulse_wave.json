@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:sci_fi.pulse_wave" } ],
+  "palette": { "white": "#FFFFFF", "cyan": "#7AF8FF", "deep": "#0A5A80" },
+  "layers": [
+    { "sprite": "minecraftfx:ring", "frames": "first", "shape": "oriented", "additive": false, "repeat": 3, "interval": 2, "lifetime": [12], "scale": { "from": 0.6, "to": 0.6 }, "alpha": { "from": 1.0, "to": 0.2 }, "color": ["white", "cyan"], "cone": 0, "speed": [0.6] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 12, "lifetime": [10], "scale": { "from": 0.05, "to": 0.02 }, "color": ["cyan", "deep"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.6], "lift": [0.6] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "lifetime": [10], "scale": { "from": 0.03, "to": 0.03 }, "length": { "from": 0.8, "to": 0.8 }, "color": ["white", "cyan"], "cone": 0, "speed": [0.6] }
+  ]
+}

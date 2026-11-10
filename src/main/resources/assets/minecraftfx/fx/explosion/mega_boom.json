@@ -1,0 +1,12 @@
+{
+  "sounds": [ { "id": "minecraftfx:explosion.mega_boom" } ],
+  "palette": { "white": "#FFF8E0", "yellow": "#FFD24A", "orange": "#FF7A1F", "red": "#B8321A", "smoke": "#5A5250", "ash": "#2E2A2A" },
+  "layers": [
+    { "sprite": "minecraftfx:flash", "lifetime": [6], "scale": { "from": 1.0, "mid": 3.0, "to": 1.5, "easing": "expoOut" }, "color": ["white", "yellow"] },
+    { "sprite": "minecraftfx:flame", "additive": false, "count": 8, "repeat": 3, "interval": 3, "lifetime": [10, 14], "scale": { "from": 0.7, "to": 0.3 }, "color": ["yellow", "red"], "offset": [0.2, 1.6], "speed": [0.04, 0.1] },
+    { "sprite": "minecraftfx:puff", "additive": false, "count": 14, "lifetime": [12, 16], "scale": { "from": 0.9, "to": 0.4 }, "color": ["orange", "red"], "speed": [0.1, 0.25], "friction": 0.85 },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "axis": "up", "additive": false, "repeat": 2, "interval": 4, "lifetime": [10], "scale": { "from": 0.5, "to": 4.5, "easing": "expoOut" }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["yellow", "red"] },
+    { "sprite": "minecraftfx:smoke", "additive": false, "count": 5, "repeat": 4, "interval": 3, "delay": 6, "lifetime": [30, 44], "scale": { "from": 0.6, "to": 1.4 }, "alpha": { "from": 0.85, "to": 0.0, "easing": "quadIn" }, "color": ["smoke", "ash"], "offset": [0.0, 1.2], "speed": [0.02, 0.06], "gravity": -0.15, "spin": 0.03 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 36, "lifetime": [20, 32], "scale": { "from": 0.1, "to": 0.04 }, "color": ["yellow", "red"], "speed": [0.3, 0.6], "gravity": 0.8, "friction": 0.93 }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "sounds": [ { "id": "minecraftfx:impact.hit_flash" } ],
+  "palette": { "white": "#FFFFFF", "pale": "#DDEEFF" },
+  "layers": [
+    { "sprite": "minecraftfx:flash", "lifetime": [3], "scale": { "from": 0.9, "to": 0.3, "easing": "quadOut" }, "color": ["white", "pale"] },
+    { "sprite": "minecraftfx:orb", "lifetime": [4], "scale": { "from": 0.5, "to": 0.1 }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["white"] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "count": 6, "lifetime": [3, 5],
+      "scale": { "from": 0.05, "to": 0.02 }, "length": { "from": 0.35, "to": 0.05, "easing": "quadOut" }, "color": ["white", "pale"],
+      "speed": [0.25, 0.4], "friction": 0.7 }
+  ]
+}

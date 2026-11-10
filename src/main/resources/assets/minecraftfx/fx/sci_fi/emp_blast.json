@@ -1,0 +1,16 @@
+{
+  "sounds": [ { "id": "minecraftfx:sci_fi.emp_blast" } ],
+  "palette": { "white": "#FFFFFF", "cyan": "#7AF8FF", "teal": "#20C8D8", "deep": "#0A5A80" },
+  "layers": [
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "lifetime": [14],
+      "scale": { "from": 0.3, "mid": 0.45, "to": 0.0, "easing": "sineIn" }, "color": ["cyan", "teal"] },
+    { "sprite": "minecraftfx:ring", "additive": false, "shape": "plane", "axis": "up", "repeat": 3, "interval": 4, "lifetime": [12],
+      "scale": { "from": 0.2, "to": 3.0, "easing": "quadOut" }, "alpha": { "from": 1.0, "to": 0.0, "easing": "quadIn" }, "color": ["cyan", "deep"] },
+    { "sprite": "minecraftfx:pixel", "frames": "first", "additive": false, "axis": "up", "count": 16, "repeat": 3, "interval": 4, "lifetime": [12],
+      "scale": { "from": 0.07, "to": 0.04 }, "alpha": { "from": 1.0, "to": 0.0, "easing": "expoIn" }, "color": ["white", "teal"],
+      "cone": 90, "rim": true, "pattern": "even", "twist": 11.25, "offset": [0.2], "speed": [0.27], "friction": 0.92 },
+    { "sprite": "minecraftfx:bolt", "shape": "streak", "axis": "up", "count": 6, "repeat": 3, "interval": 4, "delay": 2, "lifetime": [4],
+      "scale": { "from": 0.1, "to": 0.06 }, "length": { "from": 0.35, "to": 0.2 }, "color": ["white", "cyan"],
+      "cone": 90, "rim": true, "pattern": "even", "twist": 30, "offset": [1.0, 1.4], "orbit": 0.35 }
+  ]
+}

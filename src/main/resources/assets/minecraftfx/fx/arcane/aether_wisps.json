@@ -1,0 +1,8 @@
+{
+  "sounds": [ { "id": "minecraftfx:arcane.aether_wisps" } ],
+  "palette": { "white": "#FFFFFF", "glow": "#C8E8FF", "aether": "#8CA8FF" },
+  "layers": [
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "axis": "up", "count": 2, "repeat": 8, "interval": 4, "lifetime": [24, 34], "scale": { "from": 0.06, "to": 0.03 }, "alpha": { "from": 0.0, "mid": 0.9, "to": 0.0 }, "color": ["glow", "aether"], "offset": [0.3, 1.5], "height": [1.0], "speed": [0.01, 0.02], "orbit": 0.03 },
+    { "sprite": "minecraftfx:glint", "axis": "up", "repeat": 10, "interval": 3, "lifetime": [5], "scale": { "from": 0.12, "to": 0.12 }, "color": ["white"], "offset": [0.3, 1.5], "height": [1.0] }
+  ]
+}

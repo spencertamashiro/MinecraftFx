@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:nature.root_snare" } ],
+  "palette": { "light": "#B8F06A", "leaf": "#5CC23A", "wood": "#8A5A32", "bark": "#5A3A20", "dirt": "#7A5A3A" },
+  "layers": [
+    { "sprite": "minecraftfx:wave", "shape": "streak", "additive": false, "axis": "up", "count": 5, "repeat": 30, "interval": 1, "lifetime": [10], "scale": { "from": 0.1, "to": 0.06 }, "length": { "from": 0.2, "to": 0.2 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["wood", "bark"], "cone": 90, "rim": true, "pattern": "even", "offset": [1.1], "speed": [-0.07], "lift": [0.12] },
+    { "sprite": "minecraftfx:leaf", "frames": "random", "additive": false, "axis": "up", "count": 5, "repeat": 5, "interval": 6, "lifetime": [12], "scale": { "from": 0.08, "to": 0.08 }, "color": ["light", "leaf"], "cone": 90, "rim": true, "pattern": "even", "offset": [1.1], "speed": [-0.07], "lift": [0.12] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 5, "repeat": 4, "interval": 8, "lifetime": [8, 10], "scale": { "from": 0.06, "to": 0.03 }, "color": ["dirt", "bark"], "cone": 90, "rim": true, "pattern": "even", "offset": [1.1], "height": [0.05], "lift": [0.08], "gravity": 0.8 }
+  ]
+}

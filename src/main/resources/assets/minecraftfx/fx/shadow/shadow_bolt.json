@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:shadow.shadow_bolt" } ],
+  "palette": { "void": "#0A0612", "dark": "#2A1240", "violet": "#8A3CFF", "glow": "#D0A0FF" },
+  "layers": [
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "lifetime": [16], "scale": { "from": 0.2, "to": 0.2 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["void", "dark"], "cone": 0, "speed": [0.5] },
+    { "sprite": "minecraftfx:ring", "frames": "first", "shape": "oriented", "additive": false, "lifetime": [16], "scale": { "from": 0.26, "to": 0.26 }, "alpha": { "from": 0.9, "to": 0.9 }, "color": ["violet", "glow"], "cone": 0, "speed": [0.5] },
+    { "sprite": "minecraftfx:smoke", "additive": false, "count": 14, "lifetime": [10, 16], "scale": { "from": 0.2, "to": 0.08 }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["dark", "void"], "cone": 3, "speed": [0.06, 0.46] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 10, "delay": 16, "lifetime": [8, 12], "scale": { "from": 0.07, "to": 0.03 }, "color": ["violet", "void"], "cone": 90, "rim": true, "pattern": "even", "height": [8.0], "speed": [0.18], "friction": 0.85 }
+  ]
+}

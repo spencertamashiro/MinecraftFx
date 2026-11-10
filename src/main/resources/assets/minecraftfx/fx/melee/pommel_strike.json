@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:melee.pommel_strike" } ],
+  "palette": { "white": "#FFFFFF", "yellow": "#FFE45A", "dust": "#D8CFC0", "shade": "#8A7F70" },
+  "layers": [
+    { "sprite": "minecraftfx:puff", "additive": false, "count": 4, "lifetime": [8, 10], "scale": { "from": 0.18, "to": 0.18 }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["dust", "shade"], "cone": 60, "speed": [0.05, 0.1], "friction": 0.85 },
+    { "sprite": "minecraftfx:ring", "frames": "first", "shape": "plane", "additive": false, "lifetime": [5], "scale": { "from": 0.1, "to": 0.5 }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["white", "dust"] },
+    { "sprite": "minecraftfx:star", "additive": false, "axis": "up", "count": 2, "lifetime": [12], "scale": { "from": 0.12, "to": 0.08 }, "color": ["white", "yellow"], "cone": 40, "speed": [0.1, 0.14], "gravity": 0.6 }
+  ]
+}

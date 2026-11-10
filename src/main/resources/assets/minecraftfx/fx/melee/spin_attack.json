@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:melee.spin_attack" } ],
+  "palette": { "white": "#FFFFFF", "steel": "#D8ECFF", "blue": "#7AB4FF", "dust": "#D8CFC0", "shade": "#8A7F70" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "count": 8, "lifetime": [10], "scale": { "from": 0.12, "to": 0.03 }, "length": { "from": 0.5, "to": 0.5 }, "color": ["white", "steel"], "cone": 90, "rim": true, "pattern": "even", "offset": [1.4], "height": [1.0], "orbit": 0.4 },
+    { "sprite": "minecraftfx:ring", "frames": "first", "shape": "plane", "additive": false, "axis": "up", "lifetime": [10], "height": [1.0], "scale": { "from": 1.4, "to": 1.4 }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["steel", "blue"] },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 8, "delay": 2, "lifetime": [10, 14], "scale": { "from": 0.18, "to": 0.18 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["dust", "shade"], "cone": 90, "rim": true, "pattern": "even", "offset": [1.2], "height": [0.1], "orbit": 0.2, "speed": [0.03] }
+  ]
+}

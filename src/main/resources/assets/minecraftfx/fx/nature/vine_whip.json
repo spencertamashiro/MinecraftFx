@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:nature.vine_whip" } ],
+  "palette": { "white": "#FFFFFF", "light": "#B8F06A", "leaf": "#5CC23A", "dark": "#2E7A2A" },
+  "layers": [
+    { "sprite": "minecraftfx:wave", "shape": "streak", "additive": false, "axis": "up", "repeat": 9, "interval": 1, "lifetime": [9], "scale": { "from": 0.12, "to": 0.06 }, "length": { "from": 0.3, "to": 0.3 }, "color": ["light", "leaf"], "cone": 90, "rim": true, "pattern": "even", "phase": 20, "offset": [1.6], "height": [0.9], "orbit": 0.35 },
+    { "sprite": "minecraftfx:leaf", "frames": "random", "additive": false, "axis": "up", "repeat": 4, "interval": 1, "delay": 9, "lifetime": [12, 16], "scale": { "from": 0.09, "to": 0.06 }, "color": ["light", "dark"], "cone": 90, "rim": true, "pattern": "even", "phase": 200.5, "offset": [1.6], "height": [0.9], "lift": [0.03, 0.08], "gravity": 0.5, "spin": 0.2 },
+    { "sprite": "minecraftfx:glint", "axis": "up", "delay": 9, "lifetime": [4], "scale": { "from": 0.4, "to": 0.4 }, "color": ["white"], "cone": 90, "rim": true, "pattern": "even", "phase": 200.5, "offset": [1.6], "height": [0.9] }
+  ]
+}

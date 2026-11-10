@@ -1,0 +1,8 @@
+{
+  "sounds": [ { "id": "minecraftfx:fire.embers_floating" } ],
+  "palette": { "core": "#FFF0A8", "flame": "#FF8A2A", "deep": "#D23A1A" },
+  "layers": [
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 2, "repeat": 15, "interval": 3, "lifetime": [24, 36], "scale": { "from": 0.06, "to": 0.02 }, "color": ["core", "deep"], "cone": 90, "rim": true, "offset": [0.0, 1.5], "height": [0.0, 0.6], "lift": [0.03, 0.06], "orbit": 0.03 },
+    { "sprite": "minecraftfx:glint", "axis": "up", "repeat": 8, "interval": 5, "lifetime": [4], "scale": { "from": 0.1, "to": 0.1 }, "color": ["core"], "cone": 90, "rim": true, "offset": [0.0, 1.4], "height": [0.4, 1.6] }
+  ]
+}

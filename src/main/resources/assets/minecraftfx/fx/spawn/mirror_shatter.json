@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:spawn.mirror_shatter" } ],
+  "palette": { "white": "#FFFFFF", "pale": "#BFE0F4", "dark": "#2A3A4A" },
+  "layers": [
+    { "sprite": "minecraftfx:block", "shape": "plane", "additive": false, "lifetime": [10], "scale": { "from": 0.7, "to": 0.7 }, "alpha": { "from": 0.9, "to": 0.9 }, "color": ["white", "pale"] },
+    { "sprite": "minecraftfx:crack", "shape": "plane", "additive": false, "delay": 3, "lifetime": [7], "height": [0.01], "scale": { "from": 0.7, "to": 0.7 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["dark"] },
+    { "sprite": "minecraftfx:shard", "shape": "oriented", "additive": false, "count": 16, "delay": 10, "lifetime": [14, 20], "scale": { "from": 0.12, "to": 0.08 }, "alpha": { "from": 1.0, "to": 0.0, "easing": "quarticIn" }, "color": ["white", "pale"], "cone": 90, "rim": true, "offset": [0.0, 0.6], "speed": [0.02, 0.05], "lift": [0.1, 0.25], "gravity": 1.2 },
+    { "sprite": "minecraftfx:glint", "count": 2, "repeat": 5, "interval": 2, "delay": 10, "lifetime": [5], "scale": { "from": 0.3, "to": 0.3 }, "color": ["white"], "cone": 90, "rim": true, "offset": [0.0, 0.7] }
+  ]
+}

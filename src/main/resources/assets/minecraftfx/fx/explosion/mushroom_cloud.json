@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:explosion.mushroom_cloud" } ],
+  "palette": { "orange": "#FF8A2A", "red": "#B8321A", "smoke": "#5A5250", "ash": "#2E2A2A" },
+  "layers": [
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 2, "repeat": 12, "interval": 1, "lifetime": [14, 18], "scale": { "from": 0.45, "to": 0.25 }, "color": ["orange", "smoke"], "cone": 10, "lift": [0.16, 0.2], "friction": 0.93 },
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "delay": 8, "count": 14, "lifetime": [30, 40], "scale": { "from": 0.5, "to": 0.9 }, "alpha": { "from": 0.9, "to": 0.0, "easing": "quadIn" }, "color": ["red", "ash"], "cone": 90, "rim": true, "pattern": "even", "height": [2.8, 3.1], "offset": [0.2], "speed": [0.09], "lift": [0.02], "orbit": 0.05, "friction": 0.95, "spin": 0.03 },
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "delay": 6, "count": 6, "lifetime": [28, 36], "scale": { "from": 0.6, "to": 1.0 }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["orange", "smoke"], "height": [3.0, 3.3], "speed": [0.01, 0.04], "lift": [0.03] },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 16, "lifetime": [14, 18], "scale": { "from": 0.3, "to": 0.2 }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["smoke", "ash"], "cone": 90, "rim": true, "pattern": "even", "height": [0.1], "speed": [0.2], "friction": 0.86 }
+  ]
+}

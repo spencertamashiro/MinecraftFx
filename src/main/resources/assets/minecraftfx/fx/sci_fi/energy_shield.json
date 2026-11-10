@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:sci_fi.energy_shield" } ],
+  "palette": { "white": "#FFFFFF", "cyan": "#7AF8FF", "teal": "#20C8D8", "deep": "#0A5A80" },
+  "layers": [
+    { "sprite": "minecraftfx:ring", "frames": "first", "additive": false, "axis": "up", "lifetime": [50], "height": [0.9], "scale": { "from": 1.1, "mid": 1.2, "to": 1.1 }, "alpha": { "from": 0.0, "mid": 0.8, "to": 0.0 }, "color": ["cyan", "teal"] },
+    { "sprite": "minecraftfx:ring", "frames": "first", "additive": false, "axis": "up", "lifetime": [50], "height": [0.9], "scale": { "from": 1.0, "to": 1.0 }, "alpha": { "from": 0.0, "mid": 0.3, "to": 0.0 }, "color": ["white", "cyan"] },
+    { "sprite": "minecraftfx:ring", "frames": "first", "shape": "plane", "additive": false, "axis": "up", "repeat": 5, "interval": 9, "lifetime": [20], "height": [0.0], "scale": { "from": 0.9, "to": 0.9 }, "alpha": { "from": 0.0, "mid": 0.5, "to": 0.0 }, "color": ["cyan", "deep"], "lift": [0.09] },
+    { "sprite": "minecraftfx:glint", "axis": "up", "repeat": 6, "interval": 8, "lifetime": [6], "scale": { "from": 0.25, "to": 0.25 }, "color": ["white"], "cone": 60, "rim": true, "offset": [1.1], "height": [0.9] }
+  ]
+}

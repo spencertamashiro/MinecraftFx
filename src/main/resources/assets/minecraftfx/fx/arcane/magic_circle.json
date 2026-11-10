@@ -1,0 +1,14 @@
+{
+  "sounds": [ { "id": "minecraftfx:arcane.magic_circle" } ],
+  "palette": { "white": "#FFFFFF", "glow": "#D9B8FF", "arcane": "#9A5CFF", "deep": "#4B2AA8" },
+  "layers": [
+    { "sprite": "minecraftfx:rune", "additive": false, "shape": "plane", "axis": "up", "lifetime": [40], "height": [0.05],
+      "scale": { "from": 0.6, "mid": 1.5, "to": 1.5, "easing": "expoOut" }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0, "easing": "quadIn" },
+      "color": ["glow", "arcane"], "spin": 0.03 },
+    { "sprite": "minecraftfx:glyph", "frames": "random", "axis": "up", "additive": false, "count": 4, "repeat": 6, "interval": 6, "lifetime": [20, 24],
+      "scale": { "from": 0.1, "to": 0.06 }, "color": ["glow", "arcane"],
+      "cone": 90, "rim": true, "pattern": "even", "twist": 22.5, "offset": [1.3], "lift": [0.04, 0.05], "orbit": 0.1 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 3, "repeat": 12, "interval": 3, "lifetime": [10, 16],
+      "scale": { "from": 0.05, "to": 0.02 }, "color": ["white", "arcane"], "cone": 90, "offset": [0.0, 1.4], "lift": [0.03, 0.08], "orbit": -0.08 }
+  ]
+}

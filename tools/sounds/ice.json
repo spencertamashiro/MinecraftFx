@@ -1,0 +1,95 @@
+{
+  "blizzard_swirl": { "about": "Gusting, swirling wind full of ice", "range": 32, "layers": [
+    { "use": "wind", "band": [700, 1600], "trem": [1.5, 0.5], "dur": 3.0 },
+    { "use": "hiss", "high": 6000, "dur": 3.0, "shape": "bump", "vol": 0.3 },
+    { "use": "glass", "freq": 3200, "repeat": 10, "every": 0.28, "jitter": 0.9, "scatter": 4, "vol": 0.2 } ] },
+  "crystalline_dust": { "about": "Fine glassy tinkling, like ice dust in light", "level": 0.7, "layers": [
+    { "use": "glass", "freq": 3600, "notes": [0, 5, -2, 7, 3, 10, 0, 12, 5, 8], "every": 0.3, "jitter": 0.4, "dur": 0.3 },
+    { "use": "hiss", "high": 8000, "dur": 3.0, "shape": "bump", "vol": 0.1 } ] },
+  "freezing_breath": { "about": "A long cold exhale with frost crackling in it", "layers": [
+    { "wave": "hiss", "band": [2500, 5000], "dur": 1.4, "shape": "bump", "power": 1 },
+    { "use": "wind", "band": [900, 1400], "dur": 1.4, "vol": 0.6 },
+    { "use": "glass", "at": 0.3, "repeat": 6, "every": 0.16, "jitter": 0.8, "scatter": 3, "vol": 0.25 } ] },
+  "frost_armor": { "about": "Ice plates crunching on, then a rising glassy chord", "layers": [
+    { "use": "crunch", "freq": [3000, 1200], "dur": 0.12, "repeat": 6, "every": 0.1 },
+    { "use": "glass", "freq": 1800, "notes": [0, 4, 7, 12], "every": 0.15, "at": 0.1, "dur": 0.35 },
+    { "use": "pad", "freq": 880, "dur": 2.0, "vol": 0.3 } ] },
+  "frost_nova": { "about": "A glassy burst outward and a scatter of ice", "range": 32, "layers": [
+    { "use": "glass", "freq": 2100, "dur": 0.6 },
+    { "use": "whoosh", "band": [5000, 1200], "dur": 0.6, "shape": "decay" },
+    { "use": "crunch", "freq": [5000, 1500], "dur": 0.35 },
+    { "use": "thud", "vol": 0.5 },
+    { "use": "glass", "freq": 3000, "at": 0.2, "repeat": 8, "every": 0.1, "jitter": 0.7, "step": 1.03, "vol": 0.3 } ] },
+  "frostbite_aura": { "about": "Three cold gusts, each with a falling icy note", "layers": [
+    { "use": "wind", "band": [1200, 2000], "dur": 0.6, "repeat": 3, "every": 0.5 },
+    { "use": "glass", "freq": 1500, "notes": [0, -2, -5], "every": 0.5, "dur": 0.5 },
+    { "use": "hiss", "high": 7000, "dur": 2.4, "shape": "bump", "vol": 0.15 } ] },
+  "frozen_ground": { "about": "Ground freezing over with creaks and small cracks", "level": 0.8, "layers": [
+    { "use": "crunch", "freq": [2500, 900], "glide": 0.5, "dur": 0.5 },
+    { "wave": "noise", "freq": [6000, 3000], "dur": 0.04, "power": 3, "repeat": 14, "every": 0.18, "jitter": 0.9, "vol": 0.4 },
+    { "use": "wind", "band": [1000, 1500], "dur": 3.0, "vol": 0.3 },
+    { "use": "glass", "at": 0.2, "repeat": 6, "every": 0.4, "jitter": 0.8, "vol": 0.2 } ] },
+  "frozen_orb": { "about": "A humming orb of cold shedding icy shards", "layers": [
+    { "use": "wobble", "wave": "triangle", "freq": 660, "vib": [5, 1], "dur": 3.0, "vol": 0.5 },
+    { "use": "glass", "freq": 2600, "repeat": 16, "every": 0.18, "jitter": 0.5, "step": 0.99, "vol": 0.35 },
+    { "use": "wind", "band": [1500, 2500], "dur": 3.0, "vol": 0.4 } ] },
+  "glacial_quake": { "about": "Three grinding ice quakes over a deep rumble", "range": 32, "layers": [
+    { "use": "rumble", "freq": [120, 60], "dur": 2.1 },
+    { "use": "crunch", "freq": [1400, 400], "dur": 0.3, "repeat": 3, "every": 0.5 },
+    { "use": "boom", "freq": [90, 40], "dur": 0.5, "repeat": 3, "every": 0.5, "vol": 0.7 },
+    { "use": "glass", "at": 0.1, "repeat": 6, "every": 0.3, "jitter": 0.8, "vol": 0.2 } ] },
+  "glacier_spike": { "about": "A spike of ice shooting up with a crunch and a ring", "layers": [
+    { "use": "rise", "wave": "saw", "freq": [200, 1600], "glide": 0.5, "low": 4000, "dur": 0.15 },
+    { "use": "crunch", "freq": [4000, 900], "dur": 0.4 },
+    { "use": "glass", "freq": 1900, "dur": 0.5 },
+    { "use": "thud" } ] },
+  "hail_storm": { "about": "Hailstones rattling down and bouncing", "range": 32, "layers": [
+    { "use": "crunch", "freq": [5000, 2500], "dur": 0.04, "repeat": 20, "every": 0.1, "jitter": 0.9 },
+    { "use": "thud", "freq": [400, 200], "dur": 0.04, "at": 0.5, "repeat": 16, "every": 0.1, "jitter": 0.9, "vol": 0.5 },
+    { "use": "wind", "band": [800, 1300], "dur": 2.4, "vol": 0.5 } ] },
+  "ice_shatter": { "about": "Ice breaking apart with a cascade of tinkling shards", "layers": [
+    { "use": "crack" },
+    { "use": "crunch", "freq": [7000, 2000], "dur": 0.3 },
+    { "use": "glass", "freq": 2800, "dur": 0.2, "repeat": 9, "every": 0.06, "jitter": 0.9, "step": 0.96 },
+    { "use": "thud", "vol": 0.4 } ] },
+  "ice_shield_shatter": { "about": "A shield of ice humming, cracking, then bursting", "layers": [
+    { "use": "pad", "freq": 1300, "dur": 0.5, "vol": 0.4 },
+    { "use": "crack", "at": 0.3, "freq": [9000, 4000], "vol": 0.6 },
+    { "use": "crunch", "at": 0.5, "freq": [8000, 1500], "dur": 0.4 },
+    { "use": "glass", "at": 0.5, "freq": 2400, "repeat": 10, "every": 0.05, "jitter": 0.9, "step": 0.95 },
+    { "use": "thud", "at": 0.5 } ] },
+  "ice_wall": { "about": "Blocks of ice stacking up fast into a wall", "layers": [
+    { "use": "crunch", "freq": [1800, 700], "dur": 0.1, "repeat": 8, "every": 0.06, "step": 1.05 },
+    { "use": "thud", "freq": [200, 80], "dur": 0.1, "at": 0.15, "repeat": 6, "every": 0.06 },
+    { "use": "glass", "at": 0.35, "repeat": 8, "every": 0.3, "jitter": 0.7, "vol": 0.25 },
+    { "use": "wind", "band": [1200, 1600], "dur": 2.8, "vol": 0.25 } ] },
+  "icicle_spear": { "about": "A spear of ice hissing through the air and shattering", "layers": [
+    { "use": "whoosh", "band": [3000, 6000], "dur": 0.6, "shape": "swell", "vol": 0.6 },
+    { "use": "glass", "freq": [2000, 3000], "dur": 0.6, "shape": "swell", "vol": 0.3 },
+    { "use": "crunch", "at": 0.6, "freq": [6000, 1500], "dur": 0.25 },
+    { "use": "glass", "at": 0.6, "freq": 2600, "repeat": 5, "every": 0.05, "jitter": 0.8 },
+    { "use": "thud", "at": 0.6 } ] },
+  "permafrost_crack": { "about": "A crack racing through frozen ground, venting cold air", "layers": [
+    { "use": "crack" },
+    { "wave": "noise", "freq": [5000, 1500], "dur": 0.05, "power": 3, "repeat": 12, "every": 0.09, "jitter": 0.9, "fade": 0.95 },
+    { "use": "boom", "freq": [80, 40], "dur": 0.6, "vol": 0.6 },
+    { "use": "crunch", "at": 0.2, "freq": [1500, 500], "dur": 0.5 },
+    { "use": "wind", "at": 0.2, "band": [600, 1200], "dur": 2.4, "vol": 0.3 } ] },
+  "rime_buildup": { "about": "Frost creeping: many faint ticks and a few slow glassy notes", "level": 0.7, "layers": [
+    { "wave": "noise", "freq": [7000, 5000], "dur": 0.03, "power": 3, "repeat": 30, "every": 0.1, "jitter": 0.9, "vol": 0.3 },
+    { "use": "glass", "freq": 3000, "notes": [0, 2, 4, 7, 9, 12], "every": 0.45, "at": 0.5, "vol": 0.25 },
+    { "use": "wind", "band": [1500, 2200], "dur": 3.0, "vol": 0.25 } ] },
+  "sleet_spray": { "about": "A wet, icy spray pattering against something", "layers": [
+    { "wave": "hiss", "band": [3000, 6000], "dur": 1.0, "power": 1 },
+    { "use": "crunch", "freq": [6000, 3000], "dur": 0.03, "repeat": 12, "every": 0.06, "jitter": 0.9, "vol": 0.5 },
+    { "use": "splash", "dur": 0.5, "vol": 0.4 } ] },
+  "snow_flurry": { "about": "A soft, muffled swirl of snow", "level": 0.7, "layers": [
+    { "use": "wind", "band": [500, 900], "dur": 3.0, "vol": 0.8 },
+    { "use": "hiss", "high": 5000, "dur": 3.0, "shape": "bump", "vol": 0.15 },
+    { "use": "glass", "freq": 3500, "repeat": 6, "every": 0.5, "jitter": 0.9, "vol": 0.1 } ] },
+  "winter_chill": { "about": "A slow, bitter wind with a cold dissonant shimmer", "level": 0.8, "layers": [
+    { "use": "wind", "band": [900, 1500], "trem": [0.8, 0.5], "dur": 3.0 },
+    { "use": "pad", "freq": 1175, "dur": 3.0, "vol": 0.25 },
+    { "use": "pad", "freq": 1245, "dur": 3.0, "vol": 0.2 },
+    { "use": "glass", "freq": 2800, "repeat": 5, "every": 0.6, "jitter": 0.8, "vol": 0.15 } ] }
+}

@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:arcane.arcane_missile" } ],
+  "palette": { "white": "#FFFFFF", "pink": "#FF7AF0", "magenta": "#E02CC8", "deep": "#7A1490" },
+  "layers": [
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "lifetime": [16], "scale": { "from": 0.2, "to": 0.16 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["white", "pink"], "cone": 0, "speed": [0.5] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "lifetime": [16], "scale": { "from": 0.1, "to": 0.08 }, "length": { "from": 0.6, "to": 0.6 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["pink", "magenta"], "cone": 0, "speed": [0.5] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 22, "lifetime": [10, 16], "scale": { "from": 0.07, "to": 0.02 }, "color": ["magenta", "deep"], "cone": 3, "speed": [0.08, 0.46] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 10, "delay": 16, "lifetime": [8, 12], "scale": { "from": 0.08, "to": 0.03 }, "color": ["white", "magenta"], "cone": 90, "rim": true, "pattern": "even", "height": [8.0], "speed": [0.15], "friction": 0.85 }
+  ]
+}

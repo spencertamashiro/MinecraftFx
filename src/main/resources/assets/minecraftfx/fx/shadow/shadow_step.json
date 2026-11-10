@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:shadow.shadow_step" } ],
+  "palette": { "void": "#0A0612", "dark": "#2A1240", "violet": "#8A3CFF" },
+  "layers": [
+    { "sprite": "minecraftfx:ghost", "additive": false, "axis": "up", "lifetime": [8], "height": [0.9], "scale": { "from": 0.7, "to": 0.7 }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["dark", "void"] },
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "count": 4, "repeat": 4, "interval": 1, "lifetime": [14, 20], "scale": { "from": 0.3, "to": 0.6 }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["dark", "void"], "cone": 90, "rim": true, "offset": [0.0, 0.35], "height": [0.1, 1.7], "speed": [0.02, 0.06], "spin": 0.05 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 14, "delay": 2, "lifetime": [12, 18], "scale": { "from": 0.05, "to": 0.02 }, "color": ["violet", "void"], "cone": 90, "rim": true, "offset": [0.1, 0.4], "height": [0.2, 1.7], "lift": [0.03, 0.08] }
+  ]
+}

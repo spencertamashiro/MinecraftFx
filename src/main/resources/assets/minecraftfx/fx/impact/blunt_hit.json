@@ -1,0 +1,12 @@
+{
+  "sounds": [ { "id": "minecraftfx:impact.blunt_hit" } ],
+  "palette": { "flash": "#FFFFFF", "dust": "#D8CFC0", "shade": "#8A7F70" },
+  "layers": [
+    { "sprite": "minecraftfx:flash", "lifetime": [3], "scale": { "from": 0.5, "to": 0.2, "easing": "quadOut" }, "color": ["flash"] },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "lifetime": [6],
+      "scale": { "from": 0.15, "to": 0.7, "easing": "expoOut" }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["dust", "shade"] },
+    { "sprite": "minecraftfx:smoke", "additive": false, "count": 7, "lifetime": [10, 16],
+      "scale": { "from": 0.15, "to": 0.35, "easing": "quadOut" }, "alpha": { "from": 0.9, "to": 0.0, "easing": "quadIn" },
+      "color": ["dust", "shade"], "speed": [0.04, 0.1], "cone": 80, "friction": 0.85, "spin": 0.05 }
+  ]
+}

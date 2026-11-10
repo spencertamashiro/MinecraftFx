@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:water.steam_hiss" } ],
+  "palette": { "white": "#FFFFFF", "pale": "#D0D8E0" },
+  "layers": [
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "count": 2, "repeat": 20, "interval": 1, "lifetime": [14, 18], "scale": { "from": 0.12, "to": 0.5 }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["white", "pale"], "cone": 8, "speed": [0.35, 0.45], "friction": 0.9 },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "repeat": 4, "interval": 6, "lifetime": [10], "height": [0.3], "scale": { "from": 0.1, "to": 0.5 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["white", "pale"], "lift": [0.12] },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 2, "repeat": 8, "interval": 3, "lifetime": [10, 12], "scale": { "from": 0.1, "to": 0.1 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["pale"], "cone": 90, "rim": true, "speed": [0.06, 0.1], "friction": 0.85 }
+  ]
+}

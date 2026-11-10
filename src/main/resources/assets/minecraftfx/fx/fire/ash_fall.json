@@ -1,0 +1,8 @@
+{
+  "sounds": [ { "id": "minecraftfx:fire.ash_fall" } ],
+  "palette": { "ash": "#B0ABA6", "grey": "#6A6662" },
+  "layers": [
+    { "sprite": "minecraftfx:pixel", "frames": "first", "additive": false, "axis": "up", "count": 3, "repeat": 20, "interval": 3, "lifetime": [50, 70], "scale": { "from": 0.04, "to": 0.03 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["ash", "grey"], "cone": 90, "rim": true, "offset": [0.0, 2.5], "height": [2.5, 4.0], "lift": [-0.03, -0.045], "orbit": 0.01 },
+    { "sprite": "minecraftfx:puff", "frames": "first", "additive": false, "axis": "up", "repeat": 10, "interval": 6, "lifetime": [50, 60], "scale": { "from": 0.06, "to": 0.05 }, "alpha": { "from": 0.0, "mid": 0.8, "to": 0.0 }, "color": ["ash", "grey"], "cone": 90, "rim": true, "offset": [0.0, 2.5], "height": [2.5, 4.0], "lift": [-0.025], "orbit": -0.01 }
+  ]
+}

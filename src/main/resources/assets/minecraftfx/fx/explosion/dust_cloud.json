@@ -1,0 +1,15 @@
+{
+  "sounds": [ { "id": "minecraftfx:explosion.dust_cloud" } ],
+  "palette": { "sand": "#C9A877", "dirt": "#7A5A3A", "dark": "#4A3626" },
+  "layers": [
+    { "sprite": "minecraftfx:pixel", "axis": "up", "additive": false, "count": 24, "lifetime": [16, 26],
+      "scale": { "from": 0.12, "to": 0.08 }, "alpha": { "from": 1.0, "to": 0.7 }, "color": ["dirt", "dark"],
+      "cone": 35, "speed": [0.25, 0.5], "gravity": 1.5, "friction": 0.97 },
+    { "sprite": "minecraftfx:smoke", "axis": "up", "additive": false, "count": 14, "lifetime": [20, 30],
+      "scale": { "from": 0.3, "to": 0.7, "easing": "quadOut" }, "alpha": { "from": 0.8, "to": 0.0, "easing": "quadIn" }, "color": ["sand", "dirt"],
+      "cone": 45, "speed": [0.06, 0.18], "friction": 0.88, "spin": 0.03 },
+    { "sprite": "minecraftfx:smoke", "axis": "up", "additive": false, "count": 8, "lifetime": [18, 26],
+      "scale": { "from": 0.25, "to": 0.45 }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["sand", "dirt"],
+      "cone": 90, "rim": true, "speed": [0.12, 0.2], "friction": 0.85 }
+  ]
+}

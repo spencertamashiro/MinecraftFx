@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:impact.parry_clash" } ],
+  "palette": { "white": "#FFFFFF", "hot": "#FFE98A", "mid": "#FF9B2F" },
+  "layers": [
+    { "sprite": "minecraftfx:xslash", "additive": false, "lifetime": [6], "scale": { "from": 0.5, "to": 0.7 }, "color": ["white", "hot"] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "count": 6, "lifetime": [6, 8], "scale": { "from": 0.04, "to": 0.02 }, "length": { "from": 0.4, "to": 0.15 }, "color": ["hot", "mid"], "cone": 25, "speed": [0.4, 0.6], "gravity": 0.5 },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "count": 6, "lifetime": [6, 8], "scale": { "from": 0.04, "to": 0.02 }, "length": { "from": 0.4, "to": 0.15 }, "color": ["hot", "mid"], "cone": 30, "speed": [0.35, 0.55], "gravity": 0.8 },
+    { "sprite": "minecraftfx:glint", "lifetime": [5], "scale": { "from": 0.6, "to": 0.6 }, "color": ["white"] }
+  ]
+}

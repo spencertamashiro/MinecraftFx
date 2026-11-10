@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:nature.mud_slide" } ],
+  "palette": { "mud": "#7A5A3A", "dark": "#4A3424", "stone": "#8A8078" },
+  "layers": [
+    { "sprite": "minecraftfx:puff", "additive": false, "count": 3, "repeat": 12, "interval": 1, "lifetime": [14, 18], "scale": { "from": 0.3, "to": 0.22 }, "color": ["mud", "dark"], "cone": 15, "speed": [0.25, 0.35], "gravity": 0.4, "friction": 0.96 },
+    { "sprite": "minecraftfx:rock", "frames": "random", "additive": false, "repeat": 12, "interval": 1, "lifetime": [14, 18], "scale": { "from": 0.12, "to": 0.12 }, "color": ["stone", "dark"], "cone": 18, "speed": [0.25, 0.4], "gravity": 0.6, "spin": 0.3 },
+    { "sprite": "minecraftfx:drop", "additive": false, "count": 2, "repeat": 12, "interval": 1, "lifetime": [10, 14], "scale": { "from": 0.06, "to": 0.06 }, "color": ["mud", "dark"], "cone": 30, "speed": [0.2, 0.4], "gravity": 0.9 }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:explosion.dirt_fountain" } ],
+  "palette": { "dirt": "#8A6A44", "dark": "#4A3626", "stone": "#9A9088" },
+  "layers": [
+    { "sprite": "minecraftfx:rock", "frames": "random", "additive": false, "axis": "up", "count": 3, "repeat": 6, "interval": 1, "lifetime": [18, 24], "scale": { "from": 0.12, "to": 0.09 }, "color": ["dirt", "dark"], "cone": 12, "speed": [0.5, 0.7], "gravity": 1.5, "spin": 0.3 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 6, "repeat": 6, "interval": 1, "lifetime": [16, 22], "scale": { "from": 0.07, "to": 0.04 }, "color": ["dirt", "dark"], "cone": 16, "speed": [0.4, 0.75], "gravity": 1.4 },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 8, "lifetime": [12, 16], "scale": { "from": 0.3, "to": 0.3 }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["dirt", "stone"], "cone": 90, "rim": true, "pattern": "even", "speed": [0.1], "friction": 0.85 }
+  ]
+}

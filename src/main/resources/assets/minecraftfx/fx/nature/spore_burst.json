@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:nature.spore_burst" } ],
+  "palette": { "cap": "#D85A4A", "stem": "#F0E0C0", "spore": "#D8E06A", "olive": "#7A8A2A" },
+  "layers": [
+    { "sprite": "minecraftfx:mushroom", "additive": false, "axis": "up", "lifetime": [8], "height": [0.3], "scale": { "from": 0.2, "mid": 0.5, "to": 0.1 }, "alpha": { "from": 1.0, "to": 0.6 }, "color": ["cap", "stem"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 30, "delay": 5, "lifetime": [30, 44], "scale": { "from": 0.05, "to": 0.03 }, "color": ["spore", "olive"], "cone": 80, "height": [0.4], "speed": [0.1, 0.3], "friction": 0.85, "gravity": -0.03 },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 6, "delay": 5, "lifetime": [16, 20], "scale": { "from": 0.25, "to": 0.25 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["spore", "olive"], "cone": 80, "height": [0.4], "speed": [0.03, 0.08] }
+  ]
+}

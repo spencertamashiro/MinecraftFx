@@ -1,0 +1,12 @@
+{
+  "sounds": [ { "id": "minecraftfx:status.bleeding" } ],
+  "palette": { "bright": "#FF4A4A", "blood": "#C01818", "dark": "#6A0A0A" },
+  "layers": [
+    { "sprite": "minecraftfx:drop", "additive": false, "count": 8, "lifetime": [12, 18],
+      "scale": { "from": 0.08, "to": 0.06 }, "color": ["bright", "blood"], "cone": 60, "speed": [0.12, 0.22], "gravity": 1.4, "friction": 0.97 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 10, "lifetime": [8, 14],
+      "scale": { "from": 0.06, "to": 0.03 }, "color": ["blood", "dark"], "cone": 50, "speed": [0.15, 0.3], "gravity": 1.2, "friction": 0.92 },
+    { "sprite": "minecraftfx:drop", "axis": "up", "additive": false, "repeat": 8, "interval": 4, "delay": 4, "lifetime": [14, 18],
+      "scale": { "from": 0.07, "to": 0.05 }, "color": ["blood", "dark"], "cone": 90, "offset": [0.1, 0.35], "height": [0.6, 1.4], "gravity": 0.9 }
+  ]
+}

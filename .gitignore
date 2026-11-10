@@ -1,0 +1,35 @@
+# Build output and local Minecraft instances
+.gradle/
+build/
+run/
+bin/
+out/
+*.class
+*.log
+
+# Editors and local agent configuration
+.idea/
+.vscode/
+.eclipse/
+.settings/
+.classpath
+.project
+*.iml
+.claude/
+.codex/
+.agents/
+
+# Local environments and credentials
+.env
+.env.*
+*.pem
+*.key
+.venv/
+venv/
+.sound-venv/
+__pycache__/
+*.py[cod]
+
+# OS metadata
+.DS_Store
+Thumbs.db

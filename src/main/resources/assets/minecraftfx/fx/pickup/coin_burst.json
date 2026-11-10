@@ -1,0 +1,13 @@
+{
+  "sounds": [ { "id": "minecraftfx:pickup.coin_burst" } ],
+  "palette": { "shine": "#FFF6B0", "gold": "#FFC83A", "dark": "#B07A12" },
+  "layers": [
+    { "sprite": "minecraftfx:coin", "axis": "up", "additive": false, "count": 12, "lifetime": [20, 28],
+      "scale": { "from": 0.1, "to": 0.1 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["shine", "gold"],
+      "cone": 35, "speed": [0.22, 0.35], "gravity": 1.2, "friction": 0.98 },
+    { "sprite": "minecraftfx:flash", "axis": "up", "count": 6, "delay": 3, "lifetime": [6, 9],
+      "scale": { "from": 0.15, "to": 0.0 }, "color": ["shine", "gold"], "cone": 60, "offset": [0.3, 1.0] },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "axis": "up", "additive": false, "lifetime": [8], "height": [0.05],
+      "scale": { "from": 0.2, "to": 0.8, "easing": "expoOut" }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["gold", "dark"] }
+  ]
+}

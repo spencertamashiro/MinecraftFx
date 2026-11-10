@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:melee.thrust_trail" } ],
+  "palette": { "white": "#FFFFFF", "steel": "#D8ECFF", "blue": "#7AB4FF" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "lifetime": [6], "scale": { "from": 0.06, "to": 0.02 }, "length": { "from": 1.2, "to": 0.6 }, "color": ["white", "steel"], "cone": 0, "speed": [0.9] },
+    { "sprite": "minecraftfx:ring", "shape": "oriented", "additive": false, "lifetime": [7], "scale": { "from": 0.1, "to": 0.5, "easing": "expoOut" }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["white", "blue"], "cone": 0, "speed": [0.05] },
+    { "sprite": "minecraftfx:glint", "delay": 5, "lifetime": [5], "scale": { "from": 0.4, "to": 0.4 }, "color": ["white"], "cone": 0, "height": [5.0] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 8, "lifetime": [6, 8], "scale": { "from": 0.04, "to": 0.02 }, "color": ["steel", "blue"], "cone": 3, "speed": [0.2, 0.85] }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:pickup.mana_potion_glint" } ],
+  "palette": { "white": "#FFFFFF", "sky": "#9AD8FF", "blue": "#3F8CFF" },
+  "layers": [
+    { "sprite": "minecraftfx:flask", "additive": false, "axis": "up", "lifetime": [50], "height": [0.5], "scale": { "from": 0.22, "to": 0.22 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["sky", "blue"] },
+    { "sprite": "minecraftfx:glint", "axis": "up", "repeat": 5, "interval": 9, "delay": 3, "lifetime": [7], "scale": { "from": 0.25, "to": 0.25 }, "color": ["white"], "cone": 90, "rim": true, "offset": [0.08, 0.12], "height": [0.66] },
+    { "sprite": "minecraftfx:bubble", "additive": false, "axis": "up", "repeat": 10, "interval": 5, "lifetime": [10, 12], "scale": { "from": 0.03, "to": 0.05 }, "color": ["white", "sky"], "cone": 90, "rim": true, "offset": [0.0, 0.08], "height": [0.7], "lift": [0.02, 0.03] }
+  ]
+}

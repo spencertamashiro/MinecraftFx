@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:ice.blizzard_swirl" } ],
+  "palette": { "white": "#FFFFFF", "ice": "#BDF0FF", "blue": "#5AB4FF" },
+  "layers": [
+    { "sprite": "minecraftfx:snowflake", "additive": false, "axis": "up", "count": 4, "repeat": 20, "interval": 2, "lifetime": [20, 28], "scale": { "from": 0.1, "to": 0.05 }, "color": ["white", "ice"], "cone": 90, "rim": true, "offset": [0.5, 2.5], "height": [0.0, 2.5], "orbit": 0.2, "lift": [-0.01] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 6, "repeat": 20, "interval": 2, "lifetime": [14, 20], "scale": { "from": 0.05, "to": 0.03 }, "color": ["white", "blue"], "cone": 90, "rim": true, "offset": [0.3, 2.6], "height": [0.0, 2.6], "orbit": 0.26 },
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "count": 2, "repeat": 12, "interval": 3, "lifetime": [24, 30], "scale": { "from": 0.5, "to": 0.9 }, "alpha": { "from": 0.0, "mid": 0.35, "to": 0.0 }, "color": ["white", "ice"], "cone": 90, "rim": true, "offset": [0.5, 2.0], "height": [0.2, 2.0], "orbit": 0.1 }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "sounds": [ { "id": "minecraftfx:pickup.confetti" } ],
+  "palette": { "red": "#FF4A5A", "yellow": "#FFD83A", "green": "#4AE07A", "blue": "#4AA8FF", "pink": "#FF7AD8" },
+  "layers": [
+    { "sprite": "minecraftfx:flash", "axis": "up", "lifetime": [4], "scale": { "from": 0.3, "to": 0.8, "easing": "expoOut" }, "color": ["yellow"] },
+    { "sprite": "minecraftfx:pixel", "shape": "oriented", "frames": "first", "axis": "up", "additive": false, "count": 12, "lifetime": [30, 45],
+      "scale": { "from": 0.07, "to": 0.07 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["red"],
+      "cone": 40, "speed": [0.25, 0.4], "friction": 0.9, "gravity": 0.25 },
+    { "sprite": "minecraftfx:pixel", "shape": "oriented", "frames": "first", "axis": "up", "additive": false, "count": 12, "lifetime": [30, 45],
+      "scale": { "from": 0.07, "to": 0.07 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["yellow"],
+      "cone": 40, "speed": [0.25, 0.4], "friction": 0.9, "gravity": 0.25 },
+    { "sprite": "minecraftfx:pixel", "shape": "oriented", "frames": "first", "axis": "up", "additive": false, "count": 12, "lifetime": [30, 45],
+      "scale": { "from": 0.07, "to": 0.07 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["green", "blue"],
+      "cone": 40, "speed": [0.25, 0.4], "friction": 0.9, "gravity": 0.25 },
+    { "sprite": "minecraftfx:pixel", "shape": "oriented", "frames": "first", "axis": "up", "additive": false, "count": 12, "lifetime": [30, 45],
+      "scale": { "from": 0.07, "to": 0.07 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["pink", "blue"],
+      "cone": 40, "speed": [0.25, 0.4], "friction": 0.9, "gravity": 0.25 }
+  ]
+}

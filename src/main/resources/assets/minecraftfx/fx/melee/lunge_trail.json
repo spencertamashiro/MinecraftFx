@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:melee.lunge_trail" } ],
+  "palette": { "white": "#FFFFFF", "steel": "#D8ECFF", "blue": "#7AB4FF", "dust": "#D8CFC0", "shade": "#8A7F70" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "count": 8, "lifetime": [6], "scale": { "from": 0.03, "to": 0.02 }, "length": { "from": 1.0, "to": 0.3 }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["white", "steel"], "cone": 90, "rim": true, "offset": [0.0, 0.4], "lift": [0.6] },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 5, "lifetime": [10, 12], "scale": { "from": 0.2, "to": 0.2 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["dust", "shade"], "cone": 90, "rim": true, "speed": [0.05, 0.1], "friction": 0.85 },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "lifetime": [5], "scale": { "from": 0.08, "to": 0.02 }, "length": { "from": 1.4, "to": 0.5 }, "color": ["white", "blue"], "cone": 0, "speed": [0.7] }
+  ]
+}

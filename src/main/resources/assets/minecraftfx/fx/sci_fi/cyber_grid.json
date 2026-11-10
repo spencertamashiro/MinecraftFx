@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:sci_fi.cyber_grid" } ],
+  "palette": { "neon": "#5AFF7A", "green": "#1A8A3A" },
+  "layers": [
+    { "sprite": "minecraftfx:grid", "shape": "plane", "additive": false, "axis": "up", "lifetime": [60], "height": [0.04], "scale": { "from": 2.5, "to": 2.5 }, "alpha": { "from": 0.0, "mid": 0.8, "to": 0.0 }, "color": ["neon", "green"] },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "repeat": 3, "interval": 14, "lifetime": [16], "height": [0.05], "scale": { "from": 0.2, "to": 2.5, "easing": "quadOut" }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["neon", "green"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 3, "repeat": 14, "interval": 3, "lifetime": [12, 16], "scale": { "from": 0.05, "to": 0.02 }, "color": ["neon", "green"], "cone": 90, "rim": true, "offset": [0.2, 2.2], "height": [0.05], "lift": [0.05, 0.09] }
+  ]
+}

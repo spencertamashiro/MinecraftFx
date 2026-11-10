@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:arcane.leyline_glow" } ],
+  "palette": { "white": "#FFFFFF", "cyan": "#8FE8FF", "arcane": "#7A6CFF", "deep": "#3A2AA8" },
+  "layers": [
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 6, "repeat": 16, "interval": 1, "lifetime": [14], "scale": { "from": 0.06, "to": 0.03 }, "color": ["white", "arcane"], "cone": 90, "rim": true, "pattern": "even", "height": [0.05], "speed": [0.2] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "count": 6, "repeat": 4, "interval": 6, "lifetime": [12], "scale": { "from": 0.05, "to": 0.03 }, "length": { "from": 0.5, "to": 0.3 }, "color": ["cyan", "deep"], "cone": 90, "rim": true, "pattern": "even", "height": [0.05], "speed": [0.26] },
+    { "sprite": "minecraftfx:glint", "axis": "up", "repeat": 4, "interval": 6, "lifetime": [6], "height": [0.1], "scale": { "from": 0.3, "to": 0.3 }, "color": ["white"] }
+  ]
+}

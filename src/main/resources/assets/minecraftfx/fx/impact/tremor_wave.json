@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:impact.tremor_wave" } ],
+  "palette": { "stone": "#9A9088", "dust": "#B8AFA0", "shade": "#5A524A" },
+  "layers": [
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 24, "repeat": 3, "interval": 4, "lifetime": [10], "scale": { "from": 0.06, "to": 0.03 }, "color": ["dust", "shade"], "cone": 90, "rim": true, "pattern": "even", "twist": 7.5, "height": [0.06], "offset": [0.3], "speed": [0.22] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "count": 12, "repeat": 3, "interval": 4, "lifetime": [8], "scale": { "from": 0.04, "to": 0.02 }, "length": { "from": 0.35, "to": 0.15 }, "color": ["stone", "shade"], "cone": 90, "rim": true, "pattern": "even", "height": [0.06], "offset": [0.3], "speed": [0.3] },
+    { "sprite": "minecraftfx:rock", "frames": "random", "additive": false, "axis": "up", "count": 8, "repeat": 3, "interval": 4, "lifetime": [8, 10], "scale": { "from": 0.08, "to": 0.08 }, "color": ["stone", "shade"], "cone": 90, "rim": true, "pattern": "even", "twist": 22.5, "offset": [0.9, 1.6], "height": [0.05], "lift": [0.12, 0.16], "gravity": 1.3 }
+  ]
+}

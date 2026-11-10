@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:impact.blade_lock" } ],
+  "palette": { "white": "#FFFFFF", "hot": "#FFE98A", "mid": "#FF9B2F", "steel": "#C8D0D8", "iron": "#6A7078" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "count": 2, "repeat": 22, "interval": 1, "lifetime": [6, 9], "scale": { "from": 0.03, "to": 0.02 }, "length": { "from": 0.3, "to": 0.1 }, "color": ["hot", "mid"], "cone": 50, "speed": [0.25, 0.45], "gravity": 1.0 },
+    { "sprite": "minecraftfx:glint", "repeat": 11, "interval": 2, "lifetime": [3], "scale": { "from": 0.3, "to": 0.3 }, "color": ["white"] },
+    { "sprite": "minecraftfx:xslash", "frames": "first", "additive": false, "lifetime": [24], "scale": { "from": 0.35, "to": 0.35 }, "alpha": { "from": 0.9, "mid": 0.9, "to": 0.0 }, "color": ["steel", "iron"] }
+  ]
+}

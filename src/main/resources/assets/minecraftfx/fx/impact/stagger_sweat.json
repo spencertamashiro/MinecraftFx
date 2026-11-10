@@ -1,0 +1,8 @@
+{
+  "sounds": [ { "id": "minecraftfx:impact.stagger_sweat" } ],
+  "palette": { "white": "#FFFFFF", "sweat": "#9AD8FF" },
+  "layers": [
+    { "sprite": "minecraftfx:drop", "additive": false, "axis": "up", "count": 6, "lifetime": [12, 16], "scale": { "from": 0.06, "to": 0.05 }, "color": ["white", "sweat"], "cone": 60, "height": [1.7], "speed": [0.12, 0.2], "gravity": 1.0 },
+    { "sprite": "minecraftfx:drop", "additive": false, "axis": "up", "count": 4, "delay": 6, "lifetime": [12, 16], "scale": { "from": 0.05, "to": 0.04 }, "color": ["white", "sweat"], "cone": 60, "height": [1.7], "speed": [0.1, 0.18], "gravity": 1.0 }
+  ]
+}

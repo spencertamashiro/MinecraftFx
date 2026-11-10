@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:water.tear_drop" } ],
+  "palette": { "foam": "#F0FBFF", "water": "#5FB8FF" },
+  "layers": [
+    { "sprite": "minecraftfx:drop", "additive": false, "axis": "up", "lifetime": [11], "height": [2.2], "scale": { "from": 0.18, "to": 0.18 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["foam", "water"], "cone": 0, "gravity": 1.0 },
+    { "sprite": "minecraftfx:drop", "additive": false, "axis": "up", "count": 8, "delay": 11, "lifetime": [8, 10], "scale": { "from": 0.05, "to": 0.05 }, "color": ["foam", "water"], "cone": 55, "rim": true, "pattern": "even", "height": [0.05], "speed": [0.14], "gravity": 1.0 },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "repeat": 2, "interval": 4, "delay": 11, "lifetime": [12], "height": [0.03], "scale": { "from": 0.1, "to": 0.8, "easing": "quadOut" }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["foam", "water"] }
+  ]
+}

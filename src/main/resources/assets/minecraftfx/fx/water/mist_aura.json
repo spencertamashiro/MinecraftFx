@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:water.mist_aura" } ],
+  "palette": { "mist": "#FFFFFF", "pale": "#D8ECF8" },
+  "layers": [
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "count": 2, "repeat": 12, "interval": 4, "lifetime": [40, 50], "scale": { "from": 0.5, "to": 0.9 }, "alpha": { "from": 0.0, "mid": 0.4, "to": 0.0 }, "color": ["mist", "pale"], "cone": 90, "rim": true, "offset": [0.6, 1.6], "height": [0.1, 0.8], "orbit": 0.03 },
+    { "sprite": "minecraftfx:drop", "additive": false, "axis": "up", "repeat": 10, "interval": 5, "lifetime": [14], "scale": { "from": 0.03, "to": 0.03 }, "alpha": { "from": 0.0, "mid": 0.8, "to": 0.0 }, "color": ["mist"], "cone": 90, "rim": true, "offset": [0.4, 1.4], "height": [0.4, 1.4], "lift": [-0.01] },
+    { "sprite": "minecraftfx:glint", "axis": "up", "repeat": 8, "interval": 6, "lifetime": [5], "scale": { "from": 0.12, "to": 0.12 }, "color": ["mist"], "cone": 90, "rim": true, "offset": [0.4, 1.4], "height": [0.3, 1.2] }
+  ]
+}

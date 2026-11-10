@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:fire.wall_of_fire" } ],
+  "palette": { "core": "#FFF0A8", "flame": "#FF8A2A", "deep": "#D23A1A", "ember": "#9E2412", "smoke": "#3E3430" },
+  "layers": [
+    { "sprite": "minecraftfx:flame", "additive": false, "count": 2, "repeat": 44, "interval": 1, "lifetime": [10, 14], "scale": { "from": 0.32, "to": 0.12 }, "color": ["core", "deep"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.0, 2.5], "gravity": -0.5 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 2, "repeat": 30, "interval": 1, "delay": 4, "lifetime": [14, 20], "scale": { "from": 0.06, "to": 0.02 }, "color": ["core", "ember"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.0, 2.5], "gravity": -0.7 },
+    { "sprite": "minecraftfx:smoke", "additive": false, "count": 2, "repeat": 12, "interval": 3, "delay": 6, "lifetime": [18, 24], "scale": { "from": 0.3, "to": 0.6 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["smoke"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.0, 2.5], "gravity": -0.6 }
+  ]
+}

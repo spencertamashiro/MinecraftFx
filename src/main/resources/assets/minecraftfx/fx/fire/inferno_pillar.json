@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:fire.inferno_pillar" } ],
+  "palette": { "white": "#FFFFFF", "core": "#FFF0A8", "flame": "#FF8A2A", "deep": "#D23A1A", "ember": "#9E2412" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "lifetime": [18], "height": [2.5], "scale": { "from": 0.7, "to": 0.1, "easing": "quadIn" }, "length": { "from": 2.5, "to": 2.5 }, "alpha": { "from": 1.0, "to": 0.5 }, "color": ["core", "flame"], "cone": 0, "speed": [0.001] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "axis": "up", "lifetime": [14], "height": [2.5], "scale": { "from": 0.25, "to": 0.02 }, "length": { "from": 2.5, "to": 2.5 }, "color": ["white"], "cone": 0, "speed": [0.001] },
+    { "sprite": "minecraftfx:flame", "additive": false, "axis": "up", "count": 4, "repeat": 14, "interval": 1, "lifetime": [8, 10], "scale": { "from": 0.35, "to": 0.15 }, "color": ["core", "deep"], "cone": 90, "rim": true, "offset": [0.3, 0.6], "lift": [0.3, 0.45] },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "lifetime": [12], "height": [0.05], "scale": { "from": 0.4, "to": 2.0, "easing": "expoOut" }, "color": ["flame", "ember"] }
+  ]
+}

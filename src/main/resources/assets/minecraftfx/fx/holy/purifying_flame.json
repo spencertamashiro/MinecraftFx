@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:holy.purifying_flame" } ],
+  "palette": { "white": "#FFFFFF", "light": "#FFF6C8", "gold": "#FFD54A" },
+  "layers": [
+    { "sprite": "minecraftfx:flame", "additive": false, "axis": "up", "count": 2, "repeat": 24, "interval": 1, "lifetime": [12, 16], "scale": { "from": 0.3, "to": 0.1 }, "color": ["white", "gold"], "cone": 90, "rim": true, "offset": [0.0, 0.3], "lift": [0.06, 0.1] },
+    { "sprite": "minecraftfx:flame", "additive": false, "axis": "up", "repeat": 24, "interval": 1, "lifetime": [10, 12], "scale": { "from": 0.16, "to": 0.05 }, "color": ["white", "light"], "cone": 90, "rim": true, "offset": [0.0, 0.12], "height": [0.1], "lift": [0.09, 0.12] },
+    { "sprite": "minecraftfx:glint", "axis": "up", "repeat": 8, "interval": 4, "lifetime": [6], "scale": { "from": 0.14, "to": 0.14 }, "color": ["white"], "cone": 90, "rim": true, "offset": [0.2, 0.6], "height": [0.4, 1.6] }
+  ]
+}

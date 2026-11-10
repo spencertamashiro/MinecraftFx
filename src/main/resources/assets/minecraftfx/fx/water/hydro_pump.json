@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:water.hydro_pump" } ],
+  "palette": { "foam": "#F0FBFF", "water": "#5FB8FF", "deep": "#2A6FD6" },
+  "layers": [
+    { "sprite": "minecraftfx:puff", "additive": false, "count": 3, "repeat": 22, "interval": 1, "lifetime": [10, 12], "scale": { "from": 0.28, "to": 0.2 }, "color": ["water", "deep"], "cone": 4, "speed": [0.55, 0.65] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "repeat": 22, "interval": 1, "lifetime": [10], "scale": { "from": 0.08, "to": 0.08 }, "length": { "from": 0.5, "to": 0.5 }, "color": ["foam", "water"], "cone": 2, "speed": [0.65] },
+    { "sprite": "minecraftfx:drop", "additive": false, "count": 2, "repeat": 22, "interval": 1, "lifetime": [10, 14], "scale": { "from": 0.06, "to": 0.06 }, "color": ["foam", "deep"], "cone": 20, "speed": [0.3, 0.5], "gravity": 0.6 }
+  ]
+}

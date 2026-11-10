@@ -1,0 +1,11 @@
+{
+  "sounds": [ { "id": "minecraftfx:arcane.blink_in" } ],
+  "palette": { "white": "#FFFFFF", "sky": "#9AD8FF", "blue": "#3F8CFF", "deep": "#1E3FB0" },
+  "layers": [
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "lifetime": [8], "height": [0.1], "scale": { "from": 1.6, "to": 0.1, "easing": "quadIn" }, "alpha": { "from": 0.3, "to": 1.0 }, "color": ["sky", "blue"] },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "delay": 2, "lifetime": [8], "height": [0.9], "scale": { "from": 1.6, "to": 0.1, "easing": "quadIn" }, "alpha": { "from": 0.3, "to": 1.0 }, "color": ["sky", "blue"] },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "delay": 4, "lifetime": [8], "height": [1.7], "scale": { "from": 1.6, "to": 0.1, "easing": "quadIn" }, "alpha": { "from": 0.3, "to": 1.0 }, "color": ["sky", "deep"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 20, "lifetime": [8], "scale": { "from": 0.03, "to": 0.06 }, "alpha": { "from": 0.2, "to": 1.0 }, "color": ["deep", "sky"], "height": [0.9], "offset": [1.6, 2.0], "speed": [-0.2, -0.25] },
+    { "sprite": "minecraftfx:flash", "axis": "up", "delay": 11, "lifetime": [5], "height": [0.9], "scale": { "from": 1.0, "to": 0.2, "easing": "quadOut" }, "color": ["white", "sky"] }
+  ]
+}

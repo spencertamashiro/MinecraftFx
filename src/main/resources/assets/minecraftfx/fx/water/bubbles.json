@@ -1,0 +1,11 @@
+{
+  "sounds": [ { "id": "minecraftfx:water.bubbles" } ],
+  "palette": { "shine": "#FFFFFF", "water": "#3FA4F0", "deep": "#2464C8" },
+  "layers": [
+    { "sprite": "minecraftfx:bubble", "axis": "up", "additive": false, "count": 3, "repeat": 8, "interval": 3, "lifetime": [18, 28],
+      "scale": { "from": 0.08, "to": 0.14 }, "alpha": { "from": 1.0, "to": 0.9 }, "color": ["water", "deep"],
+      "cone": 90, "offset": [0.0, 0.6], "lift": [0.04, 0.07], "friction": 0.97 },
+    { "sprite": "minecraftfx:pixel", "axis": "up", "additive": false, "count": 2, "repeat": 8, "interval": 3, "lifetime": [10, 16],
+      "scale": { "from": 0.04, "to": 0.02 }, "color": ["shine"], "cone": 90, "offset": [0.0, 0.5], "lift": [0.06, 0.09] }
+  ]
+}

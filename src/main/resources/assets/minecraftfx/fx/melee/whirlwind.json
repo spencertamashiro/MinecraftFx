@@ -1,0 +1,16 @@
+{
+  "sounds": [ { "id": "minecraftfx:melee.whirlwind" } ],
+  "palette": { "white": "#FFFFFF", "steel": "#DDEEFF", "wind": "#A8C8E8", "dust": "#B8A890" },
+  "layers": [
+    { "sprite": "minecraftfx:slash", "shape": "plane", "axis": "up", "lifetime": [12], "height": [0.9],
+      "scale": { "from": 1.0, "to": 1.4, "easing": "expoOut" }, "alpha": { "from": 1.0, "to": 0.0, "easing": "quadIn" }, "color": ["white", "steel"], "spin": 0.55 },
+    { "sprite": "minecraftfx:slash", "shape": "plane", "axis": "up", "additive": false, "delay": 2, "lifetime": [12], "height": [0.6, 1.2],
+      "scale": { "from": 0.8, "to": 1.2, "easing": "expoOut" }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["steel", "wind"], "spin": 0.5 },
+    { "sprite": "minecraftfx:smoke", "axis": "up", "additive": false, "count": 10, "lifetime": [12, 18],
+      "scale": { "from": 0.2, "to": 0.4 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["wind", "dust"],
+      "cone": 90, "rim": true, "pattern": "even", "offset": [0.8, 1.0], "height": [0.1], "speed": [0.04, 0.06], "orbit": 0.45, "friction": 0.92 },
+    { "sprite": "minecraftfx:pixel", "axis": "up", "additive": false, "count": 4, "repeat": 4, "interval": 2, "lifetime": [10, 14],
+      "scale": { "from": 0.05, "to": 0.02 }, "color": ["steel", "dust"],
+      "cone": 90, "rim": true, "pattern": "even", "twist": 45, "offset": [1.0, 1.2], "height": [0.3, 1.2], "lift": [0.02], "orbit": 0.5 }
+  ]
+}

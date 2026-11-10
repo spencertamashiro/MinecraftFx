@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:nature.natural_spring" } ],
+  "palette": { "foam": "#F4FCFF", "water": "#9ADCF0" },
+  "layers": [
+    { "sprite": "minecraftfx:drop", "additive": false, "axis": "up", "count": 2, "repeat": 24, "interval": 2, "lifetime": [10, 12], "scale": { "from": 0.06, "to": 0.05 }, "color": ["foam", "water"], "cone": 20, "speed": [0.14, 0.2], "gravity": 1.0 },
+    { "sprite": "minecraftfx:bubble", "additive": false, "axis": "up", "repeat": 16, "interval": 3, "lifetime": [8, 10], "scale": { "from": 0.05, "to": 0.08 }, "color": ["foam", "water"], "cone": 90, "rim": true, "offset": [0.0, 0.3], "height": [0.05], "lift": [0.02] },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "repeat": 6, "interval": 8, "lifetime": [14], "height": [0.03], "scale": { "from": 0.1, "to": 0.7, "easing": "quadOut" }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["foam", "water"] }
+  ]
+}

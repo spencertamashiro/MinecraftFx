@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:water.condensation" } ],
+  "palette": { "foam": "#F0FBFF", "water": "#5FB8FF" },
+  "layers": [
+    { "sprite": "minecraftfx:drop", "additive": false, "count": 2, "repeat": 16, "interval": 2, "lifetime": [30], "scale": { "from": 0.0, "mid": 0.07, "to": 0.07 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["foam", "water"], "cone": 90, "rim": true, "offset": [0.0, 0.8], "gravity": 0.08 },
+    { "sprite": "minecraftfx:pixel", "frames": "first", "additive": false, "count": 2, "repeat": 16, "interval": 2, "lifetime": [24], "scale": { "from": 0.025, "to": 0.025 }, "alpha": { "from": 0.0, "mid": 0.8, "to": 0.0 }, "color": ["foam"], "cone": 90, "rim": true, "offset": [0.0, 0.9] },
+    { "sprite": "minecraftfx:smoke", "additive": false, "count": 3, "lifetime": [36, 40], "scale": { "from": 0.5, "to": 0.7 }, "alpha": { "from": 0.0, "mid": 0.2, "to": 0.0 }, "color": ["foam"], "cone": 90, "rim": true, "offset": [0.0, 0.4] }
+  ]
+}

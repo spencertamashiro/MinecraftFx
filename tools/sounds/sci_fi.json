@@ -1,0 +1,95 @@
+{
+  "cloaking_fade": { "about": "A tone and its static dissolving away", "crush": 6, "layers": [
+    { "wave": "sine", "freq": [1600, 200], "vib": [12, 1], "dur": 1.4, "power": 1.5, "vol": 0.5 },
+    { "wave": "noise", "freq": [8000, 400], "dur": 1.4, "power": 1, "vol": 0.3 },
+    { "use": "tick", "freq": 2500, "repeat": 14, "every": 0.1, "fade": 0.9, "vol": 0.3 } ] },
+  "cyber_grid": { "about": "Three digital pulses over a low synth drone", "layers": [
+    { "use": "blip", "duty": 0.25, "freq": 220, "dur": 0.12, "repeat": 3, "every": 0.7 },
+    { "use": "fall", "wave": "square", "duty": 0.12, "freq": [1760, 880], "dur": 0.15, "at": 0.05, "repeat": 3, "every": 0.7, "vol": 0.3 },
+    { "use": "drone", "dur": 2.9, "vol": 0.6 },
+    { "use": "tick", "freq": 3200, "repeat": 28, "every": 0.1, "vol": 0.2 } ] },
+  "data_stream": { "about": "A fast stream of random data beeps", "layers": [
+    { "use": "blip", "freq": 1500, "dur": 0.03, "repeat": 30, "every": 0.055, "scatter": 12 },
+    { "use": "drone", "freq": 110, "low": 900, "dur": 1.7, "vol": 0.3 },
+    { "use": "tick", "freq": 4000, "repeat": 16, "every": 0.1, "vol": 0.2 } ] },
+  "drone_spawn": { "about": "A motor spinning up, a hover and an online beep", "layers": [
+    { "use": "rise", "wave": "saw", "freq": [60, 220], "low": 2500, "trem": [35, 0.5], "dur": 0.6 },
+    { "use": "buzz", "at": 0.6, "freq": 220, "trem": [35, 0.6], "dur": 1.2, "vol": 0.6 },
+    { "use": "blip", "at": 0.6, "freq": 1320, "notes": [0, 7], "every": 0.1, "dur": 0.06 },
+    { "use": "clang", "freq": 500, "dur": 0.1, "repeat": 2, "every": 0.15, "vol": 0.4 } ] },
+  "emp_blast": { "about": "A pulse that drags every pitch down to nothing", "range": 32, "crush": 7, "layers": [
+    { "use": "fall", "wave": "square", "duty": 0.2, "freq": [1200, 40], "glide": 0.6, "dur": 0.8 },
+    { "use": "boom", "freq": [140, 40], "dur": 0.5 },
+    { "use": "blast", "freq": [6000, 300], "dur": 0.5, "vol": 0.4 },
+    { "use": "spark", "at": 0.1, "repeat": 12, "every": 0.06, "vol": 0.5 } ] },
+  "energy_shield": { "about": "A shield powering up and holding a soft pulsing hum", "layers": [
+    { "use": "rise", "wave": "saw", "freq": [110, 330], "low": 3000, "dur": 0.3 },
+    { "use": "buzz", "at": 0.3, "freq": 165, "trem": [8, 0.3], "low": 1500, "dur": 2.5, "shape": "bump", "vol": 0.5 },
+    { "wave": "sine", "freq": 990, "trem": [8, 0.3], "at": 0.2, "dur": 2.6, "shape": "bump", "vol": 0.25 },
+    { "use": "blip", "freq": 1980, "dur": 0.04, "at": 0.1, "repeat": 8, "every": 0.3, "vol": 0.2 } ] },
+  "forcefield_impact": { "about": "Something bouncing off a force field with a shimmer", "layers": [
+    { "use": "zap", "duty": 0.5, "freq": [500, 180], "dur": 0.25 },
+    { "use": "clang", "freq": 300, "fm": [2, 5], "dur": 0.5 },
+    { "wave": "sine", "freq": [1400, 1100], "trem": [40, 0.7], "dur": 0.5, "vol": 0.4 },
+    { "use": "thud" } ] },
+  "hack_progress": { "about": "Rapid typing while a tone climbs, then access granted", "layers": [
+    { "use": "blip", "freq": 1200, "dur": 0.035, "repeat": 34, "every": 0.058, "scatter": 7, "vol": 0.6 },
+    { "use": "rise", "wave": "square", "duty": 0.12, "freq": [200, 800], "dur": 2.0, "shape": "hold", "vol": 0.2 },
+    { "use": "blip", "at": 2.0, "freq": 1047, "notes": [0, 7, 12], "every": 0.08, "dur": 0.1 } ] },
+  "holographic_glitch": { "about": "Broken, stuttering digital noise", "crush": 5, "rate": 9000, "layers": [
+    { "wave": "noise", "freq": 2000, "dur": 0.04, "shape": "hold", "repeat": 9, "every": 0.13, "jitter": 0.9, "scatter": 24 },
+    { "use": "blip", "duty": 0.12, "freq": 700, "dur": 0.05, "repeat": 9, "every": 0.13, "jitter": 0.9, "scatter": 14 },
+    { "wave": "sine", "freq": 1500, "trem": [28, 1], "dur": 1.2, "shape": "hold", "vol": 0.3 } ] },
+  "laser_beam": { "about": "A laser firing and holding a steady beam", "range": 32, "layers": [
+    { "use": "zap", "duty": 0.25, "freq": [2400, 900], "dur": 0.2 },
+    { "wave": "saw", "freq": 900, "vib": [9, 0.3], "trem": [55, 0.4], "low": 5000, "at": 0.05, "dur": 1.6, "shape": "hold", "release": 0.3 },
+    { "wave": "sine", "freq": 2700, "dur": 1.6, "shape": "hold", "release": 0.3, "vol": 0.25 } ] },
+  "matrix_code": { "about": "Falling code: endless tiny ticks and dropping blips", "crush": 6, "layers": [
+    { "use": "blip", "freq": 2400, "dur": 0.025, "repeat": 50, "every": 0.058, "scatter": 9, "jitter": 0.4, "vol": 0.5 },
+    { "use": "fall", "wave": "square", "duty": 0.12, "freq": [1800, 300], "dur": 0.6, "repeat": 5, "every": 0.58, "vol": 0.2 },
+    { "use": "drone", "freq": 82, "dur": 3.0, "vol": 0.4 } ] },
+  "neon_trail": { "about": "A neon tube flicking on and humming", "layers": [
+    { "use": "tick", "freq": 3000, "repeat": 3, "every": 0.06, "vol": 0.4 },
+    { "use": "blip", "freq": 1760, "dur": 0.05, "vol": 0.4 },
+    { "wave": "saw", "freq": [440, 660], "trem": [120, 0.3], "low": 4000, "dur": 2.0, "shape": "bump" },
+    { "use": "buzz", "freq": 120, "trem": [120, 0.8], "dur": 2.0, "shape": "bump", "vol": 0.4 } ] },
+  "photon_torpedo": { "about": "A launch, a pulsing flight and a bright detonation", "range": 32, "layers": [
+    { "use": "zap", "freq": [800, 1600], "dur": 0.12 },
+    { "use": "wobble", "wave": "square", "freq": [500, 900], "vib": [18, 2], "dur": 0.8, "vol": 0.5 },
+    { "use": "boom", "at": 0.8, "freq": [170, 50], "dur": 0.5 },
+    { "use": "zap", "at": 0.8, "freq": [3000, 300], "dur": 0.3 },
+    { "use": "blast", "at": 0.8, "freq": [7000, 1500], "dur": 0.3, "vol": 0.5 } ] },
+  "pulse_wave": { "about": "Three fading sonar-like pulses", "layers": [
+    { "wave": "sine", "freq": [900, 200], "dur": 0.22, "repeat": 3, "every": 0.1, "fade": 0.75 },
+    { "use": "zap", "freq": [1500, 500], "dur": 0.1, "vol": 0.4 },
+    { "use": "whoosh", "band": [3000, 800], "dur": 0.5, "shape": "decay", "vol": 0.4 } ] },
+  "scanner_sweep": { "about": "A rising scan with ticking, ending on a ping", "layers": [
+    { "use": "rise", "wave": "sine", "freq": [500, 2000], "dur": 1.5, "shape": "hold", "vol": 0.4 },
+    { "use": "blip", "freq": 2000, "dur": 0.03, "repeat": 15, "every": 0.1, "vol": 0.5 },
+    { "use": "blip", "at": 1.5, "freq": 2640, "dur": 0.3, "shape": "decay" } ] },
+  "system_reboot": { "about": "Power dying, a self-test chatter and a start-up chime", "layers": [
+    { "use": "fall", "wave": "square", "duty": 0.25, "freq": [600, 60], "dur": 0.35 },
+    { "use": "tick", "freq": 1500, "at": 0.35, "repeat": 8, "every": 0.1, "scatter": 5, "vol": 0.5 },
+    { "use": "blip", "wave": "triangle", "at": 1.2, "freq": 659, "notes": [0, 5, 12], "every": 0.12, "dur": 0.14 },
+    { "wave": "sine", "at": 1.2, "freq": [80, 160], "dur": 0.5, "vol": 0.4 } ] },
+  "teleport_beam": { "about": "A shimmering tone climbing as someone is beamed up", "layers": [
+    { "use": "rise", "wave": "sine", "freq": [300, 2400], "trem": [16, 0.7], "dur": 1.1, "power": 1 },
+    { "wave": "hiss", "band": [3000, 8000], "trem": [16, 0.7], "dur": 1.1, "shape": "swell", "vol": 0.35 },
+    { "wave": "sine", "freq": 150, "dur": 1.1, "shape": "bump", "vol": 0.4 },
+    { "use": "chime", "at": 1.1, "freq": 2637, "dur": 0.25 } ] },
+  "thruster_exhaust": { "about": "A rocket thruster lighting: a roar with a turbine whine", "range": 32, "layers": [
+    { "use": "rise", "wave": "saw", "freq": [70, 140], "low": 1000, "dur": 0.25, "vol": 0.5 },
+    { "wave": "noise", "freq": [1600, 1200], "low": [1500, 3500], "attack": 0.1, "dur": 1.5, "shape": "hold", "release": 0.35 },
+    { "wave": "saw", "freq": [300, 520], "trem": [45, 0.3], "low": 2500, "dur": 1.5, "shape": "hold", "release": 0.35, "vol": 0.5 },
+    { "use": "rumble", "freq": [130, 110], "dur": 1.5, "shape": "hold", "release": 0.3 } ] },
+  "tractor_beam": { "about": "A steady 'wup-wup-wup' pulling upward", "layers": [
+    { "wave": "sine", "freq": [220, 440], "dur": 0.25, "shape": "swell", "power": 1, "repeat": 9, "every": 0.25, "vol": 0.6 },
+    { "use": "drone", "freq": 110, "low": 800, "trem": [4, 0.6], "dur": 2.3, "vol": 0.5 },
+    { "wave": "sine", "freq": 1760, "trem": [4, 0.6], "dur": 2.3, "shape": "bump", "vol": 0.15 } ] },
+  "warp_speed": { "about": "A pitch screaming upward into a jump flash", "range": 32, "layers": [
+    { "use": "rise", "wave": "saw", "freq": [100, 2400], "glide": 2.5, "low": 6000, "dur": 0.6 },
+    { "use": "whoosh", "band": [500, 7000], "dur": 0.6, "shape": "swell" },
+    { "use": "crack", "at": 0.6 },
+    { "use": "boom", "at": 0.6, "freq": [250, 40], "dur": 0.35 },
+    { "wave": "sine", "at": 0.6, "freq": [2400, 600], "dur": 0.35, "vol": 0.3 } ] }
+}

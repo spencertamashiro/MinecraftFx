@@ -1,0 +1,93 @@
+{
+  "ash_fall": { "about": "A low smoulder with dying embers ticking out", "level": 0.7, "layers": [
+    { "use": "flame", "freq": [220, 160], "low": 500, "trem": [2, 0.4], "dur": 3.0, "vol": 0.7 },
+    { "use": "crackle", "freq": [5000, 1500], "repeat": 9, "every": 0.32, "vol": 0.45 },
+    { "use": "fall", "wave": "sine", "freq": [900, 500], "dur": 0.25, "repeat": 3, "every": 0.95, "jitter": 0.6, "vol": 0.12 } ] },
+  "campfire_crackle": { "about": "A small steady campfire: soft low flames, crackles and wood pops", "level": 0.8, "layers": [
+    { "use": "flame", "freq": [400, 300], "dur": 3.2, "vol": 0.6 },
+    { "use": "crackle", "repeat": 22, "every": 0.14 },
+    { "use": "thud", "freq": [300, 150], "dur": 0.04, "repeat": 5, "every": 0.6, "jitter": 0.9, "vol": 0.5 } ] },
+  "cauterize_smoke": { "about": "A sharp sear and a hiss of smoke", "layers": [
+    { "use": "sizzle", "dur": 1.0 },
+    { "use": "hiss", "high": 6000, "dur": 1.1, "vol": 0.5 },
+    { "use": "crack", "vol": 0.5 } ] },
+  "dragon_breath": { "about": "A throaty growl behind a long roaring gout of flame", "range": 32, "layers": [
+    { "use": "flame", "freq": [1200, 400], "low": [3000, 900], "dur": 1.6, "attack": 0.08 },
+    { "use": "growl", "freq": [110, 70], "dur": 1.5 },
+    { "use": "whoosh", "band": [900, 2200], "dur": 1.5, "vol": 0.6 },
+    { "use": "crackle", "at": 0.3, "vol": 0.5 } ] },
+  "embers_floating": { "about": "Tiny embers ticking and glinting in still air", "level": 0.7, "layers": [
+    { "use": "crackle", "freq": [12000, 6000], "repeat": 14, "every": 0.2, "vol": 0.6 },
+    { "use": "chime", "freq": 3136, "dur": 0.2, "repeat": 6, "every": 0.45, "jitter": 0.9, "vol": 0.12 },
+    { "use": "flame", "freq": [300, 200], "dur": 3.0, "vol": 0.3 } ] },
+  "fire_ring": { "about": "A whump as a ring of flame rolls outward", "layers": [
+    { "use": "flame", "freq": [500, 1500], "dur": 1.1, "shape": "decay" },
+    { "use": "boom", "freq": [130, 60], "dur": 0.4, "vol": 0.6 },
+    { "use": "crackle", "at": 0.2, "repeat": 6, "vol": 0.6 } ] },
+  "fire_shield": { "about": "Flames catching, then circling with a warm hum", "layers": [
+    { "use": "rise", "freq": [150, 500], "dur": 0.4, "vol": 0.5 },
+    { "use": "flame", "dur": 2.9, "trem": [7, 0.5] },
+    { "use": "pad", "freq": 196, "dur": 2.8, "vol": 0.35 },
+    { "use": "crackle", "repeat": 14, "every": 0.2, "vol": 0.5 } ] },
+  "fire_tornado": { "about": "Fire roaring round and round with a deep rumble", "range": 32, "layers": [
+    { "use": "flame", "freq": [400, 1400], "trem": [6, 0.6], "dur": 2.6 },
+    { "use": "whoosh", "band": [300, 1500], "dur": 0.5, "repeat": 5, "every": 0.5, "vol": 0.8 },
+    { "use": "rumble", "dur": 2.6, "vol": 0.6 } ] },
+  "fireball_burst": { "about": "A fireball bursting: boom, flare and crackle", "range": 32, "layers": [
+    { "use": "boom", "freq": [140, 40], "dur": 0.8 },
+    { "use": "flame", "freq": [2500, 500], "dur": 1.4, "shape": "decay" },
+    { "use": "crack" },
+    { "use": "crackle", "at": 0.4, "every": 0.1, "vol": 0.6 } ] },
+  "flame_jet": { "about": "A steady pressurised jet of flame that cuts off", "layers": [
+    { "use": "rise", "freq": [80, 160], "dur": 0.2 },
+    { "wave": "hiss", "band": [1500, 2500], "dur": 1.4, "shape": "hold", "release": 0.4 },
+    { "use": "flame", "freq": 900, "trem": [19, 0.4], "dur": 1.5, "shape": "hold", "release": 0.4 } ] },
+  "flaming_trail": { "about": "A sweep of fire that leaves the ground burning", "layers": [
+    { "use": "whoosh", "band": [1800, 700], "dur": 0.8 },
+    { "use": "flame", "freq": [900, 400], "dur": 2.8 },
+    { "use": "crackle", "at": 0.3, "repeat": 16, "every": 0.15, "vol": 0.6 } ] },
+  "heat_distortion": { "about": "A slow wavering shimmer of hot air", "level": 0.7, "layers": [
+    { "use": "wobble", "freq": 150, "vib": [3, 4], "dur": 2.4, "vol": 0.6 },
+    { "use": "hiss", "band": [5000, 7000], "trem": [4, 0.6], "dur": 2.4, "shape": "bump", "vol": 0.3 },
+    { "use": "flame", "freq": 250, "dur": 2.4, "vol": 0.3 } ] },
+  "ignition_spark": { "about": "A flint strike and a small flame catching", "layers": [
+    { "use": "crack" },
+    { "use": "spark", "repeat": 3, "every": 0.03 },
+    { "use": "flame", "at": 0.08, "freq": [600, 1800], "dur": 0.4, "shape": "decay" },
+    { "use": "drip", "at": 0.08, "freq": [200, 900], "dur": 0.1, "vol": 0.5 } ] },
+  "inferno_pillar": { "about": "A column of fire erupting upward", "range": 32, "layers": [
+    { "use": "boom", "freq": [100, 45] },
+    { "use": "flame", "freq": [600, 2600], "glide": 0.5, "dur": 1.1, "shape": "decay", "power": 1.2 },
+    { "use": "rise", "wave": "saw", "freq": [90, 300], "low": 1500, "dur": 0.7, "vol": 0.5 } ] },
+  "lava_splash": { "about": "A heavy molten glop, then sizzling", "layers": [
+    { "use": "thud", "freq": [200, 70], "dur": 0.25 },
+    { "use": "splash", "freq": [2500, 600], "low": 2500, "dur": 0.5 },
+    { "use": "sizzle", "at": 0.3, "dur": 1.6, "vol": 0.6 },
+    { "use": "drip", "freq": [200, 500], "dur": 0.12, "at": 0.4, "repeat": 4, "every": 0.25, "jitter": 0.8, "vol": 0.5 } ] },
+  "magma_eruption": { "about": "The ground roaring open and globs of magma landing", "range": 40, "layers": [
+    { "use": "rumble", "freq": [160, 60], "dur": 2.8 },
+    { "use": "boom", "freq": [90, 35], "dur": 1.2 },
+    { "use": "blast", "freq": [2500, 300], "low": 2500, "dur": 1.2, "vol": 0.7 },
+    { "use": "thud", "freq": [180, 70], "at": 0.5, "repeat": 8, "every": 0.22, "jitter": 0.9, "vol": 0.7 },
+    { "use": "sizzle", "at": 1.0, "dur": 1.8, "vol": 0.4 } ] },
+  "meteor_strike": { "about": "A falling whistle, then a massive fiery impact", "range": 40, "echo": [0.12, 0.3], "layers": [
+    { "use": "fall", "wave": "saw", "freq": [1400, 180], "low": 3000, "dur": 0.5, "shape": "swell" },
+    { "use": "flame", "freq": [2000, 700], "dur": 0.5, "shape": "swell", "vol": 0.6 },
+    { "use": "boom", "at": 0.5, "freq": [120, 28], "dur": 1.4 },
+    { "use": "blast", "at": 0.5, "dur": 1.5 },
+    { "use": "crack", "at": 0.5 },
+    { "use": "crackle", "at": 1.0, "repeat": 10, "every": 0.15, "vol": 0.5 } ] },
+  "molten_drip": { "about": "Six heavy drops falling, each landing with a sizzle", "layers": [
+    { "use": "drip", "freq": [900, 300], "dur": 0.12, "repeat": 6, "every": 0.3 },
+    { "use": "sizzle", "at": 0.65, "dur": 0.18, "repeat": 6, "every": 0.3, "vol": 0.6 } ] },
+  "scorch_mark": { "about": "A sear and a long fading sizzle from burnt ground", "level": 0.8, "layers": [
+    { "use": "crack" },
+    { "use": "thud", "vol": 0.5 },
+    { "use": "sizzle", "dur": 2.6, "power": 2 },
+    { "use": "hiss", "high": 5000, "dur": 3.0, "vol": 0.3 } ] },
+  "wall_of_fire": { "about": "A wall of flame rushing up into a loud bright roar", "range": 32, "layers": [
+    { "use": "whoosh", "band": [400, 2000], "dur": 0.6, "shape": "swell" },
+    { "use": "flame", "freq": [900, 2200], "low": 3500, "dur": 3.1, "attack": 0.3 },
+    { "use": "rumble", "dur": 3.1, "vol": 0.8 },
+    { "use": "crackle", "at": 0.2, "repeat": 10, "every": 0.28, "vol": 0.6 } ] }
+}

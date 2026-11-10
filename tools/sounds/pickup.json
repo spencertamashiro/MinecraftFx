@@ -1,0 +1,86 @@
+{
+  "ammo_pickup": { "about": "A metallic clack-clack and a confirming beep", "layers": [
+    { "use": "clang", "freq": 900, "dur": 0.08 },
+    { "use": "clang", "at": 0.08, "freq": 1200, "dur": 0.08 },
+    { "use": "blip", "at": 0.4, "freq": 1568, "dur": 0.08, "vol": 0.5 } ] },
+  "armor_glint": { "about": "A solid armour ring and two polished glints", "layers": [
+    { "use": "clang", "freq": 660, "fm": [2, 2], "dur": 0.5 },
+    { "use": "chime", "at": 0.25, "freq": 1976, "dur": 0.3, "repeat": 2, "every": 0.6 },
+    { "use": "chime", "at": 0.7, "freq": 2637, "dur": 0.4, "vol": 0.6 } ] },
+  "chest_open_flash": { "about": "A lid creaking open into a rising fanfare", "layers": [
+    { "wave": "noise", "freq": [300, 500], "trem": [40, 0.8], "dur": 0.15 },
+    { "use": "thud", "at": 0.12, "freq": [200, 90], "dur": 0.1 },
+    { "use": "blip", "at": 0.15, "freq": 784, "notes": [0, 4, 7, 12, 16, 19], "every": 0.07, "dur": 0.09 },
+    { "use": "chime", "at": 0.6, "freq": 3136, "dur": 0.25, "repeat": 6, "every": 0.15, "jitter": 0.5, "vol": 0.3 } ] },
+  "coin_burst": { "about": "The two-note coin ding with jingling coins after", "layers": [
+    { "use": "blip", "freq": 1976, "dur": 0.06 },
+    { "use": "blip", "at": 0.06, "freq": 2637, "dur": 0.35, "shape": "decay" },
+    { "use": "clang", "freq": 3200, "dur": 0.05, "at": 0.15, "repeat": 8, "every": 0.09, "jitter": 0.8, "step": 1.03, "vol": 0.3 } ] },
+  "confetti": { "about": "A party pop, a little toot and fluttering paper", "layers": [
+    { "use": "thud", "freq": [400, 150], "dur": 0.08 },
+    { "use": "crack" },
+    { "use": "blip", "wave": "triangle", "at": 0.05, "freq": 1047, "notes": [0, 4, 7, 12, 7, 12, 16], "every": 0.09, "dur": 0.08 },
+    { "wave": "hiss", "band": [5000, 7000], "trem": [12, 0.7], "dur": 1.6, "at": 0.1, "vol": 0.15 } ] },
+  "drop_shadow": { "about": "A quiet idle pulse marking a dropped item", "level": 0.6, "layers": [
+    { "use": "wobble", "freq": 330, "vib": [1.5, 0.5], "dur": 2.8, "vol": 0.4 },
+    { "use": "chime", "freq": 1320, "repeat": 3, "every": 1.0, "vol": 0.3 } ] },
+  "exp_orb": { "about": "Rising plips flying in, then an absorbed two-note", "layers": [
+    { "use": "drip", "freq": [600, 1400], "repeat": 5, "every": 0.15, "step": 1.12 },
+    { "use": "chime", "at": 0.75, "freq": 1760, "notes": [0, 5], "every": 0.08, "dur": 0.35 } ] },
+  "gem_sparkle": { "about": "A crystalline ring and a scatter of sparkles", "layers": [
+    { "use": "bell", "freq": 2093, "fm": [3.5, 1.2], "dur": 0.6 },
+    { "use": "chime", "freq": 3136, "notes": [0, 7, 4, 12, 7, 16], "every": 0.4, "jitter": 0.3, "at": 0.2, "dur": 0.3, "vol": 0.5 } ] },
+  "health_globe": { "about": "A steady heartbeat under a warm glow", "layers": [
+    { "use": "thud", "freq": [130, 70], "dur": 0.1, "repeat": 6, "every": 0.45 },
+    { "use": "thud", "at": 0.14, "freq": [110, 60], "dur": 0.1, "repeat": 6, "every": 0.45, "vol": 0.7 },
+    { "use": "pad", "freq": 523, "dur": 2.7, "vol": 0.35 },
+    { "use": "chime", "freq": 1047, "notes": [0, 4, 7], "every": 0.9, "dur": 0.6, "vol": 0.3 } ] },
+  "key_shimmer": { "about": "Keys jingling, then a slow shimmer", "layers": [
+    { "use": "clang", "freq": 2400, "dur": 0.15, "repeat": 3, "every": 0.11, "step": 1.12 },
+    { "use": "chime", "at": 0.4, "freq": 3520, "notes": [0, -5, 0, -5, 0, 7], "every": 0.35, "dur": 0.3, "vol": 0.4 } ] },
+  "level_up": { "about": "Four rising notes into a triumphant chord", "range": 32, "echo": [0.12, 0.25], "layers": [
+    { "use": "blip", "duty": 0.25, "freq": 523, "notes": [0, 4, 7, 12], "every": 0.2, "dur": 0.18, "vol": 0.5 },
+    { "wave": "sine", "freq": [200, 1000], "dur": 0.8, "shape": "swell", "vol": 0.25 },
+    { "use": "bell", "at": 0.8, "freq": 1047, "dur": 1.2 },
+    { "use": "bell", "at": 0.8, "freq": 1319, "dur": 1.2, "vol": 0.6 },
+    { "use": "bell", "at": 0.8, "freq": 1568, "dur": 1.2, "vol": 0.6 } ] },
+  "loot_beam": { "about": "A beam of light rising and holding on an open fifth", "level": 0.8, "layers": [
+    { "wave": "sine", "freq": [196, 392], "dur": 0.6, "shape": "swell", "vol": 0.5 },
+    { "use": "pad", "freq": 392, "dur": 3.0 },
+    { "use": "pad", "freq": 588, "dur": 3.0, "vol": 0.5 },
+    { "use": "chime", "freq": 2349, "dur": 0.3, "repeat": 9, "every": 0.32, "jitter": 0.5, "vol": 0.2 } ] },
+  "mana_potion_glint": { "about": "A glass tink, bubbling and three magic notes", "layers": [
+    { "use": "clang", "freq": 2800, "dur": 0.1, "vol": 0.4 },
+    { "use": "drip", "freq": [500, 1300], "repeat": 10, "every": 0.25, "jitter": 0.5 },
+    { "use": "chime", "at": 0.15, "freq": 1865, "notes": [0, 7, 12], "every": 0.45, "vol": 0.4 } ] },
+  "material_pop": { "about": "A cartoon pop and a small pickup beep", "layers": [
+    { "use": "drip", "freq": [300, 1100], "dur": 0.08 },
+    { "use": "thud", "freq": [300, 120], "dur": 0.06, "vol": 0.6 },
+    { "use": "blip", "at": 0.25, "freq": 1319, "dur": 0.06, "vol": 0.4 } ] },
+  "quest_item_pulse": { "about": "An alert beep, then three slow important bell pulses", "layers": [
+    { "use": "blip", "freq": 1245, "notes": [0, 5], "every": 0.08 },
+    { "use": "bell", "freq": 880, "notes": [0, 5, 0], "every": 0.7, "dur": 0.8 },
+    { "use": "pad", "freq": 440, "dur": 2.8, "vol": 0.3 } ] },
+  "rarity_glow": { "about": "A rich, mysterious held chord with rising glints", "level": 0.8, "layers": [
+    { "use": "pad", "freq": 277, "dur": 2.9 },
+    { "use": "pad", "freq": 415, "dur": 2.9, "vol": 0.6 },
+    { "use": "pad", "freq": 554, "dur": 2.9, "vol": 0.4 },
+    { "use": "chime", "freq": 2217, "dur": 0.3, "at": 0.2, "repeat": 6, "every": 0.4, "step": 1.06, "vol": 0.25 } ] },
+  "resource_gather": { "about": "Stone, leaf and gem collected in turn, then a tally beep", "layers": [
+    { "use": "crunch", "freq": [1200, 400], "dur": 0.08 },
+    { "use": "rustle", "at": 0.1, "dur": 0.1 },
+    { "use": "clang", "at": 0.2, "freq": 2600, "dur": 0.1 },
+    { "use": "blip", "at": 0.85, "freq": 1047, "notes": [0, 7], "every": 0.07, "dur": 0.08 } ] },
+  "soul_absorb": { "about": "A soul drawn in with a long inhale and a soft landing note", "layers": [
+    { "use": "whoosh", "band": [400, 2800], "dur": 1.0, "shape": "swell" },
+    { "use": "wobble", "freq": [700, 350], "vib": [7, 2], "dur": 1.0, "vol": 0.5 },
+    { "use": "thud", "at": 1.0, "freq": [200, 80], "dur": 0.15 },
+    { "use": "chime", "at": 1.2, "freq": 1480, "vol": 0.5 } ] },
+  "treasure_glow": { "about": "A gleaming melody running up and back down", "layers": [
+    { "use": "chime", "freq": 1568, "notes": [0, 4, 7, 12, 16, 12, 7, 4], "every": 0.22, "dur": 0.35 },
+    { "use": "pad", "freq": 784, "dur": 1.9, "vol": 0.35 } ] },
+  "weapon_shine": { "about": "A blade's shing and a long clean ring", "layers": [
+    { "use": "slice", "band": [3000, 9000], "dur": 0.25, "attack": 0.05, "vol": 0.6 },
+    { "use": "clang", "freq": 3000, "fm": [1.41, 2], "dur": 0.9, "vol": 0.6 },
+    { "use": "chime", "at": 0.25, "freq": 3951, "dur": 0.3, "repeat": 4, "every": 0.45, "vol": 0.25 } ] }
+}

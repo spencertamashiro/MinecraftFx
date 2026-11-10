@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:fire.fire_shield" } ],
+  "palette": { "core": "#FFF0A8", "flame": "#FF8A2A", "deep": "#D23A1A", "ember": "#9E2412" },
+  "layers": [
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "axis": "up", "count": 3, "lifetime": [50], "scale": { "from": 0.16, "to": 0.16 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["core", "flame"], "cone": 90, "rim": true, "pattern": "even", "offset": [1.0], "height": [0.9], "orbit": 0.2 },
+    { "sprite": "minecraftfx:flame", "additive": false, "axis": "up", "count": 3, "repeat": 24, "interval": 2, "lifetime": [8], "scale": { "from": 0.22, "to": 0.06 }, "color": ["flame", "deep"], "cone": 90, "rim": true, "pattern": "even", "twist": 22.92, "offset": [1.0], "height": [0.9], "lift": [0.02] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 3, "repeat": 24, "interval": 2, "delay": 1, "lifetime": [10, 14], "scale": { "from": 0.05, "to": 0.02 }, "color": ["core", "ember"], "cone": 90, "rim": true, "pattern": "even", "twist": 22.92, "offset": [1.0], "height": [0.9], "gravity": 0.3 }
+  ]
+}

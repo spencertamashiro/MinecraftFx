@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:nature.bark_shield" } ],
+  "palette": { "light": "#B8F06A", "leaf": "#5CC23A", "wood": "#8A5A32", "bark": "#5A3A20" },
+  "layers": [
+    { "sprite": "minecraftfx:block", "additive": false, "axis": "up", "count": 6, "lifetime": [56], "scale": { "from": 0.2, "to": 0.2 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["wood", "bark"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.75], "height": [0.6], "orbit": 0.08 },
+    { "sprite": "minecraftfx:block", "additive": false, "axis": "up", "count": 6, "lifetime": [56], "scale": { "from": 0.2, "to": 0.2 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["bark", "wood"], "cone": 90, "rim": true, "pattern": "even", "phase": 30, "offset": [0.75], "height": [1.3], "orbit": 0.08 },
+    { "sprite": "minecraftfx:leaf", "frames": "random", "additive": false, "axis": "up", "repeat": 10, "interval": 5, "lifetime": [16, 20], "scale": { "from": 0.08, "to": 0.08 }, "color": ["light", "leaf"], "cone": 90, "rim": true, "offset": [0.75], "height": [0.4, 1.5], "gravity": 0.3, "spin": 0.1 }
+  ]
+}

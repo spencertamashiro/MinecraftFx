@@ -1,0 +1,8 @@
+{
+  "sounds": [ { "id": "minecraftfx:arcane.spell_echo" } ],
+  "palette": { "glow": "#D9B8FF", "arcane": "#9A5CFF", "deep": "#4B2AA8" },
+  "layers": [
+    { "sprite": "minecraftfx:rune", "shape": "plane", "additive": false, "repeat": 4, "interval": 4, "lifetime": [16], "scale": { "from": 0.5, "to": 0.9 }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["glow", "arcane"], "lift": [0.06] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 8, "repeat": 4, "interval": 4, "lifetime": [12], "scale": { "from": 0.05, "to": 0.02 }, "color": ["glow", "deep"], "cone": 90, "rim": true, "pattern": "even", "twist": 22.5, "offset": [0.5], "speed": [0.05], "lift": [0.06] }
+  ]
+}

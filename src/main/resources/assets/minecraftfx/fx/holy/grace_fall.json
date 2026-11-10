@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:holy.grace_fall" } ],
+  "palette": { "white": "#FFFFFF", "light": "#FFF6C8", "gold": "#FFD54A" },
+  "layers": [
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "axis": "up", "count": 2, "repeat": 12, "interval": 4, "lifetime": [34, 40], "scale": { "from": 0.07, "to": 0.04 }, "alpha": { "from": 0.0, "mid": 0.9, "to": 0.0 }, "color": ["light", "gold"], "cone": 90, "rim": true, "offset": [0.2, 1.0], "height": [2.6, 3.2], "lift": [-0.06], "orbit": 0.03 },
+    { "sprite": "minecraftfx:glint", "axis": "up", "repeat": 12, "interval": 4, "lifetime": [6], "scale": { "from": 0.14, "to": 0.14 }, "color": ["white"], "cone": 90, "rim": true, "offset": [0.2, 1.0], "height": [0.6, 2.6] },
+    { "sprite": "minecraftfx:feather", "frames": "random", "additive": false, "axis": "up", "repeat": 4, "interval": 10, "lifetime": [40], "scale": { "from": 0.09, "to": 0.09 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["white", "light"], "cone": 90, "rim": true, "offset": [0.3, 0.8], "height": [2.8], "lift": [-0.05], "orbit": -0.04, "spin": 0.05 }
+  ]
+}

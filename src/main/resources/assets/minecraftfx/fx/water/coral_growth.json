@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:water.coral_growth" } ],
+  "palette": { "foam": "#F0FBFF", "water": "#5FB8FF", "pink": "#FF8AA8", "orange": "#FF9A4A", "violet": "#B07AE8" },
+  "layers": [
+    { "sprite": "minecraftfx:coral", "additive": false, "axis": "up", "repeat": 10, "interval": 3, "lifetime": [50], "scale": { "from": 0.0, "mid": 0.3, "to": 0.3, "easing": "expoOut" }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["pink", "orange"], "cone": 90, "rim": true, "pattern": "even", "twist": 137, "offset": [0.2, 1.3], "height": [0.28] },
+    { "sprite": "minecraftfx:coral", "additive": false, "axis": "up", "repeat": 6, "interval": 5, "delay": 4, "lifetime": [44], "scale": { "from": 0.0, "mid": 0.2, "to": 0.2, "easing": "expoOut" }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["violet", "pink"], "cone": 90, "rim": true, "pattern": "even", "twist": 97, "offset": [0.4, 1.5], "height": [0.2] },
+    { "sprite": "minecraftfx:bubble", "additive": false, "axis": "up", "count": 2, "repeat": 12, "interval": 4, "lifetime": [14, 18], "scale": { "from": 0.04, "to": 0.08 }, "color": ["foam", "water"], "cone": 90, "rim": true, "offset": [0.0, 1.3], "height": [0.3], "lift": [0.03, 0.05] }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:pickup.rarity_glow" } ],
+  "palette": { "glow": "#E0B0FF", "violet": "#A040FF", "deep": "#5A1AB0" },
+  "layers": [
+    { "sprite": "minecraftfx:ring", "frames": "first", "shape": "plane", "additive": false, "axis": "up", "lifetime": [60], "height": [0.04], "scale": { "from": 0.5, "to": 0.5 }, "alpha": { "from": 0.0, "mid": 0.9, "to": 0.0 }, "color": ["violet", "deep"] },
+    { "sprite": "minecraftfx:orb", "frames": "first", "shape": "plane", "axis": "up", "lifetime": [60], "height": [0.035], "scale": { "from": 0.5, "to": 0.5 }, "alpha": { "from": 0.0, "mid": 0.4, "to": 0.0 }, "color": ["glow"] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "count": 8, "repeat": 6, "interval": 8, "lifetime": [12], "scale": { "from": 0.03, "to": 0.02 }, "length": { "from": 0.15, "to": 0.3 }, "color": ["glow", "violet"], "cone": 90, "rim": true, "pattern": "even", "twist": 22.5, "offset": [0.5], "lift": [0.06] }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:impact.knockback_dust" } ],
+  "palette": { "dust": "#D8CFC0", "shade": "#8A7F70", "dirt": "#9A7A54" },
+  "layers": [
+    { "sprite": "minecraftfx:puff", "additive": false, "count": 12, "lifetime": [14, 18], "scale": { "from": 0.22, "to": 0.26 }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["dust", "shade"], "cone": 6, "speed": [0.1, 0.6], "friction": 0.8 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 14, "lifetime": [10, 14], "scale": { "from": 0.05, "to": 0.03 }, "color": ["dirt", "shade"], "cone": 10, "speed": [0.15, 0.7], "friction": 0.82, "gravity": 0.3 },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "count": 3, "lifetime": [5], "scale": { "from": 0.03, "to": 0.03 }, "length": { "from": 0.8, "to": 0.3 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["dust"], "cone": 4, "speed": [0.5, 0.7] }
+  ]
+}

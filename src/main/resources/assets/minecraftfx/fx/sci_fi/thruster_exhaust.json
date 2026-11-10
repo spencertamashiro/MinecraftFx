@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:sci_fi.thruster_exhaust" } ],
+  "palette": { "white": "#FFFFFF", "cyan": "#9AE8FF", "blue": "#3A7AFF" },
+  "layers": [
+    { "sprite": "minecraftfx:flame", "additive": false, "count": 2, "repeat": 24, "interval": 1, "lifetime": [6, 8], "scale": { "from": 0.22, "to": 0.06 }, "color": ["white", "blue"], "cone": 6, "speed": [0.45, 0.6] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "repeat": 24, "interval": 1, "lifetime": [4], "scale": { "from": 0.06, "to": 0.02 }, "length": { "from": 0.4, "to": 0.4 }, "color": ["white"], "cone": 3, "speed": [0.7] },
+    { "sprite": "minecraftfx:ring", "shape": "oriented", "additive": false, "repeat": 6, "interval": 4, "lifetime": [8], "scale": { "from": 0.14, "to": 0.2 }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["cyan", "blue"], "cone": 0, "speed": [0.3] }
+  ]
+}

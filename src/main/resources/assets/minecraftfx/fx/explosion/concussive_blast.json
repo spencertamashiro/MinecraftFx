@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:explosion.concussive_blast" } ],
+  "palette": { "white": "#FFFFFF", "pale": "#DCE4EC", "dust": "#B8AFA0" },
+  "layers": [
+    { "sprite": "minecraftfx:ring", "frames": "first", "additive": false, "lifetime": [7], "scale": { "from": 0.3, "to": 3.0, "easing": "quadOut" }, "alpha": { "from": 0.35, "to": 0.0 }, "color": ["white", "pale"] },
+    { "sprite": "minecraftfx:ring", "frames": "first", "additive": false, "delay": 2, "lifetime": [7], "scale": { "from": 0.2, "to": 2.2, "easing": "quadOut" }, "alpha": { "from": 0.25, "to": 0.0 }, "color": ["white", "pale"] },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 12, "delay": 1, "lifetime": [10, 14], "scale": { "from": 0.2, "to": 0.25 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["dust", "pale"], "cone": 90, "rim": true, "pattern": "even", "height": [0.1], "offset": [0.6], "speed": [0.3], "friction": 0.85 }
+  ]
+}

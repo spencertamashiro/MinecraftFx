@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:water.tidal_wave" } ],
+  "palette": { "foam": "#F0FBFF", "water": "#5FB8FF", "deep": "#2A6FD6" },
+  "layers": [
+    { "sprite": "minecraftfx:crest", "additive": false, "count": 2, "repeat": 5, "interval": 1, "lifetime": [24], "scale": { "from": 0.7, "to": 0.7 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["water", "deep"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.0, 2.5], "lift": [0.2] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 2, "repeat": 20, "interval": 1, "lifetime": [8, 12], "scale": { "from": 0.06, "to": 0.03 }, "color": ["foam", "water"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.0, 2.5], "lift": [0.2], "gravity": -0.3 },
+    { "sprite": "minecraftfx:drop", "additive": false, "count": 2, "repeat": 12, "interval": 2, "lifetime": [10, 14], "scale": { "from": 0.06, "to": 0.06 }, "color": ["foam", "deep"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.0, 2.5], "lift": [0.12, 0.2], "gravity": 0.4 },
+    { "sprite": "minecraftfx:smoke", "additive": false, "count": 2, "repeat": 8, "interval": 3, "lifetime": [14, 18], "scale": { "from": 0.3, "to": 0.5 }, "alpha": { "from": 0.4, "to": 0.0 }, "color": ["foam"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.0, 2.5], "lift": [0.15] }
+  ]
+}

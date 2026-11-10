@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:lightning.surge_aura" } ],
+  "palette": { "white": "#FFFFFF", "bolt": "#C8E8FF", "blue": "#6FA8FF", "violet": "#7A5CFF" },
+  "layers": [
+    { "sprite": "minecraftfx:orb", "frames": "first", "axis": "up", "repeat": 3, "interval": 8, "lifetime": [10], "height": [0.9], "scale": { "from": 0.6, "to": 1.2 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["bolt", "blue"] },
+    { "sprite": "minecraftfx:ring", "frames": "first", "additive": false, "axis": "up", "repeat": 3, "interval": 8, "lifetime": [10], "height": [0.9], "scale": { "from": 0.5, "to": 1.2 }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["bolt", "violet"] },
+    { "sprite": "minecraftfx:bolt", "shape": "streak", "axis": "up", "count": 3, "repeat": 12, "interval": 2, "lifetime": [4], "scale": { "from": 0.08, "to": 0.08 }, "length": { "from": 0.3, "to": 0.3 }, "color": ["white", "bolt"], "cone": 90, "rim": true, "offset": [0.45, 0.6], "height": [0.1, 1.4], "lift": [0.12] }
+  ]
+}

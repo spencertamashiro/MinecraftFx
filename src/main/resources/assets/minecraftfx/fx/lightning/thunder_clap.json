@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:lightning.thunder_clap" } ],
+  "palette": { "white": "#FFFFFF", "bolt": "#C8E8FF", "blue": "#6FA8FF" },
+  "layers": [
+    { "sprite": "minecraftfx:flash", "lifetime": [5], "scale": { "from": 2.6, "mid": 2.6, "to": 0.8 }, "color": ["white"] },
+    { "sprite": "minecraftfx:ring", "frames": "first", "additive": false, "repeat": 2, "interval": 3, "lifetime": [8], "scale": { "from": 0.4, "to": 2.8, "easing": "quadOut" }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["white", "bolt"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 20, "lifetime": [8], "scale": { "from": 0.06, "to": 0.02 }, "color": ["white", "blue"], "cone": 90, "rim": true, "pattern": "even", "height": [0.9], "offset": [0.3], "speed": [0.4], "friction": 0.85 }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:arcane.spell_fizzle" } ],
+  "palette": { "spark": "#F4A6FF", "arcane": "#A45CFF", "ash": "#6A5A78", "dim": "#3A3046" },
+  "layers": [
+    { "sprite": "minecraftfx:puff", "additive": false, "count": 3, "lifetime": [12, 16], "scale": { "from": 0.16, "to": 0.1 }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["ash", "dim"], "speed": [0.01, 0.03], "gravity": -0.1 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 3, "repeat": 5, "interval": 2, "lifetime": [6, 10], "scale": { "from": 0.06, "to": 0.02 }, "color": ["spark", "arcane"], "speed": [0.05, 0.12], "gravity": 0.6 },
+    { "sprite": "minecraftfx:glint", "repeat": 4, "interval": 3, "lifetime": [4], "scale": { "from": 0.12, "to": 0.12 }, "color": ["spark"], "offset": [0.0, 0.3] }
+  ]
+}

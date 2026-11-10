@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:status.confused" } ],
+  "palette": { "white": "#FFFFFF", "yellow": "#FFE86A", "purple": "#C07AFF" },
+  "layers": [
+    { "sprite": "minecraftfx:question", "additive": false, "axis": "up", "repeat": 6, "interval": 7, "lifetime": [18], "scale": { "from": 0.1, "to": 0.18 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["yellow", "purple"], "cone": 90, "rim": true, "pattern": "even", "twist": 137, "offset": [0.4], "height": [2.0], "lift": [0.03] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "repeat": 6, "interval": 7, "lifetime": [8], "scale": { "from": 0.05, "to": 0.02 }, "color": ["white", "yellow"], "cone": 90, "rim": true, "pattern": "even", "twist": 137, "offset": [0.4], "height": [1.9] },
+    { "sprite": "minecraftfx:spiral", "additive": false, "axis": "up", "lifetime": [44], "height": [2.1], "scale": { "from": 0.12, "to": 0.12 }, "alpha": { "from": 0.0, "mid": 0.5, "to": 0.0 }, "color": ["purple"], "spin": -0.15 }
+  ]
+}

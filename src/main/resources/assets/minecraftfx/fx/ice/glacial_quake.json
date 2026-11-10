@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:ice.glacial_quake" } ],
+  "palette": { "white": "#FFFFFF", "ice": "#BDF0FF", "blue": "#5AB4FF", "deep": "#2C66C8" },
+  "layers": [
+    { "sprite": "minecraftfx:crack", "shape": "plane", "additive": false, "axis": "up", "lifetime": [44], "height": [0.04], "scale": { "from": 1.8, "to": 1.8 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["ice", "deep"] },
+    { "sprite": "minecraftfx:block", "additive": false, "axis": "up", "count": 2, "repeat": 10, "interval": 3, "lifetime": [12, 14], "scale": { "from": 0.12, "to": 0.1 }, "color": ["ice", "blue"], "cone": 90, "rim": true, "offset": [0.3, 1.8], "height": [0.05], "lift": [0.16, 0.24], "gravity": 1.4, "spin": 0.2 },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "repeat": 3, "interval": 10, "lifetime": [10], "height": [0.05], "scale": { "from": 0.4, "to": 2.0, "easing": "quadOut" }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["white", "ice"] },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 2, "repeat": 10, "interval": 3, "lifetime": [12, 16], "scale": { "from": 0.15, "to": 0.15 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["white", "ice"], "cone": 90, "rim": true, "offset": [0.3, 1.8], "height": [0.1], "lift": [0.02] }
+  ]
+}

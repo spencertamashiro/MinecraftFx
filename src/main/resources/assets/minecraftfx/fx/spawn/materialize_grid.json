@@ -1,0 +1,11 @@
+{
+  "sounds": [ { "id": "minecraftfx:spawn.materialize_grid" } ],
+  "palette": { "white": "#FFFFFF", "cyan": "#7AF8FF", "teal": "#20C8D8" },
+  "layers": [
+    { "sprite": "minecraftfx:grid", "shape": "plane", "additive": false, "axis": "up", "lifetime": [30], "height": [0.1], "scale": { "from": 0.6, "to": 0.6 }, "alpha": { "from": 0.0, "mid": 0.9, "to": 0.0 }, "color": ["cyan", "teal"], "lift": [0.065] },
+    { "sprite": "minecraftfx:block", "additive": false, "axis": "up", "count": 5, "lifetime": [34], "scale": { "from": 0.0, "mid": 0.12, "to": 0.12, "easing": "expoOut" }, "alpha": { "from": 0.9, "mid": 0.9, "to": 0.0 }, "color": ["white", "cyan"], "cone": 90, "rim": true, "offset": [0.05, 0.4], "height": [0.2, 0.5] },
+    { "sprite": "minecraftfx:block", "additive": false, "axis": "up", "count": 5, "delay": 7, "lifetime": [27], "scale": { "from": 0.0, "mid": 0.12, "to": 0.12, "easing": "expoOut" }, "alpha": { "from": 0.9, "mid": 0.9, "to": 0.0 }, "color": ["white", "cyan"], "cone": 90, "rim": true, "offset": [0.05, 0.4], "height": [0.6, 0.9] },
+    { "sprite": "minecraftfx:block", "additive": false, "axis": "up", "count": 5, "delay": 14, "lifetime": [20], "scale": { "from": 0.0, "mid": 0.12, "to": 0.12, "easing": "expoOut" }, "alpha": { "from": 0.9, "mid": 0.9, "to": 0.0 }, "color": ["white", "cyan"], "cone": 90, "rim": true, "offset": [0.05, 0.4], "height": [1.0, 1.3] },
+    { "sprite": "minecraftfx:block", "additive": false, "axis": "up", "count": 5, "delay": 21, "lifetime": [13], "scale": { "from": 0.0, "mid": 0.12, "to": 0.12, "easing": "expoOut" }, "alpha": { "from": 0.9, "mid": 0.9, "to": 0.0 }, "color": ["white", "cyan"], "cone": 90, "rim": true, "offset": [0.05, 0.4], "height": [1.4, 1.8] }
+  ]
+}

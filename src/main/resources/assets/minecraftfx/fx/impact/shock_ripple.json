@@ -1,0 +1,8 @@
+{
+  "sounds": [ { "id": "minecraftfx:impact.shock_ripple" } ],
+  "palette": { "white": "#FFFFFF", "pale": "#CFE0F0" },
+  "layers": [
+    { "sprite": "minecraftfx:ring", "additive": false, "repeat": 3, "interval": 3, "lifetime": [10], "scale": { "from": 0.2, "to": 1.6, "easing": "quadOut" }, "alpha": { "from": 0.45, "to": 0.0 }, "color": ["white", "pale"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 16, "delay": 1, "lifetime": [8], "scale": { "from": 0.04, "to": 0.02 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["white", "pale"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.2], "speed": [0.2], "friction": 0.9 }
+  ]
+}

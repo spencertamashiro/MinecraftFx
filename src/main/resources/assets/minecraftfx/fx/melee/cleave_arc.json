@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:melee.cleave_arc" } ],
+  "palette": { "white": "#FFFFFF", "steel": "#D8ECFF", "blue": "#7AB4FF" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "repeat": 6, "interval": 1, "lifetime": [10], "scale": { "from": 0.16, "to": 0.04 }, "length": { "from": 0.5, "to": 0.5 }, "color": ["white", "steel"], "cone": 90, "rim": true, "pattern": "even", "phase": 200, "offset": [1.5], "height": [1.0], "orbit": 0.3 },
+    { "sprite": "minecraftfx:slash", "shape": "plane", "additive": false, "axis": "up", "lifetime": [9], "height": [1.0], "scale": { "from": 1.5, "to": 1.7 }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["steel", "blue"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 2, "repeat": 6, "interval": 1, "lifetime": [8, 10], "scale": { "from": 0.05, "to": 0.02 }, "color": ["white", "blue"], "cone": 90, "rim": true, "pattern": "even", "phase": 200, "offset": [1.6], "height": [1.0], "orbit": 0.3, "speed": [0.04] }
+  ]
+}

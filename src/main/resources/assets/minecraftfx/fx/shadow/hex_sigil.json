@@ -1,0 +1,16 @@
+{
+  "sounds": [ { "id": "minecraftfx:shadow.hex_sigil" } ],
+  "palette": { "pink": "#FF6AD5", "magenta": "#C21E9E", "dark": "#4A0A3A", "black": "#160410" },
+  "layers": [
+    { "sprite": "minecraftfx:rune", "shape": "plane", "axis": "up", "additive": false, "lifetime": [36], "height": [0.05],
+      "scale": { "from": 1.4, "mid": 1.1, "to": 1.1, "easing": "expoOut" }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["magenta", "dark"], "spin": 0.04 },
+    { "sprite": "minecraftfx:rune", "additive": false, "shape": "plane", "axis": "up", "delay": 4, "lifetime": [30], "height": [0.06],
+      "scale": { "from": 0.4, "to": 0.7, "easing": "expoOut" }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["pink", "magenta"], "spin": 0.06 },
+    { "sprite": "minecraftfx:glyph", "additive": false, "frames": "random", "axis": "up", "count": 6, "delay": 6, "lifetime": [24, 30],
+      "scale": { "from": 0.14, "to": 0.1 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["pink", "magenta"],
+      "cone": 90, "rim": true, "pattern": "even", "offset": [1.15], "height": [0.4], "lift": [0.01, 0.02], "orbit": -0.06 },
+    { "sprite": "minecraftfx:smoke", "axis": "up", "additive": false, "count": 2, "repeat": 8, "interval": 4, "lifetime": [16, 22],
+      "scale": { "from": 0.2, "to": 0.4 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["dark", "black"],
+      "cone": 90, "rim": true, "offset": [0.9, 1.2], "lift": [0.03, 0.05] }
+  ]
+}

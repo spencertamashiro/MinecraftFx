@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:ice.glacier_spike" } ],
+  "palette": { "white": "#FFFFFF", "ice": "#BDF0FF", "blue": "#5AB4FF", "deep": "#2C66C8" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "lifetime": [44], "height": [-0.3], "scale": { "from": 0.4, "to": 0.4 }, "length": { "from": 1.4, "to": 1.4 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["ice", "blue"], "cone": 0, "speed": [0.5], "friction": 0.7 },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "count": 5, "delay": 2, "lifetime": [40], "height": [-0.2], "scale": { "from": 0.2, "to": 0.2 }, "length": { "from": 0.7, "to": 0.7 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["white", "deep"], "cone": 28, "rim": true, "pattern": "even", "speed": [0.35], "friction": 0.7 },
+    { "sprite": "minecraftfx:rock", "frames": "random", "additive": false, "axis": "up", "count": 10, "lifetime": [14, 20], "scale": { "from": 0.09, "to": 0.06 }, "color": ["white", "ice"], "cone": 60, "speed": [0.15, 0.3], "gravity": 1.2, "spin": 0.3 },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 10, "lifetime": [14, 18], "scale": { "from": 0.2, "to": 0.2 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["white", "ice"], "cone": 90, "rim": true, "pattern": "even", "speed": [0.14], "friction": 0.86 }
+  ]
+}

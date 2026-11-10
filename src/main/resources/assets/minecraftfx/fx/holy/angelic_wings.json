@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:holy.angelic_wings" } ],
+  "palette": { "white": "#FFFFFF", "light": "#FFF6C8" },
+  "layers": [
+    { "sprite": "minecraftfx:wings", "additive": false, "axis": "up", "lifetime": [44], "height": [1.4], "scale": { "from": 0.3, "mid": 1.2, "to": 1.2, "easing": "expoOut" }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["white", "light"] },
+    { "sprite": "minecraftfx:feather", "frames": "random", "additive": false, "axis": "up", "count": 2, "repeat": 8, "interval": 4, "lifetime": [30, 40], "scale": { "from": 0.1, "to": 0.08 }, "color": ["white", "light"], "cone": 90, "rim": true, "offset": [0.5, 1.3], "height": [1.2, 2.2], "lift": [-0.03], "orbit": 0.03, "spin": 0.06 },
+    { "sprite": "minecraftfx:glint", "axis": "up", "repeat": 10, "interval": 4, "lifetime": [6], "scale": { "from": 0.15, "to": 0.15 }, "color": ["white"], "cone": 90, "rim": true, "offset": [0.3, 1.3], "height": [1.0, 2.2] }
+  ]
+}

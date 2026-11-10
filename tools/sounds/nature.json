@@ -1,0 +1,92 @@
+{
+  "acid_splash": { "about": "A splash that keeps hissing and bubbling", "layers": [
+    { "use": "splash" },
+    { "use": "sizzle", "at": 0.15, "dur": 1.5 },
+    { "use": "drip", "freq": [300, 900], "at": 0.2, "repeat": 6, "every": 0.15, "jitter": 0.7, "vol": 0.5 } ] },
+  "bark_shield": { "about": "Wood creaking and plates of bark knocking into place", "layers": [
+    { "use": "crunch", "freq": [700, 250], "dur": 0.15, "repeat": 4, "every": 0.09 },
+    { "wave": "noise", "freq": [300, 150], "trem": [30, 0.8], "dur": 0.5, "vol": 0.6 },
+    { "use": "thud", "at": 0.35, "freq": [160, 70] },
+    { "use": "rustle", "at": 0.3, "repeat": 5, "every": 0.5, "vol": 0.4 } ] },
+  "branch_snap": { "about": "A dry branch snapping and leaves shaking", "layers": [
+    { "use": "crack" },
+    { "use": "crunch", "freq": [1500, 400], "dur": 0.18 },
+    { "wave": "noise", "freq": [500, 200], "trem": [50, 0.8], "dur": 0.12, "vol": 0.5 },
+    { "use": "rustle", "at": 0.1, "dur": 0.6, "vol": 0.5 } ] },
+  "earth_tremor": { "about": "The ground shaking with rocks knocking together", "range": 32, "layers": [
+    { "use": "rumble", "freq": [90, 50], "dur": 2.4 },
+    { "use": "thud", "freq": [130, 50], "dur": 0.2, "repeat": 12, "every": 0.15, "jitter": 0.6, "vol": 0.6 },
+    { "use": "crunch", "freq": [600, 250], "dur": 0.1, "repeat": 12, "every": 0.15, "jitter": 0.8, "vol": 0.4 } ] },
+  "fungal_growth": { "about": "Nine mushrooms popping up, each a little higher", "level": 0.8, "layers": [
+    { "use": "drip", "freq": [200, 500], "dur": 0.1, "repeat": 9, "every": 0.15, "step": 1.07 },
+    { "wave": "noise", "freq": [400, 250], "dur": 0.08, "repeat": 9, "every": 0.15, "vol": 0.4 },
+    { "use": "wobble", "at": 1.4, "freq": 220, "vib": [4, 1], "dur": 1.4, "vol": 0.25 } ] },
+  "healing_bloom": { "about": "Leaves unfurling and a soft rising flower chime", "layers": [
+    { "use": "rustle", "dur": 0.5 },
+    { "use": "chime", "freq": 1319, "notes": [0, 4, 7, 12], "every": 0.15, "at": 0.2, "dur": 0.45 },
+    { "wave": "sine", "freq": [330, 660], "dur": 0.8, "shape": "bump", "vol": 0.3 },
+    { "use": "drip", "at": 0.4, "freq": [800, 1600], "vol": 0.4 } ] },
+  "insect_swarm": { "about": "A dense, shifting buzz of many wings", "layers": [
+    { "use": "buzz", "freq": [210, 180], "trem": [117, 0.9], "vib": [3, 2], "dur": 2.2, "shape": "bump" },
+    { "use": "buzz", "freq": [245, 230], "trem": [143, 0.9], "vib": [2, 3], "dur": 2.2, "shape": "bump", "vol": 0.7 },
+    { "wave": "hiss", "band": [5000, 6000], "trem": [80, 0.9], "dur": 2.2, "shape": "bump", "vol": 0.25 } ] },
+  "leaf_storm": { "about": "Wind tearing through leaves in gusts", "layers": [
+    { "use": "wind", "band": [500, 1400], "dur": 2.2 },
+    { "use": "rustle", "band": [3000, 4500], "dur": 2.2, "vol": 0.8 },
+    { "use": "whoosh", "dur": 0.5, "repeat": 3, "every": 0.6, "vol": 0.5 } ] },
+  "moss_spread": { "about": "Soft damp creeping with the odd drip", "level": 0.6, "layers": [
+    { "wave": "noise", "freq": [500, 300], "dur": 0.06, "repeat": 20, "every": 0.15, "jitter": 0.9, "vol": 0.4 },
+    { "use": "rustle", "trem": [9, 0.6], "dur": 3.0, "vol": 0.25 },
+    { "use": "drip", "freq": [300, 600], "repeat": 5, "every": 0.6, "jitter": 0.8, "vol": 0.3 } ] },
+  "mud_slide": { "about": "Thick mud sliding with heavy glops", "layers": [
+    { "use": "rumble", "freq": [200, 90], "dur": 1.4 },
+    { "wave": "noise", "freq": [700, 250], "trem": [14, 0.5], "low": 1500, "dur": 1.3 },
+    { "use": "drip", "freq": [250, 120], "dur": 0.12, "repeat": 8, "every": 0.15, "jitter": 0.8, "vol": 0.5 } ] },
+  "natural_spring": { "about": "Clear water trickling and plinking", "level": 0.8, "layers": [
+    { "use": "drip", "freq": [700, 1500], "repeat": 22, "every": 0.13, "jitter": 0.9, "scatter": 4 },
+    { "wave": "noise", "freq": [5000, 3000], "high": 2000, "trem": [6, 0.3], "dur": 2.9, "shape": "bump", "vol": 0.25 },
+    { "use": "drip", "freq": [400, 900], "at": 0.1, "repeat": 9, "every": 0.3, "jitter": 0.9, "vol": 0.5 } ] },
+  "petal_dance": { "about": "A light waltzing melody with petals whisking by", "level": 0.8, "layers": [
+    { "use": "chime", "freq": 1760, "notes": [0, 4, 9, 7, 12, 9, 4, 7], "every": 0.35, "dur": 0.4, "vol": 0.5 },
+    { "use": "wind", "band": [800, 1500], "dur": 3.0, "vol": 0.35 },
+    { "use": "rustle", "band": [4000, 6000], "dur": 0.2, "repeat": 6, "every": 0.5, "jitter": 0.8, "vol": 0.2 } ] },
+  "poison_cloud": { "about": "A sick hissing cloud with slow bubbling", "layers": [
+    { "wave": "hiss", "band": [900, 1400], "dur": 2.9, "shape": "bump", "power": 1 },
+    { "use": "drip", "freq": [250, 600], "repeat": 10, "every": 0.28, "jitter": 0.9, "vol": 0.5 },
+    { "use": "wobble", "freq": 98, "vib": [3, 2], "dur": 2.9, "vol": 0.4 } ] },
+  "pollen_cloud": { "about": "A soft puff and a faint tickling haze", "level": 0.7, "layers": [
+    { "use": "whoosh", "band": [900, 2000], "dur": 0.6, "vol": 0.6 },
+    { "use": "hiss", "high": 7000, "dur": 3.0, "shape": "bump", "vol": 0.15 },
+    { "use": "chime", "freq": 2960, "dur": 0.2, "repeat": 7, "every": 0.4, "jitter": 0.9, "vol": 0.12 },
+    { "use": "wind", "dur": 3.0, "vol": 0.3 } ] },
+  "root_snare": { "about": "Roots creaking up out of the ground and clamping shut", "layers": [
+    { "wave": "noise", "freq": [250, 600], "trem": [26, 0.8], "low": 1800, "dur": 1.5, "shape": "hold", "release": 0.1 },
+    { "use": "crunch", "freq": [900, 400], "dur": 0.08, "repeat": 8, "every": 0.18, "jitter": 0.6, "vol": 0.6 },
+    { "use": "rustle", "at": 0.3, "repeat": 4, "every": 0.3, "vol": 0.3 },
+    { "use": "thud", "at": 1.5, "freq": [180, 60], "dur": 0.25 } ] },
+  "spore_burst": { "about": "A mushroom swelling, popping and letting out a slow puff", "layers": [
+    { "use": "drip", "freq": [180, 420], "dur": 0.2 },
+    { "use": "thud", "at": 0.25, "freq": [260, 90], "dur": 0.12 },
+    { "use": "whoosh", "at": 0.25, "band": [1500, 500], "dur": 0.8, "shape": "decay" },
+    { "use": "hiss", "at": 0.3, "high": 6000, "dur": 1.8, "vol": 0.2 } ] },
+  "thorn_spike": { "about": "Thorns stabbing up through the ground", "layers": [
+    { "use": "slice", "band": [3000, 7000], "dur": 0.1 },
+    { "use": "crunch", "freq": [2500, 800], "dur": 0.15 },
+    { "wave": "noise", "freq": [1200, 500], "dur": 0.05, "repeat": 4, "every": 0.04, "vol": 0.5 },
+    { "use": "thud", "vol": 0.5 },
+    { "use": "rustle", "at": 0.3, "dur": 0.5, "vol": 0.3 } ] },
+  "toxic_puddle": { "about": "A wet splat, then a long fizzing bubble", "level": 0.8, "layers": [
+    { "use": "splash", "freq": [2500, 700], "low": 3000, "dur": 0.35 },
+    { "use": "drip", "freq": [200, 520], "dur": 0.12, "repeat": 14, "every": 0.2, "jitter": 0.9 },
+    { "use": "sizzle", "dur": 3.0, "shape": "bump", "vol": 0.25 } ] },
+  "venom_spit": { "about": "A spit, a short flight and a sizzling splat", "layers": [
+    { "wave": "noise", "freq": [3000, 6000], "high": 1500, "dur": 0.12 },
+    { "use": "whoosh", "band": [1800, 2600], "dur": 0.6, "vol": 0.3 },
+    { "use": "splash", "at": 0.7, "dur": 0.25, "vol": 0.7 },
+    { "use": "sizzle", "at": 0.75, "vol": 0.5 } ] },
+  "vine_whip": { "about": "A vine lashing out and cracking like a whip", "layers": [
+    { "use": "whoosh", "band": [500, 3500], "dur": 0.45, "shape": "swell" },
+    { "use": "crack", "at": 0.45 },
+    { "wave": "noise", "freq": [6000, 2000], "dur": 0.1, "at": 0.45 },
+    { "use": "rustle", "at": 0.5, "dur": 0.6, "vol": 0.4 } ] }
+}

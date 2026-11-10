@@ -1,0 +1,14 @@
+{
+  "sounds": [ { "id": "minecraftfx:nature.leaf_storm" } ],
+  "palette": { "light": "#B8F06A", "leaf": "#5CC23A", "dark": "#2E7A2A", "autumn": "#E0A030" },
+  "layers": [
+    { "sprite": "minecraftfx:leaf", "frames": "random", "additive": false, "count": 20, "lifetime": [30, 44],
+      "scale": { "from": 0.1, "to": 0.08 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["light", "dark"],
+      "speed": [0.15, 0.3], "lift": [0.05, 0.1], "friction": 0.88, "gravity": 0.12, "spin": 0.15 },
+    { "sprite": "minecraftfx:leaf", "frames": "random", "additive": false, "count": 8, "lifetime": [30, 44],
+      "scale": { "from": 0.1, "to": 0.08 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["autumn", "leaf"],
+      "speed": [0.12, 0.25], "lift": [0.05, 0.1], "friction": 0.88, "gravity": 0.12, "spin": 0.15 },
+    { "sprite": "minecraftfx:smoke", "additive": false, "count": 5, "lifetime": [10, 14],
+      "scale": { "from": 0.2, "to": 0.4 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["light", "leaf"], "speed": [0.04, 0.08] }
+  ]
+}

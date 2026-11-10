@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:nature.moss_spread" } ],
+  "palette": { "light": "#B8F06A", "moss": "#5A9A3A", "dark": "#2E5A22" },
+  "layers": [
+    { "sprite": "minecraftfx:splat", "shape": "plane", "additive": false, "axis": "up", "repeat": 32, "interval": 2, "lifetime": [56], "scale": { "from": 0.0, "mid": 0.3, "to": 0.3, "easing": "expoOut" }, "alpha": { "from": 0.9, "mid": 0.9, "to": 0.0 }, "color": ["moss", "dark"], "cone": 90, "rim": true, "offset": [0.0, 1.8], "height": [0.03], "spin": 0.001 },
+    { "sprite": "minecraftfx:leaf", "frames": "random", "additive": false, "axis": "up", "repeat": 10, "interval": 6, "delay": 8, "lifetime": [30], "scale": { "from": 0.0, "mid": 0.08, "to": 0.08 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["light", "moss"], "cone": 90, "rim": true, "offset": [0.2, 1.6], "height": [0.1] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 2, "repeat": 10, "interval": 6, "lifetime": [12, 16], "scale": { "from": 0.04, "to": 0.02 }, "color": ["light", "moss"], "cone": 90, "rim": true, "offset": [0.0, 1.8], "height": [0.05], "lift": [0.02, 0.04] }
+  ]
+}

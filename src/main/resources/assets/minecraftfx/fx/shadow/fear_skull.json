@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:shadow.fear_skull" } ],
+  "palette": { "bone": "#E6D8FF", "violet": "#8A3CFF", "dark": "#2A1240", "void": "#0A0612" },
+  "layers": [
+    { "sprite": "minecraftfx:skull", "additive": false, "lifetime": [18], "scale": { "from": 0.3, "to": 1.4 }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["bone", "violet"], "cone": 0, "speed": [0.25] },
+    { "sprite": "minecraftfx:ring", "shape": "oriented", "additive": false, "repeat": 3, "interval": 4, "lifetime": [10], "scale": { "from": 0.3, "to": 1.2 }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["violet", "dark"], "cone": 0, "speed": [0.3] },
+    { "sprite": "minecraftfx:smoke", "additive": false, "count": 10, "lifetime": [14, 20], "scale": { "from": 0.3, "to": 0.5 }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["dark", "void"], "cone": 10, "speed": [0.05, 0.22], "spin": 0.05 }
+  ]
+}

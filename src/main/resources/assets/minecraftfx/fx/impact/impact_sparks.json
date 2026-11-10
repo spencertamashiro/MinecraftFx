@@ -1,0 +1,8 @@
+{
+  "sounds": [ { "id": "minecraftfx:impact.impact_sparks" } ],
+  "palette": { "white": "#FFFFFF", "hot": "#FFE98A" },
+  "layers": [
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 8, "lifetime": [5, 8], "scale": { "from": 0.06, "to": 0.02 }, "color": ["white", "hot"], "cone": 70, "speed": [0.25, 0.45], "gravity": 0.8, "friction": 0.9 },
+    { "sprite": "minecraftfx:glint", "lifetime": [4], "scale": { "from": 0.3, "to": 0.3 }, "color": ["white"] }
+  ]
+}

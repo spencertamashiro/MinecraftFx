@@ -1,0 +1,14 @@
+{
+  "sounds": [ { "id": "minecraftfx:lightning.electrified" } ],
+  "palette": { "white": "#FFFFFF", "spark": "#BFE6FF", "blue": "#5C9DFF", "violet": "#8A6CFF" },
+  "layers": [
+    { "sprite": "minecraftfx:bolt", "shape": "streak", "axis": "up", "count": 2, "repeat": 10, "interval": 3, "lifetime": [2, 3],
+      "scale": { "from": 0.12, "to": 0.08 }, "length": { "from": 0.35, "to": 0.25 }, "color": ["white", "blue"],
+      "offset": [0.4, 0.6], "height": [0.0, 1.8], "speed": [0.001] },
+    { "sprite": "minecraftfx:flash", "axis": "up", "repeat": 10, "interval": 3, "lifetime": [3],
+      "scale": { "from": 0.25, "to": 0.05 }, "color": ["spark", "violet"], "offset": [0.3, 0.6], "height": [0.0, 1.8] },
+    { "sprite": "minecraftfx:pixel", "axis": "up", "count": 3, "repeat": 10, "interval": 3, "lifetime": [6, 10],
+      "scale": { "from": 0.05, "to": 0.02 }, "color": ["white", "blue"],
+      "offset": [0.3, 0.6], "height": [0.0, 1.8], "speed": [0.05, 0.12], "gravity": 0.6, "friction": 0.9 }
+  ]
+}

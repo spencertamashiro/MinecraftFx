@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:pickup.loot_beam" } ],
+  "palette": { "white": "#FFFFFF", "gold": "#FFD24A", "orange": "#FF8A1F" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "lifetime": [64], "height": [3.0], "scale": { "from": 0.1, "to": 0.1 }, "length": { "from": 3.0, "to": 3.0 }, "alpha": { "from": 0.0, "mid": 0.9, "to": 0.0 }, "color": ["gold", "orange"], "cone": 0, "lift": [0.0001] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "axis": "up", "lifetime": [64], "height": [3.0], "scale": { "from": 0.04, "to": 0.04 }, "length": { "from": 3.0, "to": 3.0 }, "alpha": { "from": 0.0, "mid": 0.9, "to": 0.0 }, "color": ["white"], "cone": 0, "lift": [0.0001] },
+    { "sprite": "minecraftfx:ring", "frames": "first", "shape": "plane", "additive": false, "axis": "up", "lifetime": [64], "height": [0.04], "scale": { "from": 0.5, "mid": 0.6, "to": 0.5 }, "alpha": { "from": 0.0, "mid": 0.9, "to": 0.0 }, "color": ["gold", "orange"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "repeat": 20, "interval": 3, "lifetime": [20, 26], "scale": { "from": 0.05, "to": 0.02 }, "color": ["gold", "orange"], "cone": 90, "rim": true, "offset": [0.05, 0.2], "lift": [0.1, 0.16] }
+  ]
+}

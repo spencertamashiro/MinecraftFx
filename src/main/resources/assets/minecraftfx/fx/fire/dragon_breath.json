@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:fire.dragon_breath" } ],
+  "palette": { "core": "#FFF0A8", "flame": "#FF8A2A", "deep": "#D23A1A", "ember": "#9E2412" },
+  "layers": [
+    { "sprite": "minecraftfx:flame", "additive": false, "count": 4, "repeat": 16, "interval": 1, "lifetime": [10, 14], "scale": { "from": 0.15, "to": 0.5 }, "color": ["core", "deep"], "cone": 28, "speed": [0.35, 0.5], "friction": 0.95 },
+    { "sprite": "minecraftfx:puff", "additive": false, "count": 2, "repeat": 16, "interval": 1, "lifetime": [12, 16], "scale": { "from": 0.25, "to": 0.5 }, "color": ["flame", "ember"], "cone": 24, "speed": [0.3, 0.42], "friction": 0.94 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 2, "repeat": 16, "interval": 1, "lifetime": [14, 20], "scale": { "from": 0.06, "to": 0.02 }, "color": ["core", "flame"], "cone": 32, "speed": [0.3, 0.55], "gravity": -0.2 }
+  ]
+}

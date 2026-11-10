@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:explosion.flak_burst" } ],
+  "palette": { "flare": "#FFD88A", "soot": "#3A3636", "black": "#161414", "iron": "#6A7078" },
+  "layers": [
+    { "sprite": "minecraftfx:flash", "lifetime": [2], "scale": { "from": 0.6, "to": 0.3 }, "color": ["flare"] },
+    { "sprite": "minecraftfx:puff", "additive": false, "count": 12, "lifetime": [26, 36], "scale": { "from": 0.45, "to": 0.5 }, "alpha": { "from": 0.95, "to": 0.0, "easing": "quadIn" }, "color": ["soot", "black"], "offset": [0.0, 0.5], "speed": [0.02, 0.05], "friction": 0.9 },
+    { "sprite": "minecraftfx:smoke", "additive": false, "count": 5, "delay": 2, "lifetime": [30, 40], "scale": { "from": 0.4, "to": 0.8 }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["soot", "black"], "offset": [0.0, 0.4], "speed": [0.01, 0.03], "spin": 0.03 },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "count": 8, "lifetime": [6, 9], "scale": { "from": 0.03, "to": 0.02 }, "length": { "from": 0.3, "to": 0.1 }, "color": ["iron", "black"], "speed": [0.4, 0.6], "gravity": 0.5 }
+  ]
+}

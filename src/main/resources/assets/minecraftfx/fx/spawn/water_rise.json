@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:spawn.water_rise" } ],
+  "palette": { "foam": "#F0FBFF", "water": "#5FB8FF", "deep": "#2A6FD6" },
+  "layers": [
+    { "sprite": "minecraftfx:splat", "shape": "plane", "additive": false, "axis": "up", "lifetime": [44], "height": [0.03], "scale": { "from": 0.9, "to": 0.5 }, "alpha": { "from": 0.9, "mid": 0.9, "to": 0.0 }, "color": ["water", "deep"] },
+    { "sprite": "minecraftfx:drop", "additive": false, "axis": "up", "count": 3, "repeat": 14, "interval": 1, "lifetime": [14], "scale": { "from": 0.08, "to": 0.05 }, "alpha": { "from": 1.0, "to": 0.6 }, "color": ["foam", "water"], "cone": 90, "rim": true, "offset": [0.3, 0.6], "height": [0.05], "speed": [-0.02], "lift": [0.12] },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "repeat": 3, "interval": 6, "lifetime": [12], "height": [0.04], "scale": { "from": 0.2, "to": 1.0, "easing": "quadOut" }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["foam", "water"] },
+    { "sprite": "minecraftfx:drop", "additive": false, "axis": "up", "count": 10, "delay": 20, "lifetime": [10, 14], "scale": { "from": 0.06, "to": 0.06 }, "color": ["foam", "deep"], "cone": 60, "height": [1.6], "speed": [0.1, 0.2], "gravity": 1.0 }
+  ]
+}

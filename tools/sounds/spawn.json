@@ -1,0 +1,107 @@
+{
+  "angelic_descent": { "about": "A full bright chord, slow wingbeats and chimes stepping down", "range": 32, "layers": [
+    { "wave": "sine", "freq": [1760, 880], "dur": 1.6, "shape": "bump", "vol": 0.3 },
+    { "use": "pad", "freq": 523, "dur": 3.0 },
+    { "use": "pad", "freq": 659, "dur": 3.0, "vol": 0.7 },
+    { "use": "pad", "freq": 784, "dur": 3.0, "vol": 0.6 },
+    { "use": "whoosh", "band": [700, 1500], "dur": 0.5, "repeat": 3, "every": 0.8, "vol": 0.4 },
+    { "use": "chime", "freq": 2093, "notes": [12, 7, 4, 0], "every": 0.5, "at": 0.4, "vol": 0.3 } ] },
+  "ash_reconstitution": { "about": "Ash rushing back together and settling into a body", "layers": [
+    { "wave": "hiss", "band": [600, 3000], "dur": 1.2, "shape": "swell" },
+    { "wave": "noise", "freq": [200, 2500], "glide": 1.5, "dur": 1.2, "shape": "swell", "vol": 0.4 },
+    { "use": "pad", "at": 0.6, "freq": 220, "dur": 1.4, "vol": 0.4 },
+    { "use": "thud", "at": 1.2, "freq": [180, 70], "dur": 0.2 } ] },
+  "beam_down": { "about": "A shimmering tone dropping as someone is beamed in", "layers": [
+    { "use": "fall", "wave": "sine", "freq": [2400, 400], "trem": [16, 0.7], "dur": 1.0, "power": 1 },
+    { "wave": "hiss", "band": [8000, 3000], "trem": [16, 0.7], "dur": 1.0, "power": 1, "vol": 0.3 },
+    { "use": "thud", "at": 1.0, "freq": [160, 60], "dur": 0.2 },
+    { "use": "chime", "at": 1.0, "freq": 1319, "dur": 0.4 } ] },
+  "burrow_out": { "about": "Something digging up through the earth, dirt falling off it", "layers": [
+    { "use": "crunch", "freq": [900, 300], "dur": 0.15, "repeat": 4, "every": 0.25, "step": 1.1 },
+    { "use": "rumble", "freq": [170, 80], "dur": 1.6 },
+    { "use": "thud", "freq": [150, 55], "dur": 0.25 },
+    { "wave": "noise", "freq": [700, 300], "dur": 0.05, "at": 0.3, "repeat": 10, "every": 0.12, "jitter": 0.9, "vol": 0.5 } ] },
+  "cocoon_burst": { "about": "Silk ripping open and wings buzzing away", "layers": [
+    { "wave": "noise", "freq": [900, 2500], "trem": [45, 0.8], "dur": 0.25 },
+    { "use": "thud", "at": 0.25, "freq": [280, 100], "dur": 0.1 },
+    { "use": "splash", "at": 0.25, "freq": [2500, 900], "dur": 0.2, "vol": 0.4 },
+    { "use": "buzz", "at": 0.3, "freq": [230, 260], "trem": [125, 0.9], "dur": 1.5, "shape": "decay", "power": 1, "vol": 0.7 } ] },
+  "crystal_formation": { "about": "Crystal growing note by note, then ringing out whole", "layers": [
+    { "use": "glass", "freq": 1200, "notes": [0, 4, 7, 11, 14, 19], "every": 0.1, "dur": 0.3 },
+    { "use": "crunch", "freq": [3500, 1500], "dur": 0.08, "repeat": 6, "every": 0.1, "vol": 0.4 },
+    { "use": "bell", "at": 0.6, "freq": 2400, "fm": [3.53, 2], "dur": 1.2 },
+    { "use": "glass", "freq": 3600, "at": 0.7, "repeat": 6, "every": 0.25, "jitter": 0.7, "vol": 0.25 } ] },
+  "demonic_rift": { "about": "The air ripping open on fire and a deep voice behind it", "range": 32, "layers": [
+    { "wave": "noise", "freq": [500, 7000], "glide": 2, "dur": 0.2, "shape": "swell" },
+    { "use": "crack", "at": 0.18 },
+    { "use": "growl", "at": 0.15, "freq": [70, 45], "trem": [21, 0.8], "dur": 1.7 },
+    { "use": "flame", "at": 0.15, "freq": [500, 900], "dur": 1.7, "vol": 0.5 },
+    { "use": "fall", "wave": "saw", "at": 0.5, "freq": [300, 110], "vib": [6, 2], "low": 1500, "dur": 1.0, "vol": 0.4 } ] },
+  "disintegrate": { "about": "Something crumbling steadily into dust", "layers": [
+    { "wave": "noise", "freq": [6000, 300], "dur": 2.2, "power": 1 },
+    { "use": "blip", "freq": 1800, "dur": 0.02, "repeat": 30, "every": 0.07, "scatter": 12, "fade": 0.95, "vol": 0.3 },
+    { "wave": "sine", "freq": [600, 100], "dur": 2.0, "power": 1.5, "vol": 0.3 } ] },
+  "drop_pod": { "about": "A pod screaming in, a metal crash and venting steam", "range": 40, "layers": [
+    { "use": "fall", "wave": "saw", "freq": [1100, 250], "low": 2500, "dur": 0.5, "shape": "swell" },
+    { "wave": "noise", "freq": [1500, 900], "dur": 0.5, "shape": "swell", "vol": 0.5 },
+    { "use": "boom", "at": 0.5, "freq": [110, 30], "dur": 0.9 },
+    { "use": "clang", "at": 0.5, "freq": 260, "fm": [1.41, 7], "dur": 0.8 },
+    { "use": "crunch", "at": 0.5, "freq": [1500, 300], "dur": 0.4 },
+    { "use": "hiss", "at": 0.7, "high": 3500, "dur": 1.6, "power": 1, "vol": 0.4 } ] },
+  "egg_hatch": { "about": "Two cracks, the shell breaking and three tiny peeps", "layers": [
+    { "use": "crack", "at": 0.2, "vol": 0.6 },
+    { "use": "crack", "at": 0.45, "vol": 0.7 },
+    { "use": "crunch", "at": 0.7, "freq": [3500, 1200], "dur": 0.15 },
+    { "wave": "sine", "freq": [1800, 2400], "dur": 0.08, "shape": "bump", "at": 0.8, "repeat": 3, "every": 0.13 } ] },
+  "ghost_manifest": { "about": "A classic rising and falling ghostly 'ooo'", "layers": [
+    { "wave": "sine", "freq": [200, 600], "vib": [5, 3], "dur": 2.2, "shape": "bump", "power": 1 },
+    { "wave": "sine", "freq": [300, 900], "vib": [5, 3], "dur": 2.2, "shape": "bump", "power": 1, "vol": 0.4 },
+    { "use": "wind", "band": [500, 1000], "dur": 2.6, "vol": 0.5 } ] },
+  "ground_burst": { "about": "Something bursting up out of the ground, clods raining down", "range": 32, "layers": [
+    { "use": "rise", "wave": "saw", "freq": [80, 300], "low": 1500, "dur": 0.25, "vol": 0.5 },
+    { "use": "boom", "freq": [120, 35], "dur": 0.6 },
+    { "use": "crunch", "freq": [1500, 300], "dur": 0.5 },
+    { "use": "crack" },
+    { "wave": "noise", "freq": [800, 300], "dur": 0.05, "at": 0.35, "repeat": 12, "every": 0.13, "jitter": 0.9, "fade": 0.9, "vol": 0.5 } ] },
+  "materialize_grid": { "about": "Four digital steps building something block by block", "crush": 7, "layers": [
+    { "use": "blip", "duty": 0.25, "freq": 330, "notes": [0, 5, 7, 12], "every": 0.35, "dur": 0.12 },
+    { "use": "tick", "freq": 2800, "repeat": 16, "every": 0.09, "vol": 0.3 },
+    { "wave": "sine", "freq": [220, 880], "dur": 1.5, "shape": "swell", "vol": 0.25 },
+    { "use": "clang", "at": 1.4, "freq": 1320, "vol": 0.5 } ] },
+  "mirror_shatter": { "about": "A crack across glass, then the whole pane shattering", "layers": [
+    { "use": "crack", "at": 0.15 },
+    { "use": "glass", "at": 0.15, "freq": 3200, "dur": 0.15, "vol": 0.5 },
+    { "use": "crunch", "at": 0.5, "freq": [9000, 2500], "dur": 0.3 },
+    { "use": "glass", "at": 0.5, "freq": 3400, "repeat": 14, "every": 0.05, "jitter": 0.9, "scatter": 10 },
+    { "use": "clang", "at": 0.5, "freq": 1900, "vol": 0.5 } ] },
+  "poof": { "about": "A soft cartoon poof", "layers": [
+    { "use": "thud", "freq": [300, 100], "dur": 0.1 },
+    { "use": "whoosh", "band": [1500, 400], "dur": 0.5, "shape": "decay", "power": 2 },
+    { "use": "drip", "freq": [400, 1200], "vol": 0.5 } ] },
+  "respawn_beam": { "about": "Four hopeful notes climbing into a bright return chord", "range": 32, "layers": [
+    { "use": "rise", "freq": [220, 880], "dur": 1.1, "power": 1, "vol": 0.6 },
+    { "use": "blip", "wave": "triangle", "freq": 440, "notes": [0, 4, 7, 12], "every": 0.27, "dur": 0.15, "vol": 0.5 },
+    { "use": "bell", "at": 1.1, "freq": 880, "dur": 1.0 },
+    { "use": "bell", "at": 1.1, "freq": 1319, "dur": 1.0, "vol": 0.6 },
+    { "use": "crack", "at": 1.1, "vol": 0.4 } ] },
+  "shadow_emergence": { "about": "Something bubbling up out of a pool of shadow, growling", "layers": [
+    { "use": "drone", "freq": [40, 60], "dur": 2.5 },
+    { "wave": "noise", "freq": [150, 500], "trem": [18, 0.6], "low": 1200, "dur": 1.2, "shape": "swell" },
+    { "use": "growl", "at": 0.4, "freq": [50, 90], "dur": 1.6, "shape": "swell", "vol": 0.7 },
+    { "use": "whisper", "at": 1.2, "dur": 0.8, "vol": 0.4 } ] },
+  "summon_portal": { "about": "A swirling portal winding up and opening with a bell", "range": 32, "layers": [
+    { "use": "wobble", "freq": [110, 220], "vib": [6, 4], "dur": 2.5 },
+    { "use": "whoosh", "band": [400, 1600], "dur": 0.5, "repeat": 5, "every": 0.5, "vol": 0.5 },
+    { "wave": "sine", "freq": [220, 660], "dur": 2.0, "shape": "swell", "vol": 0.4 },
+    { "use": "bell", "at": 2.0, "freq": 587, "dur": 0.5, "vol": 0.5 } ] },
+  "warp_in": { "about": "A pitch dropping out of warp and a thump on arrival", "layers": [
+    { "use": "fall", "wave": "saw", "freq": [2400, 200], "glide": 0.5, "low": 6000, "dur": 0.5, "shape": "swell" },
+    { "use": "whoosh", "band": [6000, 600], "dur": 0.5, "shape": "swell" },
+    { "use": "boom", "at": 0.5, "freq": [200, 50], "dur": 0.35 },
+    { "use": "chime", "at": 0.55, "freq": 1760, "dur": 0.35, "vol": 0.5 } ] },
+  "water_rise": { "about": "Water surging upward and breaking at the top", "layers": [
+    { "wave": "noise", "freq": [800, 2500], "high": 500, "dur": 1.0, "shape": "swell" },
+    { "use": "rumble", "freq": [100, 160], "dur": 1.0, "shape": "swell", "vol": 0.5 },
+    { "use": "drip", "freq": [300, 900], "repeat": 10, "every": 0.1, "step": 1.08, "vol": 0.5 },
+    { "use": "splash", "at": 1.0, "dur": 0.6 } ] }
+}

@@ -1,0 +1,17 @@
+{
+  "sounds": [ { "id": "minecraftfx:impact.ground_slam" } ],
+  "palette": { "light": "#F2E6CF", "dust": "#B49A78", "dirt": "#6B5440" },
+  "layers": [
+    { "sprite": "minecraftfx:ring", "shape": "plane", "axis": "up", "additive": false, "lifetime": [8], "height": [0.05],
+      "scale": { "from": 0.3, "to": 2.2, "easing": "expoOut" }, "alpha": { "from": 1.0, "to": 0.0, "easing": "quadIn" }, "color": ["light", "dust"] },
+    { "sprite": "minecraftfx:smoke", "axis": "up", "additive": false, "count": 16, "lifetime": [14, 22],
+      "scale": { "from": 0.25, "to": 0.5, "easing": "quadOut" }, "alpha": { "from": 0.9, "to": 0.0, "easing": "quadIn" }, "color": ["dust", "dirt"],
+      "cone": 90, "rim": true, "offset": [0.3], "height": [0.2], "speed": [0.15, 0.25], "friction": 0.85, "spin": 0.04 },
+    { "sprite": "minecraftfx:pixel", "axis": "up", "additive": false, "count": 14, "lifetime": [14, 22],
+      "scale": { "from": 0.1, "to": 0.06 }, "alpha": { "from": 1.0, "to": 0.6 }, "color": ["dust", "dirt"],
+      "cone": 40, "speed": [0.2, 0.4], "gravity": 1.2, "friction": 0.96 },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "axis": "up", "additive": false, "count": 8, "lifetime": [6, 10],
+      "scale": { "from": 0.06, "to": 0.02 }, "length": { "from": 0.3, "to": 0.05 }, "color": ["light", "dust"],
+      "cone": 60, "speed": [0.3, 0.5], "gravity": 0.8, "friction": 0.85 }
+  ]
+}

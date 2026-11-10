@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:holy.heal" } ],
+  "palette": { "white": "#FFFFFF", "light": "#FFF6C8", "gold": "#FFD54A", "amber": "#E89A1E" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "count": 3, "repeat": 8, "interval": 2, "lifetime": [12, 14], "scale": { "from": 0.04, "to": 0.02 }, "length": { "from": 0.25, "to": 0.5 }, "color": ["light", "gold"], "cone": 90, "rim": true, "offset": [0.3, 0.6], "lift": [0.12, 0.16] },
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "axis": "up", "count": 2, "repeat": 8, "interval": 3, "lifetime": [18, 24], "scale": { "from": 0.09, "to": 0.03 }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["white", "gold"], "cone": 90, "rim": true, "offset": [0.1, 0.5], "height": [0.0, 0.8], "lift": [0.05, 0.07] },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "lifetime": [16], "height": [0.05], "scale": { "from": 1.2, "to": 0.3, "easing": "quadOut" }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["light", "amber"] }
+  ]
+}

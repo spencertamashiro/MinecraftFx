@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:pickup.gem_sparkle" } ],
+  "palette": { "white": "#FFFFFF", "cyan": "#7AF0FF", "blue": "#2A8CE0" },
+  "layers": [
+    { "sprite": "minecraftfx:gem", "additive": false, "axis": "up", "lifetime": [50], "height": [0.5], "scale": { "from": 0.2, "to": 0.2 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["cyan", "blue"] },
+    { "sprite": "minecraftfx:glint", "axis": "up", "repeat": 12, "interval": 4, "lifetime": [6], "scale": { "from": 0.2, "to": 0.2 }, "color": ["white"], "cone": 90, "offset": [0.15, 0.3], "height": [0.5] },
+    { "sprite": "minecraftfx:pixel", "frames": "first", "additive": false, "axis": "up", "repeat": 8, "interval": 6, "lifetime": [14], "scale": { "from": 0.03, "to": 0.03 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["cyan"], "cone": 90, "offset": [0.25, 0.4], "height": [0.5], "gravity": 0.1 }
+  ]
+}

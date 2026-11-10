@@ -1,0 +1,12 @@
+{
+  "sounds": [ { "id": "minecraftfx:pickup.level_up" } ],
+  "palette": { "white": "#FFFFFF", "light": "#FFF0A0", "gold": "#FFD24A", "amber": "#E89A1E" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "lifetime": [20], "height": [1.2], "scale": { "from": 0.3, "to": 0.05 }, "length": { "from": 1.2, "to": 1.2 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["light", "gold"], "cone": 0, "lift": [0.0001] },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "repeat": 3, "interval": 5, "lifetime": [14], "height": [0.05], "scale": { "from": 0.9, "to": 0.2, "easing": "quadIn" }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["gold", "amber"], "lift": [0.12] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "count": 3, "repeat": 8, "interval": 2, "lifetime": [10, 14], "scale": { "from": 0.05, "to": 0.02 }, "length": { "from": 0.3, "to": 0.5 }, "color": ["white", "light"], "cone": 90, "rim": true, "offset": [0.5, 0.7], "lift": [0.2, 0.3] },
+    { "sprite": "minecraftfx:flash", "axis": "up", "delay": 16, "lifetime": [8], "height": [2.2], "scale": { "from": 0.3, "mid": 1.0, "to": 0.0, "easing": "expoOut" }, "color": ["white", "gold"] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "count": 5, "delay": 16, "lifetime": [14], "scale": { "from": 0.07, "to": 0.03 }, "length": { "from": 0.4, "to": 0.2 }, "color": ["white", "gold"], "cone": 60, "rim": true, "pattern": "even", "height": [2.2], "speed": [0.2], "friction": 0.82 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 10, "delay": 18, "lifetime": [18, 24], "scale": { "from": 0.05, "to": 0.02 }, "color": ["gold", "amber"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.6], "height": [2.4], "lift": [-0.03], "orbit": 0.12 }
+  ]
+}

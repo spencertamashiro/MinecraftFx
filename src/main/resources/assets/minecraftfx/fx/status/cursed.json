@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:status.cursed" } ],
+  "palette": { "glow": "#E0B0FF", "violet": "#8A3CFF", "dark": "#3A2450", "void": "#1A1024" },
+  "layers": [
+    { "sprite": "minecraftfx:cloud", "additive": false, "axis": "up", "lifetime": [54], "height": [2.6], "scale": { "from": 0.5, "to": 0.5 }, "alpha": { "from": 0.0, "mid": 0.95, "to": 0.0 }, "color": ["dark", "void"] },
+    { "sprite": "minecraftfx:drop", "additive": false, "axis": "up", "count": 2, "repeat": 20, "interval": 2, "delay": 4, "lifetime": [10], "scale": { "from": 0.05, "to": 0.05 }, "alpha": { "from": 0.9, "to": 0.4 }, "color": ["violet", "dark"], "cone": 90, "rim": true, "offset": [0.0, 0.4], "height": [2.4], "lift": [-0.1] },
+    { "sprite": "minecraftfx:bolt", "shape": "streak", "axis": "up", "repeat": 2, "interval": 18, "delay": 12, "lifetime": [3], "scale": { "from": 0.08, "to": 0.08 }, "length": { "from": 0.35, "to": 0.35 }, "color": ["glow", "violet"], "cone": 90, "rim": true, "offset": [0.0, 0.2], "height": [2.05], "lift": [-0.001] }
+  ]
+}

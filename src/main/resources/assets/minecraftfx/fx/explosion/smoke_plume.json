@@ -1,0 +1,8 @@
+{
+  "sounds": [ { "id": "minecraftfx:explosion.smoke_plume" } ],
+  "palette": { "soot": "#4A4442", "black": "#1E1A1A", "ember": "#FF8A2A", "red": "#B8321A" },
+  "layers": [
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "count": 2, "repeat": 24, "interval": 2, "lifetime": [30, 40], "scale": { "from": 0.35, "to": 0.9 }, "alpha": { "from": 0.9, "to": 0.0, "easing": "quadIn" }, "color": ["soot", "black"], "cone": 8, "offset": [0.0, 0.2], "lift": [0.09, 0.12], "spin": 0.03 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "repeat": 16, "interval": 3, "lifetime": [18, 26], "scale": { "from": 0.05, "to": 0.02 }, "color": ["ember", "red"], "cone": 90, "rim": true, "offset": [0.0, 0.3], "lift": [0.1, 0.16] }
+  ]
+}

@@ -1,0 +1,5 @@
+# Build-time only: used by tools/make_sounds.py to write the .ogg files. Nothing here ships in the mod jar.
+numpy==2.3.4
+soundfile==0.13.1
+cffi==2.1.1
+pycparser==3.12

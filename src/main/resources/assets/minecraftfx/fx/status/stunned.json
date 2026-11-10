@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:status.stunned" } ],
+  "palette": { "white": "#FFFFFF", "yellow": "#FFE45A", "orange": "#FFAA2A" },
+  "layers": [
+    { "sprite": "minecraftfx:spiral", "additive": false, "axis": "up", "lifetime": [44], "height": [2.3], "scale": { "from": 0.1, "mid": 0.3, "to": 0.3, "easing": "expoOut" }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["yellow", "orange"], "spin": 0.3 },
+    { "sprite": "minecraftfx:pixel", "frames": "first", "additive": false, "axis": "up", "count": 6, "lifetime": [44], "scale": { "from": 0.04, "to": 0.04 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["white", "yellow"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.45], "height": [2.3], "orbit": -0.2 },
+    { "sprite": "minecraftfx:glint", "axis": "up", "repeat": 5, "interval": 8, "lifetime": [5], "scale": { "from": 0.2, "to": 0.2 }, "color": ["white"], "cone": 90, "rim": true, "offset": [0.45], "height": [2.3] }
+  ]
+}

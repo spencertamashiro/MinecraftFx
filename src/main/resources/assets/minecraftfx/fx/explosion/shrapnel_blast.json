@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:explosion.shrapnel_blast" } ],
+  "palette": { "white": "#FFF8E0", "yellow": "#FFD24A", "steel": "#C8D0D8", "iron": "#6A7078", "smoke": "#5A5250", "ash": "#2E2A2A" },
+  "layers": [
+    { "sprite": "minecraftfx:flash", "lifetime": [3], "scale": { "from": 0.3, "to": 0.9 }, "color": ["white", "yellow"] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "count": 18, "lifetime": [8, 12], "scale": { "from": 0.05, "to": 0.03 }, "length": { "from": 0.5, "to": 0.15 }, "color": ["steel", "iron"], "speed": [0.45, 0.7], "gravity": 0.6, "friction": 0.9 },
+    { "sprite": "minecraftfx:rock", "frames": "random", "additive": false, "count": 8, "lifetime": [16, 22], "scale": { "from": 0.1, "to": 0.08 }, "color": ["steel", "iron"], "speed": [0.2, 0.35], "gravity": 1.2, "spin": 0.4 },
+    { "sprite": "minecraftfx:puff", "additive": false, "count": 5, "lifetime": [10, 14], "scale": { "from": 0.25, "to": 0.3 }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["smoke", "ash"], "speed": [0.03, 0.06] }
+  ]
+}

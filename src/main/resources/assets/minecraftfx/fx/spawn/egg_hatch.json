@@ -1,0 +1,11 @@
+{
+  "sounds": [ { "id": "minecraftfx:spawn.egg_hatch" } ],
+  "palette": { "white": "#FFFFFF", "shell": "#FFF8E8", "cream": "#E8D8B8", "dark": "#5A4A3A", "pink": "#FF8CC8", "rose": "#E8407E" },
+  "layers": [
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "lifetime": [14], "scale": { "from": 0.3, "mid": 0.34, "to": 0.3 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["shell", "cream"] },
+    { "sprite": "minecraftfx:crack", "shape": "plane", "additive": false, "delay": 4, "lifetime": [10], "height": [0.05], "scale": { "from": 0.3, "to": 0.3 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["dark"] },
+    { "sprite": "minecraftfx:rock", "frames": "random", "additive": false, "count": 10, "delay": 14, "lifetime": [14, 18], "scale": { "from": 0.09, "to": 0.07 }, "color": ["shell", "cream"], "speed": [0.1, 0.22], "gravity": 1.1, "spin": 0.3 },
+    { "sprite": "minecraftfx:heart", "additive": false, "axis": "up", "delay": 16, "lifetime": [16], "scale": { "from": 0.08, "to": 0.12 }, "color": ["pink", "rose"], "lift": [0.04] },
+    { "sprite": "minecraftfx:glint", "delay": 14, "lifetime": [5], "scale": { "from": 0.4, "to": 0.4 }, "color": ["white"] }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:arcane.mana_shield" } ],
+  "palette": { "white": "#FFFFFF", "sky": "#9AD8FF", "blue": "#3F8CFF", "deep": "#1E3FB0" },
+  "layers": [
+    { "sprite": "minecraftfx:ring", "frames": "first", "additive": false, "axis": "up", "lifetime": [44], "height": [0.9], "scale": { "from": 0.6, "mid": 1.15, "to": 1.15, "easing": "expoOut" }, "alpha": { "from": 0.0, "mid": 0.6, "to": 0.0 }, "color": ["sky", "blue"] },
+    { "sprite": "minecraftfx:hex", "additive": false, "axis": "up", "count": 4, "repeat": 7, "interval": 5, "lifetime": [10], "height": [0.9], "offset": [0.95], "scale": { "from": 0.2, "to": 0.26 }, "alpha": { "from": 0.0, "mid": 0.8, "to": 0.0 }, "color": ["white", "blue"] },
+    { "sprite": "minecraftfx:pixel", "frames": "first", "additive": false, "axis": "up", "count": 6, "lifetime": [44], "scale": { "from": 0.05, "to": 0.05 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["white", "sky"], "cone": 90, "rim": true, "pattern": "even", "offset": [1.1], "height": [0.9], "orbit": 0.12 }
+  ]
+}

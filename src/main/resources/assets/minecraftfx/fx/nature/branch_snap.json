@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:nature.branch_snap" } ],
+  "palette": { "white": "#FFFFFF", "light": "#B8F06A", "leaf": "#5CC23A", "wood": "#8A5A32", "bark": "#5A3A20", "dust": "#C8B89A" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "oriented", "additive": false, "count": 9, "lifetime": [12, 18], "scale": { "from": 0.12, "to": 0.08 }, "color": ["wood", "bark"], "speed": [0.15, 0.3], "gravity": 1.2, "friction": 0.96 },
+    { "sprite": "minecraftfx:leaf", "frames": "random", "additive": false, "count": 4, "lifetime": [18, 24], "scale": { "from": 0.09, "to": 0.09 }, "color": ["light", "leaf"], "speed": [0.08, 0.15], "gravity": 0.3, "spin": 0.15 },
+    { "sprite": "minecraftfx:glint", "lifetime": [3], "scale": { "from": 0.35, "to": 0.35 }, "color": ["white"] },
+    { "sprite": "minecraftfx:puff", "additive": false, "count": 3, "lifetime": [8, 10], "scale": { "from": 0.15, "to": 0.15 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["dust"], "speed": [0.03, 0.06] }
+  ]
+}

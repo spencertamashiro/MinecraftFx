@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:holy.holy_water_splash" } ],
+  "palette": { "white": "#FFFFFF", "silver": "#DCE8F4", "pale": "#A8C4E0", "gold": "#FFD54A" },
+  "layers": [
+    { "sprite": "minecraftfx:drop", "additive": false, "axis": "up", "count": 14, "lifetime": [14, 20], "scale": { "from": 0.08, "to": 0.06 }, "color": ["white", "silver"], "cone": 55, "speed": [0.22, 0.38], "gravity": 1.2 },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "repeat": 2, "interval": 4, "lifetime": [10], "height": [0.04], "scale": { "from": 0.2, "to": 1.1, "easing": "expoOut" }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["silver", "pale"] },
+    { "sprite": "minecraftfx:glint", "axis": "up", "count": 5, "delay": 3, "lifetime": [6, 9], "scale": { "from": 0.2, "to": 0.2 }, "color": ["white"], "cone": 60, "offset": [0.3, 1.0] },
+    { "sprite": "minecraftfx:plus", "additive": false, "axis": "up", "delay": 2, "lifetime": [14], "height": [0.5], "scale": { "from": 0.12, "to": 0.2 }, "color": ["white", "gold"], "lift": [0.03] }
+  ]
+}

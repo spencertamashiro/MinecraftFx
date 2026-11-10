@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:ice.ice_wall" } ],
+  "palette": { "white": "#FFFFFF", "ice": "#BDF0FF", "blue": "#5AB4FF" },
+  "layers": [
+    { "sprite": "minecraftfx:block", "shape": "plane", "additive": false, "count": 6, "repeat": 8, "interval": 1, "lifetime": [56], "scale": { "from": 0.0, "mid": 0.3, "to": 0.3, "easing": "expoOut" }, "alpha": { "from": 0.9, "mid": 0.9, "to": 0.0 }, "color": ["ice", "blue"], "cone": 90, "rim": true, "offset": [0.0, 1.8] },
+    { "sprite": "minecraftfx:block", "shape": "plane", "additive": false, "count": 3, "repeat": 6, "interval": 1, "delay": 3, "lifetime": [50], "scale": { "from": 0.0, "mid": 0.2, "to": 0.2, "easing": "expoOut" }, "alpha": { "from": 0.9, "mid": 0.9, "to": 0.0 }, "color": ["white", "ice"], "cone": 90, "rim": true, "offset": [0.3, 2.0] },
+    { "sprite": "minecraftfx:glint", "count": 2, "repeat": 10, "interval": 4, "delay": 6, "lifetime": [6], "scale": { "from": 0.18, "to": 0.18 }, "color": ["white"], "cone": 90, "rim": true, "offset": [0.0, 1.8], "height": [0.1] },
+    { "sprite": "minecraftfx:puff", "additive": false, "count": 8, "delay": 2, "lifetime": [14, 18], "scale": { "from": 0.2, "to": 0.2 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["white", "ice"], "cone": 90, "rim": true, "pattern": "even", "offset": [1.6], "speed": [0.05] }
+  ]
+}

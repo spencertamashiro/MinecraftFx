@@ -1,0 +1,8 @@
+{
+  "sounds": [ { "id": "minecraftfx:water.puddle_step" } ],
+  "palette": { "foam": "#F0FBFF", "water": "#5FB8FF" },
+  "layers": [
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "lifetime": [8], "height": [0.03], "scale": { "from": 0.1, "to": 0.5, "easing": "quadOut" }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["foam", "water"] },
+    { "sprite": "minecraftfx:drop", "additive": false, "axis": "up", "count": 6, "lifetime": [8, 10], "scale": { "from": 0.04, "to": 0.04 }, "color": ["foam", "water"], "cone": 60, "rim": true, "pattern": "even", "height": [0.05], "speed": [0.1], "gravity": 1.0 }
+  ]
+}

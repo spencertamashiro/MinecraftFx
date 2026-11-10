@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:fire.ignition_spark" } ],
+  "palette": { "core": "#FFF0A8", "flame": "#FF8A2A", "deep": "#D23A1A" },
+  "layers": [
+    { "sprite": "minecraftfx:glint", "lifetime": [5], "scale": { "from": 0.35, "to": 0.35 }, "color": ["core"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 6, "lifetime": [6, 9], "scale": { "from": 0.05, "to": 0.02 }, "color": ["core", "flame"], "speed": [0.12, 0.25], "gravity": 0.8 },
+    { "sprite": "minecraftfx:flame", "additive": false, "delay": 2, "lifetime": [9], "scale": { "from": 0.08, "to": 0.2 }, "color": ["core", "deep"], "gravity": -0.2 }
+  ]
+}

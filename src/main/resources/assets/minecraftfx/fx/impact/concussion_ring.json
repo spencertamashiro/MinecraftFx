@@ -1,0 +1,8 @@
+{
+  "sounds": [ { "id": "minecraftfx:impact.concussion_ring" } ],
+  "palette": { "white": "#FFFFFF" },
+  "layers": [
+    { "sprite": "minecraftfx:ring", "shape": "plane", "lifetime": [5], "scale": { "from": 0.2, "to": 2.5, "easing": "quadOut" }, "color": ["white"] },
+    { "sprite": "minecraftfx:flash", "lifetime": [2], "scale": { "from": 0.4, "to": 0.2 }, "color": ["white"] }
+  ]
+}

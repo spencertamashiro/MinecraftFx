@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:nature.toxic_puddle" } ],
+  "palette": { "lime": "#D4FF4A", "acid": "#8CE02A", "dark": "#3E7A12", "fume": "#A8C878" },
+  "layers": [
+    { "sprite": "minecraftfx:splat", "shape": "plane", "additive": false, "axis": "up", "lifetime": [80], "height": [0.03], "scale": { "from": 0.3, "mid": 1.2, "to": 1.2, "easing": "quadOut" }, "alpha": { "from": 0.9, "mid": 0.9, "to": 0.0 }, "color": ["acid", "dark"] },
+    { "sprite": "minecraftfx:bubble", "additive": false, "axis": "up", "count": 2, "repeat": 14, "interval": 4, "lifetime": [10, 14], "scale": { "from": 0.06, "to": 0.1 }, "color": ["lime", "acid"], "cone": 90, "rim": true, "offset": [0.0, 0.9], "height": [0.05], "lift": [0.02, 0.04] },
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "repeat": 8, "interval": 6, "lifetime": [20, 26], "scale": { "from": 0.2, "to": 0.45 }, "alpha": { "from": 0.0, "mid": 0.4, "to": 0.0 }, "color": ["fume"], "cone": 90, "rim": true, "offset": [0.0, 0.7], "height": [0.2], "lift": [0.03] }
+  ]
+}

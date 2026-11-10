@@ -1,0 +1,8 @@
+{
+  "sounds": [ { "id": "minecraftfx:fire.heat_distortion" } ],
+  "palette": { "haze": "#FFE8C8", "warm": "#FFC89A" },
+  "layers": [
+    { "sprite": "minecraftfx:wave", "shape": "streak", "additive": false, "axis": "up", "count": 2, "repeat": 16, "interval": 2, "lifetime": [16, 20], "scale": { "from": 0.12, "to": 0.2 }, "length": { "from": 0.35, "to": 0.5 }, "alpha": { "from": 0.0, "mid": 0.28, "to": 0.0 }, "color": ["haze", "warm"], "cone": 90, "rim": true, "offset": [0.0, 0.9], "lift": [0.05, 0.08] },
+    { "sprite": "minecraftfx:pixel", "frames": "first", "additive": false, "axis": "up", "repeat": 12, "interval": 3, "lifetime": [14], "scale": { "from": 0.03, "to": 0.03 }, "alpha": { "from": 0.0, "mid": 0.5, "to": 0.0 }, "color": ["haze"], "cone": 90, "rim": true, "offset": [0.0, 0.9], "height": [0.0, 1.2], "lift": [0.06] }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "sounds": [ { "id": "minecraftfx:impact.critical_spark" } ],
+  "palette": {
+    "core": "#FFFFFF",
+    "hot": "#FFE98A",
+    "mid": "#FF9B2F",
+    "deep": "#D9401C"
+  },
+  "layers": [
+    {
+      "sprite": "minecraftfx:flash",
+      "lifetime": [4],
+      "scale": { "from": 0.2, "mid": 0.8, "to": 0.5, "easing": "expoOut" },
+      "alpha": { "from": 1.0, "to": 0.0, "easing": "quadIn" },
+      "color": ["core", "hot"]
+    },
+    {
+      "sprite": "minecraftfx:flash",
+      "shape": "oriented",
+      "count": 3,
+      "lifetime": [5, 6],
+      "scale": { "from": 0.3, "to": 0.9, "easing": "expoOut" },
+      "alpha": { "from": 1.0, "to": 0.0, "easing": "quadIn" },
+      "color": ["hot", "mid"],
+      "speed": [0.01, 0.02]
+    },
+    {
+      "sprite": "minecraftfx:ring",
+      "shape": "plane",
+      "additive": false,
+      "delay": 1,
+      "lifetime": [7],
+      "scale": { "from": 0.2, "to": 1.1, "easing": "expoOut" },
+      "alpha": { "from": 1.0, "to": 0.0, "easing": "quadIn" },
+      "color": ["hot", "deep"]
+    },
+    {
+      "sprite": "minecraftfx:ring",
+      "shape": "plane",
+      "additive": false,
+      "delay": 3,
+      "lifetime": [6],
+      "scale": { "from": 0.1, "to": 0.65, "easing": "expoOut" },
+      "alpha": { "from": 0.8, "to": 0.0 },
+      "color": ["mid", "deep"]
+    },
+    {
+      "sprite": "minecraftfx:shard",
+      "shape": "streak",
+      "additive": false,
+      "count": 10,
+      "lifetime": [5, 9],
+      "scale": { "from": 0.07, "to": 0.02 },
+      "length": { "from": 0.45, "to": 0.05, "easing": "quadOut" },
+      "alpha": { "from": 1.0, "to": 0.0, "easing": "quadIn" },
+      "color": ["hot", "deep"],
+      "speed": [0.2, 0.45],
+      "cone": 75,
+      "gravity": 0.3,
+      "friction": 0.78
+    },
+    {
+      "sprite": "minecraftfx:pixel",
+      "additive": false,
+      "count": 12,
+      "delay": 1,
+      "lifetime": [10, 18],
+      "scale": { "from": 0.08, "to": 0.05 },
+      "alpha": { "from": 1.0, "to": 0.0, "easing": "quadIn" },
+      "color": ["hot", "deep"],
+      "speed": [0.08, 0.3],
+      "cone": 110,
+      "gravity": 0.6,
+      "friction": 0.9
+    }
+  ]
+}

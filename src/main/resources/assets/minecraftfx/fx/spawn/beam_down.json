@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:spawn.beam_down" } ],
+  "palette": { "white": "#FFFFFF", "gold": "#FFE08A", "amber": "#E0A02A" },
+  "layers": [
+    { "sprite": "minecraftfx:glint", "axis": "up", "count": 4, "repeat": 20, "interval": 1, "lifetime": [4, 6], "scale": { "from": 0.14, "to": 0.14 }, "color": ["white"], "cone": 90, "rim": true, "offset": [0.0, 0.4], "height": [0.1, 1.9] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "count": 6, "lifetime": [30], "scale": { "from": 0.02, "to": 0.02 }, "length": { "from": 1.0, "to": 1.0 }, "alpha": { "from": 0.0, "mid": 0.7, "to": 0.0 }, "color": ["gold", "amber"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.35], "height": [1.0], "lift": [0.002] },
+    { "sprite": "minecraftfx:ring", "frames": "first", "shape": "plane", "additive": false, "axis": "up", "lifetime": [30], "height": [0.04], "scale": { "from": 0.5, "to": 0.5 }, "alpha": { "from": 0.0, "mid": 0.9, "to": 0.0 }, "color": ["gold", "amber"] },
+    { "sprite": "minecraftfx:pixel", "frames": "first", "additive": false, "axis": "up", "count": 3, "repeat": 14, "interval": 2, "lifetime": [6], "scale": { "from": 0.04, "to": 0.04 }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["gold", "amber"], "cone": 90, "rim": true, "offset": [0.0, 0.4], "height": [0.1, 1.9] }
+  ]
+}

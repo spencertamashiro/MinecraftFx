@@ -1,0 +1,13 @@
+{
+  "sounds": [ { "id": "minecraftfx:melee.slash" } ],
+  "palette": { "white": "#FFFFFF", "steel": "#D8ECFF", "blue": "#7AB4FF" },
+  "layers": [
+    { "sprite": "minecraftfx:slash", "shape": "plane", "lifetime": [7],
+      "scale": { "from": 0.7, "to": 0.95, "easing": "expoOut" }, "alpha": { "from": 1.0, "to": 0.0, "easing": "quadIn" }, "color": ["white", "steel"], "spin": 0.03 },
+    { "sprite": "minecraftfx:flash", "lifetime": [3], "scale": { "from": 0.3, "to": 0.1 }, "color": ["white", "steel"] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "count": 6, "lifetime": [4, 6],
+      "scale": { "from": 0.04, "to": 0.02 }, "length": { "from": 0.3, "to": 0.05 }, "color": ["white", "blue"], "cone": 60, "speed": [0.25, 0.35], "friction": 0.75 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 5, "lifetime": [8, 12],
+      "scale": { "from": 0.05, "to": 0.02 }, "color": ["steel", "blue"], "speed": [0.06, 0.12], "friction": 0.85 }
+  ]
+}

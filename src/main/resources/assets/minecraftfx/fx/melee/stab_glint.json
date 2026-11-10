@@ -1,0 +1,8 @@
+{
+  "sounds": [ { "id": "minecraftfx:melee.stab_glint" } ],
+  "palette": { "white": "#FFFFFF", "steel": "#D8ECFF" },
+  "layers": [
+    { "sprite": "minecraftfx:glint", "lifetime": [6], "scale": { "from": 0.2, "to": 0.6 }, "color": ["white"] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "lifetime": [4], "scale": { "from": 0.03, "to": 0.03 }, "length": { "from": 0.5, "to": 0.2 }, "color": ["white", "steel"], "cone": 0, "speed": [0.3] }
+  ]
+}

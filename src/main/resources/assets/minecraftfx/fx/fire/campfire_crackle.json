@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:fire.campfire_crackle" } ],
+  "palette": { "core": "#FFF0A8", "flame": "#FF8A2A", "deep": "#D23A1A", "smoke": "#3E3430" },
+  "layers": [
+    { "sprite": "minecraftfx:flame", "additive": false, "axis": "up", "count": 2, "repeat": 25, "interval": 2, "lifetime": [8, 12], "scale": { "from": 0.22, "to": 0.08 }, "color": ["core", "deep"], "cone": 90, "rim": true, "offset": [0.0, 0.25], "lift": [0.03, 0.06] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 3, "repeat": 5, "interval": 9, "delay": 4, "lifetime": [8, 12], "scale": { "from": 0.05, "to": 0.02 }, "color": ["core", "flame"], "cone": 35, "speed": [0.12, 0.2], "gravity": 0.7 },
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "repeat": 10, "interval": 5, "delay": 3, "lifetime": [22, 28], "scale": { "from": 0.12, "to": 0.35 }, "alpha": { "from": 0.4, "to": 0.0 }, "color": ["smoke"], "cone": 90, "rim": true, "offset": [0.0, 0.15], "height": [0.5], "lift": [0.04, 0.06] }
+  ]
+}

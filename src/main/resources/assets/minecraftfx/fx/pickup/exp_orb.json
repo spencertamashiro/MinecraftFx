@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:pickup.exp_orb" } ],
+  "palette": { "white": "#FFFFFF", "lime": "#D8FF6A", "green": "#6AD82A" },
+  "layers": [
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "axis": "up", "count": 8, "lifetime": [16], "scale": { "from": 0.09, "to": 0.06 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["lime", "green"], "cone": 90, "rim": true, "pattern": "even", "offset": [1.6, 2.2], "height": [0.8], "speed": [-0.12], "orbit": 0.12 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 8, "repeat": 5, "interval": 3, "lifetime": [8], "scale": { "from": 0.04, "to": 0.01 }, "color": ["lime", "green"], "cone": 90, "rim": true, "offset": [0.3, 1.8], "height": [0.8], "speed": [-0.03] },
+    { "sprite": "minecraftfx:ring", "frames": "first", "additive": false, "axis": "up", "delay": 15, "lifetime": [8], "height": [0.8], "scale": { "from": 0.1, "to": 0.6 }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["lime", "green"] },
+    { "sprite": "minecraftfx:glint", "axis": "up", "delay": 15, "lifetime": [6], "height": [0.8], "scale": { "from": 0.4, "to": 0.4 }, "color": ["white"] }
+  ]
+}

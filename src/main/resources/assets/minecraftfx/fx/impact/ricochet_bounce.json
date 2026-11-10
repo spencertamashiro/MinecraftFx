@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:impact.ricochet_bounce" } ],
+  "palette": { "white": "#FFFFFF", "hot": "#FFE98A", "mid": "#FF9B2F" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "lifetime": [5], "scale": { "from": 0.05, "to": 0.05 }, "length": { "from": 0.6, "to": 0.6 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["white", "hot"], "cone": 50, "rim": true, "pattern": "even", "offset": [3.0], "speed": [-0.6] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "delay": 5, "lifetime": [7], "scale": { "from": 0.05, "to": 0.03 }, "length": { "from": 0.6, "to": 0.4 }, "color": ["white", "hot"], "cone": 0, "speed": [0.7] },
+    { "sprite": "minecraftfx:glint", "delay": 5, "lifetime": [4], "scale": { "from": 0.4, "to": 0.4 }, "color": ["white"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 6, "delay": 5, "lifetime": [6, 9], "scale": { "from": 0.05, "to": 0.02 }, "color": ["hot", "mid"], "cone": 50, "speed": [0.15, 0.3], "gravity": 0.8 }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:water.deep_sea_crush" } ],
+  "palette": { "foam": "#F0FBFF", "water": "#5FB8FF", "deep": "#2A6FD6", "dark": "#0E2A5A" },
+  "layers": [
+    { "sprite": "minecraftfx:ring", "frames": "first", "additive": false, "repeat": 3, "interval": 5, "lifetime": [8], "scale": { "from": 1.8, "to": 0.2, "easing": "quadIn" }, "alpha": { "from": 0.2, "to": 0.9 }, "color": ["water", "deep"] },
+    { "sprite": "minecraftfx:bubble", "additive": false, "count": 4, "repeat": 6, "interval": 2, "lifetime": [8], "scale": { "from": 0.08, "to": 0.04 }, "color": ["foam", "water"], "offset": [1.4, 1.8], "speed": [-0.18] },
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "lifetime": [20], "scale": { "from": 0.2, "mid": 0.5, "to": 0.1 }, "alpha": { "from": 0.9, "to": 0.9 }, "color": ["deep", "dark"] },
+    { "sprite": "minecraftfx:bubble", "additive": false, "count": 14, "delay": 18, "lifetime": [12, 16], "scale": { "from": 0.05, "to": 0.09 }, "color": ["foam", "water"], "pattern": "even", "speed": [0.12], "friction": 0.9 }
+  ]
+}

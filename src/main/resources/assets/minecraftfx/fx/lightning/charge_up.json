@@ -1,0 +1,13 @@
+{
+  "sounds": [ { "id": "minecraftfx:lightning.charge_up" } ],
+  "palette": { "white": "#FFFFFF", "cyan": "#8FF0FF", "blue": "#4A8CFF", "deep": "#3046C8" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "additive": false, "shape": "streak", "count": 3, "repeat": 10, "interval": 2, "lifetime": [10],
+      "scale": { "from": 0.03, "to": 0.05 }, "length": { "from": 0.1, "to": 0.3 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 1.0 }, "color": ["blue", "cyan"],
+      "offset": [1.8, 2.0], "speed": [-0.19, -0.2], "orbit": 0.25 },
+    { "sprite": "minecraftfx:orb", "lifetime": [22], "scale": { "from": 0.05, "to": 0.4, "easing": "quadIn" }, "alpha": { "from": 0.6, "to": 1.0 }, "color": ["blue", "white"] },
+    { "sprite": "minecraftfx:flash", "delay": 21, "lifetime": [5], "scale": { "from": 0.4, "to": 1.4, "easing": "expoOut" }, "color": ["white", "cyan"] },
+    { "sprite": "minecraftfx:ring", "additive": false, "shape": "plane", "delay": 21, "lifetime": [7],
+      "scale": { "from": 0.3, "to": 1.5, "easing": "expoOut" }, "color": ["cyan", "deep"] }
+  ]
+}

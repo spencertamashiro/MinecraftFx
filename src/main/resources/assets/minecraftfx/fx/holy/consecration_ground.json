@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:holy.consecration_ground" } ],
+  "palette": { "white": "#FFFFFF", "light": "#FFF6C8", "gold": "#FFD54A", "amber": "#E89A1E" },
+  "layers": [
+    { "sprite": "minecraftfx:rune", "shape": "plane", "additive": false, "axis": "up", "lifetime": [70], "height": [0.05], "scale": { "from": 0.8, "mid": 1.6, "to": 1.6, "easing": "expoOut" }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["light", "gold"], "spin": 0.01 },
+    { "sprite": "minecraftfx:glint", "axis": "up", "count": 2, "repeat": 16, "interval": 4, "lifetime": [8], "scale": { "from": 0.16, "to": 0.16 }, "color": ["white"], "cone": 90, "rim": true, "offset": [0.2, 1.5], "height": [0.1, 0.5] },
+    { "sprite": "minecraftfx:pixel", "frames": "first", "additive": false, "axis": "up", "count": 12, "lifetime": [70], "scale": { "from": 0.05, "to": 0.05 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["gold", "amber"], "cone": 90, "rim": true, "pattern": "even", "offset": [1.6], "height": [0.1], "orbit": 0.04 }
+  ]
+}

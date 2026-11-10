@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:impact.pierce_wound" } ],
+  "palette": { "white": "#FFFFFF", "pale": "#F0E0E0", "bright": "#FF4A4A", "blood": "#C01818", "dark": "#6A0A0A" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "lifetime": [4], "scale": { "from": 0.03, "to": 0.03 }, "length": { "from": 1.2, "to": 0.6 }, "color": ["white", "pale"], "cone": 0, "speed": [0.9] },
+    { "sprite": "minecraftfx:drop", "additive": false, "count": 10, "delay": 1, "lifetime": [10, 14], "scale": { "from": 0.07, "to": 0.05 }, "color": ["bright", "blood"], "cone": 12, "speed": [0.3, 0.5], "gravity": 0.8 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 10, "delay": 1, "lifetime": [8, 12], "scale": { "from": 0.05, "to": 0.03 }, "color": ["blood", "dark"], "cone": 16, "speed": [0.2, 0.55], "gravity": 0.9 }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:status.enraged" } ],
+  "palette": { "bright": "#FF5A4A", "red": "#D01818", "dark": "#6A0A0A" },
+  "layers": [
+    { "sprite": "minecraftfx:anger", "additive": false, "axis": "up", "repeat": 3, "interval": 12, "lifetime": [12], "height": [2.3], "scale": { "from": 0.14, "mid": 0.26, "to": 0.16 }, "alpha": { "from": 1.0, "to": 0.5 }, "color": ["bright", "red"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.25] },
+    { "sprite": "minecraftfx:orb", "frames": "first", "axis": "up", "repeat": 3, "interval": 12, "lifetime": [12], "height": [0.9], "scale": { "from": 0.6, "to": 1.0 }, "alpha": { "from": 0.45, "to": 0.0 }, "color": ["bright", "red"] },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 2, "repeat": 12, "interval": 3, "lifetime": [10, 12], "scale": { "from": 0.14, "to": 0.14 }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["red", "dark"], "cone": 25, "height": [1.9], "speed": [0.06, 0.1] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 2, "repeat": 12, "interval": 3, "lifetime": [10, 14], "scale": { "from": 0.05, "to": 0.02 }, "color": ["bright", "dark"], "cone": 90, "rim": true, "offset": [0.3, 0.5], "height": [0.2, 1.6], "lift": [0.06, 0.1] }
+  ]
+}

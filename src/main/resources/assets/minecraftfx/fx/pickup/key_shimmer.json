@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:pickup.key_shimmer" } ],
+  "palette": { "white": "#FFFFFF", "gold": "#FFE27A", "amber": "#D89A1E" },
+  "layers": [
+    { "sprite": "minecraftfx:key", "additive": false, "axis": "up", "lifetime": [50], "height": [0.6], "scale": { "from": 0.22, "to": 0.22 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["gold", "amber"] },
+    { "sprite": "minecraftfx:glint", "axis": "up", "repeat": 5, "interval": 9, "delay": 2, "lifetime": [7], "scale": { "from": 0.3, "to": 0.3 }, "color": ["white"], "cone": 90, "offset": [0.05, 0.2], "height": [0.6] },
+    { "sprite": "minecraftfx:ring", "frames": "first", "additive": false, "axis": "up", "repeat": 2, "interval": 20, "delay": 4, "lifetime": [14], "height": [0.6], "scale": { "from": 0.15, "to": 0.5 }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["gold", "amber"] }
+  ]
+}

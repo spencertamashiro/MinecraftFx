@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:pickup.chest_open_flash" } ],
+  "palette": { "white": "#FFFFFF", "light": "#FFF6C8", "gold": "#FFC83A", "wood": "#9A6A3A", "dark": "#5A3A1E" },
+  "layers": [
+    { "sprite": "minecraftfx:box", "additive": false, "axis": "up", "lifetime": [40], "height": [0.3], "scale": { "from": 0.3, "to": 0.3 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["wood", "dark"] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "count": 7, "delay": 3, "lifetime": [14], "scale": { "from": 0.06, "to": 0.02 }, "length": { "from": 0.5, "to": 0.9 }, "color": ["light", "gold"], "cone": 35, "height": [0.55], "speed": [0.12, 0.2], "friction": 0.9 },
+    { "sprite": "minecraftfx:flash", "axis": "up", "delay": 3, "lifetime": [6], "height": [0.6], "scale": { "from": 0.3, "mid": 1.0, "to": 0.4 }, "color": ["white", "light"] },
+    { "sprite": "minecraftfx:glint", "axis": "up", "count": 2, "repeat": 8, "interval": 3, "delay": 5, "lifetime": [7], "scale": { "from": 0.18, "to": 0.18 }, "color": ["white"], "cone": 40, "offset": [0.3, 1.2], "height": [0.5] }
+  ]
+}

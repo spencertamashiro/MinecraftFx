@@ -1,0 +1,11 @@
+{
+  "sounds": [ { "id": "minecraftfx:sci_fi.drone_spawn" } ],
+  "palette": { "white": "#FFFFFF", "steel": "#C8D0D8", "iron": "#6A7078", "cyan": "#7AF8FF", "teal": "#20C8D8" },
+  "layers": [
+    { "sprite": "minecraftfx:gear", "additive": false, "axis": "up", "count": 3, "lifetime": [14], "scale": { "from": 0.12, "to": 0.12 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 1.0 }, "color": ["steel", "iron"], "cone": 90, "rim": true, "pattern": "even", "offset": [1.6], "height": [1.0], "speed": [-0.11], "orbit": 0.15, "spin": 0.3 },
+    { "sprite": "minecraftfx:block", "additive": false, "axis": "up", "count": 3, "lifetime": [14], "scale": { "from": 0.1, "to": 0.1 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 1.0 }, "color": ["steel", "iron"], "cone": 90, "rim": true, "pattern": "even", "phase": 60, "offset": [1.6], "height": [1.0], "speed": [-0.11], "orbit": 0.15 },
+    { "sprite": "minecraftfx:screen", "additive": false, "axis": "up", "delay": 12, "lifetime": [26], "height": [1.0], "scale": { "from": 0.1, "mid": 0.28, "to": 0.28, "easing": "expoOut" }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["cyan", "teal"] },
+    { "sprite": "minecraftfx:grid", "shape": "plane", "additive": false, "axis": "up", "lifetime": [26], "height": [0.04], "scale": { "from": 0.9, "to": 0.9 }, "alpha": { "from": 0.0, "mid": 0.7, "to": 0.0 }, "color": ["cyan", "teal"] },
+    { "sprite": "minecraftfx:glint", "axis": "up", "delay": 13, "lifetime": [6], "height": [1.0], "scale": { "from": 0.6, "to": 0.6 }, "color": ["white"] }
+  ]
+}

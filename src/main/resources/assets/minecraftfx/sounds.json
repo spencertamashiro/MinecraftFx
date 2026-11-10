@@ -1,0 +1,2702 @@
+{
+  "arcane.aether_wisps": {
+    "subtitle": "subtitles.minecraftfx.arcane.aether_wisps",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/aether_wisps",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "arcane.arcane_barrage": {
+    "subtitle": "subtitles.minecraftfx.arcane.arcane_barrage",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/arcane_barrage",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "arcane.arcane_burst": {
+    "subtitle": "subtitles.minecraftfx.arcane.arcane_burst",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/arcane_burst",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "arcane.arcane_missile": {
+    "subtitle": "subtitles.minecraftfx.arcane.arcane_missile",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/arcane_missile",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "arcane.arcane_nova": {
+    "subtitle": "subtitles.minecraftfx.arcane.arcane_nova",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/arcane_nova",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "arcane.blink_in": {
+    "subtitle": "subtitles.minecraftfx.arcane.blink_in",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/blink_in",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "arcane.blink_out": {
+    "subtitle": "subtitles.minecraftfx.arcane.blink_out",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/blink_out",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "arcane.ethereal_chains": {
+    "subtitle": "subtitles.minecraftfx.arcane.ethereal_chains",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/ethereal_chains",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "arcane.leyline_glow": {
+    "subtitle": "subtitles.minecraftfx.arcane.leyline_glow",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/leyline_glow",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "arcane.magic_circle": {
+    "subtitle": "subtitles.minecraftfx.arcane.magic_circle",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/magic_circle",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "arcane.mana_drain": {
+    "subtitle": "subtitles.minecraftfx.arcane.mana_drain",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/mana_drain",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "arcane.mana_shield": {
+    "subtitle": "subtitles.minecraftfx.arcane.mana_shield",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/mana_shield",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "arcane.mind_flay": {
+    "subtitle": "subtitles.minecraftfx.arcane.mind_flay",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/mind_flay",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "arcane.mystic_runes": {
+    "subtitle": "subtitles.minecraftfx.arcane.mystic_runes",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/mystic_runes",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "arcane.reality_warp": {
+    "subtitle": "subtitles.minecraftfx.arcane.reality_warp",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/reality_warp",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "arcane.rift_tear": {
+    "subtitle": "subtitles.minecraftfx.arcane.rift_tear",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/rift_tear",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "arcane.spell_echo": {
+    "subtitle": "subtitles.minecraftfx.arcane.spell_echo",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/spell_echo",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "arcane.spell_fizzle": {
+    "subtitle": "subtitles.minecraftfx.arcane.spell_fizzle",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/spell_fizzle",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "arcane.teleport_flash": {
+    "subtitle": "subtitles.minecraftfx.arcane.teleport_flash",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/teleport_flash",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "arcane.temporal_shift": {
+    "subtitle": "subtitles.minecraftfx.arcane.temporal_shift",
+    "sounds": [
+      {
+        "name": "minecraftfx:arcane/temporal_shift",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "explosion.ash_cloud": {
+    "subtitle": "subtitles.minecraftfx.explosion.ash_cloud",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/ash_cloud",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "explosion.cluster_bombs": {
+    "subtitle": "subtitles.minecraftfx.explosion.cluster_bombs",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/cluster_bombs",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "explosion.concussive_blast": {
+    "subtitle": "subtitles.minecraftfx.explosion.concussive_blast",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/concussive_blast",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "explosion.debris_scatter": {
+    "subtitle": "subtitles.minecraftfx.explosion.debris_scatter",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/debris_scatter",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "explosion.dirt_fountain": {
+    "subtitle": "subtitles.minecraftfx.explosion.dirt_fountain",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/dirt_fountain",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "explosion.dust_cloud": {
+    "subtitle": "subtitles.minecraftfx.explosion.dust_cloud",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/dust_cloud",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "explosion.explosion": {
+    "subtitle": "subtitles.minecraftfx.explosion.explosion",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/explosion",
+        "attenuation_distance": 40
+      }
+    ]
+  },
+  "explosion.firework_burst": {
+    "subtitle": "subtitles.minecraftfx.explosion.firework_burst",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/firework_burst",
+        "attenuation_distance": 40
+      }
+    ]
+  },
+  "explosion.flak_burst": {
+    "subtitle": "subtitles.minecraftfx.explosion.flak_burst",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/flak_burst",
+        "attenuation_distance": 40
+      }
+    ]
+  },
+  "explosion.flashbang": {
+    "subtitle": "subtitles.minecraftfx.explosion.flashbang",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/flashbang",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "explosion.implosion": {
+    "subtitle": "subtitles.minecraftfx.explosion.implosion",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/implosion",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "explosion.kinetic_blast": {
+    "subtitle": "subtitles.minecraftfx.explosion.kinetic_blast",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/kinetic_blast",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "explosion.mega_boom": {
+    "subtitle": "subtitles.minecraftfx.explosion.mega_boom",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/mega_boom",
+        "attenuation_distance": 40
+      }
+    ]
+  },
+  "explosion.mushroom_cloud": {
+    "subtitle": "subtitles.minecraftfx.explosion.mushroom_cloud",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/mushroom_cloud",
+        "attenuation_distance": 40
+      }
+    ]
+  },
+  "explosion.plasma_pop": {
+    "subtitle": "subtitles.minecraftfx.explosion.plasma_pop",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/plasma_pop",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "explosion.rubble_shower": {
+    "subtitle": "subtitles.minecraftfx.explosion.rubble_shower",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/rubble_shower",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "explosion.shockwave_ring": {
+    "subtitle": "subtitles.minecraftfx.explosion.shockwave_ring",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/shockwave_ring",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "explosion.shrapnel_blast": {
+    "subtitle": "subtitles.minecraftfx.explosion.shrapnel_blast",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/shrapnel_blast",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "explosion.smoke_plume": {
+    "subtitle": "subtitles.minecraftfx.explosion.smoke_plume",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/smoke_plume",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "explosion.sonic_boom": {
+    "subtitle": "subtitles.minecraftfx.explosion.sonic_boom",
+    "sounds": [
+      {
+        "name": "minecraftfx:explosion/sonic_boom",
+        "attenuation_distance": 40
+      }
+    ]
+  },
+  "fire.ash_fall": {
+    "subtitle": "subtitles.minecraftfx.fire.ash_fall",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/ash_fall",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "fire.campfire_crackle": {
+    "subtitle": "subtitles.minecraftfx.fire.campfire_crackle",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/campfire_crackle",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "fire.cauterize_smoke": {
+    "subtitle": "subtitles.minecraftfx.fire.cauterize_smoke",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/cauterize_smoke",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "fire.dragon_breath": {
+    "subtitle": "subtitles.minecraftfx.fire.dragon_breath",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/dragon_breath",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "fire.embers_floating": {
+    "subtitle": "subtitles.minecraftfx.fire.embers_floating",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/embers_floating",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "fire.fire_ring": {
+    "subtitle": "subtitles.minecraftfx.fire.fire_ring",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/fire_ring",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "fire.fire_shield": {
+    "subtitle": "subtitles.minecraftfx.fire.fire_shield",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/fire_shield",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "fire.fire_tornado": {
+    "subtitle": "subtitles.minecraftfx.fire.fire_tornado",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/fire_tornado",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "fire.fireball_burst": {
+    "subtitle": "subtitles.minecraftfx.fire.fireball_burst",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/fireball_burst",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "fire.flame_jet": {
+    "subtitle": "subtitles.minecraftfx.fire.flame_jet",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/flame_jet",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "fire.flaming_trail": {
+    "subtitle": "subtitles.minecraftfx.fire.flaming_trail",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/flaming_trail",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "fire.heat_distortion": {
+    "subtitle": "subtitles.minecraftfx.fire.heat_distortion",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/heat_distortion",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "fire.ignition_spark": {
+    "subtitle": "subtitles.minecraftfx.fire.ignition_spark",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/ignition_spark",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "fire.inferno_pillar": {
+    "subtitle": "subtitles.minecraftfx.fire.inferno_pillar",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/inferno_pillar",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "fire.lava_splash": {
+    "subtitle": "subtitles.minecraftfx.fire.lava_splash",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/lava_splash",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "fire.magma_eruption": {
+    "subtitle": "subtitles.minecraftfx.fire.magma_eruption",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/magma_eruption",
+        "attenuation_distance": 40
+      }
+    ]
+  },
+  "fire.meteor_strike": {
+    "subtitle": "subtitles.minecraftfx.fire.meteor_strike",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/meteor_strike",
+        "attenuation_distance": 40
+      }
+    ]
+  },
+  "fire.molten_drip": {
+    "subtitle": "subtitles.minecraftfx.fire.molten_drip",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/molten_drip",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "fire.scorch_mark": {
+    "subtitle": "subtitles.minecraftfx.fire.scorch_mark",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/scorch_mark",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "fire.wall_of_fire": {
+    "subtitle": "subtitles.minecraftfx.fire.wall_of_fire",
+    "sounds": [
+      {
+        "name": "minecraftfx:fire/wall_of_fire",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "holy.angelic_wings": {
+    "subtitle": "subtitles.minecraftfx.holy.angelic_wings",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/angelic_wings",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "holy.aura_of_courage": {
+    "subtitle": "subtitles.minecraftfx.holy.aura_of_courage",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/aura_of_courage",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "holy.blessing_light": {
+    "subtitle": "subtitles.minecraftfx.holy.blessing_light",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/blessing_light",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "holy.celestial_orbit": {
+    "subtitle": "subtitles.minecraftfx.holy.celestial_orbit",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/celestial_orbit",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "holy.consecration_ground": {
+    "subtitle": "subtitles.minecraftfx.holy.consecration_ground",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/consecration_ground",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "holy.divine_nova": {
+    "subtitle": "subtitles.minecraftfx.holy.divine_nova",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/divine_nova",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "holy.divine_ray": {
+    "subtitle": "subtitles.minecraftfx.holy.divine_ray",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/divine_ray",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "holy.faith_shield": {
+    "subtitle": "subtitles.minecraftfx.holy.faith_shield",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/faith_shield",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "holy.feather_burst": {
+    "subtitle": "subtitles.minecraftfx.holy.feather_burst",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/feather_burst",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "holy.golden_sparkles": {
+    "subtitle": "subtitles.minecraftfx.holy.golden_sparkles",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/golden_sparkles",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "holy.grace_fall": {
+    "subtitle": "subtitles.minecraftfx.holy.grace_fall",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/grace_fall",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "holy.halo": {
+    "subtitle": "subtitles.minecraftfx.holy.halo",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/halo",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "holy.heal": {
+    "subtitle": "subtitles.minecraftfx.holy.heal",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/heal",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "holy.holy_smite": {
+    "subtitle": "subtitles.minecraftfx.holy.holy_smite",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/holy_smite",
+        "attenuation_distance": 40
+      }
+    ]
+  },
+  "holy.holy_water_splash": {
+    "subtitle": "subtitles.minecraftfx.holy.holy_water_splash",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/holy_water_splash",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "holy.prayer_beads_glow": {
+    "subtitle": "subtitles.minecraftfx.holy.prayer_beads_glow",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/prayer_beads_glow",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "holy.purifying_flame": {
+    "subtitle": "subtitles.minecraftfx.holy.purifying_flame",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/purifying_flame",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "holy.resurrect_beam": {
+    "subtitle": "subtitles.minecraftfx.holy.resurrect_beam",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/resurrect_beam",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "holy.sacred_chimes": {
+    "subtitle": "subtitles.minecraftfx.holy.sacred_chimes",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/sacred_chimes",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "holy.smiting_bolt": {
+    "subtitle": "subtitles.minecraftfx.holy.smiting_bolt",
+    "sounds": [
+      {
+        "name": "minecraftfx:holy/smiting_bolt",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "ice.blizzard_swirl": {
+    "subtitle": "subtitles.minecraftfx.ice.blizzard_swirl",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/blizzard_swirl",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "ice.crystalline_dust": {
+    "subtitle": "subtitles.minecraftfx.ice.crystalline_dust",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/crystalline_dust",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "ice.freezing_breath": {
+    "subtitle": "subtitles.minecraftfx.ice.freezing_breath",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/freezing_breath",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "ice.frost_armor": {
+    "subtitle": "subtitles.minecraftfx.ice.frost_armor",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/frost_armor",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "ice.frost_nova": {
+    "subtitle": "subtitles.minecraftfx.ice.frost_nova",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/frost_nova",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "ice.frostbite_aura": {
+    "subtitle": "subtitles.minecraftfx.ice.frostbite_aura",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/frostbite_aura",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "ice.frozen_ground": {
+    "subtitle": "subtitles.minecraftfx.ice.frozen_ground",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/frozen_ground",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "ice.frozen_orb": {
+    "subtitle": "subtitles.minecraftfx.ice.frozen_orb",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/frozen_orb",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "ice.glacial_quake": {
+    "subtitle": "subtitles.minecraftfx.ice.glacial_quake",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/glacial_quake",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "ice.glacier_spike": {
+    "subtitle": "subtitles.minecraftfx.ice.glacier_spike",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/glacier_spike",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "ice.hail_storm": {
+    "subtitle": "subtitles.minecraftfx.ice.hail_storm",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/hail_storm",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "ice.ice_shatter": {
+    "subtitle": "subtitles.minecraftfx.ice.ice_shatter",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/ice_shatter",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "ice.ice_shield_shatter": {
+    "subtitle": "subtitles.minecraftfx.ice.ice_shield_shatter",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/ice_shield_shatter",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "ice.ice_wall": {
+    "subtitle": "subtitles.minecraftfx.ice.ice_wall",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/ice_wall",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "ice.icicle_spear": {
+    "subtitle": "subtitles.minecraftfx.ice.icicle_spear",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/icicle_spear",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "ice.permafrost_crack": {
+    "subtitle": "subtitles.minecraftfx.ice.permafrost_crack",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/permafrost_crack",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "ice.rime_buildup": {
+    "subtitle": "subtitles.minecraftfx.ice.rime_buildup",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/rime_buildup",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "ice.sleet_spray": {
+    "subtitle": "subtitles.minecraftfx.ice.sleet_spray",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/sleet_spray",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "ice.snow_flurry": {
+    "subtitle": "subtitles.minecraftfx.ice.snow_flurry",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/snow_flurry",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "ice.winter_chill": {
+    "subtitle": "subtitles.minecraftfx.ice.winter_chill",
+    "sounds": [
+      {
+        "name": "minecraftfx:ice/winter_chill",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "impact.armor_break": {
+    "subtitle": "subtitles.minecraftfx.impact.armor_break",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/armor_break",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "impact.blade_lock": {
+    "subtitle": "subtitles.minecraftfx.impact.blade_lock",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/blade_lock",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "impact.blunt_hit": {
+    "subtitle": "subtitles.minecraftfx.impact.blunt_hit",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/blunt_hit",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "impact.concussion_ring": {
+    "subtitle": "subtitles.minecraftfx.impact.concussion_ring",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/concussion_ring",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "impact.critical_spark": {
+    "subtitle": "subtitles.minecraftfx.impact.critical_spark",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/critical_spark",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "impact.ground_slam": {
+    "subtitle": "subtitles.minecraftfx.impact.ground_slam",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/ground_slam",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "impact.heavy_stagger": {
+    "subtitle": "subtitles.minecraftfx.impact.heavy_stagger",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/heavy_stagger",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "impact.hit_flash": {
+    "subtitle": "subtitles.minecraftfx.impact.hit_flash",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/hit_flash",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "impact.impact_sparks": {
+    "subtitle": "subtitles.minecraftfx.impact.impact_sparks",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/impact_sparks",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "impact.knockback_dust": {
+    "subtitle": "subtitles.minecraftfx.impact.knockback_dust",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/knockback_dust",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "impact.parry_clash": {
+    "subtitle": "subtitles.minecraftfx.impact.parry_clash",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/parry_clash",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "impact.pierce_wound": {
+    "subtitle": "subtitles.minecraftfx.impact.pierce_wound",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/pierce_wound",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "impact.ricochet_bounce": {
+    "subtitle": "subtitles.minecraftfx.impact.ricochet_bounce",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/ricochet_bounce",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "impact.shield_bash": {
+    "subtitle": "subtitles.minecraftfx.impact.shield_bash",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/shield_bash",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "impact.shock_ripple": {
+    "subtitle": "subtitles.minecraftfx.impact.shock_ripple",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/shock_ripple",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "impact.smash_crater": {
+    "subtitle": "subtitles.minecraftfx.impact.smash_crater",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/smash_crater",
+        "attenuation_distance": 40
+      }
+    ]
+  },
+  "impact.stagger_sweat": {
+    "subtitle": "subtitles.minecraftfx.impact.stagger_sweat",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/stagger_sweat",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "impact.sweep_trail": {
+    "subtitle": "subtitles.minecraftfx.impact.sweep_trail",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/sweep_trail",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "impact.tremor_wave": {
+    "subtitle": "subtitles.minecraftfx.impact.tremor_wave",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/tremor_wave",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "impact.weakpoint_flash": {
+    "subtitle": "subtitles.minecraftfx.impact.weakpoint_flash",
+    "sounds": [
+      {
+        "name": "minecraftfx:impact/weakpoint_flash",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "lightning.arc_whip": {
+    "subtitle": "subtitles.minecraftfx.lightning.arc_whip",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/arc_whip",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "lightning.chain_lightning": {
+    "subtitle": "subtitles.minecraftfx.lightning.chain_lightning",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/chain_lightning",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "lightning.charge_up": {
+    "subtitle": "subtitles.minecraftfx.lightning.charge_up",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/charge_up",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "lightning.electrified": {
+    "subtitle": "subtitles.minecraftfx.lightning.electrified",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/electrified",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "lightning.emp_sparks": {
+    "subtitle": "subtitles.minecraftfx.lightning.emp_sparks",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/emp_sparks",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "lightning.ion_trail": {
+    "subtitle": "subtitles.minecraftfx.lightning.ion_trail",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/ion_trail",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "lightning.lightning_rod": {
+    "subtitle": "subtitles.minecraftfx.lightning.lightning_rod",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/lightning_rod",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "lightning.lightning_strike": {
+    "subtitle": "subtitles.minecraftfx.lightning.lightning_strike",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/lightning_strike",
+        "attenuation_distance": 40
+      }
+    ]
+  },
+  "lightning.plasma_arc": {
+    "subtitle": "subtitles.minecraftfx.lightning.plasma_arc",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/plasma_arc",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "lightning.plasma_burst": {
+    "subtitle": "subtitles.minecraftfx.lightning.plasma_burst",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/plasma_burst",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "lightning.spark_shower": {
+    "subtitle": "subtitles.minecraftfx.lightning.spark_shower",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/spark_shower",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "lightning.static_cling": {
+    "subtitle": "subtitles.minecraftfx.lightning.static_cling",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/static_cling",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "lightning.storm_cloud": {
+    "subtitle": "subtitles.minecraftfx.lightning.storm_cloud",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/storm_cloud",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "lightning.surge_aura": {
+    "subtitle": "subtitles.minecraftfx.lightning.surge_aura",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/surge_aura",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "lightning.tesla_coil": {
+    "subtitle": "subtitles.minecraftfx.lightning.tesla_coil",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/tesla_coil",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "lightning.thunder_clap": {
+    "subtitle": "subtitles.minecraftfx.lightning.thunder_clap",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/thunder_clap",
+        "attenuation_distance": 40
+      }
+    ]
+  },
+  "lightning.thunder_storm": {
+    "subtitle": "subtitles.minecraftfx.lightning.thunder_storm",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/thunder_storm",
+        "attenuation_distance": 40
+      }
+    ]
+  },
+  "lightning.volt_shield": {
+    "subtitle": "subtitles.minecraftfx.lightning.volt_shield",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/volt_shield",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "lightning.volt_tackle": {
+    "subtitle": "subtitles.minecraftfx.lightning.volt_tackle",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/volt_tackle",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "lightning.zap_flash": {
+    "subtitle": "subtitles.minecraftfx.lightning.zap_flash",
+    "sounds": [
+      {
+        "name": "minecraftfx:lightning/zap_flash",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "melee.blade_beam": {
+    "subtitle": "subtitles.minecraftfx.melee.blade_beam",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/blade_beam",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "melee.cleave_arc": {
+    "subtitle": "subtitles.minecraftfx.melee.cleave_arc",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/cleave_arc",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "melee.cross_slash": {
+    "subtitle": "subtitles.minecraftfx.melee.cross_slash",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/cross_slash",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "melee.dagger_toss": {
+    "subtitle": "subtitles.minecraftfx.melee.dagger_toss",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/dagger_toss",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "melee.execution_strike": {
+    "subtitle": "subtitles.minecraftfx.melee.execution_strike",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/execution_strike",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "melee.flurry_blur": {
+    "subtitle": "subtitles.minecraftfx.melee.flurry_blur",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/flurry_blur",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "melee.gouge_blood": {
+    "subtitle": "subtitles.minecraftfx.melee.gouge_blood",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/gouge_blood",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "melee.lunge_trail": {
+    "subtitle": "subtitles.minecraftfx.melee.lunge_trail",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/lunge_trail",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "melee.overhead_smash": {
+    "subtitle": "subtitles.minecraftfx.melee.overhead_smash",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/overhead_smash",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "melee.parry_spark": {
+    "subtitle": "subtitles.minecraftfx.melee.parry_spark",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/parry_spark",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "melee.pommel_strike": {
+    "subtitle": "subtitles.minecraftfx.melee.pommel_strike",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/pommel_strike",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "melee.riposte_flash": {
+    "subtitle": "subtitles.minecraftfx.melee.riposte_flash",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/riposte_flash",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "melee.slash": {
+    "subtitle": "subtitles.minecraftfx.melee.slash",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/slash",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "melee.spin_attack": {
+    "subtitle": "subtitles.minecraftfx.melee.spin_attack",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/spin_attack",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "melee.stab_glint": {
+    "subtitle": "subtitles.minecraftfx.melee.stab_glint",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/stab_glint",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "melee.sweep_dust": {
+    "subtitle": "subtitles.minecraftfx.melee.sweep_dust",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/sweep_dust",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "melee.sword_clash": {
+    "subtitle": "subtitles.minecraftfx.melee.sword_clash",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/sword_clash",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "melee.thrust_trail": {
+    "subtitle": "subtitles.minecraftfx.melee.thrust_trail",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/thrust_trail",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "melee.uppercut_swoosh": {
+    "subtitle": "subtitles.minecraftfx.melee.uppercut_swoosh",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/uppercut_swoosh",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "melee.whirlwind": {
+    "subtitle": "subtitles.minecraftfx.melee.whirlwind",
+    "sounds": [
+      {
+        "name": "minecraftfx:melee/whirlwind",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "nature.acid_splash": {
+    "subtitle": "subtitles.minecraftfx.nature.acid_splash",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/acid_splash",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "nature.bark_shield": {
+    "subtitle": "subtitles.minecraftfx.nature.bark_shield",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/bark_shield",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "nature.branch_snap": {
+    "subtitle": "subtitles.minecraftfx.nature.branch_snap",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/branch_snap",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "nature.earth_tremor": {
+    "subtitle": "subtitles.minecraftfx.nature.earth_tremor",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/earth_tremor",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "nature.fungal_growth": {
+    "subtitle": "subtitles.minecraftfx.nature.fungal_growth",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/fungal_growth",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "nature.healing_bloom": {
+    "subtitle": "subtitles.minecraftfx.nature.healing_bloom",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/healing_bloom",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "nature.insect_swarm": {
+    "subtitle": "subtitles.minecraftfx.nature.insect_swarm",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/insect_swarm",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "nature.leaf_storm": {
+    "subtitle": "subtitles.minecraftfx.nature.leaf_storm",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/leaf_storm",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "nature.moss_spread": {
+    "subtitle": "subtitles.minecraftfx.nature.moss_spread",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/moss_spread",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "nature.mud_slide": {
+    "subtitle": "subtitles.minecraftfx.nature.mud_slide",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/mud_slide",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "nature.natural_spring": {
+    "subtitle": "subtitles.minecraftfx.nature.natural_spring",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/natural_spring",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "nature.petal_dance": {
+    "subtitle": "subtitles.minecraftfx.nature.petal_dance",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/petal_dance",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "nature.poison_cloud": {
+    "subtitle": "subtitles.minecraftfx.nature.poison_cloud",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/poison_cloud",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "nature.pollen_cloud": {
+    "subtitle": "subtitles.minecraftfx.nature.pollen_cloud",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/pollen_cloud",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "nature.root_snare": {
+    "subtitle": "subtitles.minecraftfx.nature.root_snare",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/root_snare",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "nature.spore_burst": {
+    "subtitle": "subtitles.minecraftfx.nature.spore_burst",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/spore_burst",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "nature.thorn_spike": {
+    "subtitle": "subtitles.minecraftfx.nature.thorn_spike",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/thorn_spike",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "nature.toxic_puddle": {
+    "subtitle": "subtitles.minecraftfx.nature.toxic_puddle",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/toxic_puddle",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "nature.venom_spit": {
+    "subtitle": "subtitles.minecraftfx.nature.venom_spit",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/venom_spit",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "nature.vine_whip": {
+    "subtitle": "subtitles.minecraftfx.nature.vine_whip",
+    "sounds": [
+      {
+        "name": "minecraftfx:nature/vine_whip",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "pickup.ammo_pickup": {
+    "subtitle": "subtitles.minecraftfx.pickup.ammo_pickup",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/ammo_pickup",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "pickup.armor_glint": {
+    "subtitle": "subtitles.minecraftfx.pickup.armor_glint",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/armor_glint",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "pickup.chest_open_flash": {
+    "subtitle": "subtitles.minecraftfx.pickup.chest_open_flash",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/chest_open_flash",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "pickup.coin_burst": {
+    "subtitle": "subtitles.minecraftfx.pickup.coin_burst",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/coin_burst",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "pickup.confetti": {
+    "subtitle": "subtitles.minecraftfx.pickup.confetti",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/confetti",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "pickup.drop_shadow": {
+    "subtitle": "subtitles.minecraftfx.pickup.drop_shadow",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/drop_shadow",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "pickup.exp_orb": {
+    "subtitle": "subtitles.minecraftfx.pickup.exp_orb",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/exp_orb",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "pickup.gem_sparkle": {
+    "subtitle": "subtitles.minecraftfx.pickup.gem_sparkle",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/gem_sparkle",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "pickup.health_globe": {
+    "subtitle": "subtitles.minecraftfx.pickup.health_globe",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/health_globe",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "pickup.key_shimmer": {
+    "subtitle": "subtitles.minecraftfx.pickup.key_shimmer",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/key_shimmer",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "pickup.level_up": {
+    "subtitle": "subtitles.minecraftfx.pickup.level_up",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/level_up",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "pickup.loot_beam": {
+    "subtitle": "subtitles.minecraftfx.pickup.loot_beam",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/loot_beam",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "pickup.mana_potion_glint": {
+    "subtitle": "subtitles.minecraftfx.pickup.mana_potion_glint",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/mana_potion_glint",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "pickup.material_pop": {
+    "subtitle": "subtitles.minecraftfx.pickup.material_pop",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/material_pop",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "pickup.quest_item_pulse": {
+    "subtitle": "subtitles.minecraftfx.pickup.quest_item_pulse",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/quest_item_pulse",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "pickup.rarity_glow": {
+    "subtitle": "subtitles.minecraftfx.pickup.rarity_glow",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/rarity_glow",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "pickup.resource_gather": {
+    "subtitle": "subtitles.minecraftfx.pickup.resource_gather",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/resource_gather",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "pickup.soul_absorb": {
+    "subtitle": "subtitles.minecraftfx.pickup.soul_absorb",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/soul_absorb",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "pickup.treasure_glow": {
+    "subtitle": "subtitles.minecraftfx.pickup.treasure_glow",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/treasure_glow",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "pickup.weapon_shine": {
+    "subtitle": "subtitles.minecraftfx.pickup.weapon_shine",
+    "sounds": [
+      {
+        "name": "minecraftfx:pickup/weapon_shine",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "sci_fi.cloaking_fade": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.cloaking_fade",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/cloaking_fade",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "sci_fi.cyber_grid": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.cyber_grid",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/cyber_grid",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "sci_fi.data_stream": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.data_stream",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/data_stream",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "sci_fi.drone_spawn": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.drone_spawn",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/drone_spawn",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "sci_fi.emp_blast": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.emp_blast",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/emp_blast",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "sci_fi.energy_shield": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.energy_shield",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/energy_shield",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "sci_fi.forcefield_impact": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.forcefield_impact",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/forcefield_impact",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "sci_fi.hack_progress": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.hack_progress",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/hack_progress",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "sci_fi.holographic_glitch": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.holographic_glitch",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/holographic_glitch",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "sci_fi.laser_beam": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.laser_beam",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/laser_beam",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "sci_fi.matrix_code": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.matrix_code",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/matrix_code",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "sci_fi.neon_trail": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.neon_trail",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/neon_trail",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "sci_fi.photon_torpedo": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.photon_torpedo",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/photon_torpedo",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "sci_fi.pulse_wave": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.pulse_wave",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/pulse_wave",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "sci_fi.scanner_sweep": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.scanner_sweep",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/scanner_sweep",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "sci_fi.system_reboot": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.system_reboot",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/system_reboot",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "sci_fi.teleport_beam": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.teleport_beam",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/teleport_beam",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "sci_fi.thruster_exhaust": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.thruster_exhaust",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/thruster_exhaust",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "sci_fi.tractor_beam": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.tractor_beam",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/tractor_beam",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "sci_fi.warp_speed": {
+    "subtitle": "subtitles.minecraftfx.sci_fi.warp_speed",
+    "sounds": [
+      {
+        "name": "minecraftfx:sci_fi/warp_speed",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "shadow.abyssal_gaze": {
+    "subtitle": "subtitles.minecraftfx.shadow.abyssal_gaze",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/abyssal_gaze",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "shadow.black_hole": {
+    "subtitle": "subtitles.minecraftfx.shadow.black_hole",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/black_hole",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "shadow.corrupting_ooze": {
+    "subtitle": "subtitles.minecraftfx.shadow.corrupting_ooze",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/corrupting_ooze",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "shadow.curse": {
+    "subtitle": "subtitles.minecraftfx.shadow.curse",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/curse",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "shadow.dark_explosion": {
+    "subtitle": "subtitles.minecraftfx.shadow.dark_explosion",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/dark_explosion",
+        "attenuation_distance": 40
+      }
+    ]
+  },
+  "shadow.dark_whispers": {
+    "subtitle": "subtitles.minecraftfx.shadow.dark_whispers",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/dark_whispers",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "shadow.darkness_fall": {
+    "subtitle": "subtitles.minecraftfx.shadow.darkness_fall",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/darkness_fall",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "shadow.eclipse_ring": {
+    "subtitle": "subtitles.minecraftfx.shadow.eclipse_ring",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/eclipse_ring",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "shadow.fear_skull": {
+    "subtitle": "subtitles.minecraftfx.shadow.fear_skull",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/fear_skull",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "shadow.gloom_aura": {
+    "subtitle": "subtitles.minecraftfx.shadow.gloom_aura",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/gloom_aura",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "shadow.hex_sigil": {
+    "subtitle": "subtitles.minecraftfx.shadow.hex_sigil",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/hex_sigil",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "shadow.life_drain": {
+    "subtitle": "subtitles.minecraftfx.shadow.life_drain",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/life_drain",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "shadow.nightmare_smoke": {
+    "subtitle": "subtitles.minecraftfx.shadow.nightmare_smoke",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/nightmare_smoke",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "shadow.phantom_slash": {
+    "subtitle": "subtitles.minecraftfx.shadow.phantom_slash",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/phantom_slash",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "shadow.shadow_bolt": {
+    "subtitle": "subtitles.minecraftfx.shadow.shadow_bolt",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/shadow_bolt",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "shadow.shadow_step": {
+    "subtitle": "subtitles.minecraftfx.shadow.shadow_step",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/shadow_step",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "shadow.shadowy_tendrils": {
+    "subtitle": "subtitles.minecraftfx.shadow.shadowy_tendrils",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/shadowy_tendrils",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "shadow.soul_reap": {
+    "subtitle": "subtitles.minecraftfx.shadow.soul_reap",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/soul_reap",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "shadow.void_zone": {
+    "subtitle": "subtitles.minecraftfx.shadow.void_zone",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/void_zone",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "shadow.wraith_form": {
+    "subtitle": "subtitles.minecraftfx.shadow.wraith_form",
+    "sounds": [
+      {
+        "name": "minecraftfx:shadow/wraith_form",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "spawn.angelic_descent": {
+    "subtitle": "subtitles.minecraftfx.spawn.angelic_descent",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/angelic_descent",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "spawn.ash_reconstitution": {
+    "subtitle": "subtitles.minecraftfx.spawn.ash_reconstitution",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/ash_reconstitution",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "spawn.beam_down": {
+    "subtitle": "subtitles.minecraftfx.spawn.beam_down",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/beam_down",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "spawn.burrow_out": {
+    "subtitle": "subtitles.minecraftfx.spawn.burrow_out",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/burrow_out",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "spawn.cocoon_burst": {
+    "subtitle": "subtitles.minecraftfx.spawn.cocoon_burst",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/cocoon_burst",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "spawn.crystal_formation": {
+    "subtitle": "subtitles.minecraftfx.spawn.crystal_formation",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/crystal_formation",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "spawn.demonic_rift": {
+    "subtitle": "subtitles.minecraftfx.spawn.demonic_rift",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/demonic_rift",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "spawn.disintegrate": {
+    "subtitle": "subtitles.minecraftfx.spawn.disintegrate",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/disintegrate",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "spawn.drop_pod": {
+    "subtitle": "subtitles.minecraftfx.spawn.drop_pod",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/drop_pod",
+        "attenuation_distance": 40
+      }
+    ]
+  },
+  "spawn.egg_hatch": {
+    "subtitle": "subtitles.minecraftfx.spawn.egg_hatch",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/egg_hatch",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "spawn.ghost_manifest": {
+    "subtitle": "subtitles.minecraftfx.spawn.ghost_manifest",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/ghost_manifest",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "spawn.ground_burst": {
+    "subtitle": "subtitles.minecraftfx.spawn.ground_burst",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/ground_burst",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "spawn.materialize_grid": {
+    "subtitle": "subtitles.minecraftfx.spawn.materialize_grid",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/materialize_grid",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "spawn.mirror_shatter": {
+    "subtitle": "subtitles.minecraftfx.spawn.mirror_shatter",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/mirror_shatter",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "spawn.poof": {
+    "subtitle": "subtitles.minecraftfx.spawn.poof",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/poof",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "spawn.respawn_beam": {
+    "subtitle": "subtitles.minecraftfx.spawn.respawn_beam",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/respawn_beam",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "spawn.shadow_emergence": {
+    "subtitle": "subtitles.minecraftfx.spawn.shadow_emergence",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/shadow_emergence",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "spawn.summon_portal": {
+    "subtitle": "subtitles.minecraftfx.spawn.summon_portal",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/summon_portal",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "spawn.warp_in": {
+    "subtitle": "subtitles.minecraftfx.spawn.warp_in",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/warp_in",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "spawn.water_rise": {
+    "subtitle": "subtitles.minecraftfx.spawn.water_rise",
+    "sounds": [
+      {
+        "name": "minecraftfx:spawn/water_rise",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.bleeding": {
+    "subtitle": "subtitles.minecraftfx.status.bleeding",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/bleeding",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.blinded": {
+    "subtitle": "subtitles.minecraftfx.status.blinded",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/blinded",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.burning": {
+    "subtitle": "subtitles.minecraftfx.status.burning",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/burning",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.charmed": {
+    "subtitle": "subtitles.minecraftfx.status.charmed",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/charmed",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.confused": {
+    "subtitle": "subtitles.minecraftfx.status.confused",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/confused",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.cursed": {
+    "subtitle": "subtitles.minecraftfx.status.cursed",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/cursed",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.dazed": {
+    "subtitle": "subtitles.minecraftfx.status.dazed",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/dazed",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.enraged": {
+    "subtitle": "subtitles.minecraftfx.status.enraged",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/enraged",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.frozen": {
+    "subtitle": "subtitles.minecraftfx.status.frozen",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/frozen",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.hasted": {
+    "subtitle": "subtitles.minecraftfx.status.hasted",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/hasted",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.marked": {
+    "subtitle": "subtitles.minecraftfx.status.marked",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/marked",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.paralyzed": {
+    "subtitle": "subtitles.minecraftfx.status.paralyzed",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/paralyzed",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.poisoned": {
+    "subtitle": "subtitles.minecraftfx.status.poisoned",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/poisoned",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.regenerating": {
+    "subtitle": "subtitles.minecraftfx.status.regenerating",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/regenerating",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.silenced": {
+    "subtitle": "subtitles.minecraftfx.status.silenced",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/silenced",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.sleeping": {
+    "subtitle": "subtitles.minecraftfx.status.sleeping",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/sleeping",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.slowed": {
+    "subtitle": "subtitles.minecraftfx.status.slowed",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/slowed",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.stunned": {
+    "subtitle": "subtitles.minecraftfx.status.stunned",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/stunned",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.terrified": {
+    "subtitle": "subtitles.minecraftfx.status.terrified",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/terrified",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "status.vulnerable": {
+    "subtitle": "subtitles.minecraftfx.status.vulnerable",
+    "sounds": [
+      {
+        "name": "minecraftfx:status/vulnerable",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "water.aqua_ring": {
+    "subtitle": "subtitles.minecraftfx.water.aqua_ring",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/aqua_ring",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "water.bubbles": {
+    "subtitle": "subtitles.minecraftfx.water.bubbles",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/bubbles",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "water.condensation": {
+    "subtitle": "subtitles.minecraftfx.water.condensation",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/condensation",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "water.coral_growth": {
+    "subtitle": "subtitles.minecraftfx.water.coral_growth",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/coral_growth",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "water.deep_sea_crush": {
+    "subtitle": "subtitles.minecraftfx.water.deep_sea_crush",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/deep_sea_crush",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "water.fountain_spray": {
+    "subtitle": "subtitles.minecraftfx.water.fountain_spray",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/fountain_spray",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "water.geyser": {
+    "subtitle": "subtitles.minecraftfx.water.geyser",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/geyser",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "water.hydro_pump": {
+    "subtitle": "subtitles.minecraftfx.water.hydro_pump",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/hydro_pump",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "water.mist_aura": {
+    "subtitle": "subtitles.minecraftfx.water.mist_aura",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/mist_aura",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "water.puddle_step": {
+    "subtitle": "subtitles.minecraftfx.water.puddle_step",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/puddle_step",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "water.rain_cloud": {
+    "subtitle": "subtitles.minecraftfx.water.rain_cloud",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/rain_cloud",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "water.ripples": {
+    "subtitle": "subtitles.minecraftfx.water.ripples",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/ripples",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "water.splash": {
+    "subtitle": "subtitles.minecraftfx.water.splash",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/splash",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "water.steam_hiss": {
+    "subtitle": "subtitles.minecraftfx.water.steam_hiss",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/steam_hiss",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "water.tear_drop": {
+    "subtitle": "subtitles.minecraftfx.water.tear_drop",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/tear_drop",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "water.tidal_wave": {
+    "subtitle": "subtitles.minecraftfx.water.tidal_wave",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/tidal_wave",
+        "attenuation_distance": 40
+      }
+    ]
+  },
+  "water.tsunami_crash": {
+    "subtitle": "subtitles.minecraftfx.water.tsunami_crash",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/tsunami_crash",
+        "attenuation_distance": 40
+      }
+    ]
+  },
+  "water.water_shield": {
+    "subtitle": "subtitles.minecraftfx.water.water_shield",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/water_shield",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "water.water_whip": {
+    "subtitle": "subtitles.minecraftfx.water.water_whip",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/water_whip",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "water.whirlpool": {
+    "subtitle": "subtitles.minecraftfx.water.whirlpool",
+    "sounds": [
+      {
+        "name": "minecraftfx:water/whirlpool",
+        "attenuation_distance": 32
+      }
+    ]
+  }
+}

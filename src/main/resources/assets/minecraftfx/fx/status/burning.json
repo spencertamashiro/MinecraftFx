@@ -1,0 +1,15 @@
+{
+  "sounds": [ { "id": "minecraftfx:status.burning" } ],
+  "palette": { "core": "#FFE48A", "flame": "#FF8A2A", "deep": "#C8381A", "smoke": "#3A302C" },
+  "layers": [
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "count": 3, "repeat": 12, "interval": 2, "lifetime": [8, 12],
+      "scale": { "from": 0.18, "to": 0.04, "easing": "quadIn" }, "color": ["core", "deep"],
+      "cone": 90, "rim": true, "offset": [0.25, 0.4], "height": [0.0, 1.6], "lift": [0.06, 0.1], "spin": 0.1 },
+    { "sprite": "minecraftfx:pixel", "axis": "up", "additive": false, "repeat": 12, "interval": 2, "lifetime": [14, 20],
+      "scale": { "from": 0.05, "to": 0.02 }, "color": ["core", "flame"],
+      "cone": 90, "offset": [0.1, 0.4], "height": [0.4, 1.8], "speed": [0.01, 0.03], "lift": [0.05, 0.09] },
+    { "sprite": "minecraftfx:smoke", "axis": "up", "additive": false, "repeat": 8, "interval": 3, "delay": 3, "lifetime": [16, 22],
+      "scale": { "from": 0.2, "to": 0.4 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["smoke"],
+      "cone": 90, "offset": [0.0, 0.3], "height": [1.6, 2.0], "lift": [0.04, 0.06] }
+  ]
+}

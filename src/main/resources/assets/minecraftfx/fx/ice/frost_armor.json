@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:ice.frost_armor" } ],
+  "palette": { "white": "#FFFFFF", "ice": "#BDF0FF", "blue": "#5AB4FF", "deep": "#2C66C8" },
+  "layers": [
+    { "sprite": "minecraftfx:gem", "additive": false, "axis": "up", "count": 4, "repeat": 6, "interval": 2, "lifetime": [34], "scale": { "from": 0.0, "mid": 0.14, "to": 0.14, "easing": "expoOut" }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["white", "blue"], "cone": 90, "rim": true, "offset": [0.45], "height": [0.3, 1.7] },
+    { "sprite": "minecraftfx:hex", "frames": "first", "additive": false, "axis": "up", "count": 3, "repeat": 4, "interval": 3, "lifetime": [30], "scale": { "from": 0.16, "to": 0.16 }, "alpha": { "from": 0.0, "mid": 0.6, "to": 0.0 }, "color": ["ice", "deep"], "cone": 90, "rim": true, "offset": [0.5], "height": [0.4, 1.6] },
+    { "sprite": "minecraftfx:glint", "axis": "up", "repeat": 10, "interval": 3, "lifetime": [6], "scale": { "from": 0.16, "to": 0.16 }, "color": ["white"], "cone": 90, "rim": true, "offset": [0.5], "height": [0.3, 1.8] }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:melee.blade_beam" } ],
+  "palette": { "white": "#FFFFFF", "cyan": "#8FF0FF", "blue": "#4A8CFF" },
+  "layers": [
+    { "sprite": "minecraftfx:crescent", "shape": "oriented", "additive": false, "lifetime": [16], "scale": { "from": 0.7, "to": 0.7 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["white", "cyan"], "cone": 0, "speed": [0.5] },
+    { "sprite": "minecraftfx:crescent", "shape": "oriented", "lifetime": [16], "scale": { "from": 0.9, "to": 0.9 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["cyan"], "cone": 0, "speed": [0.5] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 16, "lifetime": [8, 14], "scale": { "from": 0.06, "to": 0.02 }, "color": ["cyan", "blue"], "cone": 4, "speed": [0.1, 0.45] }
+  ]
+}

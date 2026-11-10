@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:lightning.lightning_rod" } ],
+  "palette": { "white": "#FFFFFF", "bolt": "#C8E8FF", "blue": "#6FA8FF", "violet": "#7A5CFF", "grey": "#8A929A" },
+  "layers": [
+    { "sprite": "minecraftfx:bolt", "shape": "streak", "axis": "up", "count": 2, "repeat": 6, "interval": 3, "lifetime": [4], "scale": { "from": 0.12, "to": 0.08 }, "length": { "from": 1.2, "to": 1.2 }, "color": ["white", "bolt"], "cone": 120, "offset": [1.2], "height": [2.0], "speed": [-0.001] },
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "axis": "up", "lifetime": [26], "height": [2.0], "scale": { "from": 0.08, "to": 0.3 }, "alpha": { "from": 0.8, "to": 1.0 }, "color": ["white", "blue"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 3, "repeat": 8, "interval": 2, "lifetime": [10], "scale": { "from": 0.03, "to": 0.06 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 1.0 }, "color": ["bolt", "violet"], "cone": 90, "rim": true, "offset": [1.6, 2.0], "height": [2.0], "speed": [-0.17], "orbit": 0.2 },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "lifetime": [26], "height": [1.0], "scale": { "from": 0.03, "to": 0.03 }, "length": { "from": 1.0, "to": 1.0 }, "alpha": { "from": 0.6, "to": 0.6 }, "color": ["grey"], "cone": 0, "lift": [0.0001] }
+  ]
+}

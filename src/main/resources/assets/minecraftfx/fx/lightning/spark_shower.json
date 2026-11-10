@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:lightning.spark_shower" } ],
+  "palette": { "white": "#FFFFFF", "yellow": "#FFF06A", "amber": "#FFB02E" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "axis": "up", "count": 3, "repeat": 14, "interval": 1, "lifetime": [12, 14], "scale": { "from": 0.03, "to": 0.02 }, "length": { "from": 0.25, "to": 0.15 }, "color": ["white", "yellow"], "cone": 90, "rim": true, "offset": [0.0, 1.0], "height": [3.0], "gravity": 1.2 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 2, "repeat": 14, "interval": 1, "delay": 12, "lifetime": [6, 8], "scale": { "from": 0.05, "to": 0.02 }, "color": ["yellow", "amber"], "cone": 90, "rim": true, "offset": [0.0, 1.1], "height": [0.05], "lift": [0.08, 0.14], "gravity": 1.0 },
+    { "sprite": "minecraftfx:glint", "axis": "up", "repeat": 7, "interval": 2, "lifetime": [3], "scale": { "from": 0.3, "to": 0.3 }, "color": ["white"], "cone": 90, "rim": true, "offset": [0.0, 0.3], "height": [3.0] }
+  ]
+}

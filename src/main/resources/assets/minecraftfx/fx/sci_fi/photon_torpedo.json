@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:sci_fi.photon_torpedo" } ],
+  "palette": { "white": "#FFFFFF", "orange": "#FF9A3A", "red": "#E0401A" },
+  "layers": [
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "lifetime": [16], "scale": { "from": 0.22, "to": 0.22 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["white", "orange"], "cone": 0, "speed": [0.45] },
+    { "sprite": "minecraftfx:glint", "lifetime": [16], "scale": { "from": 0.5, "to": 0.5 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["white"], "cone": 0, "speed": [0.45], "spin": 0.4 },
+    { "sprite": "minecraftfx:ring", "shape": "oriented", "additive": false, "repeat": 4, "interval": 4, "lifetime": [8], "scale": { "from": 0.15, "to": 0.45 }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["orange", "red"], "cone": 0, "speed": [0.2] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 12, "delay": 16, "lifetime": [8, 12], "scale": { "from": 0.07, "to": 0.03 }, "color": ["orange", "red"], "cone": 90, "rim": true, "pattern": "even", "height": [7.2], "speed": [0.2], "friction": 0.85 }
+  ]
+}

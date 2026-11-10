@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:spawn.cocoon_burst" } ],
+  "palette": { "white": "#FFFFFF", "silk": "#E8E4D8", "pink": "#FF9AD8", "violet": "#B06AE8" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "count": 10, "lifetime": [10, 12], "scale": { "from": 0.02, "to": 0.02 }, "length": { "from": 0.8, "to": 0.3 }, "color": ["white", "silk"], "pattern": "even", "speed": [0.3], "friction": 0.8 },
+    { "sprite": "minecraftfx:puff", "additive": false, "count": 5, "lifetime": [12, 16], "scale": { "from": 0.3, "to": 0.3 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["white", "silk"], "speed": [0.03, 0.06] },
+    { "sprite": "minecraftfx:bug", "additive": false, "axis": "up", "count": 5, "delay": 6, "lifetime": [34], "scale": { "from": 0.1, "to": 0.1 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["pink", "violet"], "cone": 50, "speed": [0.03, 0.06], "lift": [0.04], "orbit": 0.12 }
+  ]
+}

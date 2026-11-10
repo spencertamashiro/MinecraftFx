@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:fire.cauterize_smoke" } ],
+  "palette": { "steam": "#FFFFFF", "mist": "#D8DCE0", "glow": "#FF8A2A", "red": "#B8321A" },
+  "layers": [
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "count": 2, "repeat": 8, "interval": 1, "lifetime": [12, 16], "scale": { "from": 0.15, "to": 0.4 }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["steam", "mist"], "cone": 20, "speed": [0.15, 0.25], "friction": 0.9 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 6, "lifetime": [10, 14], "scale": { "from": 0.06, "to": 0.02 }, "color": ["glow", "red"], "cone": 90, "rim": true, "offset": [0.0, 0.2], "height": [0.05] },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 3, "delay": 6, "lifetime": [14, 18], "scale": { "from": 0.1, "to": 0.1 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["mist"], "cone": 90, "rim": true, "speed": [0.03, 0.06] }
+  ]
+}

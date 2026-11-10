@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:nature.venom_spit" } ],
+  "palette": { "lime": "#D4FF4A", "acid": "#8CE02A", "dark": "#3E7A12" },
+  "layers": [
+    { "sprite": "minecraftfx:puff", "frames": "first", "additive": false, "lifetime": [14], "scale": { "from": 0.16, "to": 0.16 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["lime", "acid"], "cone": 0, "speed": [0.5] },
+    { "sprite": "minecraftfx:drop", "additive": false, "count": 10, "lifetime": [10, 14], "scale": { "from": 0.06, "to": 0.04 }, "color": ["acid", "dark"], "cone": 3, "speed": [0.1, 0.46] },
+    { "sprite": "minecraftfx:drop", "additive": false, "count": 10, "delay": 14, "lifetime": [10, 14], "scale": { "from": 0.07, "to": 0.05 }, "color": ["lime", "dark"], "cone": 90, "rim": true, "pattern": "even", "height": [7.0], "speed": [0.15], "gravity": 1.0 },
+    { "sprite": "minecraftfx:puff", "additive": false, "count": 4, "delay": 14, "lifetime": [10, 12], "scale": { "from": 0.2, "to": 0.2 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["acid", "dark"], "height": [7.0], "speed": [0.03, 0.06] }
+  ]
+}

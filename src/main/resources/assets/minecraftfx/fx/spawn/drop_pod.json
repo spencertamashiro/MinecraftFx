@@ -1,0 +1,12 @@
+{
+  "sounds": [ { "id": "minecraftfx:spawn.drop_pod" } ],
+  "palette": { "steel": "#C8D0D8", "iron": "#6A7078", "core": "#FFF0A8", "flame": "#FF8A2A", "dust": "#B8AFA0", "shade": "#6A625A", "steam": "#E8E8F0" },
+  "layers": [
+    { "sprite": "minecraftfx:box", "additive": false, "axis": "up", "lifetime": [10], "height": [6.0], "scale": { "from": 0.4, "to": 0.4 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["steel", "iron"], "cone": 0, "lift": [-0.57] },
+    { "sprite": "minecraftfx:flame", "additive": false, "axis": "up", "repeat": 8, "interval": 1, "lifetime": [10], "height": [6.4], "scale": { "from": 0.3, "to": 0.15 }, "color": ["core", "flame"], "cone": 0, "lift": [-0.57] },
+    { "sprite": "minecraftfx:box", "additive": false, "axis": "up", "delay": 10, "lifetime": [34], "height": [0.4], "scale": { "from": 0.4, "to": 0.4 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["steel", "iron"] },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 12, "delay": 10, "lifetime": [14, 18], "scale": { "from": 0.3, "to": 0.3 }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["dust", "shade"], "cone": 90, "rim": true, "pattern": "even", "speed": [0.2], "friction": 0.86 },
+    { "sprite": "minecraftfx:rock", "frames": "random", "additive": false, "axis": "up", "count": 8, "delay": 10, "lifetime": [14, 20], "scale": { "from": 0.1, "to": 0.1 }, "color": ["dust", "shade"], "cone": 55, "speed": [0.2, 0.35], "gravity": 1.3, "spin": 0.3 },
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "repeat": 6, "interval": 4, "delay": 14, "lifetime": [18, 24], "scale": { "from": 0.2, "to": 0.5 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["steam"], "cone": 20, "height": [0.8], "lift": [0.05] }
+  ]
+}

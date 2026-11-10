@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:melee.flurry_blur" } ],
+  "palette": { "white": "#FFFFFF", "steel": "#D8ECFF", "blue": "#7AB4FF" },
+  "layers": [
+    { "sprite": "minecraftfx:slash", "shape": "plane", "additive": false, "repeat": 8, "interval": 2, "lifetime": [4], "scale": { "from": 0.5, "to": 0.6 }, "color": ["white", "steel"], "cone": 90, "rim": true, "offset": [0.0, 0.5], "spin": 0.001 },
+    { "sprite": "minecraftfx:glint", "repeat": 8, "interval": 2, "lifetime": [3], "scale": { "from": 0.3, "to": 0.3 }, "color": ["white"], "cone": 90, "rim": true, "offset": [0.0, 0.5] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "count": 2, "repeat": 8, "interval": 2, "lifetime": [4], "scale": { "from": 0.03, "to": 0.03 }, "length": { "from": 0.4, "to": 0.15 }, "color": ["white", "blue"], "cone": 40, "speed": [0.4, 0.6] }
+  ]
+}

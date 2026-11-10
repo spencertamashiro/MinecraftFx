@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:ice.freezing_breath" } ],
+  "palette": { "white": "#FFFFFF", "ice": "#BDF0FF", "blue": "#5AB4FF", "deep": "#2C66C8" },
+  "layers": [
+    { "sprite": "minecraftfx:smoke", "additive": false, "count": 3, "repeat": 14, "interval": 1, "lifetime": [12, 16], "scale": { "from": 0.15, "to": 0.55 }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["white", "ice"], "cone": 25, "speed": [0.3, 0.45], "friction": 0.93 },
+    { "sprite": "minecraftfx:snowflake", "additive": false, "count": 2, "repeat": 14, "interval": 1, "lifetime": [14, 18], "scale": { "from": 0.09, "to": 0.05 }, "color": ["white", "blue"], "cone": 28, "speed": [0.35, 0.5], "friction": 0.94, "spin": 0.1 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 2, "repeat": 14, "interval": 1, "lifetime": [10, 14], "scale": { "from": 0.05, "to": 0.02 }, "color": ["ice", "deep"], "cone": 30, "speed": [0.4, 0.6], "friction": 0.92 }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:spawn.ash_reconstitution" } ],
+  "palette": { "ash": "#B0ABA6", "grey": "#6A6662", "dark": "#3A3836" },
+  "layers": [
+    { "sprite": "minecraftfx:pixel", "frames": "first", "additive": false, "axis": "up", "count": 4, "repeat": 14, "interval": 1, "lifetime": [14], "scale": { "from": 0.05, "to": 0.05 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 1.0 }, "color": ["ash", "grey"], "cone": 90, "rim": true, "offset": [1.2, 1.8], "height": [0.05], "speed": [-0.09], "lift": [0.06, 0.1], "orbit": 0.08 },
+    { "sprite": "minecraftfx:ghost", "additive": false, "axis": "up", "delay": 12, "lifetime": [30], "height": [1.0], "scale": { "from": 0.7, "to": 0.7 }, "alpha": { "from": 0.0, "mid": 0.9, "to": 0.0 }, "color": ["ash", "grey"] },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 2, "repeat": 8, "interval": 2, "delay": 8, "lifetime": [12, 16], "scale": { "from": 0.2, "to": 0.2 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["grey", "dark"], "cone": 90, "rim": true, "offset": [0.0, 0.3], "height": [0.2, 1.6] }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:sci_fi.forcefield_impact" } ],
+  "palette": { "white": "#FFFFFF", "cyan": "#7AF8FF", "teal": "#20C8D8", "deep": "#0A5A80" },
+  "layers": [
+    { "sprite": "minecraftfx:hex", "frames": "first", "shape": "plane", "additive": false, "lifetime": [12], "scale": { "from": 0.3, "to": 0.3 }, "color": ["white", "cyan"] },
+    { "sprite": "minecraftfx:hex", "shape": "plane", "additive": false, "count": 6, "delay": 2, "lifetime": [12], "scale": { "from": 0.3, "to": 0.3 }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["cyan", "teal"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.52] },
+    { "sprite": "minecraftfx:hex", "shape": "plane", "additive": false, "count": 12, "delay": 4, "lifetime": [12], "scale": { "from": 0.3, "to": 0.3 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["teal", "deep"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.95] },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "lifetime": [10], "scale": { "from": 0.2, "to": 1.5, "easing": "quadOut" }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["cyan", "deep"] }
+  ]
+}

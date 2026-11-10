@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:ice.permafrost_crack" } ],
+  "palette": { "white": "#FFFFFF", "ice": "#BDF0FF", "blue": "#5AB4FF", "deep": "#2C66C8" },
+  "layers": [
+    { "sprite": "minecraftfx:crack", "shape": "plane", "additive": false, "axis": "up", "lifetime": [56], "height": [0.04], "scale": { "from": 1.6, "to": 1.7 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["white", "blue"] },
+    { "sprite": "minecraftfx:crack", "shape": "plane", "additive": false, "axis": "up", "delay": 4, "lifetime": [50], "height": [0.05], "scale": { "from": 0.9, "to": 0.9 }, "alpha": { "from": 0.9, "mid": 0.9, "to": 0.0 }, "color": ["ice", "deep"], "spin": 0.001 },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 2, "repeat": 8, "interval": 4, "delay": 4, "lifetime": [18, 24], "scale": { "from": 0.14, "to": 0.14 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["white", "ice"], "cone": 90, "rim": true, "offset": [0.2, 1.4], "lift": [0.03, 0.05] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 10, "lifetime": [10, 14], "scale": { "from": 0.06, "to": 0.03 }, "color": ["white", "blue"], "cone": 50, "speed": [0.12, 0.25], "gravity": 1.0 }
+  ]
+}

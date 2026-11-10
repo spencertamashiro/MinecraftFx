@@ -1,0 +1,94 @@
+{
+  "abyssal_gaze": { "about": "A deep drone, two eyes opening and an eerie held note", "layers": [
+    { "use": "drone", "freq": 49, "dur": 2.5 },
+    { "use": "growl", "at": 0.4, "freq": [60, 45], "dur": 1.2, "vol": 0.6 },
+    { "wave": "sine", "freq": 1865, "dur": 0.1, "at": 0.4, "repeat": 2, "every": 0.4, "vol": 0.25 },
+    { "wave": "sine", "freq": [1320, 1245], "vib": [5, 0.5], "at": 1.0, "dur": 1.2, "vol": 0.3 } ] },
+  "black_hole": { "about": "A sinking drone with air being sucked inward again and again", "range": 32, "layers": [
+    { "use": "drone", "freq": [70, 35], "dur": 2.6 },
+    { "wave": "noise", "freq": [3000, 100], "dur": 0.6, "shape": "swell", "repeat": 4, "every": 0.6, "vol": 0.5 },
+    { "use": "wobble", "freq": [110, 55], "vib": [3, 3], "dur": 2.6, "vol": 0.6 } ] },
+  "corrupting_ooze": { "about": "Thick, slow blorps in a wet murk", "level": 0.8, "layers": [
+    { "use": "drip", "freq": [160, 70], "dur": 0.2, "repeat": 12, "every": 0.24, "jitter": 0.8 },
+    { "wave": "noise", "freq": [300, 160], "trem": [5, 0.6], "low": 900, "dur": 3.0, "shape": "bump", "vol": 0.5 },
+    { "use": "wobble", "freq": 73, "vib": [2, 2], "dur": 3.0, "vol": 0.4 } ] },
+  "curse": { "about": "Five dissonant tolls with whispering between them", "layers": [
+    { "use": "bell", "freq": 220, "fm": [2.76, 2.5], "notes": [0, 6, -1, 5, -2], "every": 0.25, "dur": 0.6 },
+    { "use": "whisper", "repeat": 4, "every": 0.5, "vol": 0.5 },
+    { "use": "drone", "freq": 55, "dur": 2.3, "vol": 0.5 } ] },
+  "dark_explosion": { "about": "Darkness gathering, then a deep muffled detonation", "range": 40, "layers": [
+    { "wave": "noise", "freq": [300, 5000], "glide": 2, "dur": 0.6, "shape": "swell", "vol": 0.6 },
+    { "use": "rise", "wave": "saw", "freq": [40, 160], "low": 800, "dur": 0.6 },
+    { "use": "boom", "at": 0.6, "freq": [90, 25], "dur": 1.2 },
+    { "use": "blast", "at": 0.6, "freq": [1800, 150], "low": 2500, "dur": 1.2 },
+    { "use": "growl", "at": 0.6, "dur": 0.9, "vol": 0.5 } ] },
+  "dark_whispers": { "about": "Overlapping whispers from no clear direction", "level": 0.8, "layers": [
+    { "use": "whisper", "dur": 0.35, "repeat": 8, "every": 0.36, "jitter": 0.7 },
+    { "use": "whisper", "band": [2600, 1500], "at": 0.15, "repeat": 5, "every": 0.6, "jitter": 0.8, "vol": 0.6 },
+    { "use": "drone", "freq": 61, "dur": 3.0, "vol": 0.35 } ] },
+  "darkness_fall": { "about": "Everything sinking in pitch as the dark closes in", "layers": [
+    { "wave": "saw", "freq": [400, 45], "glide": 0.8, "low": [3000, 300], "dur": 2.4, "shape": "bump", "power": 1 },
+    { "use": "drone", "freq": 41, "dur": 2.5 },
+    { "wave": "hiss", "band": [2500, 300], "dur": 2.4, "shape": "bump", "vol": 0.3 } ] },
+  "eclipse_ring": { "about": "A dark tritone swelling, then one bright point of light", "layers": [
+    { "use": "drone", "freq": 65, "dur": 2.2 },
+    { "use": "pad", "freq": 311, "dur": 2.2, "vol": 0.4 },
+    { "use": "pad", "freq": 440, "dur": 2.2, "vol": 0.3 },
+    { "wave": "sine", "freq": [130, 260], "dur": 1.0, "shape": "swell", "vol": 0.4 },
+    { "use": "chime", "at": 1.0, "freq": 2489, "dur": 0.6, "vol": 0.5 } ] },
+  "fear_skull": { "about": "A snarl, a falling shriek and three pounding beats", "layers": [
+    { "use": "growl", "freq": [140, 60], "trem": [33, 0.8], "dur": 0.7 },
+    { "use": "fall", "wave": "saw", "freq": [900, 150], "vib": [14, 2], "low": 2500, "dur": 0.5, "vol": 0.5 },
+    { "use": "thud", "freq": [120, 45], "dur": 0.3, "repeat": 3, "every": 0.2, "vol": 0.6 } ] },
+  "gloom_aura": { "about": "A slow, heavy pulse of gloom", "level": 0.8, "layers": [
+    { "use": "drone", "freq": 52, "trem": [1.67, 0.6], "dur": 2.9 },
+    { "wave": "sine", "freq": [110, 98], "dur": 0.6, "shape": "bump", "repeat": 4, "every": 0.6, "vol": 0.5 },
+    { "use": "whisper", "at": 0.3, "repeat": 3, "every": 0.9, "vol": 0.25 } ] },
+  "hex_sigil": { "about": "Two clashing bell strokes and a crackling curse", "layers": [
+    { "use": "bell", "freq": 311, "fm": [2.76, 3], "dur": 1.2 },
+    { "use": "bell", "at": 0.2, "freq": 440, "fm": [2.76, 3], "dur": 1.2, "vol": 0.7 },
+    { "wave": "noise", "freq": [500, 300], "trem": [20, 0.7], "low": 1200, "at": 0.3, "dur": 2.0, "shape": "bump", "vol": 0.3 },
+    { "use": "drone", "freq": 78, "dur": 2.5, "vol": 0.5 } ] },
+  "life_drain": { "about": "A heartbeat fading as life is siphoned away", "layers": [
+    { "use": "thud", "freq": [120, 60], "dur": 0.1, "repeat": 6, "every": 0.25, "fade": 0.85 },
+    { "use": "thud", "at": 0.1, "freq": [100, 50], "dur": 0.1, "repeat": 6, "every": 0.25, "fade": 0.85, "vol": 0.7 },
+    { "wave": "sine", "freq": [700, 250], "vib": [6, 2], "dur": 1.5, "power": 1.5, "vol": 0.4 },
+    { "wave": "hiss", "band": [900, 2500], "dur": 1.5, "shape": "swell", "vol": 0.3 } ] },
+  "nightmare_smoke": { "about": "A lurching low warble with a distant wail", "layers": [
+    { "use": "wobble", "freq": [130, 90], "vib": [2.5, 5], "dur": 2.9 },
+    { "wave": "hiss", "band": [500, 1200], "trem": [3, 0.6], "dur": 2.9, "shape": "bump", "vol": 0.6 },
+    { "wave": "sine", "freq": [1865, 1760], "vib": [7, 1], "dur": 1.2, "shape": "bump", "repeat": 2, "every": 1.4, "vol": 0.15 } ] },
+  "phantom_slash": { "about": "A cut, then its ghostly echo a moment later", "layers": [
+    { "use": "slice", "band": [5000, 1200], "dur": 0.2 },
+    { "use": "slice", "at": 0.5, "band": [3000, 700], "dur": 0.3, "vol": 0.7 },
+    { "wave": "sine", "freq": [600, 200], "vib": [10, 2], "at": 0.5, "dur": 0.5, "vol": 0.35 },
+    { "use": "whisper", "at": 0.6, "dur": 0.6, "vol": 0.4 } ] },
+  "shadow_bolt": { "about": "A snarling bolt of shadow that lands with a muffled boom", "range": 32, "layers": [
+    { "use": "growl", "freq": [90, 140], "dur": 0.8, "shape": "swell" },
+    { "use": "whoosh", "band": [300, 1200], "dur": 0.8, "shape": "swell", "vol": 0.6 },
+    { "use": "boom", "at": 0.8, "freq": [110, 30], "dur": 0.5 },
+    { "wave": "noise", "freq": [2500, 200], "low": 3000, "at": 0.8, "dur": 0.45 } ] },
+  "shadow_step": { "about": "A quick dark whisk and a trailing whisper", "layers": [
+    { "use": "whoosh", "band": [2500, 300], "dur": 0.35, "shape": "decay" },
+    { "wave": "sine", "freq": [500, 80], "dur": 0.3, "vol": 0.6 },
+    { "use": "whisper", "at": 0.25, "vol": 0.4 } ] },
+  "shadowy_tendrils": { "about": "Two waves of creeping, lashing tendrils", "layers": [
+    { "wave": "noise", "freq": [200, 700], "trem": [22, 0.8], "low": 1500, "dur": 0.5, "shape": "swell", "repeat": 2, "every": 0.8 },
+    { "use": "growl", "freq": [55, 75], "dur": 1.8, "vol": 0.6 },
+    { "use": "slice", "at": 0.4, "band": [2000, 600], "dur": 0.2, "repeat": 2, "every": 0.8, "vol": 0.5 } ] },
+  "soul_reap": { "about": "A scythe stroke, a low toll and a soul wailing upward", "layers": [
+    { "use": "whoosh", "band": [600, 2200], "dur": 0.3, "shape": "swell" },
+    { "use": "slice", "at": 0.3, "band": [6000, 900], "dur": 0.22 },
+    { "use": "bell", "at": 0.3, "freq": 147, "fm": [2.76, 3], "dur": 1.2, "vol": 0.6 },
+    { "wave": "sine", "freq": [400, 1200], "vib": [6, 2], "at": 0.6, "dur": 0.9, "shape": "bump", "vol": 0.4 } ] },
+  "void_zone": { "about": "A vast, nearly subsonic emptiness with faint pings", "level": 0.8, "layers": [
+    { "use": "drone", "freq": 36, "dur": 3.0 },
+    { "use": "wobble", "freq": 72, "vib": [0.8, 3], "dur": 3.0, "vol": 0.6 },
+    { "wave": "noise", "freq": [150, 90], "low": 400, "dur": 3.0, "shape": "bump", "vol": 0.5 },
+    { "wave": "sine", "freq": 1109, "dur": 0.15, "power": 1, "repeat": 5, "every": 0.6, "jitter": 0.8, "vol": 0.12 } ] },
+  "wraith_form": { "about": "A breathy hiss, a long moan and eyes lighting up", "layers": [
+    { "use": "whisper", "band": [1200, 2600], "trem": [5, 0.7], "dur": 2.5, "vol": 0.7 },
+    { "wave": "sine", "freq": [800, 500], "vib": [5, 3], "dur": 2.2, "shape": "bump", "vol": 0.35 },
+    { "use": "growl", "at": 0.3, "freq": [65, 55], "dur": 1.2, "vol": 0.4 },
+    { "wave": "sine", "at": 0.3, "freq": 1976, "dur": 0.12, "vol": 0.2 } ] }
+}

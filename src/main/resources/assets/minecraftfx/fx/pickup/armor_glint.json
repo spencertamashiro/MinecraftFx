@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:pickup.armor_glint" } ],
+  "palette": { "white": "#FFFFFF", "steel": "#D8E0E8", "iron": "#7A828A" },
+  "layers": [
+    { "sprite": "minecraftfx:shield", "frames": "first", "additive": false, "lifetime": [36], "scale": { "from": 0.45, "to": 0.45 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["steel", "iron"] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "repeat": 2, "interval": 12, "delay": 5, "lifetime": [8], "scale": { "from": 0.04, "to": 0.04 }, "length": { "from": 0.35, "to": 0.35 }, "color": ["white"], "cone": 90, "rim": true, "pattern": "even", "phase": 45, "offset": [0.5], "speed": [-0.12] },
+    { "sprite": "minecraftfx:glint", "delay": 14, "lifetime": [6], "scale": { "from": 0.4, "to": 0.4 }, "color": ["white"], "cone": 90, "rim": true, "pattern": "even", "phase": 225, "offset": [0.3] }
+  ]
+}

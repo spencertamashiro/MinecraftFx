@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:explosion.plasma_pop" } ],
+  "palette": { "white": "#FFFFFF", "cyan": "#8FF0FF", "blue": "#4A8CFF", "deep": "#2A46C8" },
+  "layers": [
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "lifetime": [8], "scale": { "from": 0.15, "mid": 0.7, "to": 0.1, "easing": "expoOut" }, "alpha": { "from": 1.0, "to": 0.6 }, "color": ["white", "blue"] },
+    { "sprite": "minecraftfx:bolt", "shape": "streak", "count": 6, "lifetime": [4], "scale": { "from": 0.12, "to": 0.06 }, "length": { "from": 0.5, "to": 0.3 }, "color": ["white", "cyan"], "pattern": "even", "offset": [0.5], "speed": [0.06] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 14, "delay": 2, "lifetime": [8, 12], "scale": { "from": 0.07, "to": 0.03 }, "color": ["cyan", "deep"], "speed": [0.2, 0.35], "friction": 0.85 },
+    { "sprite": "minecraftfx:ring", "frames": "first", "additive": false, "delay": 1, "lifetime": [7], "scale": { "from": 0.3, "to": 1.2, "easing": "expoOut" }, "color": ["cyan", "deep"] }
+  ]
+}

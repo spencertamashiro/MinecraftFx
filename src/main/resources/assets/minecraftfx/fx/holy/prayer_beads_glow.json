@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:holy.prayer_beads_glow" } ],
+  "palette": { "white": "#FFFFFF", "light": "#FFF6C8", "gold": "#FFD54A", "amber": "#E89A1E" },
+  "layers": [
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "axis": "up", "count": 10, "lifetime": [60], "scale": { "from": 0.07, "to": 0.07 }, "alpha": { "from": 0.0, "mid": 1.0, "to": 0.0 }, "color": ["light", "gold"], "cone": 90, "rim": true, "pattern": "even", "offset": [0.7], "height": [1.2], "orbit": 0.06 },
+    { "sprite": "minecraftfx:glint", "axis": "up", "repeat": 6, "interval": 9, "lifetime": [8], "scale": { "from": 0.2, "to": 0.2 }, "color": ["white"], "cone": 90, "rim": true, "pattern": "even", "twist": 108, "offset": [0.7], "height": [1.2] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "repeat": 12, "interval": 4, "lifetime": [14, 18], "scale": { "from": 0.04, "to": 0.02 }, "color": ["gold", "amber"], "cone": 90, "rim": true, "offset": [0.7], "height": [1.2], "gravity": 0.15 }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:explosion.cluster_bombs" } ],
+  "palette": { "white": "#FFF8E0", "yellow": "#FFD24A", "orange": "#FF7A1F", "red": "#B8321A", "smoke": "#5A5250" },
+  "layers": [
+    { "sprite": "minecraftfx:flash", "axis": "up", "repeat": 7, "interval": 3, "lifetime": [3], "scale": { "from": 0.2, "to": 0.7 }, "color": ["white", "yellow"], "cone": 90, "rim": true, "pattern": "even", "twist": 137, "offset": [1.6], "height": [0.4] },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "repeat": 7, "interval": 3, "lifetime": [8], "scale": { "from": 0.5, "to": 0.3 }, "color": ["orange", "red"], "cone": 90, "rim": true, "pattern": "even", "twist": 137, "offset": [1.6], "height": [0.4] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "repeat": 7, "interval": 3, "delay": 1, "lifetime": [10, 14], "scale": { "from": 0.09, "to": 0.04 }, "color": ["yellow", "red"], "cone": 90, "rim": true, "pattern": "even", "twist": 137, "offset": [1.6], "height": [0.4], "lift": [0.15, 0.25], "gravity": 1.0 },
+    { "sprite": "minecraftfx:smoke", "additive": false, "axis": "up", "repeat": 7, "interval": 3, "delay": 3, "lifetime": [16, 20], "scale": { "from": 0.25, "to": 0.5 }, "alpha": { "from": 0.7, "to": 0.0 }, "color": ["smoke"], "cone": 90, "rim": true, "pattern": "even", "twist": 137, "offset": [1.6], "height": [0.5], "lift": [0.03] }
+  ]
+}

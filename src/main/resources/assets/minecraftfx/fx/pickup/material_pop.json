@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:pickup.material_pop" } ],
+  "palette": { "white": "#FFFFFF", "stone": "#B0A89A", "dark": "#6A6258", "dust": "#D8CFC0" },
+  "layers": [
+    { "sprite": "minecraftfx:block", "additive": false, "axis": "up", "lifetime": [16], "height": [0.2], "scale": { "from": 0.14, "to": 0.14 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["stone", "dark"], "cone": 0, "lift": [0.22], "gravity": 1.2, "spin": 0.15 },
+    { "sprite": "minecraftfx:puff", "additive": false, "axis": "up", "count": 4, "lifetime": [8, 10], "scale": { "from": 0.12, "to": 0.12 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["dust"], "cone": 90, "rim": true, "pattern": "even", "speed": [0.06], "friction": 0.85 },
+    { "sprite": "minecraftfx:glint", "axis": "up", "delay": 5, "lifetime": [5], "scale": { "from": 0.3, "to": 0.3 }, "color": ["white"], "height": [0.7] }
+  ]
+}

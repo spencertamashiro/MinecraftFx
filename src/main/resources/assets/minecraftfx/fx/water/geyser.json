@@ -1,0 +1,16 @@
+{
+  "sounds": [ { "id": "minecraftfx:water.geyser" } ],
+  "palette": { "foam": "#F4FCFF", "water": "#6CC4FF", "deep": "#2F78D8" },
+  "layers": [
+    { "sprite": "minecraftfx:shard", "shape": "streak", "axis": "up", "additive": false, "count": 3, "repeat": 16, "interval": 1, "lifetime": [10, 14],
+      "scale": { "from": 0.12, "to": 0.06 }, "length": { "from": 0.5, "to": 0.2 }, "color": ["foam", "water"],
+      "cone": 6, "offset": [0.0, 0.2], "speed": [0.55, 0.7], "gravity": 1.6 },
+    { "sprite": "minecraftfx:drop", "axis": "up", "additive": false, "count": 3, "repeat": 12, "interval": 2, "delay": 6, "lifetime": [14, 20],
+      "scale": { "from": 0.08, "to": 0.06 }, "color": ["foam", "deep"], "cone": 90, "height": [2.6, 3.2], "speed": [0.08, 0.15], "gravity": 1.2 },
+    { "sprite": "minecraftfx:ring", "shape": "plane", "axis": "up", "additive": false, "repeat": 4, "interval": 5, "lifetime": [10], "height": [0.03],
+      "scale": { "from": 0.2, "to": 1.0, "easing": "expoOut" }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["foam", "water"] },
+    { "sprite": "minecraftfx:smoke", "axis": "up", "additive": false, "count": 2, "repeat": 8, "interval": 2, "lifetime": [12, 18],
+      "scale": { "from": 0.2, "to": 0.4 }, "alpha": { "from": 0.6, "to": 0.0 }, "color": ["foam"],
+      "cone": 90, "height": [2.5, 3.0], "speed": [0.03, 0.06] }
+  ]
+}

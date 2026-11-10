@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:explosion.flashbang" } ],
+  "palette": { "white": "#FFFFFF", "pale": "#F0F4FF", "grey": "#B0B4BC" },
+  "layers": [
+    { "sprite": "minecraftfx:flash", "lifetime": [8], "scale": { "from": 3.2, "mid": 3.2, "to": 1.0 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["white"] },
+    { "sprite": "minecraftfx:ring", "frames": "first", "lifetime": [20], "scale": { "from": 1.0, "to": 2.6 }, "alpha": { "from": 0.8, "to": 0.0 }, "color": ["white", "pale"] },
+    { "sprite": "minecraftfx:glint", "count": 14, "lifetime": [10, 16], "scale": { "from": 0.2, "to": 0.2 }, "color": ["white"], "speed": [0.1, 0.3], "friction": 0.85 },
+    { "sprite": "minecraftfx:smoke", "additive": false, "count": 4, "delay": 6, "lifetime": [20, 26], "scale": { "from": 0.3, "to": 0.6 }, "alpha": { "from": 0.5, "to": 0.0 }, "color": ["pale", "grey"], "speed": [0.02, 0.04] }
+  ]
+}

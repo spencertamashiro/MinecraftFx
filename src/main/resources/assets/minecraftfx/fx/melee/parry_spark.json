@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:melee.parry_spark" } ],
+  "palette": { "white": "#FFFFFF", "gold": "#FFE27A", "amber": "#FFB02E" },
+  "layers": [
+    { "sprite": "minecraftfx:ring", "frames": "first", "shape": "plane", "additive": false, "lifetime": [5], "scale": { "from": 0.15, "to": 0.6 }, "alpha": { "from": 0.9, "to": 0.0 }, "color": ["white", "gold"] },
+    { "sprite": "minecraftfx:glint", "lifetime": [5], "scale": { "from": 0.5, "to": 0.5 }, "color": ["white"] },
+    { "sprite": "minecraftfx:shard", "shape": "streak", "additive": false, "count": 6, "lifetime": [5], "scale": { "from": 0.04, "to": 0.02 }, "length": { "from": 0.3, "to": 0.1 }, "color": ["gold", "amber"], "cone": 90, "rim": true, "pattern": "even", "phase": 30, "speed": [0.35], "friction": 0.8 }
+  ]
+}

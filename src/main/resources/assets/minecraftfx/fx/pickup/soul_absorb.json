@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:pickup.soul_absorb" } ],
+  "palette": { "white": "#FFFFFF", "pale": "#C8FFF0", "teal": "#4AD8B8" },
+  "layers": [
+    { "sprite": "minecraftfx:ghost", "additive": false, "lifetime": [20], "scale": { "from": 0.25, "to": 0.15 }, "alpha": { "from": 0.9, "to": 0.6 }, "color": ["pale", "teal"], "cone": 0, "speed": [0.3] },
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "count": 3, "repeat": 6, "interval": 3, "lifetime": [12], "scale": { "from": 0.06, "to": 0.03 }, "color": ["pale", "teal"], "cone": 90, "rim": true, "pattern": "even", "twist": 40, "offset": [0.3], "lift": [0.3], "orbit": 0.3 },
+    { "sprite": "minecraftfx:ring", "shape": "oriented", "additive": false, "delay": 20, "lifetime": [8], "scale": { "from": 0.5, "to": 0.1 }, "alpha": { "from": 0.3, "to": 0.9 }, "color": ["pale", "teal"], "cone": 0, "height": [6.0], "speed": [0.01] },
+    { "sprite": "minecraftfx:glint", "delay": 24, "lifetime": [5], "scale": { "from": 0.4, "to": 0.4 }, "color": ["white"], "cone": 0, "height": [6.0] }
+  ]
+}

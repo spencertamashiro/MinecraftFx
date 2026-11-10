@@ -1,0 +1,10 @@
+{
+  "sounds": [ { "id": "minecraftfx:water.ripples" } ],
+  "palette": { "foam": "#EAF8FF", "water": "#78C8F0", "deep": "#3A80C0" },
+  "layers": [
+    { "sprite": "minecraftfx:ring", "shape": "plane", "axis": "up", "additive": false, "repeat": 3, "interval": 7, "lifetime": [20], "height": [0.02],
+      "scale": { "from": 0.1, "to": 1.4, "easing": "quadOut" }, "alpha": { "from": 0.9, "to": 0.0, "easing": "sineIn" }, "color": ["foam", "deep"] },
+    { "sprite": "minecraftfx:drop", "axis": "up", "additive": false, "count": 5, "lifetime": [10, 14],
+      "scale": { "from": 0.06, "to": 0.04 }, "color": ["foam", "water"], "cone": 20, "speed": [0.12, 0.18], "gravity": 1.2 }
+  ]
+}

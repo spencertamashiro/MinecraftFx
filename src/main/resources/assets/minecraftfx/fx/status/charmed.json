@@ -1,0 +1,11 @@
+{
+  "sounds": [ { "id": "minecraftfx:status.charmed" } ],
+  "palette": { "white": "#FFFFFF", "pink": "#FF8CC8", "rose": "#E8407E" },
+  "layers": [
+    { "sprite": "minecraftfx:heart", "axis": "up", "additive": false, "repeat": 8, "interval": 4, "lifetime": [20, 26],
+      "scale": { "from": 0.1, "mid": 0.14, "to": 0.08 }, "alpha": { "from": 1.0, "mid": 1.0, "to": 0.0 }, "color": ["pink", "rose"],
+      "cone": 90, "offset": [0.2, 0.5], "height": [1.6, 2.0], "lift": [0.03, 0.05] },
+    { "sprite": "minecraftfx:flash", "axis": "up", "repeat": 8, "interval": 4, "delay": 2, "lifetime": [6, 8],
+      "scale": { "from": 0.1, "to": 0.0 }, "color": ["white", "pink"], "cone": 90, "offset": [0.3, 0.6], "height": [1.5, 2.2] }
+  ]
+}

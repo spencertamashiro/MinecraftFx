@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:arcane.arcane_nova" } ],
+  "palette": { "white": "#FFFFFF", "pink": "#F4A6FF", "arcane": "#A45CFF", "deep": "#4A22A8" },
+  "layers": [
+    { "sprite": "minecraftfx:ring", "shape": "plane", "additive": false, "axis": "up", "lifetime": [14], "height": [0.05], "scale": { "from": 0.3, "to": 3.2, "easing": "expoOut" }, "alpha": { "from": 1.0, "to": 0.0, "easing": "quadIn" }, "color": ["pink", "deep"] },
+    { "sprite": "minecraftfx:glyph", "frames": "random", "additive": false, "axis": "up", "count": 12, "lifetime": [14, 16], "scale": { "from": 0.12, "to": 0.08 }, "color": ["white", "arcane"], "cone": 90, "rim": true, "pattern": "even", "height": [0.3], "speed": [0.28], "friction": 0.9 },
+    { "sprite": "minecraftfx:pixel", "additive": false, "axis": "up", "count": 24, "delay": 2, "lifetime": [12], "scale": { "from": 0.06, "to": 0.02 }, "color": ["pink", "arcane"], "cone": 90, "rim": true, "pattern": "even", "phase": 7.5, "height": [0.1], "speed": [0.34], "friction": 0.92 }
+  ]
+}

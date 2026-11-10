@@ -1,0 +1,9 @@
+{
+  "sounds": [ { "id": "minecraftfx:arcane.mind_flay" } ],
+  "palette": { "pink": "#F0A0FF", "violet": "#A040E0", "deep": "#501880" },
+  "layers": [
+    { "sprite": "minecraftfx:wave", "shape": "streak", "additive": false, "repeat": 20, "interval": 1, "lifetime": [12], "scale": { "from": 0.14, "to": 0.1 }, "length": { "from": 0.4, "to": 0.4 }, "alpha": { "from": 1.0, "to": 0.4 }, "color": ["pink", "violet"], "cone": 0, "speed": [0.3] },
+    { "sprite": "minecraftfx:orb", "frames": "first", "additive": false, "lifetime": [32], "scale": { "from": 0.15, "mid": 0.3, "to": 0.1 }, "alpha": { "from": 1.0, "to": 1.0 }, "color": ["pink", "deep"] },
+    { "sprite": "minecraftfx:pixel", "additive": false, "count": 2, "repeat": 16, "interval": 2, "lifetime": [8, 12], "scale": { "from": 0.05, "to": 0.02 }, "color": ["pink", "deep"], "cone": 6, "speed": [0.2, 0.3] }
+  ]
+}
