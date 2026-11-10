@@ -258,8 +258,9 @@ public record Layer(LodestoneWorldParticleType sprite, Shape shape, boolean addi
      * @param normal the direction the effect faces
      * @param up     the direction the effect stands along. Gravity still pulls towards the ground
      * @param size   multiplies every distance: sizes, offsets, speeds and gravity, so the effect keeps its shape and timing
+     * @param force  spawn every particle even beyond 32 blocks of the camera or with the Particles setting turned down
      */
-    void emit(ClientLevel level, Vec3 pos, Vec3 normal, Vec3 up, float size, Map<String, Integer> palette) {
+    void emit(ClientLevel level, Vec3 pos, Vec3 normal, Vec3 up, float size, Map<String, Integer> palette, boolean force) {
         RandomSource random = level.random;
         Vec3 out = axis == Axis.UP ? up : normal;
         int start = palette.get(color.getFirst());
@@ -290,7 +291,8 @@ public record Layer(LodestoneWorldParticleType sprite, Shape shape, boolean addi
                         .setLifetime(Math.round(burst.lifetime.sample(random)))
                         .setLifeDelay(burst.delay + round * burst.interval)
                         .setGravity(motion.gravity * size)
-                        .enableNoClip();
+                        .enableNoClip()
+                        .setForceSpawn(force);
                 if (orbit == null) {
                     particle.setFriction(motion.friction).setMotion(velocity);
                 } else {

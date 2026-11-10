@@ -56,8 +56,12 @@ public final class MinecraftFx {
         SPRITE_SHEETS.forEach(sheet -> PARTICLES.register(sheet, LodestoneWorldParticleType::new));
     }
 
-    /** Vanilla drops unforced particles beyond 32 blocks of the camera; the extra 8 covers third-person cameras. */
-    private static final double SEND_RADIUS = 40;
+    /**
+     * Players further than this from an effect are not sent it. Unforced particles are still dropped by vanilla beyond
+     * 32 blocks of the camera, so the extra distance only shows with {@link FxOptions#withForce}; sounds fade by their
+     * own range (24 to 40 blocks).
+     */
+    public static final double SEND_RADIUS = 96;
 
     /**
      * Suggests effect ids. Registered by name, so each client fills it from its own loaded effects: the server cannot
@@ -101,7 +105,7 @@ public final class MinecraftFx {
 
     private static void registerPayloads(RegisterPayloadHandlersEvent event) {
         // A lambda rather than a method reference, so the client-only class loads only when a client receives a packet.
-        event.registrar("3").playToClient(PlayEffectPayload.TYPE, PlayEffectPayload.STREAM_CODEC,
+        event.registrar("4").playToClient(PlayEffectPayload.TYPE, PlayEffectPayload.STREAM_CODEC,
                 (payload, context) -> EffectLibrary.play(payload));
     }
 

@@ -64,7 +64,7 @@ MinecraftFx.play(level, effectId, pos, FxOptions.facing(normal).only(FxOptions.P
 | `volume=` | 0 to 10 | Multiplies the volume. Above 1 is no louder up close; it carries further. |
 | `pitch=` | 0.5 to 2 | Multiplies the pitch. 0.5 is an octave down, 2 an octave up. It also changes the length. |
 
-`tint=`, `facing=` and `up=` are covered in the README. In Java these are `withVolume` and `withPitch` on `FxOptions`.
+`tint=`, `facing=`, `up=` and `force=` are covered in the README; `force=` changes only the particles. In Java these are `withVolume` and `withPitch` on `FxOptions`.
 
 Scale does not change the sound. To make a bigger effect sound bigger, pass a lower pitch and a higher volume with it.
 
@@ -141,7 +141,7 @@ Times are in seconds. An effect's timing is in ticks, so a flash at tick 10 want
 | --- | --- | --- |
 | `about` | required | One line for the catalogue. |
 | `layers` | required | The parts that are mixed together. |
-| `range` | `24` | Blocks at which the sound has faded out. Effects are only sent to players within 40 blocks. |
+| `range` | `24` | Blocks at which the sound has faded out. Effects are only sent to players within 96 blocks. |
 | `level` | `1` | Loudness against the other sounds. Every sound is levelled to the same loudness first; quiet ambiences use 0.6 to 0.8. |
 | `echo` | | `[seconds, strength]`: five fading repeats. |
 | `crush` | | Bit depth, for a gritty digital sound (5 to 8). |

@@ -1,8 +1,9 @@
 {
   "commands.minecraftfx.play": "Sent effect %s to nearby players",
   "commands.minecraftfx.bad_tint": "'%s' is not a colour: use #RRGGBB or a colour name such as aqua",
-  "commands.minecraftfx.bad_option": "Unknown option '%s': use tint, facing, up, volume or pitch, as in facing=up",
+  "commands.minecraftfx.bad_option": "Unknown option '%s': use tint, facing, up, volume, pitch or force, as in facing=up",
   "commands.minecraftfx.bad_direction": "'%s' is not a direction: use me, look, up, down, north, south, east, west, or yaw,pitch in degrees",
+  "commands.minecraftfx.bad_switch": "'%s' is not true or false",
   "commands.minecraftfx.bad_number": "'%s' is not a number from %s to %s",
   "subtitles.minecraftfx.arcane.aether_wisps": "Aether Wisps",
   "subtitles.minecraftfx.arcane.arcane_barrage": "Arcane Barrage",

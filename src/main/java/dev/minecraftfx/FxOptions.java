@@ -19,8 +19,12 @@ import java.util.Optional;
  * @param parts  the picture, the sound or both
  * @param volume multiplies the volume of the effect's sounds; 0 to {@link #MAX_VOLUME}. Above 1 also carries further
  * @param pitch  multiplies the pitch of the effect's sounds; {@link #MIN_PITCH} to {@link #MAX_PITCH}
+ * @param force  draw the particles however far the camera is, and whatever the player's Particles setting. Off by default:
+ *               Minecraft then skips particles more than 32 blocks from the camera, and drops some on Decreased or
+ *               Minimal. Effects are only sent to players within {@code MinecraftFx.SEND_RADIUS} (96) blocks either way
  */
-public record FxOptions(Vec3 normal, Vec3 up, float scale, Optional<Integer> tint, Parts parts, float volume, float pitch) {
+public record FxOptions(Vec3 normal, Vec3 up, float scale, Optional<Integer> tint, Parts parts, float volume, float pitch,
+                        boolean force) {
     public enum Parts {
         BOTH, VISUAL, SOUND;
 
@@ -54,36 +58,41 @@ public record FxOptions(Vec3 normal, Vec3 up, float scale, Optional<Integer> tin
 
     /** The effect as authored, facing along {@code normal}. A zero vector faces up. */
     public static FxOptions facing(Vec3 normal) {
-        return new FxOptions(unit(normal), WORLD_UP, 1, Optional.empty(), Parts.BOTH, 1, 1);
+        return new FxOptions(unit(normal), WORLD_UP, 1, Optional.empty(), Parts.BOTH, 1, 1, false);
     }
 
     public FxOptions withNormal(Vec3 normal) {
-        return new FxOptions(unit(normal), up, scale, tint, parts, volume, pitch);
+        return new FxOptions(unit(normal), up, scale, tint, parts, volume, pitch, force);
     }
 
     /** Tips the effect over: a ground circle played with up pointing north lies on a north-facing wall. */
     public FxOptions withUp(Vec3 up) {
-        return new FxOptions(normal, unit(up), scale, tint, parts, volume, pitch);
+        return new FxOptions(normal, unit(up), scale, tint, parts, volume, pitch, force);
     }
 
     public FxOptions withScale(float scale) {
-        return new FxOptions(normal, up, scale, tint, parts, volume, pitch);
+        return new FxOptions(normal, up, scale, tint, parts, volume, pitch, force);
     }
 
     public FxOptions withTint(int rgb) {
-        return new FxOptions(normal, up, scale, Optional.of(rgb), parts, volume, pitch);
+        return new FxOptions(normal, up, scale, Optional.of(rgb), parts, volume, pitch, force);
     }
 
     public FxOptions only(Parts parts) {
-        return new FxOptions(normal, up, scale, tint, parts, volume, pitch);
+        return new FxOptions(normal, up, scale, tint, parts, volume, pitch, force);
     }
 
     public FxOptions withVolume(float volume) {
-        return new FxOptions(normal, up, scale, tint, parts, volume, pitch);
+        return new FxOptions(normal, up, scale, tint, parts, volume, pitch, force);
     }
 
     public FxOptions withPitch(float pitch) {
-        return new FxOptions(normal, up, scale, tint, parts, volume, pitch);
+        return new FxOptions(normal, up, scale, tint, parts, volume, pitch, force);
+    }
+
+    /** See {@code force} above: true trades the player's particle setting and the 32-block cutoff for being seen. */
+    public FxOptions withForce(boolean force) {
+        return new FxOptions(normal, up, scale, tint, parts, volume, pitch, force);
     }
 
     private static Vec3 unit(Vec3 direction) {
@@ -120,7 +129,8 @@ public record FxOptions(Vec3 normal, Vec3 up, float scale, Optional<Integer> tin
                 wire.writeByte(options.parts.ordinal());
                 wire.writeFloat(options.volume);
                 wire.writeFloat(options.pitch);
+                wire.writeBoolean(options.force);
             },
             wire -> new FxOptions(VEC3.decode(wire), VEC3.decode(wire), wire.readFloat(), TINT.decode(wire),
-                    Parts.values()[wire.readByte()], wire.readFloat(), wire.readFloat()));
+                    Parts.values()[wire.readByte()], wire.readFloat(), wire.readFloat(), wire.readBoolean()));
 }

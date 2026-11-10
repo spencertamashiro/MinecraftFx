@@ -75,6 +75,7 @@ Create a world with cheats enabled:
 /fx play minecraftfx:fire/fire_ring ~ ~ ~
 /fx play minecraftfx:ice/frost_nova ~ ~ ~ 0.5 tint=#33AAFF
 /fx play minecraftfx:arcane/arcane_missile ~ ~1 ~ 1 facing=look
+/fx play minecraftfx:impact/critical_spark ~ ~ ~40 1 force=true
 /fx visual minecraftfx:fire/meteor_strike ~ ~ ~5
 /fx sound minecraftfx:fire/meteor_strike
 ```
@@ -88,6 +89,11 @@ Syntax: `/fx play|visual|sound <effect> [<pos> [<scale> [<options>]]]`. Scale ra
 | `up=` | Same direction values; defaults to world up |
 | `volume=` | 0 to 10 |
 | `pitch=` | 0.5 to 2 |
+| `force=` | `true` or `false` (default); bypasses the camera's 32-block particle cutoff and the player's reduced particle setting |
+
+Play requests are sent to players within 96 blocks. With `force=false`, vanilla still skips particles beyond 32 blocks from the camera and reduces them according to the player's Particles setting. `force=true` allows those particles to appear within the send radius; sound keeps its own audible range. In Java, use `FxOptions.withForce(true)` for the same behavior.
+
+The force option updates the network protocol to version 4. Update both clients and servers together.
 
 Ground effects work best at the player's feet. Projectiles travel along their facing direction. Status effects are one-shot bursts; repeat them from your own gameplay code for persistent statuses.
 

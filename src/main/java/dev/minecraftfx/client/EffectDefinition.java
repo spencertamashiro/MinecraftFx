@@ -43,7 +43,7 @@ public record EffectDefinition(List<SoundCue> sounds, Map<String, Integer> palet
         if (options.parts().visual()) {
             Map<String, Integer> colors = options.tint().map(this::tinted).orElse(palette);
             for (Layer layer : layers) {
-                layer.emit(level, pos, options.normal(), options.up(), options.scale(), colors);
+                layer.emit(level, pos, options.normal(), options.up(), options.scale(), colors, options.force());
             }
         }
         if (options.parts().sound()) {

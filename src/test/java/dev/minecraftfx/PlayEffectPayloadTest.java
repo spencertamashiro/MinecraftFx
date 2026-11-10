@@ -28,6 +28,6 @@ class PlayEffectPayloadTest {
     void survivesTheWireWithEveryOptionChanged() {
         assertSurvivesTheWire(new PlayEffectPayload(ResourceLocation.parse("minecraftfx:ice/frost_nova"), new Vec3(-4.5, 70, 8),
                 FxOptions.facing(new Vec3(1, 2, 3)).withUp(new Vec3(0, 0, -1)).withScale(2.5f).withTint(0x33AAFF)
-                        .only(FxOptions.Parts.SOUND).withVolume(0.5f).withPitch(1.5f)));
+                        .only(FxOptions.Parts.SOUND).withVolume(0.5f).withPitch(1.5f).withForce(true)));
     }
 }

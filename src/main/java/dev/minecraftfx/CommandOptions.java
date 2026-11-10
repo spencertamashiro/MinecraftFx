@@ -19,11 +19,11 @@ import java.util.stream.Stream;
 
 /**
  * The trailing options of /fx: space-separated {@code key=value} pairs in any order, e.g.
- * {@code tint=red facing=look up=north volume=0.5 pitch=1.2}. A bare word is a tint, so {@code /fx play ID ~ ~ ~ 2 red}
+ * {@code tint=red facing=look up=north volume=0.5 pitch=1.2 force=true}. A bare word is a tint, so {@code /fx play ID ~ ~ ~ 2 red}
  * keeps working.
  */
 final class CommandOptions {
-    private static final List<String> KEYS = List.of("tint", "facing", "up", "volume", "pitch");
+    private static final List<String> KEYS = List.of("tint", "facing", "up", "volume", "pitch", "force");
 
     private static final Map<String, Vec3> COMPASS = Map.of(
             "up", new Vec3(0, 1, 0), "down", new Vec3(0, -1, 0),
@@ -38,6 +38,8 @@ final class CommandOptions {
             text -> Component.translatable("commands.minecraftfx.bad_tint", text));
     private static final DynamicCommandExceptionType BAD_DIRECTION = new DynamicCommandExceptionType(
             text -> Component.translatable("commands.minecraftfx.bad_direction", text));
+    private static final DynamicCommandExceptionType BAD_SWITCH = new DynamicCommandExceptionType(
+            text -> Component.translatable("commands.minecraftfx.bad_switch", text));
     private static final Dynamic3CommandExceptionType BAD_NUMBER = new Dynamic3CommandExceptionType(
             (text, min, max) -> Component.translatable("commands.minecraftfx.bad_number", text, min, max));
 
@@ -63,6 +65,11 @@ final class CommandOptions {
                 case "up" -> options.withUp(direction(value, base.normal(), look));
                 case "volume" -> options.withVolume(number(value, 0, FxOptions.MAX_VOLUME));
                 case "pitch" -> options.withPitch(number(value, FxOptions.MIN_PITCH, FxOptions.MAX_PITCH));
+                case "force" -> options.withForce(switch (value) {
+                    case "true" -> true;
+                    case "false" -> false;
+                    default -> throw BAD_SWITCH.create(value);
+                });
                 default -> throw BAD_OPTION.create(key);
             };
         }
@@ -119,6 +126,7 @@ final class CommandOptions {
             Stream<String> values = switch (key) {
                 case "tint" -> colours;
                 case "facing", "up" -> DIRECTIONS.stream();
+                case "force" -> Stream.of("true", "false");
                 default -> Stream.empty();
             };
             candidates = values.map(value -> key + "=" + value);

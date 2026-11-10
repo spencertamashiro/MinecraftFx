@@ -26,7 +26,7 @@ class FxOptionsTest {
 
     @Test
     void defaultsAreTheAuthoredEffectStandingUprightWithItsSound() {
-        assertEquals(new FxOptions(EAST, UP, 1, Optional.empty(), FxOptions.Parts.BOTH, 1, 1), FACING_CALLER);
+        assertEquals(new FxOptions(EAST, UP, 1, Optional.empty(), FxOptions.Parts.BOTH, 1, 1, false), FACING_CALLER);
     }
 
     @Test
@@ -73,10 +73,12 @@ class FxOptionsTest {
 
     @Test
     void optionsApplyInAnyOrder() throws CommandSyntaxException {
-        FxOptions expected = FACING_CALLER.withNormal(NORTH).withUp(EAST).withTint(0x55FFFF).withVolume(0.5f).withPitch(1.5f);
+        FxOptions expected = FACING_CALLER.withNormal(NORTH).withUp(EAST).withTint(0x55FFFF).withVolume(0.5f).withPitch(1.5f)
+                .withForce(true);
 
-        assertEquals(expected, parse("tint=aqua facing=look up=east volume=0.5 pitch=1.5"));
-        assertEquals(expected, parse("pitch=1.5  volume=0.5 up=east facing=look aqua"));
+        assertEquals(expected, parse("tint=aqua facing=look up=east volume=0.5 pitch=1.5 force=true"));
+        assertEquals(expected, parse("force=true pitch=1.5  volume=0.5 up=east facing=look aqua"));
+        assertFalse(parse("force=true force=false").force());
     }
 
     @Test
@@ -111,5 +113,6 @@ class FxOptionsTest {
         assertThrows(CommandSyntaxException.class, () -> parse("volume=loud"));
         assertThrows(CommandSyntaxException.class, () -> parse("volume=11"));
         assertThrows(CommandSyntaxException.class, () -> parse("pitch=0.1"));
+        assertThrows(CommandSyntaxException.class, () -> parse("force=yes"));
     }
 }
