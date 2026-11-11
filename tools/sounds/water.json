@@ -1,89 +1,143 @@
 {
-  "aqua_ring": { "about": "A flowing ring of water with drips and a healing melody", "level": 0.8, "layers": [
-    { "wave": "noise", "freq": [5000, 3500], "high": 1500, "trem": [3, 0.4], "dur": 2.9, "shape": "bump", "vol": 0.4 },
+  "aqua_ring": { "about": "A flowing ring of water with drips and a healing melody; played on harp, timpani", "level": 0.8, "tape": 1.5, "reverb": [1.49, 0.3, 0.25], "length": 4.1, "layers": [
+    { "wave": "hiss", "high": 1500, "trem": [3, 0.4], "dur": 2.9, "shape": "bump", "vol": 0.4, "low": [3000, 2100] },
     { "use": "drip", "freq": [600, 1500], "repeat": 12, "every": 0.23, "jitter": 0.7 },
-    { "use": "chime", "freq": 1175, "notes": [0, 4, 7, 12, 7, 4], "every": 0.45, "vol": 0.35 } ] },
-  "bubbles": { "about": "Bubbles of all sizes rising and popping", "level": 0.8, "layers": [
+    { "use": "harp", "freq": 1175, "dur": 1.0, "notes": [0, 4, 7, 12, 7, 4], "every": 0.45, "vol": 0.28 },
+    { "use": "harp", "at": 0.9, "freq": 587.3, "notes": [0, 2, 4, 7, 9, 12], "every": 0.03, "vol": 0.3 },
+    { "use": "timpani", "at": 0.9, "freq": 73.4, "vol": 0.45 } ] },
+  "bubbles": { "about": "Bubbles of all sizes rising and popping; played on violins, harp", "level": 0.8, "tape": 1.5, "reverb": [1.44, 0.3, 0.25], "length": 3.7, "layers": [
     { "use": "drip", "freq": [400, 1400], "repeat": 18, "every": 0.13, "jitter": 0.9, "scatter": 9 },
-    { "use": "drip", "freq": [250, 700], "dur": 0.1, "repeat": 7, "every": 0.33, "jitter": 0.9, "scatter": 5, "vol": 0.6 } ] },
-  "condensation": { "about": "Tiny droplets forming and falling", "level": 0.6, "layers": [
+    { "use": "drip", "freq": [250, 700], "dur": 0.1, "repeat": 7, "every": 0.33, "jitter": 0.9, "scatter": 5, "vol": 0.6 },
+    { "use": "violins", "freq": 659.3, "notes": [0, 4, 7], "every": 0.004, "dur": 2.28, "shape": "bump", "power": 1, "vol": 0.18 },
+    { "use": "harp", "at": 0.2, "freq": 587.3, "notes": [0, 4, 9], "every": 0.4, "vol": 0.2 } ] },
+  "condensation": { "about": "Tiny droplets forming and falling; played on violins, harp", "level": 0.6, "tape": 1.5, "reverb": [1.36, 0.3, 0.25], "length": 3.8, "layers": [
     { "use": "drip", "freq": [1200, 2200], "dur": 0.05, "repeat": 16, "every": 0.18, "jitter": 0.9, "scatter": 6, "vol": 0.7 },
     { "use": "drip", "freq": [500, 1100], "dur": 0.08, "at": 0.3, "repeat": 4, "every": 0.7, "jitter": 0.8 },
-    { "use": "hiss", "high": 7000, "dur": 3.0, "shape": "bump", "vol": 0.12 } ] },
-  "coral_growth": { "about": "Coral plipping into being, with clicks and gentle surf", "level": 0.8, "layers": [
+    { "use": "hiss", "high": 7000, "dur": 3.0, "shape": "bump", "vol": 0.12 },
+    { "use": "violins", "freq": 784, "notes": [0, 4, 7], "every": 0.004, "dur": 3.0, "shape": "bump", "power": 1, "vol": 0.18 },
+    { "use": "harp", "at": 0.2, "freq": 587.3, "notes": [0, 4, 9], "every": 0.4, "vol": 0.2 } ] },
+  "coral_growth": { "about": "Coral plipping into being, with clicks and gentle surf; played on anvil, harp, timpani", "level": 0.8, "tape": 1.5, "reverb": [1.38, 0.3, 0.25], "length": 4.0, "layers": [
     { "use": "drip", "freq": [300, 800], "dur": 0.1, "repeat": 10, "every": 0.15, "step": 1.06 },
-    { "use": "clang", "freq": 1500, "dur": 0.08, "at": 0.2, "repeat": 6, "every": 0.25, "scatter": 7, "vol": 0.25 },
+    { "use": "anvil", "at": 0.2, "freq": 1500, "dur": 0.25, "repeat": 6, "every": 0.25, "scatter": 7, "vol": 0.2 },
     { "use": "surf", "low": [400, 800], "dur": 3.0, "vol": 0.5 },
-    { "use": "drip", "freq": [500, 1300], "at": 0.3, "repeat": 8, "every": 0.33, "jitter": 0.9, "vol": 0.4 } ] },
-  "deep_sea_crush": { "about": "Pressure groaning tighter until it implodes in bubbles", "range": 32, "layers": [
-    { "wave": "sine", "freq": [90, 38], "dur": 1.0, "shape": "swell", "power": 1 },
-    { "wave": "noise", "freq": [150, 80], "low": 400, "dur": 0.9, "shape": "swell" },
-    { "use": "clang", "freq": 180, "fm": [1.41, 6], "at": 0.2, "repeat": 2, "every": 0.4, "vol": 0.4 },
-    { "use": "boom", "at": 0.9, "freq": [200, 35], "dur": 0.5 },
-    { "use": "drip", "freq": [300, 1200], "at": 0.95, "repeat": 8, "every": 0.06, "scatter": 8, "vol": 0.5 } ] },
-  "fountain_spray": { "about": "A steady fountain: fine spray and pattering drops", "layers": [
-    { "wave": "noise", "freq": [7000, 5000], "high": 2500, "dur": 3.0, "shape": "bump", "power": 1, "vol": 0.6 },
+    { "use": "drip", "freq": [500, 1300], "at": 0.3, "repeat": 8, "every": 0.33, "jitter": 0.9, "vol": 0.4 },
+    { "use": "harp", "at": 1.2, "freq": 523.3, "notes": [0, 2, 4, 7, 9, 12], "every": 0.03, "vol": 0.3 },
+    { "use": "timpani", "at": 1.2, "freq": 82.4, "vol": 0.45 } ] },
+  "deep_sea_crush": { "about": "Pressure groaning tighter until it implodes in bubbles; played on noise bands, sub, cellos, anvil, harp", "range": 32, "tape": 1.9, "clip": 0.85, "reflect": [[0.082, 0.39, 2868], [0.18, 0.34, 1902], [0.308, 0.23, 1565]], "reverb": [2.44, 0.4, 0.25], "length": 4.4, "layers": [
+    { "use": "cellos", "freq": [90, 38], "glide": 0.7, "dur": 1.2, "shape": "bump", "power": 1, "attack": 0.02, "vol": 0.8 },
+    { "wave": "hiss", "low": 120, "dur": 0.9, "shape": "bump", "power": 1 },
+    { "use": "anvil", "at": 0.2, "freq": 300, "dur": 0.9, "repeat": 2, "every": 0.4, "vol": 0.32 },
+    { "use": "drip", "freq": [300, 1200], "at": 0.95, "repeat": 8, "every": 0.06, "scatter": 8, "vol": 0.5 },
+    { "use": "harp", "at": 0.9, "freq": 523.3, "notes": [0, 4, 7, 12, 16], "every": 0.03, "vol": 0.3 },
+    { "use": "timpani", "at": 0.9, "freq": 73.4, "vol": 0.45 },
+    { "use": "taiko", "at": 0.9, "vol": 0.55 },
+    { "use": "cymbal", "at": 0.9, "dur": 1.6, "vol": 0.25 },
+    { "use": "crack", "at": 0.9, "low": [11000, 3000], "vol": 0.7 },
+    { "wave": "hiss", "at": 0.9, "band": [55.2, 41.4], "dur": 0.84, "power": 2.2, "attack": 0.003, "vol": 1.0 },
+    { "wave": "hiss", "at": 0.9, "band": [110.5, 82.9], "dur": 0.63, "power": 2.2, "attack": 0.003, "vol": 0.75 },
+    { "wave": "hiss", "at": 0.9, "band": [221.0, 165.7], "dur": 0.42, "power": 2.2, "attack": 0.003, "vol": 0.55 },
+    { "wave": "hiss", "at": 0.9, "band": [452.0, 339.0], "dur": 0.245, "power": 2.2, "attack": 0.003, "vol": 0.4 },
+    { "wave": "sine", "at": 0.9, "freq": [62.8, 50.2], "glide": 0.15, "dur": 1.2, "power": 1.6, "attack": 0.004, "vol": 0.9 },
+    { "use": "gran_cassa", "at": 0.9, "freq": [94.2, 75.3], "dur": 1.2, "attack": 0.015, "vol": 0.45 } ] },
+  "fountain_spray": { "about": "A steady fountain: fine spray and pattering drops; played on violins, harp", "tape": 1.5, "reverb": [1.35, 0.3, 0.25], "length": 3.8, "layers": [
+    { "wave": "hiss", "high": 2500, "dur": 3.0, "shape": "bump", "power": 1, "vol": 0.6, "low": [4200, 3000] },
     { "use": "drip", "freq": [700, 1600], "repeat": 26, "every": 0.11, "jitter": 0.9, "scatter": 6, "vol": 0.5 },
-    { "use": "surf", "dur": 3.0, "vol": 0.3 } ] },
-  "geyser": { "about": "A rumble, a jet of water and steam, then rain falling back", "range": 32, "layers": [
-    { "use": "rumble", "freq": [80, 160], "dur": 0.5, "shape": "swell" },
-    { "wave": "noise", "freq": [3000, 6000], "high": 1200, "attack": 0.08, "at": 0.2, "dur": 1.8, "power": 1 },
+    { "use": "surf", "dur": 3.0, "vol": 0.3 },
+    { "use": "violins", "freq": 784, "notes": [0, 4, 7], "every": 0.004, "dur": 3.0, "shape": "bump", "power": 1, "vol": 0.18 },
+    { "use": "harp", "at": 0.2, "freq": 587.3, "notes": [0, 4, 9], "every": 0.4, "vol": 0.2 } ] },
+  "geyser": { "about": "A rumble, a jet of water and steam, then rain falling back; played on violins, harp", "range": 32, "tape": 1.9, "reverb": [2.11, 0.4, 0.25], "length": 4.1, "layers": [
+    { "use": "rumble", "dur": 0.5, "shape": "swell", "low": 120 },
+    { "wave": "hiss", "high": 1200, "attack": 0.08, "at": 0.2, "dur": 1.8, "power": 1, "low": [1800, 3600] },
     { "use": "hiss", "at": 0.2, "high": 5000, "dur": 2.0, "power": 1, "vol": 0.5 },
-    { "use": "drip", "freq": [500, 1200], "at": 1.0, "repeat": 12, "every": 0.1, "jitter": 0.9, "vol": 0.4 } ] },
-  "hydro_pump": { "about": "A high-pressure jet that holds, then splashes out", "range": 32, "layers": [
-    { "wave": "noise", "freq": [2500, 3500], "high": 600, "attack": 0.05, "dur": 1.2, "shape": "hold", "release": 0.3 },
-    { "use": "rumble", "freq": [140, 120], "dur": 1.2, "shape": "hold", "release": 0.3, "vol": 0.6 },
-    { "use": "splash", "at": 1.0, "dur": 0.6, "vol": 0.6 } ] },
-  "mist_aura": { "about": "A soft drifting mist with the odd tiny drop", "level": 0.6, "layers": [
+    { "use": "drip", "freq": [500, 1200], "at": 1.0, "repeat": 12, "every": 0.1, "jitter": 0.9, "vol": 0.4 },
+    { "use": "violins", "freq": 587.3, "notes": [0, 4, 7], "every": 0.004, "dur": 2.2, "shape": "bump", "power": 1, "vol": 0.18 },
+    { "use": "harp", "at": 0.2, "freq": 587.3, "notes": [0, 7, 12], "every": 0.4, "vol": 0.2 } ] },
+  "hydro_pump": { "about": "A high-pressure jet that holds, then splashes out; played on harp, timpani, taikos, cymbals", "range": 32, "tape": 1.9, "clip": 0.85, "reverb": [2.04, 0.4, 0.25], "length": 4.2, "layers": [
+    { "wave": "hiss", "high": 600, "attack": 0.05, "dur": 1.2, "shape": "hold", "release": 0.3, "low": [1500, 2100] },
+    { "use": "rumble", "dur": 1.2, "shape": "hold", "release": 0.3, "vol": 0.6, "low": 120 },
+    { "use": "splash", "at": 1.0, "dur": 0.6, "vol": 0.6 },
+    { "use": "harp", "at": 1.0, "freq": 587.3, "notes": [0, 4, 7, 12, 16], "every": 0.03, "vol": 0.3 },
+    { "use": "timpani", "at": 1.0, "freq": 73.4, "vol": 0.45 },
+    { "use": "taiko", "at": 1.0, "vol": 0.55 },
+    { "use": "cymbal", "at": 1.0, "dur": 1.6, "vol": 0.25 } ] },
+  "mist_aura": { "about": "A soft drifting mist with the odd tiny drop; played on violins, harp", "level": 0.6, "tape": 1.5, "reverb": [1.39, 0.3, 0.25], "length": 3.8, "layers": [
     { "wave": "hiss", "band": [3500, 5000], "trem": [0.7, 0.4], "dur": 3.0, "shape": "bump", "vol": 0.5 },
-    { "use": "pad", "freq": 880, "dur": 3.0, "vol": 0.15 },
-    { "use": "drip", "freq": [1000, 2000], "dur": 0.05, "repeat": 8, "every": 0.36, "jitter": 0.9, "vol": 0.3 } ] },
-  "puddle_step": { "about": "A foot splashing in a puddle", "layers": [
-    { "use": "splash", "freq": [3500, 1200], "dur": 0.15 },
-    { "use": "thud", "freq": [200, 90], "dur": 0.06, "vol": 0.5 },
-    { "use": "drip", "freq": [600, 1300], "dur": 0.06, "at": 0.08, "repeat": 2, "every": 0.07, "vol": 0.5 } ] },
-  "rain_cloud": { "about": "A small rain shower with a soft roll of thunder", "level": 0.8, "layers": [
-    { "use": "rumble", "freq": [90, 70], "dur": 1.2, "vol": 0.35 },
-    { "wave": "noise", "freq": 6000, "high": 2500, "at": 0.2, "dur": 2.8, "shape": "bump", "power": 1, "vol": 0.5 },
-    { "use": "drip", "freq": [900, 1800], "dur": 0.04, "at": 0.5, "repeat": 30, "every": 0.08, "jitter": 0.9, "scatter": 6, "vol": 0.5 } ] },
-  "ripples": { "about": "One drop and three widening ripples", "level": 0.8, "layers": [
+    { "use": "violins", "freq": 880, "dur": 3.0, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.12 },
+    { "use": "drip", "freq": [1000, 2000], "dur": 0.05, "repeat": 8, "every": 0.36, "jitter": 0.9, "vol": 0.3 },
+    { "use": "violins", "freq": 659.3, "notes": [0, 4, 7], "every": 0.004, "dur": 3.0, "shape": "bump", "power": 1, "vol": 0.18 },
+    { "use": "harp", "at": 0.2, "freq": 587.3, "notes": [0, 4, 9], "every": 0.4, "vol": 0.2 } ] },
+  "puddle_step": { "about": "A foot splashing in a puddle; played on timpani, harp", "tape": 1.5, "reverb": [1.48, 0.3, 0.25], "layers": [
+    { "use": "splash", "dur": 0.15, "low": [2100, 720] },
+    { "use": "timpani", "freq": [170, 136], "dur": 0.35, "vol": 0.5 },
+    { "use": "drip", "freq": [600, 1300], "dur": 0.06, "at": 0.08, "repeat": 2, "every": 0.07, "vol": 0.5 },
+    { "use": "harp", "freq": 659.3, "notes": [0, 2, 4, 7, 9, 12], "every": 0.03, "vol": 0.3 } ] },
+  "rain_cloud": { "about": "A small rain shower with a soft roll of thunder; played on violins, harp", "level": 0.8, "tape": 1.5, "reverb": [1.54, 0.3, 0.25], "length": 3.9, "layers": [
+    { "use": "rumble", "dur": 1.2, "vol": 0.35, "low": 120 },
+    { "wave": "hiss", "high": 2500, "at": 0.2, "dur": 2.8, "shape": "bump", "power": 1, "vol": 0.5, "low": 3600 },
+    { "use": "drip", "freq": [900, 1800], "dur": 0.04, "at": 0.5, "repeat": 30, "every": 0.08, "jitter": 0.9, "scatter": 6, "vol": 0.5 },
+    { "use": "violins", "freq": 587.3, "notes": [0, 4, 7], "every": 0.004, "dur": 3.0, "shape": "bump", "power": 1, "vol": 0.18 },
+    { "use": "harp", "at": 0.2, "freq": 523.3, "notes": [0, 7, 12], "every": 0.4, "vol": 0.2 } ] },
+  "ripples": { "about": "One drop and three widening ripples; played on violins, harp, timpani", "level": 0.8, "tape": 1.5, "reverb": [1.57, 0.3, 0.25], "layers": [
     { "use": "drip", "freq": [450, 1100], "dur": 0.1 },
-    { "wave": "sine", "freq": [700, 500], "dur": 0.3, "shape": "bump", "repeat": 3, "every": 0.35, "fade": 0.6, "vol": 0.4 } ] },
-  "splash": { "about": "The basic water splash", "layers": [
+    { "use": "violins", "freq": [700, 500], "dur": 0.3, "shape": "bump", "power": 1, "attack": 0.05, "repeat": 3, "every": 0.35, "fade": 0.6, "vol": 0.32 },
+    { "use": "harp", "freq": 587.3, "notes": [0, 2, 4, 7, 9, 12], "every": 0.03, "vol": 0.3 },
+    { "use": "timpani", "freq": 98, "vol": 0.45 } ] },
+  "splash": { "about": "The basic water splash; played on timpani, harp", "tape": 1.5, "reverb": [1.59, 0.3, 0.25], "layers": [
     { "use": "splash", "dur": 0.45 },
-    { "use": "thud", "freq": [180, 80], "dur": 0.12, "vol": 0.6 },
-    { "use": "drip", "freq": [500, 1300], "at": 0.15, "repeat": 5, "every": 0.08, "jitter": 0.7, "scatter": 5, "vol": 0.5 } ] },
-  "steam_hiss": { "about": "A sharp jet of steam with a hint of kettle whistle", "layers": [
+    { "use": "timpani", "freq": [153, 122.4], "dur": 0.6, "vol": 0.6 },
+    { "use": "drip", "freq": [500, 1300], "at": 0.15, "repeat": 5, "every": 0.08, "jitter": 0.7, "scatter": 5, "vol": 0.5 },
+    { "use": "harp", "freq": 587.3, "notes": [12, 9, 7, 4, 2, 0], "every": 0.03, "vol": 0.3 } ] },
+  "steam_hiss": { "about": "A sharp jet of steam with a hint of kettle whistle; played on violins, harp, timpani", "tape": 1.5, "reverb": [1.43, 0.3, 0.25], "layers": [
     { "use": "hiss", "high": 3500, "attack": 0.03, "dur": 1.8, "power": 1.2 },
-    { "wave": "noise", "freq": [9000, 7000], "trem": [28, 0.3], "dur": 1.6, "power": 1.5, "vol": 0.4 },
-    { "wave": "sine", "freq": [2600, 2200], "dur": 0.8, "vol": 0.12 } ] },
-  "tear_drop": { "about": "One tear falling, landing and rippling, with two sad notes", "level": 0.7, "layers": [
-    { "use": "chime", "freq": 1245, "notes": [0, -4], "every": 0.25, "dur": 0.4, "vol": 0.2 },
-    { "wave": "sine", "freq": [1500, 900], "dur": 0.5, "shape": "swell", "vol": 0.3 },
+    { "wave": "hiss", "trem": [28, 0.3], "dur": 1.6, "power": 1.5, "vol": 0.4, "low": [5400, 4200] },
+    { "use": "violins", "freq": [2600, 2200], "dur": 0.8, "shape": "bump", "power": 1, "attack": 0.05, "vol": 0.096 },
+    { "use": "harp", "freq": 784, "notes": [12, 9, 7, 4, 2, 0], "every": 0.03, "vol": 0.3 },
+    { "use": "timpani", "freq": 73.4, "vol": 0.45 } ] },
+  "tear_drop": { "about": "One tear falling, landing and rippling, with two sad notes; played on harp, violins, timpani", "level": 0.7, "tape": 1.5, "reverb": [1.29, 0.3, 0.25], "layers": [
+    { "use": "harp", "freq": 1245, "dur": 0.8, "notes": [0, -4], "every": 0.25, "vol": 0.16 },
+    { "use": "violins", "freq": [1500, 900], "glide": 0.7, "dur": 0.6, "shape": "bump", "power": 1, "attack": 0.02, "vol": 0.24 },
     { "use": "drip", "at": 0.55, "freq": [500, 1300], "dur": 0.09 },
-    { "wave": "sine", "freq": [800, 600], "dur": 0.25, "shape": "bump", "at": 0.58, "repeat": 2, "every": 0.2, "fade": 0.5, "vol": 0.3 } ] },
-  "tidal_wave": { "about": "A wall of water swelling and foaming", "range": 40, "layers": [
+    { "use": "violins", "at": 0.58, "freq": [800, 600], "dur": 0.25, "shape": "bump", "power": 1, "attack": 0.05, "repeat": 2, "every": 0.2, "fade": 0.5, "vol": 0.24 },
+    { "use": "harp", "at": 0.58, "freq": 523.3, "notes": [0, 4, 7, 12, 16], "every": 0.03, "vol": 0.3 },
+    { "use": "timpani", "at": 0.58, "freq": 73.4, "vol": 0.45 } ] },
+  "tidal_wave": { "about": "A wall of water swelling and foaming; played on violins, harp", "range": 40, "tape": 2.3, "reverb": [3.66, 0.5, 0.25], "length": 5.0, "layers": [
     { "use": "surf", "low": [300, 3000], "dur": 1.9 },
-    { "use": "rumble", "freq": [70, 120], "dur": 1.9, "shape": "swell" },
-    { "wave": "noise", "freq": [5000, 2000], "high": 800, "at": 0.6, "dur": 1.3, "vol": 0.5 } ] },
-  "tsunami_crash": { "about": "A wave rearing up and crashing down with a boom and spray", "range": 40, "layers": [
-    { "use": "surf", "low": [300, 2500], "dur": 0.6, "shape": "swell" },
-    { "use": "boom", "at": 0.55, "freq": [110, 28], "dur": 1.2 },
-    { "use": "splash", "at": 0.55, "freq": [6000, 800], "dur": 1.3, "power": 1.3 },
+    { "use": "rumble", "dur": 1.9, "shape": "swell", "low": 120 },
+    { "wave": "hiss", "high": 800, "at": 0.6, "dur": 1.3, "vol": 0.5, "low": [3000, 1200] },
+    { "use": "violins", "freq": 587.3, "notes": [0, 4, 7], "every": 0.004, "dur": 1.9, "shape": "bump", "power": 1, "vol": 0.18 },
+    { "use": "harp", "at": 0.2, "freq": 587.3, "notes": [0, 7, 12], "every": 0.4, "vol": 0.2 } ] },
+  "tsunami_crash": { "about": "A wave rearing up and crashing down with a boom and spray; played on noise bands, sub, violins, harp, gran cassa", "range": 40, "tape": 2.3, "reflect": [[0.105, 0.41, 2966], [0.197, 0.3, 1884], [0.28, 0.2, 1368]], "reverb": [3.21, 0.5, 0.25], "length": 5.5, "layers": [
+    { "use": "surf", "low": [300, 2500], "dur": 0.6, "shape": "bump", "power": 1 },
+    { "use": "splash", "at": 0.55, "dur": 1.3, "power": 1.3, "low": [3600, 480] },
     { "use": "rumble", "at": 0.55, "dur": 1.4 },
-    { "use": "hiss", "at": 0.7, "high": 4000, "dur": 1.2, "vol": 0.4 } ] },
-  "water_shield": { "about": "Water rising into a flowing, wobbling shield", "layers": [
-    { "wave": "sine", "freq": [200, 500], "dur": 0.3, "shape": "swell", "vol": 0.4 },
-    { "wave": "noise", "freq": [4500, 3000], "high": 1500, "trem": [5, 0.4], "dur": 2.5, "shape": "bump", "vol": 0.4 },
-    { "use": "wobble", "freq": 330, "vib": [5, 1], "dur": 2.5, "vol": 0.4 },
-    { "use": "drip", "freq": [500, 1500], "repeat": 9, "every": 0.28, "jitter": 0.7, "vol": 0.5 } ] },
-  "water_whip": { "about": "A stream of water lashing out and snapping wetly", "layers": [
-    { "wave": "noise", "freq": [1500, 6000], "high": 800, "dur": 0.45, "shape": "swell" },
+    { "use": "hiss", "at": 0.7, "high": 4000, "dur": 1.2, "vol": 0.4 },
+    { "use": "violins", "freq": 659.3, "notes": [0, 4, 7], "every": 0.004, "dur": 1.95, "shape": "bump", "power": 1, "vol": 0.18 },
+    { "use": "harp", "at": 0.2, "freq": 587.3, "notes": [0, 7, 12], "every": 0.4, "vol": 0.2 },
+    { "use": "crack", "at": 0.55, "low": [11000, 3000], "vol": 0.7 },
+    { "wave": "hiss", "at": 0.55, "band": [38.5, 28.9], "dur": 1.2, "power": 2.2, "attack": 0.003, "vol": 1.0 },
+    { "wave": "hiss", "at": 0.55, "band": [77.0, 57.8], "dur": 0.9, "power": 2.2, "attack": 0.003, "vol": 0.75 },
+    { "wave": "hiss", "at": 0.55, "band": [154.0, 115.5], "dur": 0.6, "power": 2.2, "attack": 0.003, "vol": 0.55 },
+    { "wave": "hiss", "at": 0.55, "band": [315.0, 236.2], "dur": 0.35, "power": 2.2, "attack": 0.003, "vol": 0.4 },
+    { "wave": "sine", "at": 0.55, "freq": [43.8, 35.0], "glide": 0.15, "dur": 1.8, "power": 1.6, "attack": 0.004, "vol": 0.9 },
+    { "use": "gran_cassa", "at": 0.55, "freq": [65.6, 52.5], "dur": 1.8, "attack": 0.015, "vol": 0.45 } ] },
+  "water_shield": { "about": "Water rising into a flowing, wobbling shield; played on string tremolo, sopranos, violins, harp", "tape": 1.5, "reverb": [1.57, 0.3, 0.25], "length": 3.7, "layers": [
+    { "use": "tremolo", "freq": [200, 500], "dur": 0.3, "shape": "swell", "power": 1.5, "vol": 0.32 },
+    { "wave": "hiss", "high": 1500, "trem": [5, 0.4], "dur": 2.5, "shape": "bump", "vol": 0.4, "low": [2700, 1800] },
+    { "use": "choir_high", "freq": 330, "vib": [5, 0.5], "dur": 2.5, "shape": "bump", "power": 1, "vol": 0.32 },
+    { "use": "drip", "freq": [500, 1500], "repeat": 9, "every": 0.28, "jitter": 0.7, "vol": 0.5 },
+    { "use": "violins", "freq": 587.3, "notes": [0, 4, 7], "every": 0.004, "dur": 2.5, "shape": "bump", "power": 1, "vol": 0.18 },
+    { "use": "harp", "at": 0.2, "freq": 523.3, "notes": [0, 7, 12], "every": 0.4, "vol": 0.2 } ] },
+  "water_whip": { "about": "A stream of water lashing out and snapping wetly; played on harp, timpani", "tape": 1.5, "reverb": [1.46, 0.3, 0.25], "layers": [
+    { "wave": "hiss", "high": 800, "dur": 0.45, "shape": "bump", "low": [900, 3600], "power": 1 },
     { "use": "crack", "at": 0.45 },
     { "use": "splash", "at": 0.45, "dur": 0.35, "vol": 0.8 },
-    { "use": "drip", "freq": [600, 1500], "at": 0.5, "repeat": 4, "every": 0.07, "vol": 0.4 } ] },
-  "whirlpool": { "about": "Water churning round and gurgling down a drain", "range": 32, "layers": [
+    { "use": "drip", "freq": [600, 1500], "at": 0.5, "repeat": 4, "every": 0.07, "vol": 0.4 },
+    { "use": "harp", "at": 0.45, "freq": 784, "notes": [12, 9, 7, 4, 2, 0], "every": 0.03, "vol": 0.3 },
+    { "use": "timpani", "at": 0.45, "freq": 98, "vol": 0.45 } ] },
+  "whirlpool": { "about": "Water churning round and gurgling down a drain; played on cellos, violins, harp", "range": 32, "tape": 1.9, "reverb": [2.2, 0.4, 0.25], "length": 4.3, "layers": [
     { "use": "surf", "low": [1500, 500], "trem": [2.5, 0.6], "dur": 2.6 },
-    { "wave": "sine", "freq": [300, 70], "vib": [2.5, 2], "dur": 2.6, "power": 1.5, "vol": 0.5 },
-    { "use": "drip", "freq": [700, 300], "repeat": 12, "every": 0.2, "step": 0.95, "vol": 0.4 } ] }
+    { "use": "cellos", "freq": [300, 70], "glide": 0.7, "dur": 3.0, "shape": "decay", "power": 1.5, "attack": 0.02, "vib": [2.5, 1.0], "vol": 0.4 },
+    { "use": "drip", "freq": [700, 300], "repeat": 12, "every": 0.2, "step": 0.95, "vol": 0.4 },
+    { "use": "violins", "freq": 587.3, "notes": [0, 4, 7], "every": 0.004, "dur": 2.6, "shape": "bump", "power": 1, "vol": 0.18 },
+    { "use": "harp", "at": 0.2, "freq": 523.3, "notes": [0, 7, 12], "every": 0.4, "vol": 0.2 } ] }
 }

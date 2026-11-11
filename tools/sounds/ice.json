@@ -1,95 +1,142 @@
 {
-  "blizzard_swirl": { "about": "Gusting, swirling wind full of ice", "range": 32, "layers": [
+  "blizzard_swirl": { "about": "Gusting, swirling wind full of ice; played on glass, sul ponticello strings, crotales", "range": 32, "tape": 1.9, "reverb": [2.45, 0.4, 0.25], "length": 4.6, "layers": [
     { "use": "wind", "band": [700, 1600], "trem": [1.5, 0.5], "dur": 3.0 },
     { "use": "hiss", "high": 6000, "dur": 3.0, "shape": "bump", "vol": 0.3 },
-    { "use": "glass", "freq": 3200, "repeat": 10, "every": 0.28, "jitter": 0.9, "scatter": 4, "vol": 0.2 } ] },
-  "crystalline_dust": { "about": "Fine glassy tinkling, like ice dust in light", "level": 0.7, "layers": [
-    { "use": "glass", "freq": 3600, "notes": [0, 5, -2, 7, 3, 10, 0, 12, 5, 8], "every": 0.3, "jitter": 0.4, "dur": 0.3 },
-    { "use": "hiss", "high": 8000, "dur": 3.0, "shape": "bump", "vol": 0.1 } ] },
-  "freezing_breath": { "about": "A long cold exhale with frost crackling in it", "layers": [
+    { "use": "glass_chink", "freq": 3200, "dur": 0.625, "repeat": 10, "every": 0.28, "jitter": 0.9, "scatter": 4, "vol": 0.2 },
+    { "use": "sul_pont", "freq": 1760, "notes": [0, 1], "every": 0.004, "trem": [12, 0.6], "dur": 3.0, "shape": "bump", "power": 1, "vol": 0.22 },
+    { "use": "crotale", "at": 0.02, "freq": 2349, "vol": 0.25 } ] },
+  "crystalline_dust": { "about": "Fine glassy tinkling, like ice dust in light; played on glass, sul ponticello strings, crotales", "level": 0.7, "tape": 1.5, "reverb": [1.46, 0.3, 0.25], "length": 4.3, "layers": [
+    { "use": "glass_chink", "freq": 3600, "dur": 0.75, "notes": [0, 5, -2, 7, 3, 10, 0, 12, 5, 8], "every": 0.3, "jitter": 0.4 },
+    { "use": "hiss", "high": 8000, "dur": 3.0, "shape": "bump", "vol": 0.1 },
+    { "use": "sul_pont", "freq": 1319, "notes": [0, 1], "every": 0.004, "trem": [12, 0.6], "dur": 3.0, "shape": "bump", "power": 1, "vol": 0.22 },
+    { "use": "crotale", "at": 0.02, "freq": 2637, "vol": 0.25 } ] },
+  "freezing_breath": { "about": "A long cold exhale with frost crackling in it; played on glass, sul ponticello strings, crotales", "tape": 1.5, "reverb": [1.38, 0.3, 0.25], "length": 3.6, "layers": [
     { "wave": "hiss", "band": [2500, 5000], "dur": 1.4, "shape": "bump", "power": 1 },
     { "use": "wind", "band": [900, 1400], "dur": 1.4, "vol": 0.6 },
-    { "use": "glass", "at": 0.3, "repeat": 6, "every": 0.16, "jitter": 0.8, "scatter": 3, "vol": 0.25 } ] },
-  "frost_armor": { "about": "Ice plates crunching on, then a rising glassy chord", "layers": [
-    { "use": "crunch", "freq": [3000, 1200], "dur": 0.12, "repeat": 6, "every": 0.1 },
-    { "use": "glass", "freq": 1800, "notes": [0, 4, 7, 12], "every": 0.15, "at": 0.1, "dur": 0.35 },
-    { "use": "pad", "freq": 880, "dur": 2.0, "vol": 0.3 } ] },
-  "frost_nova": { "about": "A glassy burst outward and a scatter of ice", "range": 32, "layers": [
-    { "use": "glass", "freq": 2100, "dur": 0.6 },
+    { "use": "glass_chink", "at": 0.3, "freq": 2400, "dur": 0.625, "repeat": 6, "every": 0.16, "jitter": 0.8, "scatter": 3, "vol": 0.25 },
+    { "use": "sul_pont", "freq": 1175, "notes": [0, 1], "every": 0.004, "trem": [12, 0.6], "dur": 1.4, "shape": "bump", "power": 1, "vol": 0.22 },
+    { "use": "crotale", "at": 0.02, "freq": 2960, "vol": 0.25 } ] },
+  "frost_armor": { "about": "Ice plates crunching on, then a rising glassy chord; played on glass, sul ponticello strings, crotales", "tape": 1.5, "reverb": [1.28, 0.3, 0.25], "length": 3.7, "layers": [
+    { "use": "crunch", "dur": 0.12, "repeat": 6, "every": 0.1, "band": [1800, 720] },
+    { "use": "glass_chink", "at": 0.1, "freq": 1800, "dur": 0.875, "notes": [0, 4, 7, 12], "every": 0.15 },
+    { "use": "sul_pont", "freq": 880, "dur": 2.0, "shape": "bump", "power": 1, "attack": 0.08, "trem": [9, 0.4], "vol": 0.24 },
+    { "use": "glass_chink", "at": 0.1, "freq": 3300, "vol": 0.5 },
+    { "use": "crotale", "at": 0.1, "freq": 2093, "vol": 0.3 } ] },
+  "frost_nova": { "about": "A glassy burst outward and a scatter of ice; played on glass, taikos, crotales, sul ponticello strings", "range": 32, "tape": 1.9, "clip": 0.85, "reverb": [2.4, 0.4, 0.25], "length": 4.2, "layers": [
+    { "use": "glass_chink", "freq": 2100, "dur": 1.2 },
     { "use": "whoosh", "band": [5000, 1200], "dur": 0.6, "shape": "decay" },
-    { "use": "crunch", "freq": [5000, 1500], "dur": 0.35 },
-    { "use": "thud", "vol": 0.5 },
-    { "use": "glass", "freq": 3000, "at": 0.2, "repeat": 8, "every": 0.1, "jitter": 0.7, "step": 1.03, "vol": 0.3 } ] },
-  "frostbite_aura": { "about": "Three cold gusts, each with a falling icy note", "layers": [
+    { "use": "crunch", "dur": 0.35, "band": [3000, 900] },
+    { "use": "taiko", "freq": [105.4, 84.3], "dur": 0.8, "vol": 0.5 },
+    { "use": "glass_chink", "at": 0.2, "freq": 3000, "dur": 0.625, "repeat": 8, "every": 0.1, "jitter": 0.7, "step": 1.03, "vol": 0.3 },
+    { "use": "glass_chink", "freq": 3600, "vol": 0.5 },
+    { "use": "crotale", "freq": 2637, "vol": 0.3 },
+    { "use": "sul_pont", "freq": 2093, "notes": [0, 1, 6], "every": 0.004, "dur": 0.6, "shape": "decay", "power": 1.5, "vol": 0.3 } ] },
+  "frostbite_aura": { "about": "Three cold gusts, each with a falling icy note; played on glass, crotales", "tape": 1.5, "reverb": [1.24, 0.3, 0.25], "length": 4.5, "layers": [
     { "use": "wind", "band": [1200, 2000], "dur": 0.6, "repeat": 3, "every": 0.5 },
-    { "use": "glass", "freq": 1500, "notes": [0, -2, -5], "every": 0.5, "dur": 0.5 },
-    { "use": "hiss", "high": 7000, "dur": 2.4, "shape": "bump", "vol": 0.15 } ] },
-  "frozen_ground": { "about": "Ground freezing over with creaks and small cracks", "level": 0.8, "layers": [
-    { "use": "crunch", "freq": [2500, 900], "glide": 0.5, "dur": 0.5 },
-    { "wave": "noise", "freq": [6000, 3000], "dur": 0.04, "power": 3, "repeat": 14, "every": 0.18, "jitter": 0.9, "vol": 0.4 },
+    { "use": "glass_chink", "freq": 1500, "dur": 1.2, "notes": [0, -2, -5], "every": 0.5 },
+    { "use": "hiss", "high": 7000, "dur": 2.4, "shape": "bump", "vol": 0.15 },
+    { "use": "glass_chink", "at": 1.0, "freq": 3600, "vol": 0.5 },
+    { "use": "crotale", "at": 1.0, "freq": 2093, "vol": 0.3 } ] },
+  "frozen_ground": { "about": "Ground freezing over with creaks and small cracks; played on glass, crotales", "level": 0.8, "tape": 1.5, "reverb": [1.21, 0.3, 0.25], "length": 3.7, "layers": [
+    { "use": "crunch", "dur": 0.5, "band": [1500, 540] },
+    { "wave": "hiss", "dur": 0.04, "power": 3, "repeat": 14, "every": 0.18, "jitter": 0.9, "vol": 0.4, "low": [3600, 1800] },
     { "use": "wind", "band": [1000, 1500], "dur": 3.0, "vol": 0.3 },
-    { "use": "glass", "at": 0.2, "repeat": 6, "every": 0.4, "jitter": 0.8, "vol": 0.2 } ] },
-  "frozen_orb": { "about": "A humming orb of cold shedding icy shards", "layers": [
-    { "use": "wobble", "wave": "triangle", "freq": 660, "vib": [5, 1], "dur": 3.0, "vol": 0.5 },
-    { "use": "glass", "freq": 2600, "repeat": 16, "every": 0.18, "jitter": 0.5, "step": 0.99, "vol": 0.35 },
-    { "use": "wind", "band": [1500, 2500], "dur": 3.0, "vol": 0.4 } ] },
-  "glacial_quake": { "about": "Three grinding ice quakes over a deep rumble", "range": 32, "layers": [
-    { "use": "rumble", "freq": [120, 60], "dur": 2.1 },
-    { "use": "crunch", "freq": [1400, 400], "dur": 0.3, "repeat": 3, "every": 0.5 },
-    { "use": "boom", "freq": [90, 40], "dur": 0.5, "repeat": 3, "every": 0.5, "vol": 0.7 },
-    { "use": "glass", "at": 0.1, "repeat": 6, "every": 0.3, "jitter": 0.8, "vol": 0.2 } ] },
-  "glacier_spike": { "about": "A spike of ice shooting up with a crunch and a ring", "layers": [
-    { "use": "rise", "wave": "saw", "freq": [200, 1600], "glide": 0.5, "low": 4000, "dur": 0.15 },
-    { "use": "crunch", "freq": [4000, 900], "dur": 0.4 },
-    { "use": "glass", "freq": 1900, "dur": 0.5 },
-    { "use": "thud" } ] },
-  "hail_storm": { "about": "Hailstones rattling down and bouncing", "range": 32, "layers": [
-    { "use": "crunch", "freq": [5000, 2500], "dur": 0.04, "repeat": 20, "every": 0.1, "jitter": 0.9 },
-    { "use": "thud", "freq": [400, 200], "dur": 0.04, "at": 0.5, "repeat": 16, "every": 0.1, "jitter": 0.9, "vol": 0.5 },
-    { "use": "wind", "band": [800, 1300], "dur": 2.4, "vol": 0.5 } ] },
-  "ice_shatter": { "about": "Ice breaking apart with a cascade of tinkling shards", "layers": [
+    { "use": "glass_chink", "at": 0.2, "freq": 2400, "dur": 0.625, "repeat": 6, "every": 0.4, "jitter": 0.8, "vol": 0.2 },
+    { "use": "glass_chink", "freq": 2700, "vol": 0.5 },
+    { "use": "crotale", "freq": 2093, "vol": 0.3 } ] },
+  "frozen_orb": { "about": "A humming orb of cold shedding icy shards; played on sopranos, glass, sul ponticello strings, crotales", "tape": 1.5, "reverb": [1.23, 0.3, 0.25], "length": 4.1, "layers": [
+    { "use": "choir_high", "freq": 660, "vib": [5, 0.5], "dur": 3.0, "shape": "bump", "power": 1, "vol": 0.4 },
+    { "use": "glass_chink", "freq": 2600, "dur": 0.625, "repeat": 16, "every": 0.18, "jitter": 0.5, "step": 0.99, "vol": 0.35 },
+    { "use": "wind", "band": [1500, 2500], "dur": 3.0, "vol": 0.4 },
+    { "use": "sul_pont", "freq": 1760, "notes": [0, 1], "every": 0.004, "trem": [12, 0.6], "dur": 3.0, "shape": "bump", "power": 1, "vol": 0.22 },
+    { "use": "crotale", "at": 0.02, "freq": 2637, "vol": 0.25 } ] },
+  "glacial_quake": { "about": "Three grinding ice quakes over a deep rumble; played on gran cassa, glass, crotales, taikos, sul ponticello strings", "range": 32, "tape": 1.9, "clip": 0.85, "reverb": [2.19, 0.4, 0.25], "length": 5.1, "layers": [
+    { "use": "rumble", "dur": 2.1, "low": 120 },
+    { "use": "crunch", "dur": 0.3, "repeat": 3, "every": 0.5, "band": [840, 240] },
+    { "use": "gran_cassa", "freq": [45, 36], "dur": 1.5, "repeat": 3, "every": 0.5, "vol": 0.7 },
+    { "use": "glass_chink", "at": 0.1, "freq": 2400, "dur": 0.625, "repeat": 6, "every": 0.3, "jitter": 0.8, "vol": 0.2 },
+    { "use": "glass_chink", "at": 1.0, "freq": 2700, "vol": 0.5 },
+    { "use": "crotale", "at": 1.0, "freq": 2349, "vol": 0.3 },
+    { "use": "taiko", "at": 1.0, "vol": 0.6 },
+    { "use": "sul_pont", "at": 1.0, "freq": 2349, "notes": [0, 1, 6], "every": 0.004, "dur": 0.6, "shape": "decay", "power": 1.5, "vol": 0.3 } ] },
+  "glacier_spike": { "about": "A spike of ice shooting up with a crunch and a ring; played on string tremolo, glass, taikos, crotales", "tape": 1.5, "reverb": [1.32, 0.3, 0.25], "length": 3.6, "layers": [
+    { "use": "tremolo", "freq": [200, 1600], "dur": 0.15, "shape": "swell", "power": 1.5, "glide": 0.5, "vol": 0.8 },
+    { "use": "crunch", "dur": 0.4, "band": [2400, 540] },
+    { "use": "glass_chink", "freq": 1900, "dur": 1.2 },
+    { "use": "taiko", "freq": [105.4, 84.3], "dur": 0.8 },
+    { "use": "glass_chink", "freq": 3300, "vol": 0.5 },
+    { "use": "crotale", "freq": 2637, "vol": 0.3 } ] },
+  "hail_storm": { "about": "Hailstones rattling down and bouncing; played on taikos, sul ponticello strings, crotales", "range": 32, "tape": 1.9, "reverb": [2.21, 0.4, 0.25], "length": 4.1, "layers": [
+    { "use": "crunch", "dur": 0.04, "repeat": 20, "every": 0.1, "jitter": 0.9, "band": [3000, 1500] },
+    { "use": "taiko", "at": 0.5, "freq": [230, 190], "dur": 0.35, "repeat": 16, "every": 0.1, "jitter": 0.9, "vol": 0.5 },
+    { "use": "wind", "band": [800, 1300], "dur": 2.4, "vol": 0.5 },
+    { "use": "sul_pont", "freq": 1319, "notes": [0, 1], "every": 0.004, "trem": [12, 0.6], "dur": 2.4, "shape": "bump", "power": 1, "vol": 0.22 },
+    { "use": "crotale", "at": 0.02, "freq": 2349, "vol": 0.25 } ] },
+  "ice_shatter": { "about": "Ice breaking apart with a cascade of tinkling shards; played on glass, taikos, crotales", "tape": 1.5, "reverb": [1.2, 0.3, 0.25], "length": 3.5, "layers": [
     { "use": "crack" },
-    { "use": "crunch", "freq": [7000, 2000], "dur": 0.3 },
-    { "use": "glass", "freq": 2800, "dur": 0.2, "repeat": 9, "every": 0.06, "jitter": 0.9, "step": 0.96 },
-    { "use": "thud", "vol": 0.4 } ] },
-  "ice_shield_shatter": { "about": "A shield of ice humming, cracking, then bursting", "layers": [
-    { "use": "pad", "freq": 1300, "dur": 0.5, "vol": 0.4 },
-    { "use": "crack", "at": 0.3, "freq": [9000, 4000], "vol": 0.6 },
-    { "use": "crunch", "at": 0.5, "freq": [8000, 1500], "dur": 0.4 },
-    { "use": "glass", "at": 0.5, "freq": 2400, "repeat": 10, "every": 0.05, "jitter": 0.9, "step": 0.95 },
-    { "use": "thud", "at": 0.5 } ] },
-  "ice_wall": { "about": "Blocks of ice stacking up fast into a wall", "layers": [
-    { "use": "crunch", "freq": [1800, 700], "dur": 0.1, "repeat": 8, "every": 0.06, "step": 1.05 },
-    { "use": "thud", "freq": [200, 80], "dur": 0.1, "at": 0.15, "repeat": 6, "every": 0.06 },
-    { "use": "glass", "at": 0.35, "repeat": 8, "every": 0.3, "jitter": 0.7, "vol": 0.25 },
-    { "use": "wind", "band": [1200, 1600], "dur": 2.8, "vol": 0.25 } ] },
-  "icicle_spear": { "about": "A spear of ice hissing through the air and shattering", "layers": [
-    { "use": "whoosh", "band": [3000, 6000], "dur": 0.6, "shape": "swell", "vol": 0.6 },
-    { "use": "glass", "freq": [2000, 3000], "dur": 0.6, "shape": "swell", "vol": 0.3 },
-    { "use": "crunch", "at": 0.6, "freq": [6000, 1500], "dur": 0.25 },
-    { "use": "glass", "at": 0.6, "freq": 2600, "repeat": 5, "every": 0.05, "jitter": 0.8 },
-    { "use": "thud", "at": 0.6 } ] },
-  "permafrost_crack": { "about": "A crack racing through frozen ground, venting cold air", "layers": [
+    { "use": "crunch", "dur": 0.3, "band": [4200, 1200] },
+    { "use": "glass_chink", "freq": 2800, "dur": 0.5, "repeat": 9, "every": 0.06, "jitter": 0.9, "step": 0.96 },
+    { "use": "taiko", "freq": [105.4, 84.3], "dur": 0.8, "vol": 0.4 },
+    { "use": "glass_chink", "freq": 2700, "vol": 0.5 },
+    { "use": "crotale", "freq": 2093, "vol": 0.3 } ] },
+  "ice_shield_shatter": { "about": "A shield of ice humming, cracking, then bursting; played on sul ponticello strings, glass, taikos, crotales", "tape": 1.5, "reverb": [1.43, 0.3, 0.25], "length": 4.2, "layers": [
+    { "use": "sul_pont", "freq": 1300, "dur": 0.5, "shape": "bump", "power": 1, "attack": 0.08, "trem": [9, 0.4], "vol": 0.32 },
+    { "use": "crack", "at": 0.3, "vol": 0.6, "low": [5400, 2400] },
+    { "use": "crunch", "at": 0.5, "dur": 0.4, "band": [4800, 900] },
+    { "use": "glass_chink", "at": 0.5, "freq": 2400, "dur": 0.625, "repeat": 10, "every": 0.05, "jitter": 0.9, "step": 0.95 },
+    { "use": "taiko", "at": 0.5, "freq": [105.4, 84.3], "dur": 0.8 },
+    { "use": "glass_chink", "at": 0.5, "freq": 2700, "vol": 0.5 },
+    { "use": "crotale", "at": 0.5, "freq": 2349, "vol": 0.3 } ] },
+  "ice_wall": { "about": "Blocks of ice stacking up fast into a wall; played on taikos, glass, crotales", "tape": 1.5, "reverb": [1.45, 0.3, 0.25], "length": 3.9, "layers": [
+    { "use": "crunch", "dur": 0.1, "repeat": 8, "every": 0.06, "step": 1.05, "band": [1080, 420] },
+    { "use": "taiko", "at": 0.15, "freq": [124, 99.2], "dur": 0.5, "repeat": 6, "every": 0.06 },
+    { "use": "glass_chink", "at": 0.35, "freq": 2400, "dur": 0.625, "repeat": 8, "every": 0.3, "jitter": 0.7, "vol": 0.25 },
+    { "use": "wind", "band": [1200, 1600], "dur": 2.8, "vol": 0.25 },
+    { "use": "glass_chink", "freq": 2700, "vol": 0.5 },
+    { "use": "crotale", "freq": 2637, "vol": 0.3 } ] },
+  "icicle_spear": { "about": "A spear of ice hissing through the air and shattering; played on glass, taikos, crotales", "tape": 1.5, "reverb": [1.54, 0.3, 0.25], "length": 4.3, "layers": [
+    { "use": "whoosh", "band": [3000, 6000], "dur": 0.6, "shape": "bump", "vol": 0.6, "power": 1 },
+    { "use": "glass_chink", "freq": 2000, "dur": 1.2, "vol": 0.3 },
+    { "use": "crunch", "at": 0.6, "dur": 0.25, "band": [3600, 900] },
+    { "use": "glass_chink", "at": 0.6, "freq": 2600, "dur": 0.625, "repeat": 5, "every": 0.05, "jitter": 0.8 },
+    { "use": "taiko", "at": 0.6, "freq": [105.4, 84.3], "dur": 0.8 },
+    { "use": "glass_chink", "at": 0.6, "freq": 3600, "vol": 0.5 },
+    { "use": "crotale", "at": 0.6, "freq": 2637, "vol": 0.3 } ] },
+  "permafrost_crack": { "about": "A crack racing through frozen ground, venting cold air; played on noise bands, sub, glass, crotales", "tape": 1.5, "reflect": [[0.084, 0.35, 2931], [0.222, 0.31, 2377], [0.357, 0.24, 1563]], "reverb": [1.59, 0.3, 0.25], "length": 3.8, "layers": [
     { "use": "crack" },
-    { "wave": "noise", "freq": [5000, 1500], "dur": 0.05, "power": 3, "repeat": 12, "every": 0.09, "jitter": 0.9, "fade": 0.95 },
-    { "use": "boom", "freq": [80, 40], "dur": 0.6, "vol": 0.6 },
-    { "use": "crunch", "at": 0.2, "freq": [1500, 500], "dur": 0.5 },
-    { "use": "wind", "at": 0.2, "band": [600, 1200], "dur": 2.4, "vol": 0.3 } ] },
-  "rime_buildup": { "about": "Frost creeping: many faint ticks and a few slow glassy notes", "level": 0.7, "layers": [
-    { "wave": "noise", "freq": [7000, 5000], "dur": 0.03, "power": 3, "repeat": 30, "every": 0.1, "jitter": 0.9, "vol": 0.3 },
-    { "use": "glass", "freq": 3000, "notes": [0, 2, 4, 7, 9, 12], "every": 0.45, "at": 0.5, "vol": 0.25 },
-    { "use": "wind", "band": [1500, 2200], "dur": 3.0, "vol": 0.25 } ] },
-  "sleet_spray": { "about": "A wet, icy spray pattering against something", "layers": [
+    { "wave": "hiss", "dur": 0.05, "power": 3, "repeat": 12, "every": 0.09, "jitter": 0.9, "fade": 0.95, "low": [3000, 900] },
+    { "use": "crunch", "at": 0.2, "dur": 0.5, "band": [900, 300] },
+    { "use": "wind", "at": 0.2, "band": [600, 1200], "dur": 2.4, "vol": 0.3 },
+    { "use": "glass_chink", "freq": 3300, "vol": 0.5 },
+    { "use": "crotale", "freq": 2349, "vol": 0.3 },
+    { "wave": "hiss", "at": 0.0, "band": [61.6, 46.2], "dur": 0.54, "power": 2.2, "attack": 0.003, "vol": 1.0 },
+    { "wave": "hiss", "at": 0.0, "band": [123.2, 92.4], "dur": 0.405, "power": 2.2, "attack": 0.003, "vol": 0.75 },
+    { "wave": "hiss", "at": 0.0, "band": [246.4, 184.8], "dur": 0.27, "power": 2.2, "attack": 0.003, "vol": 0.55 },
+    { "wave": "hiss", "at": 0.0, "band": [504.0, 378.0], "dur": 0.158, "power": 2.2, "attack": 0.003, "vol": 0.4 },
+    { "wave": "sine", "at": 0.0, "freq": [63.0, 50.4], "glide": 0.15, "dur": 0.7, "power": 1.6, "attack": 0.004, "vol": 0.9 } ] },
+  "rime_buildup": { "about": "Frost creeping: many faint ticks and a few slow glassy notes; played on glass, crotales", "level": 0.7, "tape": 1.5, "reverb": [1.61, 0.3, 0.25], "length": 6.0, "layers": [
+    { "wave": "hiss", "dur": 0.03, "power": 3, "repeat": 30, "every": 0.1, "jitter": 0.9, "vol": 0.3, "low": [4200, 3000] },
+    { "use": "glass_chink", "at": 0.5, "freq": 3000, "dur": 0.625, "notes": [0, 2, 4, 7, 9, 12], "every": 0.45, "vol": 0.25 },
+    { "use": "wind", "band": [1500, 2200], "dur": 3.0, "vol": 0.25 },
+    { "use": "glass_chink", "at": 2.75, "freq": 3600, "vol": 0.5 },
+    { "use": "crotale", "at": 2.75, "freq": 2349, "vol": 0.3 } ] },
+  "sleet_spray": { "about": "A wet, icy spray pattering against something; played on glass, crotales", "tape": 1.5, "reverb": [1.4, 0.3, 0.25], "length": 3.6, "layers": [
     { "wave": "hiss", "band": [3000, 6000], "dur": 1.0, "power": 1 },
-    { "use": "crunch", "freq": [6000, 3000], "dur": 0.03, "repeat": 12, "every": 0.06, "jitter": 0.9, "vol": 0.5 },
-    { "use": "splash", "dur": 0.5, "vol": 0.4 } ] },
-  "snow_flurry": { "about": "A soft, muffled swirl of snow", "level": 0.7, "layers": [
+    { "use": "crunch", "dur": 0.03, "repeat": 12, "every": 0.06, "jitter": 0.9, "vol": 0.5, "band": [3600, 1800] },
+    { "use": "splash", "dur": 0.5, "vol": 0.4 },
+    { "use": "glass_chink", "freq": 3000, "vol": 0.5 },
+    { "use": "crotale", "freq": 2637, "vol": 0.3 } ] },
+  "snow_flurry": { "about": "A soft, muffled swirl of snow; played on glass, sul ponticello strings, crotales", "level": 0.7, "tape": 1.5, "reverb": [1.52, 0.3, 0.25], "length": 4.0, "layers": [
     { "use": "wind", "band": [500, 900], "dur": 3.0, "vol": 0.8 },
     { "use": "hiss", "high": 5000, "dur": 3.0, "shape": "bump", "vol": 0.15 },
-    { "use": "glass", "freq": 3500, "repeat": 6, "every": 0.5, "jitter": 0.9, "vol": 0.1 } ] },
-  "winter_chill": { "about": "A slow, bitter wind with a cold dissonant shimmer", "level": 0.8, "layers": [
+    { "use": "glass_chink", "freq": 3500, "dur": 0.625, "repeat": 6, "every": 0.5, "jitter": 0.9, "vol": 0.1 },
+    { "use": "sul_pont", "freq": 1568, "notes": [0, 1], "every": 0.004, "trem": [12, 0.6], "dur": 3.0, "shape": "bump", "power": 1, "vol": 0.22 },
+    { "use": "crotale", "at": 0.02, "freq": 2960, "vol": 0.25 } ] },
+  "winter_chill": { "about": "A slow, bitter wind with a cold dissonant shimmer; played on sul ponticello strings, glass, crotales", "level": 0.8, "tape": 1.5, "reverb": [1.38, 0.3, 0.25], "length": 3.9, "layers": [
     { "use": "wind", "band": [900, 1500], "trem": [0.8, 0.5], "dur": 3.0 },
-    { "use": "pad", "freq": 1175, "dur": 3.0, "vol": 0.25 },
-    { "use": "pad", "freq": 1245, "dur": 3.0, "vol": 0.2 },
-    { "use": "glass", "freq": 2800, "repeat": 5, "every": 0.6, "jitter": 0.8, "vol": 0.15 } ] }
+    { "use": "sul_pont", "freq": 1175, "dur": 3.0, "shape": "bump", "power": 1, "attack": 0.08, "trem": [9, 0.4], "vol": 0.2 },
+    { "use": "sul_pont", "freq": 1245, "dur": 3.0, "shape": "bump", "power": 1, "attack": 0.08, "trem": [9, 0.4], "vol": 0.16 },
+    { "use": "glass_chink", "freq": 2800, "dur": 0.625, "repeat": 5, "every": 0.6, "jitter": 0.8, "vol": 0.15 },
+    { "use": "sul_pont", "freq": 1568, "notes": [0, 1], "every": 0.004, "trem": [12, 0.6], "dur": 3.0, "shape": "bump", "power": 1, "vol": 0.22 },
+    { "use": "crotale", "at": 0.02, "freq": 2349, "vol": 0.25 } ] }
 }

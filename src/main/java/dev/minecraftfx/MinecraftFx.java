@@ -48,7 +48,7 @@ public final class MinecraftFx {
             "puff", "flame", "rock", "star", "glint", "hex", "question", "exclaim", "zzz", "eyes", "chain", "crescent",
             "reticle", "shield", "silence", "spiral", "petal", "bug", "wings", "cloud", "digit", "grid", "wave", "ghost",
             "mushroom", "gem", "flask", "crack", "anger", "box", "gear", "dagger", "crest", "coral", "xslash", "key",
-            "splat", "block", "screen");
+            "splat", "block", "screen", "sigil", "line");
 
     public static final DeferredRegister<ParticleType<?>> PARTICLES = DeferredRegister.create(Registries.PARTICLE_TYPE, MOD_ID);
 

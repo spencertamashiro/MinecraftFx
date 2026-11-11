@@ -1,87 +1,143 @@
 {
-  "armor_break": { "about": "Armour ringing, then cracking and falling apart", "layers": [
-    { "use": "clang", "freq": 700, "vol": 0.5 },
+  "armor_break": { "about": "Armour ringing, then cracking and falling apart; played on anvil, taikos", "tape": 1.5, "reverb": [1.48, 0.3, 0.25], "layers": [
+    { "use": "anvil", "freq": 700, "dur": 0.9, "vol": 0.4 },
     { "use": "crack", "at": 0.3 },
-    { "use": "clang", "at": 0.3, "freq": 420, "fm": [1.41, 6], "dur": 0.5 },
-    { "use": "crunch", "at": 0.3, "freq": [3000, 700], "dur": 0.3 },
-    { "use": "thud", "at": 0.3 } ] },
-  "blade_lock": { "about": "Two blades grinding against each other, throwing sparks", "layers": [
-    { "use": "clang", "freq": 1100, "dur": 0.2 },
-    { "wave": "noise", "freq": [4000, 5000], "trem": [37, 0.7], "high": 2500, "dur": 1.3, "shape": "hold", "release": 0.2, "vol": 0.6 },
+    { "use": "anvil", "at": 0.3, "freq": 420, "dur": 1.5, "vol": 0.8 },
+    { "use": "crunch", "at": 0.3, "dur": 0.3, "band": [1800, 420] },
+    { "use": "taiko", "at": 0.3, "freq": [105.4, 84.3], "dur": 0.8 },
+    { "use": "skin", "at": 0.3, "vol": 0.4 },
+    { "use": "anvil", "at": 0.3, "freq": 1650, "dur": 0.9, "vol": 0.35 } ] },
+  "blade_lock": { "about": "Two blades grinding against each other, throwing sparks; played on anvil, taikos", "tape": 1.5, "reverb": [1.45, 0.3, 0.25], "layers": [
+    { "use": "anvil", "freq": 1100, "dur": 0.6, "vol": 0.8 },
+    { "wave": "hiss", "trem": [37, 0.7], "high": 2500, "dur": 1.3, "shape": "hold", "release": 0.2, "vol": 0.6, "low": [2400, 3000] },
     { "use": "spark", "repeat": 11, "every": 0.1, "vol": 0.5 },
-    { "use": "clang", "at": 1.25, "freq": 1500, "dur": 0.2, "vol": 0.6 } ] },
-  "blunt_hit": { "about": "A dull, heavy thwack", "layers": [
-    { "use": "thud", "freq": [200, 50], "dur": 0.22 },
-    { "use": "crunch", "freq": [900, 300], "dur": 0.12 } ] },
-  "concussion_ring": { "about": "A short thump with a quick falling tone", "layers": [
-    { "use": "thump" },
-    { "wave": "sine", "freq": [900, 300], "dur": 0.2, "power": 1.5, "vol": 0.6 },
-    { "use": "crack", "vol": 0.5 } ] },
-  "critical_spark": { "about": "A sharp hit capped with a bright two-note ding", "layers": [
+    { "use": "anvil", "at": 1.25, "freq": 1500, "dur": 0.6, "vol": 0.48 },
+    { "use": "taiko", "freq": [92, 76], "drive": 2, "vol": 0.75 },
+    { "use": "skin", "vol": 0.4 },
+    { "use": "anvil", "freq": 1650, "dur": 0.9, "vol": 0.35 } ] },
+  "blunt_hit": { "about": "A dull, heavy thwack; played on taikos", "tape": 1.5, "reverb": [1.38, 0.3, 0.25], "layers": [
+    { "use": "taiko", "freq": [124, 99.2], "dur": 1.1 },
+    { "use": "crunch", "dur": 0.12, "band": [540, 180] },
+    { "use": "skin", "vol": 0.4 } ] },
+  "concussion_ring": { "about": "A short thump with a quick falling tone; played on timpani, violins, taikos", "tape": 1.5, "reverb": [1.22, 0.3, 0.25], "layers": [
+    { "use": "timpani", "freq": 99, "dur": 0.72 },
+    { "use": "violins", "freq": [900, 300], "glide": 0.7, "dur": 0.24, "shape": "decay", "power": 1.5, "attack": 0.02, "vol": 0.48 },
+    { "use": "crack", "vol": 0.5 },
+    { "use": "taiko", "freq": [105, 86], "drive": 2, "vol": 0.75 },
+    { "use": "skin", "vol": 0.4 } ] },
+  "critical_spark": { "about": "A sharp hit capped with a bright two-note ding; played on anvil, taikos", "tape": 1.5, "reverb": [1.24, 0.3, 0.25], "layers": [
     { "use": "crack" },
-    { "use": "clang", "freq": 1800, "dur": 0.2 },
-    { "use": "thud" },
-    { "use": "chime", "at": 0.05, "freq": 2637, "notes": [0, 7], "every": 0.07, "dur": 0.3 } ] },
-  "ground_slam": { "about": "A heavy slam into the ground with cracking earth", "range": 32, "layers": [
-    { "use": "boom", "freq": [100, 32] },
-    { "use": "crunch", "freq": [1200, 300], "dur": 0.4 },
-    { "use": "rumble", "dur": 0.9, "vol": 0.5 } ] },
-  "heavy_stagger": { "about": "A hard knock and a woozy falling wobble", "layers": [
-    { "use": "thud", "freq": [150, 50], "dur": 0.3 },
-    { "use": "wobble", "freq": [500, 250], "vib": [9, 3], "dur": 0.8, "shape": "decay", "vol": 0.5 },
-    { "use": "tick", "freq": 900, "repeat": 3, "every": 0.2, "vol": 0.3 } ] },
-  "hit_flash": { "about": "The basic hit: a quick snap and thump", "layers": [
+    { "use": "anvil", "freq": 1800, "dur": 0.6, "vol": 0.8 },
+    { "use": "taiko", "freq": [105.4, 84.3], "dur": 0.8 },
+    { "use": "anvil", "at": 0.05, "freq": 2637, "dur": 0.6, "notes": [0, 7], "every": 0.07, "vol": 0.8 },
+    { "use": "skin", "vol": 0.4 },
+    { "use": "anvil", "freq": 1400, "dur": 0.9, "vol": 0.35 } ] },
+  "ground_slam": { "about": "A heavy slam into the ground with cracking earth; played on noise bands, sub, taikos, braams, snare", "range": 32, "tape": 1.9, "clip": 0.85, "reflect": [[0.118, 0.34, 2516], [0.259, 0.28, 2382], [0.33, 0.21, 1836]], "reverb": [2.63, 0.4, 0.25], "length": 3.7, "layers": [
+    { "use": "crunch", "dur": 0.4, "band": [720, 180] },
+    { "use": "rumble", "dur": 0.9, "vol": 0.5 },
+    { "use": "taiko", "freq": [120, 96], "drive": 2, "vol": 0.75 },
+    { "use": "skin", "vol": 0.4 },
+    { "use": "braam", "freq": 41.2, "notes": [0, 7], "every": 0.004, "dur": 0.6, "power": 2.5, "vol": 0.6 },
+    { "use": "snare", "vol": 0.35 },
+    { "use": "crack", "at": 0.0, "low": [11000, 3000], "vol": 0.7 },
+    { "wave": "hiss", "at": 0.0, "band": [46.2, 34.6], "dur": 0.84, "power": 2.2, "attack": 0.003, "vol": 1.0 },
+    { "wave": "hiss", "at": 0.0, "band": [92.4, 69.3], "dur": 0.63, "power": 2.2, "attack": 0.003, "vol": 0.75 },
+    { "wave": "hiss", "at": 0.0, "band": [184.8, 138.6], "dur": 0.42, "power": 2.2, "attack": 0.003, "vol": 0.55 },
+    { "wave": "hiss", "at": 0.0, "band": [378.0, 283.5], "dur": 0.245, "power": 2.2, "attack": 0.003, "vol": 0.4 },
+    { "wave": "sine", "at": 0.0, "freq": [52.5, 42.0], "glide": 0.15, "dur": 1.2, "power": 1.6, "attack": 0.004, "vol": 0.9 },
+    { "use": "gran_cassa", "at": 0.0, "freq": [78.8, 63.0], "dur": 1.2, "attack": 0.015, "vol": 0.45 } ] },
+  "heavy_stagger": { "about": "A hard knock and a woozy falling wobble; played on taikos, sopranos, woodblock", "tape": 1.5, "reverb": [1.27, 0.3, 0.25], "layers": [
+    { "use": "taiko", "freq": [93, 74.4], "dur": 1.4 },
+    { "use": "choir_high", "freq": [500, 250], "vib": [9, 1.5], "dur": 0.8, "shape": "decay", "power": 1, "vol": 0.4 },
+    { "use": "woodblock", "freq": 500, "repeat": 3, "every": 0.2, "vol": 0.24 },
+    { "use": "skin", "vol": 0.4 } ] },
+  "hit_flash": { "about": "The basic hit: a quick snap and thump; played on taikos", "tape": 1.5, "reverb": [1.58, 0.3, 0.25], "layers": [
     { "use": "crack" },
-    { "use": "thud", "freq": [260, 90], "dur": 0.1 } ] },
-  "impact_sparks": { "about": "Metal struck, with a spray of sparks", "layers": [
-    { "use": "clang", "freq": 2300, "dur": 0.1 },
-    { "use": "spark", "repeat": 5, "every": 0.04 } ] },
-  "knockback_dust": { "about": "A shove and feet skidding back through dust", "layers": [
-    { "use": "thud", "freq": [180, 60], "dur": 0.2 },
+    { "use": "taiko", "freq": [161.2, 129], "dur": 0.5 },
+    { "use": "skin", "vol": 0.4 } ] },
+  "impact_sparks": { "about": "Metal struck, with a spray of sparks; played on anvil, taikos", "tape": 1.5, "reverb": [1.27, 0.3, 0.25], "layers": [
+    { "use": "anvil", "freq": 2300, "dur": 0.3, "vol": 0.8 },
+    { "use": "spark", "repeat": 5, "every": 0.04 },
+    { "use": "taiko", "freq": [92, 76], "drive": 2, "vol": 0.75 },
+    { "use": "skin", "vol": 0.4 },
+    { "use": "anvil", "freq": 1250, "dur": 0.9, "vol": 0.35 } ] },
+  "knockback_dust": { "about": "A shove and feet skidding back through dust; played on taikos", "tape": 1.5, "reverb": [1.58, 0.3, 0.25], "layers": [
+    { "use": "taiko", "freq": [111.6, 89.3], "dur": 1.0 },
     { "use": "whoosh", "band": [1200, 300], "dur": 0.6, "shape": "decay" },
-    { "use": "crunch", "freq": [700, 300], "dur": 0.25, "vol": 0.5 } ] },
-  "parry_clash": { "about": "A hard, bright metal-on-metal block", "layers": [
-    { "use": "clang", "freq": 1500, "fm": [1.41, 5], "dur": 0.35 },
-    { "use": "clang", "freq": 2250, "dur": 0.25, "vol": 0.5 },
+    { "use": "crunch", "dur": 0.25, "vol": 0.5, "band": [420, 180] },
+    { "use": "skin", "vol": 0.4 } ] },
+  "parry_clash": { "about": "A hard, bright metal-on-metal block; played on anvil, taikos", "tape": 1.5, "reverb": [1.45, 0.3, 0.25], "layers": [
+    { "use": "anvil", "freq": 1500, "dur": 1.05, "vol": 0.8 },
+    { "use": "anvil", "freq": 2250, "dur": 0.75, "vol": 0.4 },
     { "use": "crack" },
-    { "use": "spark", "repeat": 4, "every": 0.03 } ] },
-  "pierce_wound": { "about": "A quick stab, a wet squelch and drops falling", "layers": [
+    { "use": "spark", "repeat": 4, "every": 0.03 },
+    { "use": "taiko", "freq": [120, 96], "drive": 2, "vol": 0.75 },
+    { "use": "skin", "vol": 0.4 },
+    { "use": "anvil", "freq": 1650, "dur": 0.9, "vol": 0.35 } ] },
+  "pierce_wound": { "about": "A quick stab, a wet squelch and drops falling; played on taikos, pizzicato", "tape": 1.5, "reverb": [1.5, 0.3, 0.25], "layers": [
     { "use": "slice", "band": [8000, 3000], "dur": 0.08 },
-    { "use": "thud", "freq": [300, 120], "dur": 0.08 },
-    { "wave": "noise", "freq": [1500, 600], "dur": 0.12, "at": 0.03, "vol": 0.5 },
-    { "use": "drip", "freq": [600, 300], "dur": 0.08, "at": 0.1, "repeat": 3, "every": 0.1, "vol": 0.5 } ] },
-  "ricochet_bounce": { "about": "A ping, a whine, a second ping and a fading whine", "layers": [
-    { "use": "clang", "freq": 2600, "dur": 0.1 },
-    { "wave": "sine", "freq": [3200, 1500], "vib": [30, 1], "dur": 0.25, "at": 0.02, "power": 1, "vol": 0.6 },
-    { "use": "clang", "at": 0.25, "freq": 3100, "dur": 0.1 },
-    { "wave": "sine", "freq": [3600, 2000], "vib": [30, 1], "dur": 0.35, "at": 0.27, "vol": 0.5 } ] },
-  "shield_bash": { "about": "A shield slamming into something with a dull metal ring", "layers": [
-    { "use": "thud", "freq": [220, 60], "dur": 0.25 },
-    { "use": "clang", "freq": 380, "fm": [1.41, 3], "dur": 0.35 },
-    { "use": "whoosh", "band": [2000, 500], "dur": 0.25, "shape": "decay", "vol": 0.5 } ] },
-  "shock_ripple": { "about": "Three quick ripples of force, each weaker", "layers": [
-    { "wave": "sine", "freq": [400, 120], "dur": 0.2, "repeat": 3, "every": 0.15, "fade": 0.7 },
-    { "use": "whoosh", "band": [1500, 500], "dur": 0.2, "repeat": 3, "every": 0.15, "fade": 0.7, "vol": 0.5 } ] },
-  "smash_crater": { "about": "A crater-making smash and debris settling afterwards", "range": 40, "layers": [
-    { "use": "boom", "freq": [90, 26], "dur": 1.0 },
-    { "use": "crunch", "freq": [1500, 300], "dur": 0.6 },
+    { "use": "taiko", "freq": [186, 148.8], "dur": 0.4 },
+    { "wave": "hiss", "dur": 0.12, "at": 0.03, "vol": 0.5, "low": [900, 360] },
+    { "use": "pizz", "at": 0.1, "freq": 424.3, "dur": 0.32, "repeat": 3, "every": 0.1, "vol": 0.5 },
+    { "use": "skin", "vol": 0.4 } ] },
+  "ricochet_bounce": { "about": "A ring, a whine, a second ring and a fading whine; played on anvil, violins, taikos", "tape": 1.5, "reverb": [1.36, 0.3, 0.25], "layers": [
+    { "use": "anvil", "freq": 2600, "dur": 0.3, "vol": 0.8 },
+    { "use": "violins", "at": 0.02, "freq": [3200, 1500], "glide": 0.7, "dur": 0.3, "shape": "decay", "power": 1.5, "attack": 0.02, "vib": [30, 0.5], "vol": 0.48 },
+    { "use": "anvil", "at": 0.25, "freq": 3100, "dur": 0.3, "vol": 0.8 },
+    { "use": "violins", "at": 0.27, "freq": [3600, 2000], "glide": 0.7, "dur": 0.42, "shape": "decay", "power": 1.5, "attack": 0.02, "vib": [30, 0.5], "vol": 0.4 },
+    { "use": "taiko", "at": 0.02, "freq": [92, 76], "drive": 2, "vol": 0.75 },
+    { "use": "skin", "at": 0.02, "vol": 0.4 },
+    { "use": "anvil", "at": 0.02, "freq": 1650, "dur": 0.9, "vol": 0.35 } ] },
+  "shield_bash": { "about": "A shield slamming into something with a dull metal ring; played on taikos, anvil", "tape": 1.5, "reverb": [1.56, 0.3, 0.25], "layers": [
+    { "use": "taiko", "freq": [136.4, 109.1], "dur": 1.25 },
+    { "use": "anvil", "freq": 380, "dur": 1.05, "vol": 0.8 },
+    { "use": "whoosh", "band": [2000, 500], "dur": 0.25, "shape": "decay", "vol": 0.5 },
+    { "use": "skin", "vol": 0.4 },
+    { "use": "anvil", "freq": 1400, "dur": 0.9, "vol": 0.35 } ] },
+  "shock_ripple": { "about": "Three quick ripples of force, each weaker; played on violins, taikos", "tape": 1.5, "reverb": [1.37, 0.3, 0.25], "layers": [
+    { "use": "violins", "freq": [400, 120], "glide": 0.7, "dur": 0.24, "shape": "decay", "power": 1.5, "attack": 0.02, "repeat": 3, "every": 0.15, "fade": 0.7, "vol": 0.8 },
+    { "use": "whoosh", "band": [1500, 500], "dur": 0.2, "repeat": 3, "every": 0.15, "fade": 0.7, "vol": 0.5 },
+    { "use": "taiko", "freq": [92, 76], "drive": 2, "vol": 0.75 },
+    { "use": "skin", "vol": 0.4 } ] },
+  "smash_crater": { "about": "A crater-making smash and debris settling afterwards; played on noise bands, sub, taikos, braams, snare", "range": 40, "tape": 2.3, "clip": 0.75, "reflect": [[0.103, 0.35, 2326], [0.2, 0.31, 1813], [0.319, 0.25, 1751]], "reverb": [3.24, 0.5, 0.25], "length": 4.9, "layers": [
+    { "use": "crunch", "dur": 0.6, "band": [900, 180] },
     { "use": "crack" },
     { "use": "rumble", "dur": 1.8, "vol": 0.5 },
-    { "wave": "noise", "freq": [900, 300], "dur": 0.05, "at": 0.4, "repeat": 10, "every": 0.13, "jitter": 0.9, "fade": 0.88, "vol": 0.5 } ] },
-  "stagger_sweat": { "about": "Two pairs of sweat drops and a woozy droop", "level": 0.8, "layers": [
-    { "use": "drip", "freq": [900, 1600], "repeat": 2, "every": 0.3 },
-    { "use": "drip", "freq": [1100, 1900], "at": 0.08, "repeat": 2, "every": 0.3, "vol": 0.6 },
-    { "wave": "sine", "freq": [500, 350], "vib": [8, 1], "dur": 0.5, "vol": 0.3 } ] },
-  "sweep_trail": { "about": "A wide, low sweeping swish", "layers": [
+    { "wave": "hiss", "dur": 0.05, "at": 0.4, "repeat": 10, "every": 0.13, "jitter": 0.9, "fade": 0.88, "vol": 0.5, "low": [540, 180] },
+    { "use": "taiko", "freq": [92, 76], "drive": 2, "vol": 0.75 },
+    { "use": "skin", "vol": 0.4 },
+    { "use": "braam", "freq": 55, "notes": [0, 7], "every": 0.004, "dur": 0.6, "power": 2.5, "vol": 0.6 },
+    { "use": "snare", "vol": 0.35 },
+    { "wave": "hiss", "at": 0.0, "band": [38.5, 28.9], "dur": 1.2, "power": 2.2, "attack": 0.003, "vol": 1.0 },
+    { "wave": "hiss", "at": 0.0, "band": [77.0, 57.8], "dur": 0.9, "power": 2.2, "attack": 0.003, "vol": 0.75 },
+    { "wave": "hiss", "at": 0.0, "band": [154.0, 115.5], "dur": 0.6, "power": 2.2, "attack": 0.003, "vol": 0.55 },
+    { "wave": "hiss", "at": 0.0, "band": [315.0, 236.2], "dur": 0.35, "power": 2.2, "attack": 0.003, "vol": 0.4 },
+    { "wave": "sine", "at": 0.0, "freq": [43.8, 35.0], "glide": 0.15, "dur": 1.8, "power": 1.6, "attack": 0.004, "vol": 0.9 },
+    { "use": "gran_cassa", "at": 0.0, "freq": [65.6, 52.5], "dur": 1.8, "attack": 0.015, "vol": 0.45 } ] },
+  "stagger_sweat": { "about": "Two pairs of sweat drops and a woozy droop; played on pizzicato, violins, taikos", "level": 0.8, "tape": 1.5, "reverb": [1.52, 0.3, 0.25], "layers": [
+    { "use": "pizz", "freq": 1200, "dur": 0.28, "repeat": 2, "every": 0.3 },
+    { "use": "pizz", "at": 0.08, "freq": 1445.7, "dur": 0.28, "repeat": 2, "every": 0.3, "vol": 0.6 },
+    { "use": "violins", "freq": [500, 350], "glide": 0.7, "dur": 0.6, "shape": "decay", "power": 1.5, "attack": 0.02, "vib": [8, 0.5], "vol": 0.24 },
+    { "use": "taiko", "freq": [105, 86], "drive": 2, "vol": 0.75 },
+    { "use": "skin", "vol": 0.4 } ] },
+  "sweep_trail": { "about": "A wide, low sweeping swish; played on taikos", "tape": 1.5, "reverb": [1.23, 0.3, 0.25], "layers": [
     { "use": "slice", "band": [5000, 1200], "dur": 0.3, "attack": 0.03 },
-    { "use": "whoosh", "band": [900, 2200], "vol": 0.6 } ] },
-  "tremor_wave": { "about": "Three ground-shaking thumps rolling outward", "range": 32, "layers": [
-    { "use": "boom", "freq": [110, 45], "dur": 0.25, "repeat": 3, "every": 0.2, "step": 0.9 },
-    { "use": "crunch", "freq": [900, 300], "dur": 0.15, "repeat": 3, "every": 0.2 },
-    { "use": "rumble", "dur": 0.9, "vol": 0.5 } ] },
-  "weakpoint_flash": { "about": "Three lock-on beeps, then a bright striking flash", "layers": [
-    { "use": "blip", "freq": 1400, "dur": 0.04, "repeat": 3, "every": 0.1, "step": 1.19 },
-    { "use": "chime", "at": 0.35, "freq": 2794 },
+    { "use": "whoosh", "band": [900, 2200], "vol": 0.6 },
+    { "use": "taiko", "freq": [120, 96], "drive": 2, "vol": 0.75 },
+    { "use": "skin", "vol": 0.4 } ] },
+  "tremor_wave": { "about": "Three ground-shaking thumps rolling outward; played on gran cassa, taikos, braams, snare", "range": 32, "tape": 1.9, "clip": 0.85, "reverb": [2.29, 0.4, 0.25], "layers": [
+    { "use": "gran_cassa", "freq": [52.8, 42.2], "dur": 0.75, "repeat": 3, "every": 0.2, "step": 0.9 },
+    { "use": "crunch", "dur": 0.15, "repeat": 3, "every": 0.2, "band": [540, 180] },
+    { "use": "rumble", "dur": 0.9, "vol": 0.5 },
+    { "use": "taiko", "at": 0.4, "freq": [105, 86], "drive": 2, "vol": 0.75 },
+    { "use": "skin", "at": 0.4, "vol": 0.4 },
+    { "use": "braam", "at": 0.4, "freq": 46.2, "notes": [0, 7], "every": 0.004, "dur": 0.6, "power": 2.5, "vol": 0.6 },
+    { "use": "snare", "at": 0.4, "vol": 0.35 } ] },
+  "weakpoint_flash": { "about": "Three lock-on plucks, then a bright striking flash; played on pizzicato, anvil, sul ponticello strings, taikos", "tape": 1.5, "reverb": [1.5, 0.3, 0.25], "layers": [
+    { "use": "pizz", "freq": 1400, "dur": 0.3, "repeat": 3, "every": 0.1, "step": 1.19 },
+    { "use": "anvil", "at": 0.35, "freq": 2794, "dur": 1.0, "vol": 0.8 },
     { "use": "crack", "at": 0.35 },
-    { "use": "zap", "at": 0.35, "freq": [2800, 900], "dur": 0.1, "vol": 0.5 } ] }
+    { "use": "sul_pont", "at": 0.35, "freq": [2800, 900], "glide": 0.6, "dur": 0.2, "shape": "decay", "power": 1.5, "attack": 0.006, "vol": 0.4 },
+    { "use": "taiko", "at": 0.1, "freq": [135, 108], "drive": 2, "vol": 0.75 },
+    { "use": "skin", "at": 0.1, "vol": 0.4 } ] }
 }

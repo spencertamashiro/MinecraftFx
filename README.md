@@ -1,6 +1,6 @@
 # MinecraftFx
 
-An open source library of 300 Minecraft visual effects and matching sounds, organized as JSON files in 15 categories. A shared NeoForge mod plays the effects using [Lodestone](https://github.com/LodestarMC/Lodestone) particles. Each effect can be scaled, recolored, and oriented without duplicating its definition.
+An open source library of 306 Minecraft visual effects and matching sounds: 300 effects in 15 categories, plus six large `mega` set pieces. A shared NeoForge mod plays the effects using [Lodestone](https://github.com/LodestarMC/Lodestone) particles. Each effect can be scaled, recolored, and oriented without duplicating its definition.
 
 The database is the versioned collection under [`src/main/resources/assets/minecraftfx/`](src/main/resources/assets/minecraftfx/). No database server or external service is required. The Java runtime, textures, audio, and authoring tools are included so contributors can use and extend the collection.
 
@@ -45,6 +45,7 @@ Ten looping GIF previews from the project's early in-game captures. Each cycles 
 | Impact | [impact](src/main/resources/assets/minecraftfx/fx/impact/) |
 | Lightning | [lightning](src/main/resources/assets/minecraftfx/fx/lightning/) |
 | Melee | [melee](src/main/resources/assets/minecraftfx/fx/melee/) |
+| Mega set pieces | [mega](src/main/resources/assets/minecraftfx/fx/mega/) |
 | Nature | [nature](src/main/resources/assets/minecraftfx/fx/nature/) |
 | Pickup | [pickup](src/main/resources/assets/minecraftfx/fx/pickup/) |
 | Science fiction | [sci_fi](src/main/resources/assets/minecraftfx/fx/sci_fi/) |
@@ -53,7 +54,9 @@ Ten looping GIF previews from the project's early in-game captures. Each cycles 
 | Status | [status](src/main/resources/assets/minecraftfx/fx/status/) |
 | Water | [water](src/main/resources/assets/minecraftfx/fx/water/) |
 
-Each category contains 20 effects. IDs use `minecraftfx:<category>/<name>`, such as `minecraftfx:impact/critical_spark`. Browse the [sound catalog](docs/SOUND_LIBRARY.md) for the 300 matching sounds.
+The original 15 categories contain 20 effects each; `mega` adds `world_ender_laser`, `dragon_breath`, `dark_summoning_circle`, `dark_summoning_circle_loop`, `supermassive_black_hole`, and `supermassive_lightning`. IDs use `minecraftfx:<category>/<name>`, such as `minecraftfx:impact/critical_spark`. Browse the [sound catalog](docs/SOUND_LIBRARY.md) for all 306 matching sounds, their descriptions, durations, and audible ranges.
+
+The mega effects are longer and denser than the standard effects. The summoning-circle loop is designed to be replayed every 100 ticks (five seconds); the mod does not schedule those replays automatically. The latest mega visuals still need in-game review.
 
 ## Build and try
 
@@ -107,6 +110,54 @@ MinecraftFx.play(serverLevel, effectId, pos,
 
 The API classes are in `dev.minecraftfx`. The server sends a play request to nearby clients; clients load and render the effect resources.
 
+## Sounds
+
+Every shipped effect has a matching sound that plays with `/fx play`. Use `/fx sound` to hear only its sound cues, or `/fx visual` for particles alone. GIF previews are silent.
+
+The sound library is synthesized from original recipes without recorded samples. Most categories use an orchestral palette of strings, choirs, taiko drums, low brass stabs, glass, and metallic percussion, with room reverberation and saturation. Explosions use physical boom layers: a close crack, noise bands, falling sub-bass, debris, and uneven echoes. Eight science-fiction sounds retain synth voices where the effect represents a laser or computer. Mega set pieces add longer build-ups and larger impacts.
+
+All 306 audio files are mono 44.1 kHz Ogg Vorbis, allowing Minecraft to position them in the world. Standard sounds run roughly 1.1 to 6.8 seconds including their tails; mega sounds run roughly 4.1 to 15 seconds. These descriptions reflect the synthesis recipes and measurements; the audio has not yet been reviewed by ear.
+
+### Play and customize
+
+```mcfunction
+/fx sound minecraftfx:fire/meteor_strike
+/fx play minecraftfx:fire/meteor_strike ~ ~ ~5 2 volume=1.5 pitch=0.7
+/playsound minecraftfx:fire.meteor_strike player @a ~ ~ ~ 1 1
+```
+
+Effect IDs use a slash (`fire/meteor_strike`); standalone sound-event IDs use a dot (`fire.meteor_strike`). The vanilla `/playsound` command also works in command blocks and datapacks when the receiving clients have the assets installed.
+
+`volume=` accepts 0 to 10; above 1 it increases the audible range rather than the loudness up close. `pitch=` accepts 0.5 to 2 and changes both pitch and playback length. Scale, tint, facing, and `force=` do not change audio. Each sound has its own range in the catalog; the mod's 96-block send radius is a separate limit.
+
+An effect's optional `sounds` array supports up to eight cues, each with an event ID and optional volume, pitch range, delay in ticks, and sound category. For example:
+
+```json
+"sounds": [
+  { "id": "minecraftfx:fire.meteor_strike", "volume": 0.8, "pitch": [0.9, 1.1], "delay": 0, "category": "player" }
+]
+```
+
+An empty or omitted array makes an effect silent. Replace audio through a resource pack at `assets/minecraftfx/sounds/<category>/<name>.ogg`, or redefine events in `assets/minecraftfx/sounds.json`.
+
+### Browse and regenerate
+
+- [Sound catalog](docs/SOUND_LIBRARY.md): all 306 events, descriptions, durations, and ranges.
+- [Sound guide](docs/SOUNDS.md): Java playback, cue fields, resource-pack overrides, synthesis recipes, and verification limits.
+- [Recipes](tools/sounds/): per-category sound definitions and shared instrument voices.
+- [Audio files](src/main/resources/assets/minecraftfx/sounds/): the ready-to-use Ogg collection.
+
+To regenerate audio on Windows:
+
+```powershell
+python -m venv .sound-venv
+.sound-venv\Scripts\pip install -r tools\requirements-sounds.txt
+.sound-venv\Scripts\python tools\make_sounds.py
+.sound-venv\Scripts\python tools\make_sounds.py --inspect fire.meteor_strike
+```
+
+The generator writes audio, sound events, subtitles, and the catalog. `--inspect` reports loudness and brightness over time without writing files. Recipe timing is in seconds; effect cue delays are in Minecraft ticks. The checked-in audio means Python is optional for building and using the mod.
+
 ## Effect format and contributions
 
 An effect combines a palette, particle layers, and optional sound cues:
@@ -151,7 +202,7 @@ docs/                         Sound usage, catalog, and ten GIF previews
 
 ## Status and validation
 
-This is a proof of concept. On November 10, 2026, `gradlew.bat --offline clean build` passed with 42 tests and no failures in the publication checkout, including audio decoding and resource references. The source project's earlier checks report all 300 effects loading in game. Only the first 51 effects were visually inspected in earlier versions, and no sounds have been reviewed by ear. Later effect revisions, remote multiplayer, compatibility with other rendering mods, and performance under heavy load still need playtesting. Build success does not establish visual or audio quality.
+This is a proof of concept. The publication build validates all 306 effects and matching sounds, including decoding each audio file with Minecraft's Ogg reader, checking mono 44.1 kHz output, rejecting duplicate decoded audio, and verifying effect-to-sound references. The source project's earlier checks report the original 300 effects loading in game. Only the first 51 effects were visually inspected in earlier versions, and no sounds have been reviewed by ear. The current mega effects and orchestral audio, remote multiplayer, compatibility with other rendering mods, and performance under heavy load still need playtesting. Build success does not establish visual or audio quality.
 
 Run `./gradlew test` to validate the collection and runtime behavior covered by the tests. Contributions should state which effects were previewed or listened to.
 

@@ -1259,6 +1259,60 @@
       }
     ]
   },
+  "mega.world_ender_laser": {
+    "subtitle": "subtitles.minecraftfx.mega.world_ender_laser",
+    "sounds": [
+      {
+        "name": "minecraftfx:mega/world_ender_laser",
+        "attenuation_distance": 80
+      }
+    ]
+  },
+  "mega.dragon_breath": {
+    "subtitle": "subtitles.minecraftfx.mega.dragon_breath",
+    "sounds": [
+      {
+        "name": "minecraftfx:mega/dragon_breath",
+        "attenuation_distance": 64
+      }
+    ]
+  },
+  "mega.dark_summoning_circle_loop": {
+    "subtitle": "subtitles.minecraftfx.mega.dark_summoning_circle_loop",
+    "sounds": [
+      {
+        "name": "minecraftfx:mega/dark_summoning_circle_loop",
+        "attenuation_distance": 48
+      }
+    ]
+  },
+  "mega.dark_summoning_circle": {
+    "subtitle": "subtitles.minecraftfx.mega.dark_summoning_circle",
+    "sounds": [
+      {
+        "name": "minecraftfx:mega/dark_summoning_circle",
+        "attenuation_distance": 80
+      }
+    ]
+  },
+  "mega.supermassive_black_hole": {
+    "subtitle": "subtitles.minecraftfx.mega.supermassive_black_hole",
+    "sounds": [
+      {
+        "name": "minecraftfx:mega/supermassive_black_hole",
+        "attenuation_distance": 80
+      }
+    ]
+  },
+  "mega.supermassive_lightning": {
+    "subtitle": "subtitles.minecraftfx.mega.supermassive_lightning",
+    "sounds": [
+      {
+        "name": "minecraftfx:mega/supermassive_lightning",
+        "attenuation_distance": 96
+      }
+    ]
+  },
   "melee.blade_beam": {
     "subtitle": "subtitles.minecraftfx.melee.blade_beam",
     "sounds": [

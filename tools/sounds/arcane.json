@@ -1,81 +1,121 @@
 {
-  "aether_wisps": { "about": "Airy swells with sparse high chimes drifting past", "level": 0.8, "layers": [
-    { "use": "pad", "freq": 660, "dur": 1.2, "repeat": 3, "every": 0.9, "step": 1.12, "vol": 0.5 },
-    { "use": "chime", "freq": 2100, "dur": 0.3, "repeat": 8, "every": 0.35, "jitter": 0.5, "scatter": 5, "vol": 0.3 },
-    { "use": "wind", "dur": 3.0, "vol": 0.25 } ] },
-  "arcane_barrage": { "about": "Eight quick rising magic shots", "layers": [
-    { "use": "zap", "freq": [1500, 500], "dur": 0.09, "repeat": 8, "every": 0.1, "step": 1.04 },
-    { "use": "chime", "freq": 1760, "dur": 0.08, "repeat": 8, "every": 0.1, "step": 1.04, "vol": 0.4 } ] },
-  "arcane_burst": { "about": "A rising charge, then a bell-like burst", "layers": [
-    { "use": "rise", "freq": [300, 1400], "dur": 0.55 },
-    { "use": "bell", "at": 0.55, "freq": 880 },
-    { "use": "blast", "at": 0.55, "freq": [6000, 800], "dur": 0.4, "vol": 0.5 } ] },
-  "arcane_missile": { "about": "A warbling bolt in flight that pops on arrival", "layers": [
-    { "use": "wobble", "freq": [400, 700], "vib": [16, 2], "dur": 0.8, "shape": "swell" },
-    { "use": "whoosh", "band": [800, 2400], "dur": 0.8, "shape": "swell", "vol": 0.5 },
-    { "use": "zap", "at": 0.8, "freq": [1400, 300], "dur": 0.2 },
-    { "use": "chime", "at": 0.8, "freq": 1568, "dur": 0.4, "vol": 0.6 } ] },
-  "arcane_nova": { "about": "A bell tone with a ring of force sweeping outward", "layers": [
-    { "use": "bell", "freq": 1175, "dur": 0.7 },
+  "aether_wisps": { "about": "Airy swells with sparse high chimes drifting past; played on violins, glockenspiel, whispers", "level": 0.8, "tape": 1.5, "reverb": [1.58, 0.3, 0.25], "length": 4.0, "layers": [
+    { "use": "violins", "freq": 660, "dur": 1.2, "shape": "bump", "power": 1, "attack": 0.08, "repeat": 3, "every": 0.9, "step": 1.12, "vol": 0.4 },
+    { "use": "glock", "freq": 2100, "dur": 0.6, "repeat": 8, "every": 0.35, "jitter": 0.5, "scatter": 5, "vol": 0.24 },
+    { "use": "wind", "dur": 3.0, "vol": 0.25 },
+    { "use": "violins", "freq": 1480, "notes": [0, 7], "every": 0.004, "trem": [6, 0.3], "dur": 3.0, "shape": "bump", "power": 1, "vol": 0.2 },
+    { "use": "choir_whisper", "at": 0.05, "formant": "o", "dur": 3.0, "vol": 0.2 } ] },
+  "arcane_barrage": { "about": "Eight quick rising magic shots; played on sul ponticello strings, glockenspiel, violins, whispers", "tape": 1.5, "reverb": [1.56, 0.3, 0.25], "layers": [
+    { "use": "sul_pont", "freq": [1500, 500], "glide": 0.6, "dur": 0.2, "shape": "decay", "power": 1.5, "attack": 0.006, "repeat": 8, "every": 0.1, "step": 1.04, "vol": 0.8 },
+    { "use": "glock", "freq": 1760, "dur": 0.5, "repeat": 8, "every": 0.1, "step": 1.04, "vol": 0.32 },
+    { "use": "violins", "freq": 1480, "notes": [0, 7], "every": 0.004, "trem": [6, 0.3], "dur": 0.79, "shape": "bump", "power": 1, "vol": 0.2 },
+    { "use": "choir_whisper", "at": 0.05, "formant": "a", "dur": 0.8, "vol": 0.2 } ] },
+  "arcane_burst": { "about": "A rising charge, then a bell-like burst; played on string tremolo, tubular bells, glockenspiel, sul ponticello strings", "tape": 1.5, "reverb": [1.55, 0.3, 0.25], "layers": [
+    { "use": "tremolo", "freq": [300, 1400], "dur": 0.55, "shape": "bump", "power": 1, "vol": 0.8 },
+    { "use": "tubular", "at": 0.55, "freq": 880, "dur": 1.44, "vol": 0.8 },
+    { "use": "blast", "at": 0.55, "dur": 0.4, "vol": 0.5, "low": [3600, 480] },
+    { "use": "glock", "at": 0.55, "freq": 2093, "vol": 0.35 },
+    { "use": "sul_pont", "at": 0.55, "freq": 1760, "notes": [0, 5, 7], "every": 0.004, "dur": 0.5, "shape": "decay", "power": 1.5, "vol": 0.3 } ] },
+  "arcane_missile": { "about": "A warbling bolt in flight that pops on arrival; played on sopranos, sul ponticello strings, glockenspiel", "tape": 1.5, "reverb": [1.49, 0.3, 0.25], "layers": [
+    { "use": "choir_high", "freq": [400, 700], "vib": [16, 1.0], "dur": 0.8, "shape": "bump", "power": 1, "vol": 0.8 },
+    { "use": "whoosh", "band": [800, 2400], "dur": 0.8, "shape": "bump", "vol": 0.5, "power": 1 },
+    { "use": "sul_pont", "at": 0.8, "freq": [1400, 300], "glide": 0.6, "dur": 0.32, "shape": "decay", "power": 1.5, "attack": 0.006, "vol": 0.8 },
+    { "use": "glock", "at": 0.8, "freq": 1568, "dur": 0.8, "vol": 0.48 },
+    { "use": "glock", "at": 0.8, "freq": 1760, "vol": 0.35 },
+    { "use": "sul_pont", "at": 0.8, "freq": 1319, "notes": [0, 5, 7], "every": 0.004, "dur": 0.5, "shape": "decay", "power": 1.5, "vol": 0.3 } ] },
+  "arcane_nova": { "about": "A bell tone with a ring of force sweeping outward; played on tubular bells, taikos, glockenspiel, sul ponticello strings", "tape": 1.5, "reverb": [1.35, 0.3, 0.25], "layers": [
+    { "use": "tubular", "freq": 1175, "dur": 1.2, "vol": 0.8 },
     { "use": "whoosh", "band": [3000, 400], "dur": 0.6, "shape": "decay" },
-    { "use": "thud", "vol": 0.6 } ] },
-  "blink_in": { "about": "A sweep rushing upward and inward, ending in a bright ping", "layers": [
-    { "use": "rise", "freq": [200, 1800], "glide": 2, "dur": 0.55 },
-    { "use": "chime", "at": 0.55, "freq": 2093, "dur": 0.3 },
-    { "use": "crack", "at": 0.55, "vol": 0.6 } ] },
-  "blink_out": { "about": "A snap, then a tone falling away as the caster vanishes", "layers": [
+    { "use": "taiko", "freq": [105.4, 84.3], "dur": 0.8, "vol": 0.6 },
+    { "use": "glock", "freq": 2349, "vol": 0.35 },
+    { "use": "sul_pont", "freq": 1319, "notes": [0, 5, 7], "every": 0.004, "dur": 0.5, "shape": "decay", "power": 1.5, "vol": 0.3 } ] },
+  "blink_in": { "about": "A sweep rushing upward and inward, ending in a bright ring; played on string tremolo, glockenspiel, sul ponticello strings", "tape": 1.5, "reverb": [1.52, 0.3, 0.25], "layers": [
+    { "use": "tremolo", "freq": [200, 1800], "dur": 0.55, "shape": "bump", "power": 1, "glide": 2, "vol": 0.8 },
+    { "use": "glock", "at": 0.55, "freq": 2093, "dur": 0.6, "vol": 0.8 },
+    { "use": "crack", "at": 0.55, "vol": 0.6 },
+    { "use": "glock", "at": 0.55, "freq": 1760, "vol": 0.35 },
+    { "use": "sul_pont", "at": 0.55, "freq": 1480, "notes": [0, 5, 7], "every": 0.004, "dur": 0.5, "shape": "decay", "power": 1.5, "vol": 0.3 } ] },
+  "blink_out": { "about": "A snap, then a tone falling away as the caster vanishes; played on violins, glockenspiel, sul ponticello strings", "tape": 1.5, "reverb": [1.58, 0.3, 0.25], "layers": [
     { "use": "crack" },
-    { "use": "fall", "freq": [1800, 200], "dur": 0.6 },
-    { "use": "whoosh", "band": [2600, 500], "dur": 0.7, "shape": "decay", "vol": 0.6 } ] },
-  "ethereal_chains": { "about": "Ghostly chain links clinking, then locking shut", "layers": [
-    { "use": "clang", "freq": 900, "dur": 0.08, "repeat": 14, "every": 0.1, "jitter": 0.3, "scatter": 2, "vol": 0.6 },
-    { "use": "pad", "freq": 330, "dur": 2.0, "vol": 0.4 },
-    { "use": "clang", "at": 1.5, "freq": 520, "dur": 0.4 } ] },
-  "leyline_glow": { "about": "A low hum under a slow shimmering fifth", "level": 0.8, "layers": [
-    { "use": "drone", "freq": 110, "dur": 1.5 },
-    { "use": "pad", "freq": 660, "dur": 1.5, "vol": 0.5 },
-    { "use": "chime", "freq": 1320, "notes": [0, 7, 12, 7], "every": 0.3, "vol": 0.3 } ] },
-  "magic_circle": { "about": "Six runes ringing in turn over a sustained hum", "layers": [
-    { "use": "bell", "freq": 587, "notes": [0, 3, 7, 10, 14, 17], "every": 0.3, "dur": 0.5, "vol": 0.5 },
-    { "use": "pad", "freq": 293, "dur": 2.6 },
-    { "use": "wobble", "freq": 146, "vib": [4, 1], "dur": 2.6, "vol": 0.4 } ] },
-  "mana_drain": { "about": "A warbling tone sinking as droplets of mana are pulled away", "layers": [
-    { "use": "wobble", "freq": [900, 300], "vib": [14, 2], "dur": 1.5 },
-    { "use": "drip", "freq": [1400, 700], "repeat": 10, "every": 0.1, "step": 0.94, "vol": 0.6 } ] },
-  "mana_shield": { "about": "A shield humming up as hexagon plates tick into place", "layers": [
-    { "use": "rise", "freq": [200, 600], "dur": 0.4 },
-    { "use": "pad", "freq": 392, "dur": 2.0, "trem": [8, 0.3] },
-    { "use": "clang", "freq": 1200, "dur": 0.15, "repeat": 7, "every": 0.25, "vol": 0.3 } ] },
-  "mind_flay": { "about": "A sickly psychic warble with a harsh buzzing edge", "layers": [
-    { "use": "wobble", "freq": 180, "vib": [11, 5], "dur": 2.0 },
-    { "use": "buzz", "freq": 270, "trem": [17, 0.8], "dur": 2.0, "shape": "bump", "vol": 0.4 },
-    { "use": "chime", "freq": 2637, "dur": 0.2, "repeat": 8, "every": 0.2, "step": 0.97, "vol": 0.2 } ] },
-  "mystic_runes": { "about": "Four strange bell notes, each a rune appearing", "layers": [
-    { "use": "bell", "freq": 523, "notes": [0, 6, 10, 16], "every": 0.25, "dur": 0.7 },
-    { "use": "pad", "freq": 261, "dur": 2.2, "vol": 0.4 } ] },
-  "reality_warp": { "about": "Pitch bending and tearing as space distorts", "layers": [
-    { "use": "wobble", "freq": [120, 480], "vib": [5, 7], "dur": 1.4 },
-    { "wave": "noise", "freq": [200, 4000], "dur": 1.2, "shape": "bump", "vol": 0.3 },
-    { "use": "fall", "wave": "square", "duty": 0.12, "at": 0.3, "freq": [2400, 100], "dur": 0.9, "vol": 0.3 } ] },
-  "rift_tear": { "about": "A rising rip, a crack, then a low drone from the opening", "layers": [
-    { "wave": "noise", "freq": [800, 9000], "glide": 2, "dur": 0.35, "shape": "swell" },
+    { "use": "violins", "freq": [1800, 200], "glide": 0.7, "dur": 0.72, "shape": "decay", "power": 1.5, "attack": 0.02, "vol": 0.8 },
+    { "use": "whoosh", "band": [2600, 500], "dur": 0.7, "shape": "decay", "vol": 0.6 },
+    { "use": "glock", "freq": 2093, "vol": 0.35 },
+    { "use": "sul_pont", "freq": 1480, "notes": [0, 5, 7], "every": 0.004, "dur": 0.5, "shape": "decay", "power": 1.5, "vol": 0.3 } ] },
+  "ethereal_chains": { "about": "Ghostly chain links clinking, then locking shut; played on anvil, violins, glockenspiel, sul ponticello strings", "tape": 1.5, "reverb": [1.3, 0.3, 0.25], "length": 3.7, "layers": [
+    { "use": "anvil", "freq": 900, "dur": 0.25, "repeat": 14, "every": 0.1, "jitter": 0.3, "scatter": 2, "vol": 0.48 },
+    { "use": "violins", "freq": 330, "dur": 2.0, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.32 },
+    { "use": "anvil", "at": 1.5, "freq": 520, "dur": 1.2, "vol": 0.8 },
+    { "use": "glock", "at": 1.5, "freq": 1760, "vol": 0.35 },
+    { "use": "sul_pont", "at": 1.5, "freq": 1480, "notes": [0, 5, 7], "every": 0.004, "dur": 0.5, "shape": "decay", "power": 1.5, "vol": 0.3 } ] },
+  "leyline_glow": { "about": "A low hum under a slow shimmering fifth; played on cellos, violins, glockenspiel, whispers", "level": 0.8, "tape": 1.5, "reverb": [1.35, 0.3, 0.25], "layers": [
+    { "use": "cellos", "freq": 110, "dur": 1.5, "shape": "bump", "power": 1, "vol": 0.9 },
+    { "use": "violins", "freq": 660, "dur": 1.5, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.4 },
+    { "use": "glock", "freq": 1320, "dur": 1.0, "notes": [0, 7, 12, 7], "every": 0.3, "vol": 0.24 },
+    { "use": "violins", "freq": 1480, "notes": [0, 7], "every": 0.004, "trem": [6, 0.3], "dur": 1.5, "shape": "bump", "power": 1, "vol": 0.2 },
+    { "use": "choir_whisper", "at": 0.05, "formant": "o", "dur": 1.5, "vol": 0.2 } ] },
+  "magic_circle": { "about": "Six runes ringing in turn over a sustained hum; played on tubular bells, violins, low choir, whispers", "tape": 1.5, "reverb": [1.51, 0.3, 0.25], "length": 3.6, "layers": [
+    { "use": "tubular", "freq": 587, "dur": 1.2, "notes": [0, 3, 7, 10, 14, 17], "every": 0.3, "vol": 0.4 },
+    { "use": "violins", "freq": 293, "dur": 2.6, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.8 },
+    { "use": "choir", "freq": 146, "formant": "u", "vib": [4, 0.5], "dur": 2.6, "shape": "bump", "power": 1, "vol": 0.32 },
+    { "use": "violins", "freq": 1760, "notes": [0, 7], "every": 0.004, "trem": [6, 0.3], "dur": 2.6, "shape": "bump", "power": 1, "vol": 0.2 },
+    { "use": "choir_whisper", "at": 0.05, "formant": "e", "dur": 2.6, "vol": 0.2 } ] },
+  "mana_drain": { "about": "A warbling tone sinking as droplets of mana are pulled away; played on sopranos, pizzicato, violins, whispers", "tape": 1.5, "reverb": [1.52, 0.3, 0.25], "layers": [
+    { "use": "choir_high", "freq": [900, 300], "vib": [14, 1.0], "dur": 1.5, "shape": "bump", "power": 1, "vol": 0.8 },
+    { "use": "pizz", "freq": 989.9, "dur": 0.28, "repeat": 10, "every": 0.1, "step": 0.94, "vol": 0.6 },
+    { "use": "violins", "freq": 1480, "notes": [0, 7], "every": 0.004, "trem": [6, 0.3], "dur": 1.5, "shape": "bump", "power": 1, "vol": 0.2 },
+    { "use": "choir_whisper", "at": 0.05, "formant": "a", "dur": 1.5, "vol": 0.2 } ] },
+  "mana_shield": { "about": "A shield humming up as hexagon plates tick into place; played on string tremolo, violins, anvil, whispers", "tape": 1.5, "reverb": [1.58, 0.3, 0.25], "layers": [
+    { "use": "tremolo", "freq": [200, 600], "dur": 0.4, "shape": "swell", "power": 1.5, "vol": 0.8 },
+    { "use": "violins", "freq": 392, "dur": 2.0, "shape": "bump", "power": 1, "attack": 0.08, "trem": [8, 0.3], "vol": 0.8 },
+    { "use": "anvil", "freq": 1200, "dur": 0.45, "repeat": 7, "every": 0.25, "vol": 0.24 },
+    { "use": "violins", "freq": 1760, "notes": [0, 7], "every": 0.004, "trem": [6, 0.3], "dur": 2.0, "shape": "bump", "power": 1, "vol": 0.2 },
+    { "use": "choir_whisper", "at": 0.05, "formant": "a", "dur": 2.0, "vol": 0.2 } ] },
+  "mind_flay": { "about": "A sickly psychic warble with a harsh buzzing edge; played on low choir, cellos, glockenspiel, violins, whispers", "tape": 1.5, "reverb": [1.54, 0.3, 0.25], "layers": [
+    { "use": "choir", "freq": 180, "formant": "u", "vib": [11, 1.5], "dur": 2.0, "shape": "bump", "power": 1, "vol": 0.8 },
+    { "use": "cellos", "freq": 270, "trem": [17, 0.8], "dur": 2.0, "shape": "bump", "high": 250, "attack": 0.01, "vol": 0.4 },
+    { "use": "glock", "freq": 2637, "dur": 0.5, "repeat": 8, "every": 0.2, "step": 0.97, "vol": 0.16 },
+    { "use": "violins", "freq": 1480, "notes": [0, 7], "every": 0.004, "trem": [6, 0.3], "dur": 2.0, "shape": "bump", "power": 1, "vol": 0.2 },
+    { "use": "choir_whisper", "at": 0.05, "formant": "a", "dur": 2.0, "vol": 0.2 } ] },
+  "mystic_runes": { "about": "Four strange bell notes, each a rune appearing; played on tubular bells, violins, glockenspiel, sul ponticello strings", "tape": 1.5, "reverb": [1.41, 0.3, 0.25], "layers": [
+    { "use": "tubular", "freq": 523, "dur": 1.2, "notes": [0, 6, 10, 16], "every": 0.25, "vol": 0.8 },
+    { "use": "violins", "freq": 261, "dur": 2.2, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.32 },
+    { "use": "glock", "at": 0.75, "freq": 1760, "vol": 0.35 },
+    { "use": "sul_pont", "at": 0.75, "freq": 1319, "notes": [0, 5, 7], "every": 0.004, "dur": 0.5, "shape": "decay", "power": 1.5, "vol": 0.3 } ] },
+  "reality_warp": { "about": "Pitch bending and tearing as space distorts; played on low choir, violins, whispers", "tape": 1.5, "reverb": [1.21, 0.3, 0.25], "layers": [
+    { "use": "choir", "freq": [120, 480], "formant": "u", "vib": [5, 1.5], "dur": 1.4, "shape": "bump", "power": 1, "vol": 0.8 },
+    { "wave": "hiss", "dur": 1.2, "shape": "bump", "vol": 0.3, "low": [120, 2400] },
+    { "use": "violins", "at": 0.3, "freq": [2400, 100], "glide": 0.7, "dur": 1.08, "shape": "decay", "power": 1.5, "attack": 0.02, "vol": 0.24 },
+    { "use": "violins", "freq": 1480, "notes": [0, 7], "every": 0.004, "trem": [6, 0.3], "dur": 1.4, "shape": "bump", "power": 1, "vol": 0.2 },
+    { "use": "choir_whisper", "at": 0.05, "formant": "a", "dur": 1.4, "vol": 0.2 } ] },
+  "rift_tear": { "about": "A rising rip, a crack, then a low drone from the opening; played on cellos, sopranos, glockenspiel, sul ponticello strings", "tape": 1.5, "reverb": [1.6, 0.3, 0.25], "layers": [
+    { "wave": "hiss", "dur": 0.35, "shape": "bump", "low": [480, 5400], "power": 1 },
     { "use": "crack", "at": 0.33 },
-    { "use": "drone", "at": 0.3, "freq": 62, "dur": 1.0 },
-    { "use": "wobble", "at": 0.3, "freq": 330, "dur": 0.9, "vol": 0.4 } ] },
-  "spell_echo": { "about": "One spell note repeated four times, each fainter", "echo": [0.1, 0.3], "layers": [
-    { "use": "bell", "freq": 784, "dur": 0.3, "repeat": 4, "every": 0.2, "fade": 0.6 },
-    { "use": "zap", "freq": [1200, 600], "dur": 0.1, "repeat": 4, "every": 0.2, "fade": 0.6, "vol": 0.5 } ] },
-  "spell_fizzle": { "about": "A sputtering tone drooping into a fizz", "layers": [
-    { "use": "fall", "wave": "square", "duty": 0.2, "freq": [700, 120], "vib": [22, 2], "dur": 0.5 },
+    { "use": "cellos", "at": 0.3, "freq": 62, "dur": 1.0, "shape": "bump", "power": 1, "vol": 0.9 },
+    { "use": "choir_high", "at": 0.3, "freq": 330, "vib": [7, 1.5], "dur": 0.9, "shape": "bump", "power": 1, "vol": 0.32 },
+    { "use": "glock", "at": 0.33, "freq": 2349, "vol": 0.35 },
+    { "use": "sul_pont", "at": 0.33, "freq": 1319, "notes": [0, 5, 7], "every": 0.004, "dur": 0.5, "shape": "decay", "power": 1.5, "vol": 0.3 } ] },
+  "spell_echo": { "about": "One spell note repeated four times, each fainter; played on tubular bells, sul ponticello strings, glockenspiel", "tape": 1.5, "reflect": [[0.104, 0.37, 2504], [0.205, 0.28, 1952], [0.351, 0.25, 1438]], "reverb": [1.52, 0.3, 0.25], "layers": [
+    { "use": "tubular", "freq": 784, "dur": 1.2, "repeat": 4, "every": 0.2, "fade": 0.6, "vol": 0.8 },
+    { "use": "sul_pont", "freq": [1200, 600], "glide": 0.6, "dur": 0.2, "shape": "decay", "power": 1.5, "attack": 0.006, "repeat": 4, "every": 0.2, "fade": 0.6, "vol": 0.4 },
+    { "use": "glock", "freq": 1568, "vol": 0.35 },
+    { "use": "sul_pont", "freq": 1760, "notes": [0, 5, 7], "every": 0.004, "dur": 0.5, "shape": "decay", "power": 1.5, "vol": 0.3 } ] },
+  "spell_fizzle": { "about": "A sputtering tone drooping into a fizz; played on violins, glockenspiel, sul ponticello strings", "tape": 1.5, "reverb": [1.43, 0.3, 0.25], "layers": [
+    { "use": "violins", "freq": [700, 120], "glide": 0.7, "dur": 0.6, "shape": "decay", "power": 1.5, "attack": 0.02, "vib": [22, 1.0], "vol": 0.8 },
     { "use": "sizzle", "dur": 0.7, "vol": 0.5 },
-    { "use": "spark", "repeat": 5, "every": 0.1, "vol": 0.6 } ] },
-  "teleport_flash": { "about": "A sharp snap and zip with a bright after-ring", "layers": [
+    { "use": "spark", "repeat": 5, "every": 0.1, "vol": 0.6 },
+    { "use": "glock", "freq": 1568, "vol": 0.35 },
+    { "use": "sul_pont", "freq": 1480, "notes": [0, 5, 7], "every": 0.004, "dur": 0.5, "shape": "decay", "power": 1.5, "vol": 0.3 } ] },
+  "teleport_flash": { "about": "A sharp snap and zip with a bright after-ring; played on sul ponticello strings, glockenspiel", "tape": 1.5, "reverb": [1.2, 0.3, 0.25], "layers": [
     { "use": "crack" },
-    { "use": "zap", "freq": [3000, 500], "dur": 0.12 },
-    { "use": "chime", "freq": 2349, "dur": 0.35, "vol": 0.6 },
-    { "use": "whoosh", "band": [3000, 800], "dur": 0.3, "shape": "decay", "vol": 0.5 } ] },
-  "temporal_shift": { "about": "Clock ticks slowing in pitch over a tone bending backwards", "layers": [
-    { "use": "tick", "freq": 1800, "repeat": 6, "every": 0.1, "step": 0.89 },
-    { "use": "wobble", "freq": [660, 220], "vib": [9, 2], "dur": 0.8 },
-    { "use": "rise", "freq": [150, 900], "glide": 3, "dur": 0.8, "vol": 0.4 } ] }
+    { "use": "sul_pont", "freq": [3000, 500], "glide": 0.6, "dur": 0.2, "shape": "decay", "power": 1.5, "attack": 0.006, "vol": 0.8 },
+    { "use": "glock", "freq": 2349, "dur": 0.7, "vol": 0.48 },
+    { "use": "whoosh", "band": [3000, 800], "dur": 0.3, "shape": "decay", "vol": 0.5 },
+    { "use": "glock", "freq": 2349, "vol": 0.35 },
+    { "use": "sul_pont", "freq": 1480, "notes": [0, 5, 7], "every": 0.004, "dur": 0.5, "shape": "decay", "power": 1.5, "vol": 0.3 } ] },
+  "temporal_shift": { "about": "Clock ticks slowing in pitch over a tone bending backwards; played on woodblock, sopranos, string tremolo, violins, whispers", "tape": 1.5, "reverb": [1.33, 0.3, 0.25], "layers": [
+    { "use": "woodblock", "freq": 900, "repeat": 6, "every": 0.1, "step": 0.89, "vol": 0.8 },
+    { "use": "choir_high", "freq": [660, 220], "vib": [9, 1.0], "dur": 0.8, "shape": "bump", "power": 1, "vol": 0.8 },
+    { "use": "tremolo", "freq": [150, 900], "dur": 0.8, "shape": "swell", "power": 1.5, "glide": 3, "vol": 0.32 },
+    { "use": "violins", "freq": 1760, "notes": [0, 7], "every": 0.004, "trem": [6, 0.3], "dur": 0.8, "shape": "bump", "power": 1, "vol": 0.2 },
+    { "use": "choir_whisper", "at": 0.05, "formant": "e", "dur": 0.8, "vol": 0.2 } ] }
 }

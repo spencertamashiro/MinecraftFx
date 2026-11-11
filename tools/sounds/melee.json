@@ -1,86 +1,142 @@
 {
-  "blade_beam": { "about": "A slash that launches a humming wave of energy", "layers": [
+  "blade_beam": { "about": "A slash that launches a humming wave of energy; played on violins, anvil, whip, taikos", "tape": 1.5, "reverb": [1.5, 0.3, 0.25], "layers": [
     { "use": "slice", "band": [6000, 2000], "dur": 0.2 },
-    { "use": "fall", "wave": "saw", "freq": [1800, 600], "low": 4000, "dur": 0.6, "vol": 0.5 },
-    { "use": "chime", "freq": 2093, "vol": 0.3 } ] },
-  "cleave_arc": { "about": "A heavy, wide swing that lands with a thud", "layers": [
+    { "use": "violins", "freq": [1800, 600], "glide": 0.7, "dur": 0.72, "shape": "decay", "power": 1.5, "attack": 0.02, "vol": 0.4 },
+    { "use": "anvil", "freq": 2093, "dur": 1.0, "vol": 0.24 },
+    { "use": "whip", "vol": 0.5 },
+    { "use": "taiko", "freq": [135, 110], "vol": 0.5 } ] },
+  "cleave_arc": { "about": "A heavy, wide swing that lands with a thud; played on taikos, sul ponticello strings", "tape": 1.5, "reverb": [1.6, 0.3, 0.25], "layers": [
     { "use": "whoosh", "band": [700, 2600], "dur": 0.32, "shape": "swell" },
     { "use": "slice", "at": 0.15, "band": [5000, 1000], "dur": 0.2 },
-    { "use": "thud", "at": 0.28, "freq": [150, 50], "vol": 0.7 } ] },
-  "cross_slash": { "about": "Two fast cuts, the second ringing", "layers": [
+    { "use": "taiko", "at": 0.28, "freq": [93, 74.4], "dur": 0.8, "vol": 0.7 },
+    { "use": "sul_pont", "freq": [1760, 880], "glide": 0.5, "dur": 0.3, "shape": "decay", "power": 1.5, "attack": 0.005, "vol": 0.25 },
+    { "use": "taiko", "at": 0.08, "freq": [160, 128], "vol": 0.35 } ] },
+  "cross_slash": { "about": "Two fast cuts, the second ringing; played on anvil, whip, taikos", "tape": 1.5, "reverb": [1.52, 0.3, 0.25], "layers": [
     { "use": "slice", "dur": 0.14 },
     { "use": "slice", "at": 0.15, "band": [8000, 2200], "dur": 0.16 },
-    { "use": "clang", "at": 0.17, "freq": 2000, "dur": 0.25, "vol": 0.4 } ] },
-  "dagger_toss": { "about": "A dagger spinning through the air and thunking in", "layers": [
+    { "use": "anvil", "at": 0.17, "freq": 2000, "dur": 0.75, "vol": 0.32 },
+    { "use": "whip", "at": 0.17, "vol": 0.5 },
+    { "use": "taiko", "at": 0.17, "freq": [170, 136], "vol": 0.5 },
+    { "use": "anvil", "at": 0.17, "freq": 1700, "dur": 0.8, "vol": 0.3 } ] },
+  "dagger_toss": { "about": "A dagger spinning through the air and thunking in; played on taikos, anvil, sopranos, whip", "tape": 1.5, "reverb": [1.2, 0.3, 0.25], "layers": [
     { "use": "whoosh", "band": [2500, 3500], "trem": [14, 0.8], "dur": 0.7, "shape": "hold", "vol": 0.6 },
-    { "use": "thud", "at": 0.7, "freq": [400, 150], "dur": 0.08 },
-    { "use": "clang", "at": 0.7, "freq": 1700, "dur": 0.15, "vol": 0.5 },
-    { "use": "wobble", "at": 0.72, "freq": 300, "vib": [40, 1], "dur": 0.25, "shape": "decay", "vol": 0.3 } ] },
-  "execution_strike": { "about": "A wind-up, a brutal final blow and a low doom toll", "range": 32, "layers": [
-    { "use": "rise", "wave": "saw", "freq": [150, 500], "low": 1500, "vol": 0.4 },
+    { "use": "taiko", "at": 0.7, "freq": [230, 190], "dur": 0.4 },
+    { "use": "anvil", "at": 0.7, "freq": 1700, "dur": 0.45, "vol": 0.4 },
+    { "use": "choir_high", "at": 0.72, "freq": 300, "vib": [40, 0.5], "dur": 0.25, "shape": "decay", "power": 1, "vol": 0.24 },
+    { "use": "whip", "at": 0.72, "vol": 0.5 },
+    { "use": "anvil", "at": 0.72, "freq": 1700, "dur": 0.8, "vol": 0.3 } ] },
+  "execution_strike": { "about": "A wind-up, a brutal final blow and a low doom toll; played on noise bands, sub, string tremolo, anvil, tubular bells", "range": 32, "tape": 1.9, "clip": 0.85, "reflect": [[0.109, 0.33, 2715], [0.22, 0.33, 2039], [0.367, 0.2, 1827]], "reverb": [2.64, 0.4, 0.25], "length": 3.8, "layers": [
+    { "use": "tremolo", "freq": [150, 500], "dur": 0.4, "shape": "bump", "power": 1, "vol": 0.32 },
     { "use": "slice", "at": 0.4, "band": [9000, 1500], "dur": 0.2 },
-    { "use": "boom", "at": 0.42, "freq": [140, 40], "dur": 0.6 },
-    { "use": "clang", "at": 0.42, "freq": 800, "fm": [1.41, 5], "dur": 0.5 },
-    { "use": "bell", "at": 0.5, "freq": 196, "dur": 1.0, "vol": 0.5 } ] },
-  "flurry_blur": { "about": "Eight rapid cuts, quickening in pitch", "layers": [
+    { "use": "anvil", "at": 0.42, "freq": 800, "dur": 1.5, "vol": 0.8 },
+    { "use": "tubular", "at": 0.5, "freq": 196, "dur": 1.6, "vol": 0.4 },
+    { "use": "whip", "at": 0.4, "vol": 0.5 },
+    { "use": "taiko", "at": 0.4, "freq": [135, 110], "vol": 0.5 },
+    { "use": "anvil", "at": 0.4, "freq": 1700, "dur": 0.8, "vol": 0.3 },
+    { "use": "violins", "at": 0.4, "freq": 1047, "notes": [0, 1], "every": 0.004, "dur": 0.35, "power": 2, "vol": 0.4 },
+    { "use": "crack", "at": 0.4, "low": [11000, 3000], "vol": 0.7 },
+    { "wave": "hiss", "at": 0.4, "band": [49.4, 37.0], "dur": 0.84, "power": 2.2, "attack": 0.003, "vol": 1.0 },
+    { "wave": "hiss", "at": 0.4, "band": [98.7, 74.1], "dur": 0.63, "power": 2.2, "attack": 0.003, "vol": 0.75 },
+    { "wave": "hiss", "at": 0.4, "band": [197.5, 148.1], "dur": 0.42, "power": 2.2, "attack": 0.003, "vol": 0.55 },
+    { "wave": "hiss", "at": 0.4, "band": [403.9, 302.9], "dur": 0.245, "power": 2.2, "attack": 0.003, "vol": 0.4 },
+    { "wave": "sine", "at": 0.4, "freq": [56.1, 44.9], "glide": 0.15, "dur": 1.2, "power": 1.6, "attack": 0.004, "vol": 0.9 },
+    { "use": "gran_cassa", "at": 0.4, "freq": [84.2, 67.3], "dur": 1.2, "attack": 0.015, "vol": 0.45 } ] },
+  "flurry_blur": { "about": "Eight rapid cuts, quickening in pitch; played on woodblock, sul ponticello strings, taikos", "tape": 1.5, "reverb": [1.27, 0.3, 0.25], "layers": [
     { "use": "slice", "band": [7000, 2500], "dur": 0.08, "repeat": 8, "every": 0.1, "step": 1.03 },
-    { "use": "tick", "freq": 2600, "at": 0.05, "repeat": 8, "every": 0.1, "vol": 0.3 } ] },
-  "gouge_blood": { "about": "A tearing rip and blood spattering", "layers": [
-    { "wave": "noise", "freq": [1800, 500], "low": 2500, "dur": 0.2 },
+    { "use": "woodblock", "at": 0.05, "freq": 1300, "repeat": 8, "every": 0.1, "vol": 0.24 },
+    { "use": "sul_pont", "freq": [2093, 880], "glide": 0.5, "dur": 0.3, "shape": "decay", "power": 1.5, "attack": 0.005, "vol": 0.25 },
+    { "use": "taiko", "at": 0.08, "freq": [160, 128], "vol": 0.35 } ] },
+  "gouge_blood": { "about": "A tearing rip and blood spattering; played on taikos, pizzicato, whip", "tape": 1.5, "reverb": [1.37, 0.3, 0.25], "layers": [
+    { "wave": "hiss", "low": [1080, 300], "dur": 0.2 },
     { "use": "slice", "dur": 0.1 },
-    { "use": "thud", "vol": 0.5 },
-    { "use": "drip", "freq": [500, 250], "dur": 0.09, "at": 0.2, "repeat": 4, "every": 0.12, "jitter": 0.6, "vol": 0.5 } ] },
-  "lunge_trail": { "about": "A fast forward lunge", "layers": [
+    { "use": "taiko", "freq": [105.4, 84.3], "dur": 0.8, "vol": 0.5 },
+    { "use": "pizz", "at": 0.2, "freq": 353.6, "dur": 0.36, "repeat": 4, "every": 0.12, "jitter": 0.6, "vol": 0.5 },
+    { "use": "whip", "vol": 0.5 } ] },
+  "lunge_trail": { "about": "A fast forward lunge; played on sul ponticello strings, taikos", "tape": 1.5, "reverb": [1.33, 0.3, 0.25], "layers": [
     { "use": "whoosh", "band": [800, 4000], "dur": 0.3, "shape": "swell" },
-    { "use": "slice", "at": 0.2, "dur": 0.12 } ] },
-  "overhead_smash": { "about": "A big swing down and a ground-cracking slam", "range": 32, "layers": [
-    { "use": "whoosh", "band": [2500, 500], "dur": 0.4, "shape": "swell" },
-    { "use": "boom", "at": 0.4, "freq": [120, 35], "dur": 0.6 },
-    { "use": "crunch", "at": 0.4, "freq": [1300, 300], "dur": 0.35 },
-    { "use": "crack", "at": 0.4 } ] },
-  "parry_spark": { "about": "A tiny, crisp deflect", "layers": [
-    { "use": "clang", "freq": 2400, "fm": [1.41, 3], "dur": 0.18 },
-    { "use": "tick", "freq": 4000 },
-    { "use": "spark", "repeat": 3, "every": 0.03, "vol": 0.6 } ] },
-  "pommel_strike": { "about": "A blunt knock to the head and a dizzy two-note", "layers": [
-    { "use": "thud", "freq": [320, 110], "dur": 0.1 },
-    { "use": "clang", "freq": 600, "dur": 0.12, "vol": 0.5 },
-    { "use": "chime", "at": 0.05, "freq": 1400, "notes": [0, -1], "every": 0.12, "dur": 0.2, "vol": 0.3 } ] },
-  "riposte_flash": { "about": "A deflect, an instant counter-cut and a glint", "layers": [
-    { "use": "clang", "freq": 2100, "dur": 0.1 },
+    { "use": "slice", "at": 0.2, "dur": 0.12 },
+    { "use": "sul_pont", "freq": [1976, 880], "glide": 0.5, "dur": 0.3, "shape": "decay", "power": 1.5, "attack": 0.005, "vol": 0.25 },
+    { "use": "taiko", "at": 0.08, "freq": [160, 128], "vol": 0.35 } ] },
+  "overhead_smash": { "about": "A big swing down and a ground-cracking slam; played on noise bands, sub, whip, taikos, violins", "range": 32, "tape": 1.9, "clip": 0.85, "reflect": [[0.109, 0.33, 2424], [0.216, 0.33, 1917], [0.314, 0.19, 1660]], "reverb": [2.55, 0.4, 0.25], "length": 3.7, "layers": [
+    { "use": "whoosh", "band": [2500, 500], "dur": 0.4, "shape": "bump", "power": 1 },
+    { "use": "crunch", "at": 0.4, "dur": 0.35, "band": [780, 180] },
+    { "use": "crack", "at": 0.4 },
+    { "use": "whip", "at": 0.4, "vol": 0.5 },
+    { "use": "taiko", "at": 0.4, "freq": [150, 120], "vol": 0.5 },
+    { "use": "violins", "at": 0.4, "freq": 988, "notes": [0, 1], "every": 0.004, "dur": 0.35, "power": 2, "vol": 0.4 },
+    { "wave": "hiss", "at": 0.4, "band": [46.2, 34.6], "dur": 0.84, "power": 2.2, "attack": 0.003, "vol": 1.0 },
+    { "wave": "hiss", "at": 0.4, "band": [92.4, 69.3], "dur": 0.63, "power": 2.2, "attack": 0.003, "vol": 0.75 },
+    { "wave": "hiss", "at": 0.4, "band": [184.8, 138.6], "dur": 0.42, "power": 2.2, "attack": 0.003, "vol": 0.55 },
+    { "wave": "hiss", "at": 0.4, "band": [378.0, 283.5], "dur": 0.245, "power": 2.2, "attack": 0.003, "vol": 0.4 },
+    { "wave": "sine", "at": 0.4, "freq": [52.5, 42.0], "glide": 0.15, "dur": 1.2, "power": 1.6, "attack": 0.004, "vol": 0.9 },
+    { "use": "gran_cassa", "at": 0.4, "freq": [78.8, 63.0], "dur": 1.2, "attack": 0.015, "vol": 0.45 } ] },
+  "parry_spark": { "about": "A tiny, crisp deflect; played on anvil, woodblock, whip, taikos", "tape": 1.5, "reverb": [1.37, 0.3, 0.25], "layers": [
+    { "use": "anvil", "freq": 2400, "dur": 0.54, "vol": 0.8 },
+    { "use": "woodblock", "freq": 2000, "vol": 0.8 },
+    { "use": "spark", "repeat": 3, "every": 0.03, "vol": 0.6 },
+    { "use": "whip", "vol": 0.5 },
+    { "use": "taiko", "freq": [170, 136], "vol": 0.5 },
+    { "use": "anvil", "freq": 1950, "dur": 0.8, "vol": 0.3 } ] },
+  "pommel_strike": { "about": "A blunt knock to the head and a dizzy two-note; played on taikos, anvil, whip", "tape": 1.5, "reverb": [1.31, 0.3, 0.25], "layers": [
+    { "use": "taiko", "freq": [198.4, 158.7], "dur": 0.5 },
+    { "use": "anvil", "freq": 600, "dur": 0.36, "vol": 0.4 },
+    { "use": "anvil", "at": 0.05, "freq": 1400, "dur": 0.5, "notes": [0, -1], "every": 0.12, "vol": 0.24 },
+    { "use": "whip", "vol": 0.5 },
+    { "use": "anvil", "freq": 1950, "dur": 0.8, "vol": 0.3 } ] },
+  "riposte_flash": { "about": "A deflect, an instant counter-cut and a glint; played on anvil, sul ponticello strings, whip, taikos", "tape": 1.5, "reverb": [1.21, 0.3, 0.25], "layers": [
+    { "use": "anvil", "freq": 2100, "dur": 0.3, "vol": 0.8 },
     { "use": "slice", "at": 0.15, "band": [9000, 2500], "dur": 0.14 },
-    { "use": "zap", "at": 0.15, "freq": [2000, 1200], "dur": 0.06, "vol": 0.3 },
-    { "use": "chime", "at": 0.35, "freq": 3136, "dur": 0.4, "vol": 0.5 } ] },
-  "slash": { "about": "The basic sword swish", "layers": [
+    { "use": "sul_pont", "at": 0.15, "freq": [2000, 1200], "glide": 0.6, "dur": 0.2, "shape": "decay", "power": 1.5, "attack": 0.006, "vol": 0.24 },
+    { "use": "anvil", "at": 0.35, "freq": 3136, "dur": 0.8, "vol": 0.4 },
+    { "use": "whip", "vol": 0.5 },
+    { "use": "taiko", "freq": [150, 120], "vol": 0.5 },
+    { "use": "anvil", "freq": 1950, "dur": 0.8, "vol": 0.3 } ] },
+  "slash": { "about": "The basic sword swish; played on sul ponticello strings, taikos", "tape": 1.5, "reverb": [1.25, 0.3, 0.25], "layers": [
     { "use": "slice", "band": [6500, 1600], "dur": 0.16 },
-    { "use": "whoosh", "band": [1500, 3000], "dur": 0.2, "vol": 0.4 } ] },
-  "spin_attack": { "about": "Three rising whooshes as a blade spins round", "layers": [
+    { "use": "whoosh", "band": [1500, 3000], "dur": 0.2, "vol": 0.4 },
+    { "use": "sul_pont", "freq": [1760, 880], "glide": 0.5, "dur": 0.3, "shape": "decay", "power": 1.5, "attack": 0.005, "vol": 0.25 },
+    { "use": "taiko", "at": 0.08, "freq": [160, 128], "vol": 0.35 } ] },
+  "spin_attack": { "about": "Three rising whooshes as a blade spins round; played on sul ponticello strings, taikos", "tape": 1.5, "reverb": [1.46, 0.3, 0.25], "layers": [
     { "use": "whoosh", "band": [600, 2400], "dur": 0.25, "repeat": 3, "every": 0.2, "step": 1.1 },
-    { "wave": "hiss", "band": [3000, 5000], "dur": 0.5, "shape": "bump", "vol": 0.5 } ] },
-  "stab_glint": { "about": "A quick stab and a high glint", "layers": [
+    { "wave": "hiss", "band": [3000, 5000], "dur": 0.5, "shape": "bump", "vol": 0.5 },
+    { "use": "sul_pont", "freq": [2093, 880], "glide": 0.5, "dur": 0.3, "shape": "decay", "power": 1.5, "attack": 0.005, "vol": 0.25 },
+    { "use": "taiko", "at": 0.08, "freq": [160, 128], "vol": 0.35 } ] },
+  "stab_glint": { "about": "A quick stab and a high glint; played on woodblock, anvil, whip, taikos", "tape": 1.5, "reverb": [1.31, 0.3, 0.25], "layers": [
     { "use": "slice", "band": [9000, 4000], "dur": 0.07 },
-    { "use": "tick", "freq": 3000 },
-    { "use": "chime", "at": 0.03, "freq": 3520, "dur": 0.25, "vol": 0.5 } ] },
-  "sweep_dust": { "about": "A low sweep scraping up dust", "layers": [
+    { "use": "woodblock", "freq": 1500, "vol": 0.8 },
+    { "use": "anvil", "at": 0.03, "freq": 3520, "dur": 0.5, "vol": 0.4 },
+    { "use": "whip", "vol": 0.5 },
+    { "use": "taiko", "freq": [170, 136], "vol": 0.5 } ] },
+  "sweep_dust": { "about": "A low sweep scraping up dust; played on sul ponticello strings, taikos", "tape": 1.5, "reverb": [1.24, 0.3, 0.25], "layers": [
     { "use": "whoosh", "band": [500, 1500], "dur": 0.5 },
     { "wave": "hiss", "band": [1500, 800], "dur": 0.9, "power": 1.5, "vol": 0.5 },
-    { "wave": "noise", "freq": [700, 300], "dur": 0.3, "vol": 0.3 } ] },
-  "sword_clash": { "about": "Two swords meeting with a long ringing clang", "echo": [0.07, 0.3], "layers": [
-    { "use": "clang", "freq": 1250, "fm": [1.41, 6], "dur": 0.5 },
-    { "use": "clang", "freq": 1870, "dur": 0.4, "vol": 0.6 },
+    { "wave": "hiss", "dur": 0.3, "vol": 0.3, "low": [420, 180] },
+    { "use": "sul_pont", "freq": [1976, 880], "glide": 0.5, "dur": 0.3, "shape": "decay", "power": 1.5, "attack": 0.005, "vol": 0.25 },
+    { "use": "taiko", "at": 0.08, "freq": [160, 128], "vol": 0.35 } ] },
+  "sword_clash": { "about": "Two swords meeting with a long ringing clang; played on anvil, whip, taikos", "tape": 1.5, "reflect": [[0.084, 0.42, 2970], [0.22, 0.28, 1977], [0.306, 0.23, 1831]], "reverb": [1.4, 0.3, 0.25], "layers": [
+    { "use": "anvil", "freq": 1250, "dur": 1.5, "vol": 0.8 },
+    { "use": "anvil", "freq": 1870, "dur": 1.2, "vol": 0.48 },
     { "use": "crack" },
-    { "use": "spark", "repeat": 6, "every": 0.04 } ] },
-  "thrust_trail": { "about": "A straight, fast thrust ending in a glint", "layers": [
+    { "use": "spark", "repeat": 6, "every": 0.04 },
+    { "use": "whip", "vol": 0.5 },
+    { "use": "taiko", "freq": [135, 110], "vol": 0.5 },
+    { "use": "anvil", "freq": 1700, "dur": 0.8, "vol": 0.3 } ] },
+  "thrust_trail": { "about": "A straight, fast thrust ending in a glint; played on anvil, sul ponticello strings, taikos", "tape": 1.5, "reverb": [1.51, 0.3, 0.25], "layers": [
     { "use": "whoosh", "band": [1500, 6000], "dur": 0.22, "shape": "swell" },
     { "use": "slice", "at": 0.12, "band": [9000, 5000], "dur": 0.1 },
-    { "use": "chime", "at": 0.25, "freq": 2794, "dur": 0.2, "vol": 0.3 } ] },
-  "uppercut_swoosh": { "about": "A rising swoosh, a hit and a high glint at the top", "layers": [
+    { "use": "anvil", "at": 0.25, "freq": 2794, "dur": 0.5, "vol": 0.24 },
+    { "use": "sul_pont", "freq": [1976, 880], "glide": 0.5, "dur": 0.3, "shape": "decay", "power": 1.5, "attack": 0.005, "vol": 0.25 },
+    { "use": "taiko", "at": 0.08, "freq": [160, 128], "vol": 0.35 } ] },
+  "uppercut_swoosh": { "about": "A rising swoosh, a hit and a high glint at the top; played on string tremolo, taikos, anvil, whip", "tape": 1.5, "reverb": [1.2, 0.3, 0.25], "layers": [
     { "use": "whoosh", "band": [400, 3500], "dur": 0.32, "shape": "swell" },
-    { "use": "rise", "freq": [200, 900], "dur": 0.3, "vol": 0.4 },
-    { "use": "thud", "at": 0.15, "freq": [250, 90], "dur": 0.12 },
-    { "use": "chime", "at": 0.45, "freq": 2349, "dur": 0.25, "vol": 0.3 } ] },
-  "whirlwind": { "about": "Four fast revolutions of a spinning blade", "layers": [
+    { "use": "tremolo", "freq": [200, 900], "dur": 0.3, "shape": "swell", "power": 1.5, "vol": 0.32 },
+    { "use": "taiko", "at": 0.15, "freq": [155, 124], "dur": 0.6 },
+    { "use": "anvil", "at": 0.45, "freq": 2349, "dur": 0.5, "vol": 0.24 },
+    { "use": "whip", "at": 0.15, "vol": 0.5 } ] },
+  "whirlwind": { "about": "Four fast revolutions of a spinning blade; played on sul ponticello strings, taikos", "tape": 1.5, "reverb": [1.25, 0.3, 0.25], "layers": [
     { "use": "whoosh", "band": [500, 2000], "dur": 0.22, "repeat": 4, "every": 0.2 },
     { "use": "wind", "band": [600, 1200], "dur": 0.95, "vol": 0.7 },
-    { "use": "slice", "at": 0.1, "dur": 0.15, "repeat": 2, "every": 0.4, "vol": 0.5 } ] }
+    { "use": "slice", "at": 0.1, "dur": 0.15, "repeat": 2, "every": 0.4, "vol": 0.5 },
+    { "use": "sul_pont", "freq": [2093, 880], "glide": 0.5, "dur": 0.3, "shape": "decay", "power": 1.5, "attack": 0.005, "vol": 0.25 },
+    { "use": "taiko", "at": 0.08, "freq": [160, 128], "vol": 0.35 } ] }
 }

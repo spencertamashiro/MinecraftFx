@@ -1,88 +1,145 @@
 {
-  "angelic_wings": { "about": "Four broad wingbeats with rustling feathers and one clear bell", "layers": [
+  "angelic_wings": { "about": "Four broad wingbeats with rustling feathers and one clear bell; played on sopranos, tubular bells, horns", "tape": 1.5, "reverb": [1.4, 0.3, 0.25], "length": 3.6, "layers": [
     { "use": "whoosh", "band": [500, 1600], "dur": 0.55, "repeat": 4, "every": 0.7 },
     { "use": "rustle", "band": [3000, 5000], "dur": 0.3, "at": 0.35, "repeat": 4, "every": 0.7, "vol": 0.3 },
-    { "use": "pad", "freq": 784, "dur": 2.8, "vol": 0.5 },
-    { "use": "bell", "at": 0.1, "freq": 1568, "dur": 1.2, "vol": 0.4 } ] },
-  "aura_of_courage": { "about": "Three rising horn-and-bell calls", "layers": [
-    { "use": "bell", "freq": 392, "notes": [0, 4, 7], "every": 0.5, "dur": 0.8 },
-    { "wave": "saw", "freq": 196, "notes": [0, 4, 7], "every": 0.5, "dur": 0.45, "low": 1800, "shape": "bump", "power": 1, "vol": 0.5 } ] },
-  "blessing_light": { "about": "A warm low glow with a gentle rising run of chimes", "layers": [
-    { "use": "pad", "freq": 440, "dur": 2.4 },
-    { "use": "pad", "freq": 554, "dur": 2.4, "vol": 0.6 },
-    { "use": "chime", "freq": 1109, "notes": [0, 5, 9, 12, 17], "every": 0.3, "vol": 0.4 } ] },
-  "celestial_orbit": { "about": "Stars chiming up and down as they circle", "layers": [
-    { "use": "chime", "freq": 1568, "notes": [0, 7, 12, 7, 0, 7, 12, 7], "every": 0.28, "dur": 0.4 },
-    { "use": "wobble", "freq": 392, "vib": [2, 1], "dur": 2.4, "vol": 0.4 } ] },
-  "consecration_ground": { "about": "A deep hallowed fifth with one bell and faint sparkles", "layers": [
-    { "use": "pad", "freq": 130, "dur": 3.0 },
-    { "use": "pad", "freq": 196, "dur": 3.0, "vol": 0.7 },
-    { "use": "bell", "freq": 523, "dur": 1.5, "vol": 0.7 },
-    { "use": "chime", "freq": 2637, "dur": 0.3, "repeat": 8, "every": 0.35, "jitter": 0.7, "vol": 0.2 } ] },
-  "divine_nova": { "about": "Two bright bells and a wave of light bursting out", "range": 32, "layers": [
-    { "use": "bell", "freq": 1047, "dur": 1.2 },
-    { "use": "bell", "freq": 1319, "dur": 1.2, "vol": 0.6 },
+    { "use": "choir_high", "freq": 784, "dur": 2.8, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.4 },
+    { "use": "tubular", "at": 0.1, "freq": 1568, "dur": 1.92, "vol": 0.32 },
+    { "use": "choir_high", "freq": 392, "notes": [0, 4, 11], "every": 0.004, "dur": 2.8, "shape": "bump", "power": 0.8, "vol": 0.35 },
+    { "use": "horns", "at": 0.15, "freq": 196, "notes": [0, 7], "every": 0.004, "dur": 2.6, "shape": "bump", "power": 1, "vol": 0.2 } ] },
+  "aura_of_courage": { "about": "Three rising horn-and-bell calls; played on tubular bells, horns, sopranos, crotales", "tape": 1.5, "reverb": [1.57, 0.3, 0.25], "length": 4.7, "layers": [
+    { "use": "tubular", "freq": 392, "dur": 1.28, "notes": [0, 4, 7], "every": 0.5, "vol": 0.8 },
+    { "use": "horns", "freq": 196, "dur": 0.45, "shape": "bump", "power": 1, "attack": 0.05, "notes": [0, 4, 7], "every": 0.5, "vol": 0.4 },
+    { "use": "choir_high", "at": 1.0, "freq": 523.3, "notes": [0, 4, 7], "every": 0.004, "dur": 1.0, "shape": "decay", "power": 1.5, "attack": 0.02, "vol": 0.45 },
+    { "use": "crotale", "at": 1.0, "freq": 2349, "vol": 0.3 } ] },
+  "blessing_light": { "about": "A warm low glow with a gentle rising run of chimes; played on sopranos, crotales, horns", "tape": 1.5, "reverb": [1.37, 0.3, 0.25], "layers": [
+    { "use": "choir_high", "freq": 440, "dur": 2.4, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.8 },
+    { "use": "choir_high", "freq": 554, "dur": 2.4, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.48 },
+    { "use": "crotale", "freq": 1109, "dur": 1.0, "notes": [0, 5, 9, 12, 17], "every": 0.3, "vol": 0.32 },
+    { "use": "choir_high", "freq": 523.3, "notes": [0, 4, 11], "every": 0.004, "dur": 2.4, "shape": "bump", "power": 0.8, "vol": 0.35 },
+    { "use": "horns", "at": 0.15, "freq": 261.6, "notes": [0, 7], "every": 0.004, "dur": 2.2, "shape": "bump", "power": 1, "vol": 0.2 } ] },
+  "celestial_orbit": { "about": "Stars chiming up and down as they circle; played on crotales, sopranos", "tape": 1.5, "reverb": [1.28, 0.3, 0.25], "length": 4.7, "layers": [
+    { "use": "crotale", "freq": 1568, "dur": 0.8, "notes": [0, 7, 12, 7, 0, 7, 12, 7], "every": 0.28, "vol": 0.8 },
+    { "use": "choir_high", "freq": 392, "vib": [2, 0.5], "dur": 2.4, "shape": "bump", "power": 1, "vol": 0.32 },
+    { "use": "choir_high", "at": 1.12, "freq": 466.2, "notes": [0, 4, 7], "every": 0.004, "dur": 1.0, "shape": "decay", "power": 1.5, "attack": 0.02, "vol": 0.45 },
+    { "use": "crotale", "at": 1.12, "freq": 2093, "vol": 0.3 } ] },
+  "consecration_ground": { "about": "A deep hallowed fifth with one bell and faint sparkles; played on sopranos, tubular bells, crotales, horns", "tape": 1.5, "reverb": [1.61, 0.3, 0.25], "length": 4.0, "layers": [
+    { "use": "choir_high", "freq": 260, "dur": 3.0, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.8 },
+    { "use": "choir_high", "freq": 392, "dur": 3.0, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.56 },
+    { "use": "tubular", "freq": 523, "dur": 2.4, "vol": 0.56 },
+    { "use": "crotale", "freq": 2637, "dur": 0.6, "repeat": 8, "every": 0.35, "jitter": 0.7, "vol": 0.16 },
+    { "use": "choir_high", "freq": 466.2, "notes": [0, 7, 16], "every": 0.004, "dur": 3.0, "shape": "bump", "power": 0.8, "vol": 0.35 },
+    { "use": "horns", "at": 0.15, "freq": 233.1, "notes": [0, 7], "every": 0.004, "dur": 2.8, "shape": "bump", "power": 1, "vol": 0.2 } ] },
+  "divine_nova": { "about": "Two bright bells and a wave of light bursting out; played on tubular bells, timpani, sopranos, crotales, horns", "range": 32, "tape": 1.9, "clip": 0.85, "reverb": [2.08, 0.4, 0.25], "length": 4.0, "layers": [
+    { "use": "tubular", "freq": 1047, "dur": 1.92, "vol": 0.8 },
+    { "use": "tubular", "freq": 1319, "dur": 1.92, "vol": 0.48 },
     { "use": "whoosh", "band": [3500, 600], "dur": 0.7, "shape": "decay" },
-    { "use": "thud", "vol": 0.5 } ] },
-  "divine_ray": { "about": "A ray descending, then a high shimmering beam with glints", "layers": [
-    { "wave": "sine", "freq": [2400, 1200], "dur": 0.4, "vol": 0.4 },
-    { "wave": "sine", "freq": 1760, "trem": [9, 0.5], "dur": 2.5, "shape": "bump", "vol": 0.5 },
-    { "use": "pad", "freq": 880, "dur": 2.5, "vol": 0.6 },
-    { "use": "chime", "freq": 2640, "dur": 0.25, "at": 0.2, "repeat": 12, "every": 0.2, "jitter": 0.6, "vol": 0.2 } ] },
-  "faith_shield": { "about": "Two ringing plates locking into a shield", "layers": [
-    { "use": "clang", "freq": 880, "fm": [2, 2], "dur": 0.5 },
-    { "use": "clang", "at": 0.15, "freq": 1320, "fm": [2, 2], "dur": 0.5 },
-    { "use": "pad", "freq": 440, "dur": 2.0, "vol": 0.5 },
-    { "use": "chime", "at": 0.3, "freq": 2640, "dur": 0.4, "vol": 0.3 } ] },
-  "feather_burst": { "about": "A soft puff and feathers fluttering down", "level": 0.8, "layers": [
+    { "use": "timpani", "freq": [144.5, 115.6], "dur": 0.8, "vol": 0.5 },
+    { "use": "choir_high", "freq": 440, "notes": [0, 4, 7], "every": 0.004, "dur": 1.0, "shape": "decay", "power": 1.5, "attack": 0.02, "vol": 0.45 },
+    { "use": "crotale", "freq": 2637, "vol": 0.3 },
+    { "use": "horns", "freq": 220, "notes": [0, 4, 7], "every": 0.004, "dur": 1.0, "vol": 0.5 } ] },
+  "divine_ray": { "about": "A ray descending, then a high shimmering beam with glints; played on violins, sopranos, crotales, horns", "tape": 1.5, "reverb": [1.56, 0.3, 0.25], "length": 3.8, "layers": [
+    { "use": "violins", "freq": [2400, 1200], "glide": 0.7, "dur": 0.48, "shape": "decay", "power": 1.5, "attack": 0.02, "vol": 0.32 },
+    { "use": "choir_high", "freq": 880, "dur": 2.5, "shape": "bump", "power": 1, "attack": 0.05, "trem": [9, 0.5], "vol": 0.4 },
+    { "use": "choir_high", "freq": 880, "dur": 2.5, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.48 },
+    { "use": "crotale", "at": 0.2, "freq": 2640, "dur": 0.5, "repeat": 12, "every": 0.2, "jitter": 0.6, "vol": 0.16 },
+    { "use": "choir_high", "freq": 523.3, "notes": [0, 4, 11], "every": 0.004, "dur": 2.65, "shape": "bump", "power": 0.8, "vol": 0.35 },
+    { "use": "horns", "at": 0.15, "freq": 261.6, "notes": [0, 7], "every": 0.004, "dur": 2.45, "shape": "bump", "power": 1, "vol": 0.2 } ] },
+  "faith_shield": { "about": "Two ringing plates locking into a shield; played on anvil, sopranos, crotales", "tape": 1.5, "reverb": [1.48, 0.3, 0.25], "length": 3.8, "layers": [
+    { "use": "anvil", "freq": 880, "dur": 1.5, "vol": 0.8 },
+    { "use": "anvil", "at": 0.15, "freq": 1320, "dur": 1.5, "vol": 0.8 },
+    { "use": "choir_high", "freq": 440, "dur": 2.0, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.4 },
+    { "use": "crotale", "at": 0.3, "freq": 2640, "dur": 0.8, "vol": 0.24 },
+    { "use": "choir_high", "at": 0.15, "freq": 392, "notes": [0, 4, 7], "every": 0.004, "dur": 1.0, "shape": "decay", "power": 1.5, "attack": 0.02, "vol": 0.45 },
+    { "use": "crotale", "at": 0.15, "freq": 2093, "vol": 0.3 } ] },
+  "feather_burst": { "about": "A soft puff and feathers fluttering down; played on crotales, sopranos, horns", "level": 0.8, "tape": 1.5, "reverb": [1.36, 0.3, 0.25], "layers": [
     { "use": "whoosh", "band": [1200, 400], "dur": 0.45 },
     { "use": "rustle", "band": [3000, 5000], "dur": 0.12, "at": 0.15, "repeat": 7, "every": 0.22, "jitter": 0.8, "vol": 0.35 },
-    { "use": "chime", "freq": 1760, "vol": 0.3 } ] },
-  "golden_sparkles": { "about": "A dozen twinkling notes in a golden major key", "level": 0.8, "layers": [
-    { "use": "chime", "freq": 2349, "notes": [0, 4, 7, 11, 12, 7, 16, 12, 19, 16, 12, 7], "every": 0.22, "dur": 0.3, "jitter": 0.3 },
-    { "use": "pad", "freq": 587, "dur": 2.8, "vol": 0.25 } ] },
-  "grace_fall": { "about": "Slow chimes stepping gently downward", "level": 0.8, "layers": [
-    { "use": "chime", "freq": 1760, "notes": [12, 9, 7, 4, 0, -3, -5, -8], "every": 0.33, "dur": 0.6 },
-    { "use": "pad", "freq": 440, "dur": 3.0, "vol": 0.4 },
-    { "use": "wind", "dur": 3.0, "vol": 0.2 } ] },
-  "halo": { "about": "A high, softly pulsing ring of tone", "level": 0.8, "layers": [
-    { "use": "pad", "freq": 1047, "trem": [6, 0.25], "dur": 2.6 },
-    { "use": "pad", "freq": 1568, "dur": 2.6, "vol": 0.4 },
-    { "use": "bell", "freq": 2093, "dur": 1.0, "vol": 0.4 } ] },
-  "heal": { "about": "Five warm notes climbing as health returns", "layers": [
-    { "use": "chime", "freq": 880, "notes": [0, 4, 7, 12, 16], "every": 0.16, "dur": 0.45 },
-    { "use": "pad", "freq": 440, "dur": 2.0, "vol": 0.5 },
-    { "wave": "sine", "freq": [440, 880], "dur": 1.2, "shape": "bump", "vol": 0.3 } ] },
-  "holy_smite": { "about": "A beam slamming down with a great bell and a boom", "range": 40, "layers": [
-    { "use": "fall", "wave": "square", "duty": 0.3, "freq": [2600, 400], "dur": 0.12 },
-    { "use": "boom", "at": 0.1, "freq": [160, 45], "dur": 0.8 },
-    { "use": "bell", "at": 0.1, "freq": 784, "dur": 1.6 },
-    { "use": "bell", "at": 0.1, "freq": 1175, "dur": 1.4, "vol": 0.5 },
-    { "use": "blast", "at": 0.1, "freq": [8000, 1500], "dur": 0.4, "vol": 0.5 } ] },
-  "holy_water_splash": { "about": "A small splash with a blessed two-note ring", "layers": [
+    { "use": "crotale", "freq": 1760, "dur": 1.0, "vol": 0.24 },
+    { "use": "choir_high", "freq": 466.2, "notes": [0, 4, 7], "every": 0.004, "dur": 1.59, "shape": "bump", "power": 0.8, "vol": 0.35 },
+    { "use": "horns", "at": 0.15, "freq": 233.1, "notes": [0, 7], "every": 0.004, "dur": 1.39, "shape": "bump", "power": 1, "vol": 0.2 } ] },
+  "golden_sparkles": { "about": "A dozen twinkling notes in a golden major key; played on crotales, sopranos, horns", "level": 0.8, "tape": 1.5, "reverb": [1.35, 0.3, 0.25], "length": 3.8, "layers": [
+    { "use": "crotale", "freq": 2349, "dur": 0.6, "notes": [0, 4, 7, 11, 12, 7, 16, 12, 19, 16, 12, 7], "every": 0.22, "jitter": 0.3, "vol": 0.8 },
+    { "use": "choir_high", "freq": 587, "dur": 2.8, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.2 },
+    { "use": "choir_high", "freq": 523.3, "notes": [0, 4, 11], "every": 0.004, "dur": 2.8, "shape": "bump", "power": 0.8, "vol": 0.35 },
+    { "use": "horns", "at": 0.15, "freq": 261.6, "notes": [0, 7], "every": 0.004, "dur": 2.6, "shape": "bump", "power": 1, "vol": 0.2 } ] },
+  "grace_fall": { "about": "Slow chimes stepping gently downward; played on crotales, sopranos", "level": 0.8, "tape": 1.5, "reverb": [1.37, 0.3, 0.25], "length": 5.3, "layers": [
+    { "use": "crotale", "freq": 1760, "dur": 1.2, "notes": [12, 9, 7, 4, 0, -3, -5, -8], "every": 0.33, "vol": 0.8 },
+    { "use": "choir_high", "freq": 440, "dur": 3.0, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.32 },
+    { "use": "wind", "dur": 3.0, "vol": 0.2 },
+    { "use": "choir_high", "at": 1.65, "freq": 392, "notes": [0, 4, 7], "every": 0.004, "dur": 1.0, "shape": "decay", "power": 1.5, "attack": 0.02, "vol": 0.45 },
+    { "use": "crotale", "at": 1.65, "freq": 2093, "vol": 0.3 } ] },
+  "halo": { "about": "A high, softly pulsing ring of tone; played on sopranos, tubular bells, horns", "level": 0.8, "tape": 1.5, "reverb": [1.55, 0.3, 0.25], "length": 3.5, "layers": [
+    { "use": "choir_high", "freq": 1047, "dur": 2.6, "shape": "bump", "power": 1, "attack": 0.08, "trem": [6, 0.25], "vol": 0.8 },
+    { "use": "choir_high", "freq": 784, "dur": 2.6, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.32 },
+    { "use": "tubular", "freq": 2093, "dur": 1.6, "vol": 0.32 },
+    { "use": "choir_high", "freq": 392, "notes": [0, 4, 7], "every": 0.004, "dur": 2.6, "shape": "bump", "power": 0.8, "vol": 0.35 },
+    { "use": "horns", "at": 0.15, "freq": 196, "notes": [0, 7], "every": 0.004, "dur": 2.4, "shape": "bump", "power": 1, "vol": 0.2 } ] },
+  "heal": { "about": "Five warm notes climbing as health returns; played on crotales, sopranos, string tremolo", "tape": 1.5, "reverb": [1.42, 0.3, 0.25], "length": 4.3, "layers": [
+    { "use": "crotale", "freq": 880, "dur": 0.9, "notes": [0, 4, 7, 12, 16], "every": 0.16, "vol": 0.8 },
+    { "use": "choir_high", "freq": 440, "dur": 2.0, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.4 },
+    { "use": "tremolo", "freq": [440, 880], "dur": 1.2, "shape": "bump", "power": 1.5, "vol": 0.24 },
+    { "use": "choir_high", "at": 0.64, "freq": 392, "notes": [0, 4, 7], "every": 0.004, "dur": 1.0, "shape": "decay", "power": 1.5, "attack": 0.02, "vol": 0.45 },
+    { "use": "crotale", "at": 0.64, "freq": 2093, "vol": 0.3 } ] },
+  "holy_smite": { "about": "A beam slamming down with a great bell and a boom; played on noise bands, sub, violins, tubular bells, sopranos", "range": 40, "tape": 2.3, "clip": 0.75, "reflect": [[0.094, 0.4, 2323], [0.179, 0.26, 2076], [0.321, 0.19, 1388]], "reverb": [3.85, 0.5, 0.25], "length": 6.0, "layers": [
+    { "use": "violins", "freq": [2600, 400], "glide": 0.7, "dur": 0.2, "shape": "decay", "power": 1.5, "attack": 0.02, "vol": 0.8 },
+    { "use": "tubular", "at": 0.1, "freq": 784, "dur": 2.56, "vol": 0.8 },
+    { "use": "tubular", "at": 0.1, "freq": 1175, "dur": 2.24, "vol": 0.4 },
+    { "use": "choir_high", "at": 0.1, "freq": 466.2, "notes": [0, 4, 7], "every": 0.004, "dur": 1.0, "shape": "decay", "power": 1.5, "attack": 0.02, "vol": 0.45 },
+    { "use": "crotale", "at": 0.1, "freq": 2637, "vol": 0.3 },
+    { "use": "horns", "at": 0.1, "freq": 233.1, "notes": [0, 4, 7], "every": 0.004, "dur": 1.0, "vol": 0.5 },
+    { "use": "timpani", "at": 0.1, "freq": 116.5, "vol": 0.5 },
+    { "use": "braam", "at": 0.1, "freq": 58.3, "notes": [0, 7, 12, 16], "every": 0.004, "dur": 0.9, "vol": 0.8, "power": 1.4 },
+    { "use": "tubular", "at": 0.1, "freq": 233.1, "vol": 0.4 },
+    { "use": "crack", "at": 0.1, "low": [11000, 3000], "vol": 0.7 },
+    { "wave": "hiss", "at": 0.1, "band": [56.0, 42.0], "dur": 1.2, "power": 2.2, "attack": 0.003, "vol": 1.0 },
+    { "wave": "hiss", "at": 0.1, "band": [112.0, 84.0], "dur": 0.9, "power": 2.2, "attack": 0.003, "vol": 0.75 },
+    { "wave": "hiss", "at": 0.1, "band": [224.0, 168.0], "dur": 0.6, "power": 2.2, "attack": 0.003, "vol": 0.55 },
+    { "wave": "hiss", "at": 0.1, "band": [458.1, 343.6], "dur": 0.35, "power": 2.2, "attack": 0.003, "vol": 0.4 },
+    { "wave": "sine", "at": 0.1, "freq": [63.6, 50.9], "glide": 0.15, "dur": 1.8, "power": 1.6, "attack": 0.004, "vol": 0.9 },
+    { "use": "gran_cassa", "at": 0.1, "freq": [95.4, 76.3], "dur": 1.8, "attack": 0.015, "vol": 0.45 } ] },
+  "holy_water_splash": { "about": "A small splash with a blessed two-note ring; played on harp, crotales, sopranos", "tape": 1.5, "reverb": [1.46, 0.3, 0.25], "length": 3.7, "layers": [
     { "use": "splash", "dur": 0.35 },
-    { "use": "drip", "freq": [700, 1700], "repeat": 3, "every": 0.08 },
-    { "use": "chime", "at": 0.1, "freq": 1976, "notes": [0, 7], "every": 0.1, "dur": 0.4, "vol": 0.5 } ] },
-  "prayer_beads_glow": { "about": "Six beads counted off, each a soft rising note", "level": 0.8, "layers": [
-    { "use": "chime", "freq": 660, "notes": [0, 2, 4, 7, 9, 12], "every": 0.45 },
-    { "use": "tick", "freq": 1500, "repeat": 6, "every": 0.45, "vol": 0.4 },
-    { "use": "pad", "freq": 330, "dur": 3.0, "vol": 0.3 } ] },
-  "purifying_flame": { "about": "A clean bright flame with a sustained holy tone", "layers": [
-    { "use": "flame", "freq": [900, 1800], "dur": 1.9, "vol": 0.6 },
-    { "use": "pad", "freq": 784, "dur": 1.9, "vol": 0.5 },
-    { "use": "chime", "freq": 2349, "dur": 0.25, "repeat": 8, "every": 0.2, "jitter": 0.6, "vol": 0.25 } ] },
-  "resurrect_beam": { "about": "A long rising tone into a full chord and a final bell", "range": 32, "layers": [
-    { "wave": "sine", "freq": [220, 880], "dur": 1.8, "shape": "swell", "power": 1 },
-    { "use": "pad", "freq": 440, "dur": 2.3 },
-    { "use": "pad", "freq": 554, "dur": 2.3, "vol": 0.6 },
-    { "use": "pad", "freq": 659, "dur": 2.3, "vol": 0.6 },
-    { "use": "bell", "at": 1.7, "freq": 1319, "dur": 0.8 } ] },
-  "sacred_chimes": { "about": "Four bells ringing up a major chord", "echo": [0.15, 0.3], "layers": [
-    { "use": "bell", "freq": 1047, "notes": [0, 4, 7, 12], "every": 0.3 },
-    { "use": "chime", "freq": 2093, "notes": [0, 4, 7, 12], "every": 0.3, "vol": 0.4 } ] },
-  "smiting_bolt": { "about": "A bright bolt cracking down with a bell strike", "range": 32, "layers": [
-    { "use": "zap", "freq": [3200, 600], "dur": 0.1 },
+    { "use": "harp", "freq": 1090.9, "dur": 0.28, "repeat": 3, "every": 0.08 },
+    { "use": "crotale", "at": 0.1, "freq": 1976, "dur": 0.8, "notes": [0, 7], "every": 0.1, "vol": 0.4 },
+    { "use": "choir_high", "freq": 523.3, "notes": [0, 4, 7], "every": 0.004, "dur": 1.0, "shape": "decay", "power": 1.5, "attack": 0.02, "vol": 0.45 },
+    { "use": "crotale", "freq": 2349, "vol": 0.3 } ] },
+  "prayer_beads_glow": { "about": "Six beads counted off, each a soft rising note; played on crotales, woodblock, sopranos", "level": 0.8, "tape": 1.5, "reverb": [1.26, 0.3, 0.25], "length": 5.4, "layers": [
+    { "use": "crotale", "freq": 660, "dur": 1.0, "notes": [0, 2, 4, 7, 9, 12], "every": 0.45, "vol": 0.8 },
+    { "use": "woodblock", "freq": 750, "repeat": 6, "every": 0.45, "vol": 0.32 },
+    { "use": "choir_high", "freq": 330, "dur": 3.0, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.24 },
+    { "use": "choir_high", "at": 1.8, "freq": 440, "notes": [0, 4, 7], "every": 0.004, "dur": 1.0, "shape": "decay", "power": 1.5, "attack": 0.02, "vol": 0.45 },
+    { "use": "crotale", "at": 1.8, "freq": 2093, "vol": 0.3 } ] },
+  "purifying_flame": { "about": "A clean bright flame with a sustained holy tone; played on sopranos, crotales, horns", "tape": 1.5, "reverb": [1.22, 0.3, 0.25], "layers": [
+    { "use": "flame", "dur": 1.9, "vol": 0.6, "low": [540, 1080] },
+    { "use": "choir_high", "freq": 784, "dur": 1.9, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.4 },
+    { "use": "crotale", "freq": 2349, "dur": 0.5, "repeat": 8, "every": 0.2, "jitter": 0.6, "vol": 0.2 },
+    { "use": "choir_high", "freq": 523.3, "notes": [0, 7, 16], "every": 0.004, "dur": 1.9, "shape": "bump", "power": 0.8, "vol": 0.35 },
+    { "use": "horns", "at": 0.15, "freq": 261.6, "notes": [0, 7], "every": 0.004, "dur": 1.7, "shape": "bump", "power": 1, "vol": 0.2 } ] },
+  "resurrect_beam": { "about": "A long rising tone into a full chord and a final bell; played on string tremolo, sopranos, tubular bells, horns", "range": 32, "tape": 1.9, "reverb": [2.42, 0.4, 0.25], "length": 4.4, "layers": [
+    { "use": "tremolo", "freq": [220, 880], "dur": 1.8, "shape": "swell", "power": 1, "vol": 0.8 },
+    { "use": "choir_high", "freq": 440, "dur": 2.3, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.8 },
+    { "use": "choir_high", "freq": 554, "dur": 2.3, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.48 },
+    { "use": "choir_high", "freq": 659, "dur": 2.3, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.48 },
+    { "use": "tubular", "at": 1.7, "freq": 1319, "dur": 1.28, "vol": 0.8 },
+    { "use": "choir_high", "freq": 392, "notes": [0, 7, 16], "every": 0.004, "dur": 2.5, "shape": "bump", "power": 0.8, "vol": 0.35 },
+    { "use": "horns", "at": 0.15, "freq": 196, "notes": [0, 7], "every": 0.004, "dur": 2.3, "shape": "bump", "power": 1, "vol": 0.2 } ] },
+  "sacred_chimes": { "about": "Four bells ringing up a major chord; played on tubular bells, crotales, sopranos, horns", "tape": 1.5, "reflect": [[0.149, 0.43, 2947], [0.225, 0.34, 2319], [0.338, 0.24, 1611]], "reverb": [1.27, 0.3, 0.25], "layers": [
+    { "use": "tubular", "freq": 1047, "dur": 1.44, "notes": [0, 4, 7, 12], "every": 0.3, "vol": 0.8 },
+    { "use": "crotale", "freq": 2093, "dur": 1.0, "notes": [0, 4, 7, 12], "every": 0.3, "vol": 0.32 },
+    { "use": "choir_high", "freq": 523.3, "notes": [0, 4, 11], "every": 0.004, "dur": 1.8, "shape": "bump", "power": 0.8, "vol": 0.35 },
+    { "use": "horns", "at": 0.15, "freq": 261.6, "notes": [0, 7], "every": 0.004, "dur": 1.6, "shape": "bump", "power": 1, "vol": 0.2 } ] },
+  "smiting_bolt": { "about": "A bright bolt cracking down with a bell strike; played on noise bands, sub, sul ponticello strings, tubular bells, sopranos", "range": 32, "tape": 1.9, "clip": 0.85, "reflect": [[0.104, 0.37, 2702], [0.206, 0.31, 2185], [0.355, 0.25, 1730]], "reverb": [2.62, 0.4, 0.25], "length": 4.4, "layers": [
+    { "use": "sul_pont", "freq": [3000, 600], "glide": 0.6, "dur": 0.2, "shape": "decay", "power": 1.5, "attack": 0.006, "vol": 0.8 },
     { "use": "crack" },
-    { "use": "bell", "at": 0.05, "freq": 1568, "dur": 0.7 },
-    { "use": "boom", "freq": [180, 60], "dur": 0.3, "vol": 0.6 } ] }
+    { "use": "tubular", "at": 0.05, "freq": 1568, "dur": 1.2, "vol": 0.8 },
+    { "use": "choir_high", "freq": 440, "notes": [0, 4, 7], "every": 0.004, "dur": 1.0, "shape": "decay", "power": 1.5, "attack": 0.02, "vol": 0.45 },
+    { "use": "crotale", "freq": 2093, "vol": 0.3 },
+    { "use": "horns", "freq": 220, "notes": [0, 4, 7], "every": 0.004, "dur": 1.0, "vol": 0.5 },
+    { "use": "timpani", "freq": 110, "vol": 0.5 },
+    { "wave": "hiss", "at": 0.0, "band": [66.0, 49.5], "dur": 0.84, "power": 2.2, "attack": 0.003, "vol": 1.0 },
+    { "wave": "hiss", "at": 0.0, "band": [132.0, 99.0], "dur": 0.63, "power": 2.2, "attack": 0.003, "vol": 0.75 },
+    { "wave": "hiss", "at": 0.0, "band": [264.0, 198.0], "dur": 0.42, "power": 2.2, "attack": 0.003, "vol": 0.55 },
+    { "wave": "hiss", "at": 0.0, "band": [540.0, 405.0], "dur": 0.245, "power": 2.2, "attack": 0.003, "vol": 0.4 },
+    { "wave": "sine", "at": 0.0, "freq": [75.0, 60.0], "glide": 0.15, "dur": 1.2, "power": 1.6, "attack": 0.004, "vol": 0.9 },
+    { "use": "gran_cassa", "at": 0.0, "freq": [112.5, 90.0], "dur": 1.2, "attack": 0.015, "vol": 0.45 } ] }
 }

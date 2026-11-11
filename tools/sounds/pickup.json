@@ -1,86 +1,127 @@
 {
-  "ammo_pickup": { "about": "A metallic clack-clack and a confirming beep", "layers": [
-    { "use": "clang", "freq": 900, "dur": 0.08 },
-    { "use": "clang", "at": 0.08, "freq": 1200, "dur": 0.08 },
-    { "use": "blip", "at": 0.4, "freq": 1568, "dur": 0.08, "vol": 0.5 } ] },
-  "armor_glint": { "about": "A solid armour ring and two polished glints", "layers": [
-    { "use": "clang", "freq": 660, "fm": [2, 2], "dur": 0.5 },
-    { "use": "chime", "at": 0.25, "freq": 1976, "dur": 0.3, "repeat": 2, "every": 0.6 },
-    { "use": "chime", "at": 0.7, "freq": 2637, "dur": 0.4, "vol": 0.6 } ] },
-  "chest_open_flash": { "about": "A lid creaking open into a rising fanfare", "layers": [
-    { "wave": "noise", "freq": [300, 500], "trem": [40, 0.8], "dur": 0.15 },
-    { "use": "thud", "at": 0.12, "freq": [200, 90], "dur": 0.1 },
-    { "use": "blip", "at": 0.15, "freq": 784, "notes": [0, 4, 7, 12, 16, 19], "every": 0.07, "dur": 0.09 },
-    { "use": "chime", "at": 0.6, "freq": 3136, "dur": 0.25, "repeat": 6, "every": 0.15, "jitter": 0.5, "vol": 0.3 } ] },
-  "coin_burst": { "about": "The two-note coin ding with jingling coins after", "layers": [
-    { "use": "blip", "freq": 1976, "dur": 0.06 },
-    { "use": "blip", "at": 0.06, "freq": 2637, "dur": 0.35, "shape": "decay" },
-    { "use": "clang", "freq": 3200, "dur": 0.05, "at": 0.15, "repeat": 8, "every": 0.09, "jitter": 0.8, "step": 1.03, "vol": 0.3 } ] },
-  "confetti": { "about": "A party pop, a little toot and fluttering paper", "layers": [
-    { "use": "thud", "freq": [400, 150], "dur": 0.08 },
+  "ammo_pickup": { "about": "A metallic clack-clack and a confirming pluck; played on anvil, pizzicato, snare, woodblock", "tape": 1.5, "reverb": [1.57, 0.3, 0.25], "layers": [
+    { "use": "anvil", "freq": 1350, "dur": 0.25, "vol": 0.8 },
+    { "use": "anvil", "at": 0.08, "freq": 1800, "dur": 0.25, "vol": 0.8 },
+    { "use": "pizz", "at": 0.4, "freq": 784, "dur": 0.4, "vol": 0.5 },
+    { "use": "snare", "dur": 0.08, "vol": 0.3 },
+    { "use": "woodblock", "at": 0.08, "freq": 1250, "vol": 0.4 } ] },
+  "armor_glint": { "about": "A solid armour ring and two polished glints; played on anvil, glockenspiel, triangle", "tape": 1.5, "reverb": [1.2, 0.3, 0.25], "layers": [
+    { "use": "anvil", "freq": 990, "dur": 1.5, "vol": 0.8 },
+    { "use": "glock", "at": 0.25, "freq": 1976, "dur": 0.6, "repeat": 2, "every": 0.6, "vol": 0.8 },
+    { "use": "glock", "at": 0.7, "freq": 2637, "dur": 0.8, "vol": 0.48 },
+    { "use": "ting", "at": 0.25, "vol": 0.25 } ] },
+  "chest_open_flash": { "about": "A lid creaking open into a rising fanfare; played on timpani, pizzicato, glockenspiel, trumpets, cymbals", "tape": 1.9, "reverb": [2.75, 0.4, 0.25], "length": 3.8, "layers": [
+    { "wave": "hiss", "trem": [40, 0.8], "dur": 0.15, "low": [180, 300] },
+    { "use": "timpani", "at": 0.12, "freq": [170, 136], "dur": 0.5 },
+    { "use": "pizz", "at": 0.15, "freq": 784, "dur": 0.45, "notes": [0, 4, 7, 12, 16, 19], "every": 0.07 },
+    { "use": "glock", "at": 0.6, "freq": 3136, "dur": 0.5, "repeat": 6, "every": 0.15, "jitter": 0.5, "vol": 0.24 },
+    { "use": "trumpets", "at": 0.15, "freq": 392, "notes": [0, 4, 7], "every": 0.004, "dur": 0.7, "vol": 0.5 },
+    { "use": "cymbal", "at": 0.6, "dur": 1.6, "vol": 0.2 },
+    { "use": "choir_high", "at": 0.6, "freq": 523.3, "notes": [0, 4, 7, 12], "every": 0.004, "dur": 1.4, "vol": 0.3 } ] },
+  "coin_burst": { "about": "The two-note coin ding with jingling coins after; played on glockenspiel, anvil, triangle", "tape": 1.5, "reverb": [1.22, 0.3, 0.25], "layers": [
+    { "use": "glock", "freq": 1976, "dur": 0.3 },
+    { "use": "glock", "at": 0.06, "freq": 2637, "dur": 1.0 },
+    { "use": "anvil", "at": 0.15, "freq": 3200, "dur": 0.25, "repeat": 8, "every": 0.09, "jitter": 0.8, "step": 1.03, "vol": 0.24 },
+    { "use": "ting", "at": 0.06, "freq": 3300, "vol": 0.2 } ] },
+  "confetti": { "about": "A party pop, a little toot and fluttering paper; played on timpani, pizzicato, snare, cymbals, trumpets", "tape": 1.5, "reverb": [1.19, 0.3, 0.25], "layers": [
+    { "use": "timpani", "freq": [230, 190], "dur": 0.4 },
     { "use": "crack" },
-    { "use": "blip", "wave": "triangle", "at": 0.05, "freq": 1047, "notes": [0, 4, 7, 12, 7, 12, 16], "every": 0.09, "dur": 0.08 },
-    { "wave": "hiss", "band": [5000, 7000], "trem": [12, 0.7], "dur": 1.6, "at": 0.1, "vol": 0.15 } ] },
-  "drop_shadow": { "about": "A quiet idle pulse marking a dropped item", "level": 0.6, "layers": [
-    { "use": "wobble", "freq": 330, "vib": [1.5, 0.5], "dur": 2.8, "vol": 0.4 },
-    { "use": "chime", "freq": 1320, "repeat": 3, "every": 1.0, "vol": 0.3 } ] },
-  "exp_orb": { "about": "Rising plips flying in, then an absorbed two-note", "layers": [
-    { "use": "drip", "freq": [600, 1400], "repeat": 5, "every": 0.15, "step": 1.12 },
-    { "use": "chime", "at": 0.75, "freq": 1760, "notes": [0, 5], "every": 0.08, "dur": 0.35 } ] },
-  "gem_sparkle": { "about": "A crystalline ring and a scatter of sparkles", "layers": [
-    { "use": "bell", "freq": 2093, "fm": [3.5, 1.2], "dur": 0.6 },
-    { "use": "chime", "freq": 3136, "notes": [0, 7, 4, 12, 7, 16], "every": 0.4, "jitter": 0.3, "at": 0.2, "dur": 0.3, "vol": 0.5 } ] },
-  "health_globe": { "about": "A steady heartbeat under a warm glow", "layers": [
-    { "use": "thud", "freq": [130, 70], "dur": 0.1, "repeat": 6, "every": 0.45 },
-    { "use": "thud", "at": 0.14, "freq": [110, 60], "dur": 0.1, "repeat": 6, "every": 0.45, "vol": 0.7 },
-    { "use": "pad", "freq": 523, "dur": 2.7, "vol": 0.35 },
-    { "use": "chime", "freq": 1047, "notes": [0, 4, 7], "every": 0.9, "dur": 0.6, "vol": 0.3 } ] },
-  "key_shimmer": { "about": "Keys jingling, then a slow shimmer", "layers": [
-    { "use": "clang", "freq": 2400, "dur": 0.15, "repeat": 3, "every": 0.11, "step": 1.12 },
-    { "use": "chime", "at": 0.4, "freq": 3520, "notes": [0, -5, 0, -5, 0, 7], "every": 0.35, "dur": 0.3, "vol": 0.4 } ] },
-  "level_up": { "about": "Four rising notes into a triumphant chord", "range": 32, "echo": [0.12, 0.25], "layers": [
-    { "use": "blip", "duty": 0.25, "freq": 523, "notes": [0, 4, 7, 12], "every": 0.2, "dur": 0.18, "vol": 0.5 },
-    { "wave": "sine", "freq": [200, 1000], "dur": 0.8, "shape": "swell", "vol": 0.25 },
-    { "use": "bell", "at": 0.8, "freq": 1047, "dur": 1.2 },
-    { "use": "bell", "at": 0.8, "freq": 1319, "dur": 1.2, "vol": 0.6 },
-    { "use": "bell", "at": 0.8, "freq": 1568, "dur": 1.2, "vol": 0.6 } ] },
-  "loot_beam": { "about": "A beam of light rising and holding on an open fifth", "level": 0.8, "layers": [
-    { "wave": "sine", "freq": [196, 392], "dur": 0.6, "shape": "swell", "vol": 0.5 },
-    { "use": "pad", "freq": 392, "dur": 3.0 },
-    { "use": "pad", "freq": 588, "dur": 3.0, "vol": 0.5 },
-    { "use": "chime", "freq": 2349, "dur": 0.3, "repeat": 9, "every": 0.32, "jitter": 0.5, "vol": 0.2 } ] },
-  "mana_potion_glint": { "about": "A glass tink, bubbling and three magic notes", "layers": [
-    { "use": "clang", "freq": 2800, "dur": 0.1, "vol": 0.4 },
-    { "use": "drip", "freq": [500, 1300], "repeat": 10, "every": 0.25, "jitter": 0.5 },
-    { "use": "chime", "at": 0.15, "freq": 1865, "notes": [0, 7, 12], "every": 0.45, "vol": 0.4 } ] },
-  "material_pop": { "about": "A cartoon pop and a small pickup beep", "layers": [
-    { "use": "drip", "freq": [300, 1100], "dur": 0.08 },
-    { "use": "thud", "freq": [300, 120], "dur": 0.06, "vol": 0.6 },
-    { "use": "blip", "at": 0.25, "freq": 1319, "dur": 0.06, "vol": 0.4 } ] },
-  "quest_item_pulse": { "about": "An alert beep, then three slow important bell pulses", "layers": [
-    { "use": "blip", "freq": 1245, "notes": [0, 5], "every": 0.08 },
-    { "use": "bell", "freq": 880, "notes": [0, 5, 0], "every": 0.7, "dur": 0.8 },
-    { "use": "pad", "freq": 440, "dur": 2.8, "vol": 0.3 } ] },
-  "rarity_glow": { "about": "A rich, mysterious held chord with rising glints", "level": 0.8, "layers": [
-    { "use": "pad", "freq": 277, "dur": 2.9 },
-    { "use": "pad", "freq": 415, "dur": 2.9, "vol": 0.6 },
-    { "use": "pad", "freq": 554, "dur": 2.9, "vol": 0.4 },
-    { "use": "chime", "freq": 2217, "dur": 0.3, "at": 0.2, "repeat": 6, "every": 0.4, "step": 1.06, "vol": 0.25 } ] },
-  "resource_gather": { "about": "Stone, leaf and gem collected in turn, then a tally beep", "layers": [
-    { "use": "crunch", "freq": [1200, 400], "dur": 0.08 },
+    { "use": "pizz", "at": 0.05, "freq": 1047, "dur": 0.4, "notes": [0, 4, 7, 12, 7, 12, 16], "every": 0.09 },
+    { "wave": "hiss", "band": [5000, 7000], "trem": [12, 0.7], "dur": 1.6, "at": 0.1, "vol": 0.15 },
+    { "use": "snare", "vol": 0.4 },
+    { "use": "cymbal", "at": 0.02, "dur": 1.2, "vol": 0.2 },
+    { "use": "trumpets", "at": 0.05, "freq": 523.3, "notes": [0, 4, 7], "every": 0.004, "dur": 0.4, "vol": 0.35 } ] },
+  "drop_shadow": { "about": "A quiet idle pulse marking a dropped item; played on sopranos, glockenspiel, timpani", "level": 0.6, "tape": 1.5, "reverb": [1.56, 0.3, 0.25], "length": 3.9, "layers": [
+    { "use": "choir_high", "freq": 330, "vib": [1.5, 0.25], "dur": 2.8, "shape": "bump", "power": 1, "vol": 0.32 },
+    { "use": "glock", "freq": 1320, "dur": 1.0, "repeat": 3, "every": 1.0, "vol": 0.24 },
+    { "use": "timpani", "freq": 82.4, "vol": 0.4 } ] },
+  "exp_orb": { "about": "Rising plips flying in, then an absorbed two-note; played on pizzicato, glockenspiel, crotales", "tape": 1.5, "reverb": [1.5, 0.3, 0.25], "length": 4.5, "layers": [
+    { "use": "pizz", "freq": 916.5, "dur": 0.28, "repeat": 5, "every": 0.15, "step": 1.12 },
+    { "use": "glock", "at": 0.75, "freq": 1760, "dur": 0.7, "notes": [0, 5], "every": 0.08, "vol": 0.8 },
+    { "use": "crotale", "at": 0.83, "freq": 2637, "vol": 0.25 } ] },
+  "gem_sparkle": { "about": "A crystalline ring and a scatter of sparkles; played on tubular bells, glockenspiel, crotales, harp", "tape": 1.5, "reverb": [1.25, 0.3, 0.25], "length": 3.5, "layers": [
+    { "use": "tubular", "freq": 2093, "dur": 1.2, "vol": 0.8 },
+    { "use": "glock", "at": 0.2, "freq": 3136, "dur": 0.6, "notes": [0, 7, 4, 12, 7, 16], "every": 0.4, "jitter": 0.3, "vol": 0.4 },
+    { "use": "crotale", "freq": 3136, "vol": 0.3 },
+    { "use": "harp", "at": 0.05, "freq": 784, "notes": [0, 7, 12, 19], "every": 0.04, "vol": 0.25 } ] },
+  "health_globe": { "about": "A steady heartbeat under a warm glow; played on timpani, sopranos, glockenspiel, harp", "tape": 1.5, "reverb": [1.3, 0.3, 0.25], "length": 3.8, "layers": [
+    { "use": "timpani", "freq": [110.5, 88.4], "dur": 0.5, "repeat": 6, "every": 0.45 },
+    { "use": "timpani", "at": 0.14, "freq": [93.5, 74.8], "dur": 0.5, "repeat": 6, "every": 0.45, "vol": 0.7 },
+    { "use": "choir_high", "freq": 523, "dur": 2.7, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.28 },
+    { "use": "glock", "freq": 1047, "dur": 1.2, "notes": [0, 4, 7], "every": 0.9, "vol": 0.24 },
+    { "use": "choir_high", "at": 0.9, "freq": 523.3, "notes": [0, 4, 7], "every": 0.004, "dur": 0.9, "vol": 0.3 },
+    { "use": "harp", "at": 0.9, "freq": 392, "notes": [0, 4, 7, 12], "every": 0.05, "vol": 0.25 } ] },
+  "key_shimmer": { "about": "Keys jingling, then a slow shimmer; played on anvil, glockenspiel, triangle, sul ponticello strings", "tape": 1.5, "reverb": [1.6, 0.3, 0.25], "length": 3.7, "layers": [
+    { "use": "anvil", "freq": 3200, "dur": 0.45, "repeat": 3, "every": 0.11, "step": 1.12, "vol": 0.8 },
+    { "use": "glock", "at": 0.4, "freq": 3520, "dur": 0.6, "notes": [0, -5, 0, -5, 0, 7], "every": 0.35, "vol": 0.32 },
+    { "use": "ting", "at": 0.1, "freq": 2900, "vol": 0.25 },
+    { "use": "sul_pont", "freq": 2349, "dur": 1.2, "shape": "bump", "vol": 0.12 } ] },
+  "level_up": { "about": "Four rising notes into a triumphant chord; played on pizzicato, string tremolo, tubular bells, trumpets, timpani", "range": 32, "tape": 1.9, "reflect": [[0.138, 0.34, 2546], [0.284, 0.33, 2325], [0.368, 0.21, 1790]], "reverb": [2.38, 0.4, 0.25], "length": 4.4, "layers": [
+    { "use": "pizz", "freq": 523, "dur": 0.9, "notes": [0, 4, 7, 12], "every": 0.2, "vol": 0.5 },
+    { "use": "tremolo", "freq": [200, 1000], "dur": 0.8, "shape": "swell", "power": 1.5, "vol": 0.2 },
+    { "use": "tubular", "at": 0.8, "freq": 1047, "dur": 1.92, "vol": 0.8 },
+    { "use": "tubular", "at": 0.8, "freq": 1319, "dur": 1.92, "vol": 0.48 },
+    { "use": "tubular", "at": 0.8, "freq": 1568, "dur": 1.92, "vol": 0.48 },
+    { "use": "trumpets", "freq": 392, "notes": [0, 4, 7, 12], "every": 0.12, "dur": 0.5, "vol": 0.6 },
+    { "use": "timpani", "freq": 98, "repeat": 4, "every": 0.12, "vol": 0.45 },
+    { "use": "horns", "at": 0.48, "freq": 196, "notes": [0, 4, 7, 12], "every": 0.004, "dur": 1.4, "vol": 0.5 },
+    { "use": "cymbal", "at": 0.48, "vol": 0.3 },
+    { "use": "choir_high", "at": 0.48, "freq": 523.3, "notes": [0, 4, 7], "every": 0.004, "dur": 1.6, "vol": 0.35 } ] },
+  "loot_beam": { "about": "A beam of light rising and holding on an open fifth; played on string tremolo, sopranos, glockenspiel, crotales, timpani", "level": 0.8, "tape": 1.9, "reverb": [2.54, 0.4, 0.25], "length": 4.7, "layers": [
+    { "use": "tremolo", "freq": [196, 392], "dur": 0.6, "shape": "swell", "power": 1.5, "vol": 0.4 },
+    { "use": "choir_high", "freq": 392, "dur": 3.0, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.8 },
+    { "use": "choir_high", "freq": 588, "dur": 3.0, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.4 },
+    { "use": "glock", "freq": 2349, "dur": 0.6, "repeat": 9, "every": 0.32, "jitter": 0.5, "vol": 0.16 },
+    { "use": "choir_high", "freq": 587.3, "notes": [0, 4, 7, 12], "every": 0.004, "dur": 2.0, "shape": "swell", "power": 1, "vol": 0.35 },
+    { "use": "crotale", "freq": 2349, "vol": 0.3 },
+    { "use": "timpani", "freq": 73.4, "vol": 0.4 } ] },
+  "mana_potion_glint": { "about": "A glass tink, bubbling and three magic notes; played on anvil, pizzicato, glockenspiel, harp", "tape": 1.5, "reverb": [1.52, 0.3, 0.25], "layers": [
+    { "use": "anvil", "freq": 3200, "dur": 0.3, "vol": 0.32 },
+    { "use": "pizz", "freq": 806.2, "dur": 0.28, "repeat": 10, "every": 0.25, "jitter": 0.5 },
+    { "use": "glock", "at": 0.15, "freq": 1865, "dur": 1.0, "notes": [0, 7, 12], "every": 0.45, "vol": 0.32 },
+    { "use": "harp", "at": 0.02, "freq": 659.3, "notes": [0, 3, 7, 10], "every": 0.05, "vol": 0.25 } ] },
+  "material_pop": { "about": "A cartoon pop and a small pickup pluck; played on pizzicato, timpani, woodblock", "tape": 1.5, "reverb": [1.48, 0.3, 0.25], "layers": [
+    { "use": "pizz", "freq": 574.5, "dur": 0.32 },
+    { "use": "timpani", "freq": [230, 190], "dur": 0.35, "vol": 0.6 },
+    { "use": "pizz", "at": 0.25, "freq": 1319, "dur": 0.3, "vol": 0.4 },
+    { "use": "woodblock", "freq": 880, "vol": 0.4 } ] },
+  "quest_item_pulse": { "about": "An alert pluck, then three slow important bell pulses; played on pizzicato, tubular bells, sopranos, horns, timpani", "tape": 1.9, "reverb": [2.62, 0.4, 0.25], "length": 5.1, "layers": [
+    { "use": "pizz", "freq": 1245, "dur": 0.35, "notes": [0, 5], "every": 0.08 },
+    { "use": "tubular", "freq": 880, "dur": 1.28, "notes": [0, 5, 0], "every": 0.7, "vol": 0.8 },
+    { "use": "choir_high", "freq": 440, "dur": 2.8, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.24 },
+    { "use": "horns", "freq": 174.6, "notes": [0, 7, 12], "every": 0.004, "dur": 2.4, "vol": 0.35 },
+    { "use": "timpani", "freq": 87.3, "vol": 0.4 },
+    { "use": "tubular", "at": 0.05, "freq": 523.3, "vol": 0.25 } ] },
+  "rarity_glow": { "about": "A rich, mysterious held chord with rising glints; played on sopranos, glockenspiel, crotales", "level": 0.8, "tape": 1.9, "reverb": [2.63, 0.4, 0.25], "length": 4.5, "layers": [
+    { "use": "choir_high", "freq": 277, "dur": 2.9, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.8 },
+    { "use": "choir_high", "freq": 415, "dur": 2.9, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.48 },
+    { "use": "choir_high", "freq": 554, "dur": 2.9, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.32 },
+    { "use": "glock", "at": 0.2, "freq": 2217, "dur": 0.6, "repeat": 6, "every": 0.4, "step": 1.06, "vol": 0.2 },
+    { "use": "choir_high", "freq": 659.3, "notes": [0, 4, 11], "every": 0.004, "dur": 2.5, "shape": "bump", "vol": 0.3 },
+    { "use": "crotale", "at": 0.1, "freq": 2637, "vol": 0.25 } ] },
+  "resource_gather": { "about": "Stone, leaf and gem collected in turn, then a tally pluck; played on anvil, pizzicato, woodblock", "tape": 1.5, "reverb": [1.57, 0.3, 0.25], "layers": [
+    { "use": "crunch", "dur": 0.08, "band": [720, 240] },
     { "use": "rustle", "at": 0.1, "dur": 0.1 },
-    { "use": "clang", "at": 0.2, "freq": 2600, "dur": 0.1 },
-    { "use": "blip", "at": 0.85, "freq": 1047, "notes": [0, 7], "every": 0.07, "dur": 0.08 } ] },
-  "soul_absorb": { "about": "A soul drawn in with a long inhale and a soft landing note", "layers": [
-    { "use": "whoosh", "band": [400, 2800], "dur": 1.0, "shape": "swell" },
-    { "use": "wobble", "freq": [700, 350], "vib": [7, 2], "dur": 1.0, "vol": 0.5 },
-    { "use": "thud", "at": 1.0, "freq": [200, 80], "dur": 0.15 },
-    { "use": "chime", "at": 1.2, "freq": 1480, "vol": 0.5 } ] },
-  "treasure_glow": { "about": "A gleaming melody running up and back down", "layers": [
-    { "use": "chime", "freq": 1568, "notes": [0, 4, 7, 12, 16, 12, 7, 4], "every": 0.22, "dur": 0.35 },
-    { "use": "pad", "freq": 784, "dur": 1.9, "vol": 0.35 } ] },
-  "weapon_shine": { "about": "A blade's shing and a long clean ring", "layers": [
+    { "use": "anvil", "at": 0.2, "freq": 3200, "dur": 0.3, "vol": 0.8 },
+    { "use": "pizz", "at": 0.85, "freq": 1047, "dur": 0.4, "notes": [0, 7], "every": 0.07 },
+    { "use": "woodblock", "at": 0.92, "freq": 700, "vol": 0.4 },
+    { "use": "pizz", "at": 0.97, "freq": 392, "notes": [0, 7], "every": 0.08, "vol": 0.3 } ] },
+  "soul_absorb": { "about": "A soul drawn in with a long inhale and a soft landing note; played on sopranos, timpani, glockenspiel, whispers, low choir", "tape": 1.5, "reverb": [1.52, 0.3, 0.25], "layers": [
+    { "use": "whoosh", "band": [400, 2800], "dur": 1.0, "shape": "bump", "power": 1 },
+    { "use": "choir_high", "freq": [700, 350], "vib": [7, 1.0], "dur": 1.0, "shape": "bump", "power": 1, "vol": 0.4 },
+    { "use": "timpani", "at": 1.0, "freq": [170, 136], "dur": 0.75 },
+    { "use": "glock", "at": 1.2, "freq": 1480, "dur": 1.0, "vol": 0.4 },
+    { "use": "choir_whisper", "formant": "o", "dur": 1.6, "vol": 0.3 },
+    { "use": "choir", "at": 0.1, "freq": 110, "formant": "u", "notes": [0, 7], "every": 0.004, "dur": 1.5, "vol": 0.3 } ] },
+  "treasure_glow": { "about": "A gleaming melody running up and back down; played on glockenspiel, sopranos, harp", "tape": 1.9, "reverb": [2.68, 0.4, 0.25], "length": 3.9, "layers": [
+    { "use": "glock", "freq": 1568, "dur": 0.7, "notes": [0, 4, 7, 12, 16, 12, 7, 4], "every": 0.22, "vol": 0.8 },
+    { "use": "choir_high", "freq": 784, "dur": 1.9, "shape": "bump", "power": 1, "attack": 0.08, "vol": 0.28 },
+    { "use": "choir_high", "freq": 523.3, "notes": [0, 4, 7, 14], "every": 0.004, "dur": 1.9, "shape": "bump", "vol": 0.3 },
+    { "use": "harp", "at": 0.1, "freq": 523.3, "notes": [0, 4, 7, 12, 16, 19], "every": 0.07, "vol": 0.25 } ] },
+  "weapon_shine": { "about": "A blade's shing and a long clean ring; played on anvil, glockenspiel, triangle", "tape": 1.5, "reverb": [1.28, 0.3, 0.25], "layers": [
     { "use": "slice", "band": [3000, 9000], "dur": 0.25, "attack": 0.05, "vol": 0.6 },
-    { "use": "clang", "freq": 3000, "fm": [1.41, 2], "dur": 0.9, "vol": 0.6 },
-    { "use": "chime", "at": 0.25, "freq": 3951, "dur": 0.3, "repeat": 4, "every": 0.45, "vol": 0.25 } ] }
+    { "use": "anvil", "freq": 3200, "dur": 2.0, "vol": 0.48 },
+    { "use": "glock", "at": 0.25, "freq": 3951, "dur": 0.6, "repeat": 4, "every": 0.45, "vol": 0.2 },
+    { "use": "anvil", "freq": 1600, "dur": 0.6, "vol": 0.3 },
+    { "use": "ting", "at": 0.15, "freq": 3500, "vol": 0.2 } ] }
 }

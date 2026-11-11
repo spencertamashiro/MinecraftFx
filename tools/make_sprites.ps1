@@ -227,6 +227,36 @@ foreach ($step in 0, 1, 2, 3, 4) {
     }.GetNewClosure()
 }
 
+# sigil: the finished magic circle held still, one frame, with an inner ring and a ring round each point of its star.
+# For circles that must look the same every tick, such as an effect replayed as a loop. Use with shape "plane". 32x32.
+New-Frame 'sigil' 32 32 {
+    param($x, $y)
+    $d = Get-Distance $x $y 15.5 15.5
+    $angle = [math]::Atan2($y - 15.5, $x - 15.5) + [math]::PI
+    if ($d -gt 14.4 -and $d -le 15.4) { return $BRIGHT }
+    if ($d -gt 10.4 -and $d -le 11.2) { return $MID }
+    if ($d -gt 11.8 -and $d -lt 13.6) {
+        $tick = ($angle * 8 / (2 * [math]::PI)) % 1
+        if ($tick -lt 0.12 -or $tick -gt 0.88) { return $MID }
+    }
+    if ($d -gt 4.3 -and $d -le 5.1) { return $MID }
+    foreach ($p in @($up + $down)) {
+        $r = Get-Distance $x $y $p[0] $p[1]
+        if ($r -gt 1.3 -and $r -le 2.1) { return $BRIGHT }
+    }
+    foreach ($t in @($up, $down)) {
+        for ($k = 0; $k -lt 3; $k++) {
+            $a = $t[$k]; $b = $t[($k + 1) % 3]
+            if ((Get-SegmentDistance $x $y $a[0] $a[1] $b[0] $b[1]) -lt 0.55) { return $BRIGHT }
+        }
+    }
+    return 0
+}.GetNewClosure()
+
+# line: a straight bar for streaks, solid along its whole length with a bright core and dim edges, so segments laid end
+# to end draw hairline rings and the straight edges of star figures. One frame. 8x8.
+New-ArtFrame 'line' @('-+####+-', '-+####+-', '-+####+-', '-+####+-', '-+####+-', '-+####+-', '-+####+-', '-+####+-')
+
 # slash: a crescent sword arc, thick in the middle and tapered at the tips, that sweeps in and thins out. 32x32.
 foreach ($f in @(@{ sweep = 0.55; t = 5.0; dither = 0 }, @{ sweep = 1.0; t = 5.5; dither = 0 }, @{ sweep = 1.0; t = 3.5; dither = 0 }, @{ sweep = 1.0; t = 1.8; dither = 2 })) {
     New-Frame 'slash' 32 32 {

@@ -61,7 +61,7 @@ class EffectDefinitionTest {
 
     @Test
     void everyShippedEffectLoads() throws IOException {
-        assertEquals(300, shippedEffects().size());
+        assertEquals(306, shippedEffects().size());
     }
 
     /** fx/fire/meteor_strike.json plays minecraftfx:fire.meteor_strike, which is sounds/fire/meteor_strike.ogg. */
@@ -78,7 +78,7 @@ class EffectDefinitionTest {
             }
         });
         assertEquals(List.of(), wrong);
-        assertEquals(300, events.size());
+        assertEquals(306, events.size());
     }
 
     /** Decoded with Minecraft's own Ogg reader, so a file that passes here is one the game can play. */
@@ -97,7 +97,7 @@ class EffectDefinitionTest {
                 }
             }
         }
-        assertEquals(300, seen.size());
+        assertEquals(306, seen.size());
     }
 
     @Test
