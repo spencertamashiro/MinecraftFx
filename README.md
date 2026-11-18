@@ -1,12 +1,54 @@
 # MinecraftFx
 
-An open source library of 306 Minecraft visual effects and matching sounds: 300 effects in 15 categories, plus six large `mega` set pieces. A shared NeoForge mod plays the effects using [Lodestone](https://github.com/LodestarMC/Lodestone) particles. Each effect can be scaled, recolored, and oriented without duplicating its definition.
+An open source library of 306 Minecraft visual effects and matching sounds: 300 effects in 15 categories, plus six large `mega` set pieces. Choose the NeoForge mod for Java 1.21.1 or the vanilla datapack for Java 26.3. Both editions read the same effect definitions and support positioning, scale, tint, direction, and separate visual or sound playback.
 
 The database is the versioned collection under [`src/main/resources/assets/minecraftfx/`](src/main/resources/assets/minecraftfx/). No database server or external service is required. The Java runtime, textures, audio, and authoring tools are included so contributors can use and extend the collection.
 
+## Choose your edition
+
+Download the file for your world's Minecraft version from [MinecraftFx Releases](https://github.com/spencertamashiro/MinecraftFx/releases/latest).
+
+| Edition | Install | Rendering and audio |
+| --- | --- | --- |
+| **Vanilla Java 26.3** | Put `MinecraftFx-26.3-datapack.zip` in `<world>/datapacks/`. Run `/reload`, then check `/datapack list enabled`. A server operator can install it once for the world. | Animated vanilla dust particles and vanilla sound cues. The optional sound pack adds the original audio. |
+| **NeoForge Java 1.21.1** | Install NeoForge 21.1.265. Put `MinecraftFx-1.21.1-neoforge.jar` and [Lodestone 1.8.2](https://modrinth.com/mod/lodestonelib/version/CohX6yP1) in `mods/` on both client and server. Restart Minecraft. | Lodestone's animated sprites, blending, Java API, and the original sounds. Try `/fx play minecraftfx:impact/critical_spark`. |
+
+### Play an effect with the datapack
+
+Use a world with cheats enabled or run as a server operator. Functions play at the command's position and follow its rotation. The first example puts a spark three blocks ahead. Type `/function minecraftfx:play/` and press Tab to browse the catalog.
+
+```mcfunction
+/execute positioned ^ ^1 ^3 run function minecraftfx:play/impact/critical_spark
+/function minecraftfx:visual/fire/fire_ring
+/function minecraftfx:sound/fire/meteor_strike
+/execute positioned ~ ~1 ~ rotated 90 0 run function minecraftfx:play {effect:"arcane/arcane_missile",options:{scale:2.0,tint:3386111,force:1b,volume:1.5,pitch:0.8}}
+```
+
+The same `{effect:"category/name",options:{...}}` form works with `minecraftfx:visual` and `minecraftfx:sound`. Each call keeps its own origin, direction and settings, so command blocks and other datapacks can overlap effects.
+
+| Option | Meaning |
+| --- | --- |
+| `scale` | Size and travel multiplier, 0.1–10 (default 1) |
+| `tint` | Packed decimal RGB, e.g. `3386111` for `#33AAFF`. Palette shades retain their relative brightness. |
+| `force` | Use `1b` for vanilla forced particle delivery, or `0b` for normal visibility. The pack targets players within 96 blocks of the origin. |
+| `up_yaw`, `up_pitch` | Rotation of the axis for ground layers, in degrees. Defaults to `0, -90` (world up). Use `execute rotated` or `execute facing` for the forward axis. |
+| `volume`, `pitch` | Sound controls. Use volume 0–10 and pitch 0.5–2. Both default to 1. |
+| `audio` | `"vanilla"` for built-in category cues or `"original"` for the matching MinecraftFx sound. |
+
+**Original sounds on 26.3.** Put `MinecraftFx-26.3-sounds.zip` in the client's `resourcepacks/` folder and enable it under **Options → Resource Packs**. In multiplayer, each listener needs the pack or can accept it as the server resource pack. Set the world's audio mode once with the first command below. The second restores vanilla cues.
+
+```mcfunction
+/data modify storage minecraftfx:config defaults.audio set value "original"
+/data modify storage minecraftfx:config defaults.audio set value "vanilla"
+```
+
+**How the editions look.** The datapack samples the original sprite outlines, palettes, layer delays, repeats, and motion paths into colored dust. It uses fixed variations and redraws moving particles at five-tick intervals. Dense bursts have fewer points, vanilla dust controls fading, and billboard outlines follow the effect's orientation. Use the mod for full sprite animation, camera-facing billboards, and additive blending. The GIFs below show the mod.
+
+**Build the packs from source.** With Python 3.10 or newer, run `python -m pip install Pillow` and `python datapack/build_pack.py` from the repository root. Install the ZIPs from `datapack/build/`. The [datapack source folder](datapack/) contains the shared runtime and compiler. Rebuild after changing an effect, sprite, or sound.
+
 ## Visual demonstrations
 
-Ten looping GIF previews from the project's early in-game captures. Each cycles through three captured moments at ticks 3, 9, and 18, with a pause before repeating; these are sampled previews, not full-motion recordings. They show earlier captures and may differ from later revisions. GIFs have no audio; use `/fx play` to hear the matching sounds.
+Ten looping GIF previews from the project's early in-game captures. Each cycles through three captured moments at ticks 3, 9, and 18, with a pause before repeating; these are sampled previews, not full-motion recordings. They show earlier captures and may differ from later revisions. The GIFs are silent. Both editions offer sound playback.
 
 | Flame jet | Feather burst |
 | --- | --- |
@@ -58,7 +100,7 @@ The original 15 categories contain 20 effects each; `mega` adds `world_ender_las
 
 The mega effects are longer and denser than the standard effects. The summoning-circle loop is designed to be replayed every 100 ticks (five seconds); the mod does not schedule those replays automatically. The latest mega visuals still need in-game review.
 
-## Build and try
+## Build and try the NeoForge mod
 
 Requires a JDK 21 installation. The Gradle wrapper downloads the pinned build dependencies on the first run. Targets Minecraft **1.21.1**, NeoForge **21.1.265**, and Lodestone **1.8.2** (Modrinth version `CohX6yP1`).
 
@@ -112,7 +154,7 @@ The API classes are in `dev.minecraftfx`. The server sends a play request to nea
 
 ## Sounds
 
-Every shipped effect has a matching sound that plays with `/fx play`. Use `/fx sound` to hear only its sound cues, or `/fx visual` for particles alone. GIF previews are silent.
+In the mod, every shipped effect has a matching sound that plays with `/fx play`. Use `/fx sound` to hear only its sound cues, or `/fx visual` for particles alone. GIF previews are silent.
 
 The sound library is synthesized from original recipes without recorded samples. Most categories use an orchestral palette of strings, choirs, taiko drums, low brass stabs, glass, and metallic percussion, with room reverberation and saturation. Explosions use physical boom layers: a close crack, noise bands, falling sub-bass, debris, and uneven echoes. Eight science-fiction sounds retain synth voices where the effect represents a laser or computer. Mega set pieces add longer build-ups and larger impacts.
 
@@ -187,6 +229,7 @@ To add a sprite, extend `tools/make_sprites.ps1`, run it with PowerShell, and re
 ## Project layout
 
 ```text
+datapack/                      Vanilla 26.3 runtime and pack compiler
 src/main/resources/assets/minecraftfx/
   fx/<category>/*.json       Effect definitions
   particles/*.json          Sprite frame lists
@@ -202,7 +245,9 @@ docs/                         Sound usage, catalog, and ten GIF previews
 
 ## Status and validation
 
-This is a proof of concept. The publication build validates all 306 effects and matching sounds, including decoding each audio file with Minecraft's Ogg reader, checking mono 44.1 kHz output, rejecting duplicate decoded audio, and verifying effect-to-sound references. The source project's earlier checks report the original 300 effects loading in game. Only the first 51 effects were visually inspected in earlier versions, and no sounds have been reviewed by ear. The current mega effects and orchestral audio, remote multiplayer, compatibility with other rendering mods, and performance under heavy load still need playtesting. Build success does not establish visual or audio quality.
+The vanilla 26.3 GameTest server loaded the release ZIP, ran the frame sequences for all 306 effects, and checked marker cleanup. A separate timed playback check covered overlapping calls, rotation, scale, force, and frame progression. The datapack visuals and original sounds still need client-side review.
+
+The NeoForge publication build validates all 306 effects and matching sounds, including decoding each audio file with Minecraft's Ogg reader, checking mono 44.1 kHz output, rejecting duplicate decoded audio, and verifying effect-to-sound references. The source project's earlier checks report the original 300 effects loading in game. Only the first 51 effects were visually inspected in earlier versions, and no sounds have been reviewed by ear. The current mega effects and orchestral audio, remote multiplayer, compatibility with other rendering mods, and performance under heavy load still need playtesting. Build success does not establish visual or audio quality.
 
 Run `./gradlew test` to validate the collection and runtime behavior covered by the tests. Contributions should state which effects were previewed or listened to.
 

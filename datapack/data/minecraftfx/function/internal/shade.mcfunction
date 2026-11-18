@@ -1,0 +1,14 @@
+scoreboard players operation #part mfx.math = #r mfx.math
+scoreboard players operation #part mfx.math *= #shade mfx.math
+scoreboard players operation #part mfx.math /= #1000 mfx.math
+scoreboard players operation #packed mfx.math = #part mfx.math
+scoreboard players operation #part mfx.math = #g mfx.math
+scoreboard players operation #part mfx.math *= #shade mfx.math
+scoreboard players operation #part mfx.math /= #1000 mfx.math
+scoreboard players operation #packed mfx.math *= #256 mfx.math
+scoreboard players operation #packed mfx.math += #part mfx.math
+scoreboard players operation #part mfx.math = #b mfx.math
+scoreboard players operation #part mfx.math *= #shade mfx.math
+scoreboard players operation #part mfx.math /= #1000 mfx.math
+scoreboard players operation #packed mfx.math *= #256 mfx.math
+scoreboard players operation #packed mfx.math += #part mfx.math

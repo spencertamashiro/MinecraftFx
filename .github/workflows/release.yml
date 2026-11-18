@@ -1,0 +1,36 @@
+name: Publish MinecraftFx
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Build and test the NeoForge mod
+        run: ./gradlew build
+      - name: Build the vanilla packs
+        run: |
+          python -m pip install Pillow
+          python datapack/build_pack.py
+      - name: Publish the three downloads
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp build/libs/minecraftFx-*.jar build/MinecraftFx-1.21.1-neoforge.jar
+          gh release create "$GITHUB_REF_NAME" --verify-tag \
+            --title "MinecraftFx $GITHUB_REF_NAME" --notes-file .github/release-notes.md \
+            'build/MinecraftFx-1.21.1-neoforge.jar#NeoForge mod for Java 1.21.1' \
+            'datapack/build/MinecraftFx-26.3-datapack.zip#Vanilla datapack for Java 26.3' \
+            'datapack/build/MinecraftFx-26.3-sounds.zip#Optional original sounds for Java 26.3'
